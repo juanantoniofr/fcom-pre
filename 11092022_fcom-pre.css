@@ -1,0 +1,2710 @@
+/*  CSS */
+
+/* typografia */
+html {
+    font-size: 100%;
+    line-height: 1.5em;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    /*font-family: 'Oswald', sans-serif;*/
+    font-family: 'Economia', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    //font-size: 1em;
+    //line-height: 1.5em;
+    font-size:   0.875em;  //14px;
+    line-height: 22px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /*color:#363636;*/
+    color: #111;
+
+}
+body p, body ul, body ol{
+    font-family: 'Economia', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    opacity: 1;
+    visibility: visible;
+    line-height: 22px;
+    //color:#666;
+}
+body .pr-main__sidebar-first {
+    font-family: 'Lato', sans-serif;
+    color:#555;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.25em;
+}
+h1,
+h1.node__title,
+h1.node__title span {
+    font-size: 28px;
+    //color: #666;
+    font-weight: 300;
+}
+h2{font-size:22px;font-weight: 400;}
+.pr-main__sidebar-first h2.block__title {
+    font-size: 24px;
+    padding: 10px 0px;
+    border-bottom: 1px solid #999;
+    line-height: 1.2em;
+}
+h3{font-size:18px}
+.node__container .node__content {
+    //font-size:16px;
+    line-height: 26px;
+}
+.node__container .node__content h3  {
+    font-size:22px;
+    color: rgba(0,30,40,0.9);
+    font-weight: bold;
+    padding: 15px 0px;
+}
+.caption.caption-img.align-left {
+     margin-right: 35px;
+ }
+.gdoc-field{
+    height: 570px;
+}
+.gdoc-filename {font-size: 16px;}
+.field-node--field-pdftest .field__item {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 39px;
+}
+.node__container .node__content h4  {font-size:18px;color: rgba(0,30,40,0.9);font-weight: bold;}
+.block__title, .block-menu__title, .pane__title{line-height: 1rem; !important;}
+.block__title {font-size:20px;font-family: 'Oswald', sans-serif;}
+.node__title span {
+    font-family: 'Oswald', sans-serif;
+    //font-size: 30px;
+    //font-size: 24px;
+    //color: #e9ebed;
+    color:#fff;
+    font-weight: 300;
+    line-height: 36px;
+}
+#block-views-block-investigacion-block-1 div.views-field-title span a {font-size:22px;text-align: center;display: block;}
+
+/* link */
+a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+.menu a {font-family: 'Oswald', sans-serif;font-weight: 400;}
+/*.views-field.views-field-body a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}*/
+a {color:#005a8c}
+/*a {color:rgb(204,0,51);}*/
+a:hover { color:#0066cc; }
+/*a:hover {color:rgb(204,0,51,0.6);}*/
+a:visited { color:#005a8c; }
+/*a:visited {color:rgb(204,0,51); }*/
+
+a:hover, a:visited {text-decoration:none;}
+.field-node--field-subtitulo a,
+.field-node--field-subtitulo-publicacion-mes {
+  color: #000;
+  font-size: 22px;
+  font-style: normal;
+}
+.field-node--field-subtitulo-publicacion-mes {
+    font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+    }
+//.ui-widget-content a {color:#0066cc !important;}
+//.ui-widget-content a:hover {color:#005a8c !important;}
+
+
+#block-views-block-noticias-de-actualidad-block-9 a {
+    color: rgb(54,54,54);
+}
+
+.view-enlaces-de-interes-alumnos a,
+#block-menuheader a,
+.breadcrumb a {
+    color:rgb(204,0,51);
+}
+.view-enlaces-de-interes-alumnos a:hover,
+#block-menuheader a:hover,
+#block-menuheader a:visited {
+    color:#e84752;
+}
+
+ul#superfish-u0922-headerleft li a, ul#superfish-u0922-headerright li a {
+
+    color: #f8ebef;
+}
+
+/*layout*/
+
+.page {background: #fff;} 
+#highlighted, #masthead, #features {margin-bottom:0px}
+#highlighted {
+    padding: 20px 0px 0px 0px;
+    border-bottom: 2px solid #eee;
+    background: #eeeeee4d;
+}
+.pr-highlighted__rw {
+    margin: 0px auto;
+    padding: 0px;
+}
+#features {padding: 30px 0px 30px 0px;}
+.pr-features__features-first, .pr-features__features-second, .pr-features__features-third {padding: 1%;}
+.pr-features__features-first {padding-left: 0px;}
+.pr-features__features-third {padding-right: 0px;}
+#main-content {margin-bottom: 0px;}
+#main-content .views-field-title {
+    font-size: 22px;
+    padding: 20px 0px;
+    text-align: left;
+    line-height: 28px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+#main-content .views-accordion-header {
+    padding-bottom: 0px;
+}
+#pr-main__content {
+    padding:30px;
+    padding-top:0px;
+}
+.views-field.views-field-view-node {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    clear: left;
+}
+#pr-main__sidebar-first {
+    background-color: #bbbbbb4d;
+    padding: 30px;
+    margin-top: 0px;
+}
+#content-suffix {
+    margin-top: 0px;
+    /*background: #D8F2FB;*/
+    /*background: rgb(153,153,153);*/
+    background: #bebebe;
+    padding-top: 30px;
+    margin-top: 130px;
+}
+.pr-navbar, .regions, .pr-features {background: transparent;}
+
+.pr-header{
+    padding-top: 0px;
+
+    /*u092022*/
+    
+    height: 2.8em;
+    margin-top: 5px;
+    background: #a90533;
+
+}
+
+div#block-u0922-headerleft .block__content {
+    margin-left: 10%;
+    width: 60%;
+    float: left;
+}
+
+div#block-u0922-headerright .block__content{
+    width: 30%;
+    float: right;
+}
+
+
+.pr-content-prefix__rw{margin:0px;padding: 0px;}
+.block {margin: 0;}
+#pr-main__sidebar-first .block__inner{margin-top: 30px;}
+.node {box-shadow: none;border-radius: 0;padding: 0;}
+.node--view-mode-full {max-width: 1024px;width: 100%;}
+.node__title{
+    //background-color: rgba(0,30,40,0.9);
+    background-color: #be9d56;
+    /*background-color: rgb(204,0,51); */
+    padding: 15px;
+}
+.node--view-mode-full .field-type-image {
+    //float: left;
+    max-width: 1024px;
+    text-align: center;
+    //padding: 22px 22px 0px 0px;
+}
+.field{margin-bottom:0px}
+.field-node--field-subtitulo,
+.field-node--field-subtitulo-publicacion-mes {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.field-node--field-subtitulo{
+    margin-bottom: 0px;
+    padding: 10px 0px;
+}
+.field-node--field-entradilla,
+.field-node--field-entradilla-publicacion-mes {
+    color: #306C99;
+    font-weight: bold;
+    text-align: justify;
+    clear: both;
+}
+
+/* imagen */    
+
+/*img {padding: 5px 0px 10px 0px;}*/
+img {
+    padding:0px;
+    margin: 0px;
+}
+/*@media all and (max-width: 1024px){
+    img {padding: 0px;}
+}*/
+
+/* parrafos */
+
+.node p {margin-bottom: 10px;text-align: justify;}
+.node__container .node__content p {margin:15px 0px 15px 0px}
+.node__container .node__content h3 + p {margin:1em 0px}
+.node__container .node__content h4 + p {margin:1em 0px}
+
+/* listas */
+ul.links {
+    list-style:none;
+}
+ul.listado-entradas {
+    list-style:none;
+    padding-left: 0px;
+}
+ul.listado-entradas ul {
+    list-style:none;
+}
+.node li {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+.pr-main__sidebar-first ul li,
+div.menusidebar {
+    padding: 5px;
+    border-radius: 7px;
+    margin-top: 3px;
+}
+ul.listado-entradas li a,
+.menusidebar a {
+    padding: 20px 5px;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+}
+ul.listado-entradas li a:before{
+    font-family: FontAwesome;
+    content: "\f101";
+    padding-right: 10px;
+    font-size: 10px;
+}
+
+ul.listado-entradas li ul {
+    list-style: none;
+}
+
+ul#superfish-u0922-headerleft, ul#superfish-u0922-headerright{
+    height: 3.7em;
+    vertical-align: middle;
+    display: table-cell;   
+}
+
+/* leaderboard */
+
+#leaderboard {
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+#block-logouses{
+    float: left;
+}
+#block-logo30aniversario{
+    float: left;
+    //margin-left: 4%;
+}
+#block-logouses img {
+   //margin-left: 10px;
+   //margin-bottom: 8px;
+   //margin-top: -17px;
+}
+#block-logouses p {
+    margin: 0px;
+}
+#block-logouses .block__content , 
+#block-logo30aniversario .block__content{
+    width: 83px;
+    height: 85px;
+}
+#block-menuheader {
+    float: right;
+    width: 27%;
+}
+strong.site-branding__name,
+em.site-branding__name{
+    margin: 0px auto;
+}
+#block-menuheader li {
+    float: right;
+    padding:0px;
+    margin:0px;
+}
+#block-menuheader li.sf-depth-1 a {
+    padding-left: 1px;
+    padding-right: 10px;
+    font-size: 14px;
+    padding-top: 10px;
+}
+#block-at-fcom-branding {
+    width: 58%;
+    float:left;
+}
+#block-at-fcom-branding span {
+    width: 380px;
+    margin: 0px auto;
+    line-height: 30px;
+}
+#block-at-fcom-branding strong.site-branding__name a.site-branding__name-link {
+    font-size: 36px;
+    color: rgb(204,0,51);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+}
+#block-at-fcom-branding em.site-branding__slogan {
+    font-size: 1.4em;
+    color: rgb(51,51,51);
+}   
+#block-alternadordeidioma    {
+    width: 58%;
+    float: left;
+    font-size: 12px;
+}
+#block-alternadordeidioma ul {
+    width: 381px;
+    margin: 0px auto;
+    padding-left: 0px;
+}
+#block-alternadordeidioma ul li {
+    float: left;
+    margin-right: 10px;
+}
+#block-redessociales {
+    float: right;
+    width: 26%;
+}
+
+/* Menu colectivos */
+
+    /*link amigos fcom*/
+    #menu-header-menu-link-content06ec2f5e-0acd-4531-8029-64f8532333dd a:before{
+      font-family: FontAwesome;
+      content: "\f0c0";
+      padding-right: 5px;
+    }
+
+    /*link alumnos*/
+    #menu-header-menu-link-contente64d1c78-999f-448c-92d0-de31f89215d9 a:before{
+      font-family: FontAwesome;
+      content: "\f007";
+      padding-right: 5px;
+    }
+    /*link pas*/
+    #menu-header-menu-link-contentc103dab9-2b37-483b-8652-fd0a6da46381  a:before{
+      font-family: FontAwesome;
+      content: "\f025";
+      padding-right: 5px;
+    }
+    /*link pdi*/
+    #menu-header-menu-link-contentcdcc0da0-b832-487e-a96a-cb9cee94b650 a:before{
+      font-family: FontAwesome;
+      content: "\f0f2";
+      padding-right: 5px;
+    }
+/* Menu colectivos colapsado */
+    #superfish-menu-header-toggle {
+        background: #eee;
+        color: #0066cc;
+    }
+    #superfish-menu-header-toggle:before{
+        font-family: FontAwesome;
+        content: "\f0c0";
+        font-weight: bold;
+        padding: 5px;
+    }
+    #superfish-menu-header-toggle span{
+        display: inline-block;
+        padding: 5px;
+        padding-left: 0px;
+    }
+/* Redes Sociales fcom */
+    #block-social {
+        float: right;
+    }
+    #block-social ul {padding: 0px}
+    #block-social ul li, #redesBoletin ul li {
+        display: inline-block;
+        padding-right: 10px;
+    }
+    .img_redes {
+        padding:0px;
+        width: 20px;
+    }
+
+/* Responsive ladeboard */
+    
+/* min-width 768px and max-width 1024px */
+@media all and (max-width: 1024px){
+     
+    #textoBoletin {
+       //margin-left: 45px !important;
+    }
+    #redesBoletin {
+        //margin-left: 55px !important;
+    } 
+    #block-alternadordeidioma, #block-at-fcom-branding {
+        //width: 34%;
+    }
+    #block-redessociales{
+        width: 19%;
+    }
+    #block-menuheader {
+        width: 17%;
+    }
+    #block-at-fcom-branding em.site-branding__slogan {
+        font-size: auto;
+        text-align: left;
+    }
+}
+    
+/* min-width 420px and max-width 768px */
+@media all and (max-width: 768px){
+        
+    #block-logouses, #block-logo30aniversario {
+        width: auto;
+        float: left;
+    }
+
+    #block-menuheader {
+        float: right;
+        width: auto;
+        min-width: 139px;
+        background-color: #bbb;
+    }
+
+    #block-menuheader li a {
+        line-height: 1.2em;
+    }
+        
+    #block-at-fcom-branding {
+        padding-top: 0px;
+        width: 100%;
+        min-height: 90px;
+        float: none;
+    }
+
+    #block-at-fcom-branding span {
+        text-align: center;
+        width: 100%;
+        float: left;
+        margin: 10px;
+    }
+
+    #block-at-fcom-branding .site-branding__name, 
+    #block-at-fcom-branding em.site-branding__slogan {
+        text-align: center;
+    }
+
+    #block-alternadordeidioma {
+        width: auto;
+    }
+
+    #block-alternadordeidioma ul {
+        width: 100%;
+    }
+        
+    #block-redessociales {
+        width: auto;
+    }
+}
+
+/* max-width 480px */
+@media all and (max-width: 480px){    
+    
+    #leaderboard {
+        padding:0px;
+        padding-bottom: 10px;
+    }
+    #block-menuheader{
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    #block-logouses, #block-logo30aniversario {
+        width: 50%;
+        display: inline-block;
+    }
+    #block-logouses .block__content, #block-logo30aniversario .block__content{
+        width: 100%;
+        height: 100%;
+        margin: 0px auto;
+    }
+    #block-logouses a, #block-logo30aniversario a{ 
+        display: block;
+        text-align: center;
+    }
+    #block-logouses a img, #block-logo30aniversario a img {
+        width: 90px;
+    }
+    #block-at-fcom-branding {
+        width: 100%;
+        margin-top: 10px;
+        float: none;
+    }
+    #block-at-fcom-branding span {
+        width: auto;
+        margin: 0px;
+        line-height: normal;
+    }
+    .site-branding__name {
+        line-height: none;
+        font-size: 16px;
+    }
+        
+    #block-at-fcom-branding em.site-branding__slogan {
+        font-size: 16px;
+        text-align: center;
+    }
+    #block-alternadordeidioma {
+        width: 100%;
+        text-align: center;
+        float: right;
+        min-width: unset;
+        padding-top: 0px;
+        font-size: 14px;
+    }
+    #block-alternadordeidioma ul {
+        text-align: center;
+        width: 100%;
+    }
+    #block-alternadordeidioma ul li{
+        display: inline;
+        padding: 0px 5px 0px 5px;
+        float: none;
+    }
+    #block-redessociales{
+        width: 100%;
+    }
+    #block-social {
+        width: 100%;
+        padding: 0px;
+    }
+    #block-social ul{
+        text-align: center;
+        display: block;
+        padding-left: 0px;
+    }
+    #block-social ul li{
+        display: inline-block;
+        float: none;
+    }
+}
+    
+/* max-width 320px */
+@media all and (max-width: 320px){  
+    #block-at-fcom-branding{
+        padding-top: 0px;
+        float: none;
+    }
+
+    #block-logouses, #block-logo30aniversario {
+        width: 50%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #block-alternadordeidioma{
+        margin-bottom: 15px;
+    }
+}
+
+/* navbar */
+.pr-navbar  {margin: 10px 0px 0px 0px;}
+.pr-navbar  {
+    /*background-color: #333;*/ 
+    /*background-color: #005a8c;*/
+    background-color: #c03;
+}
+.pr-navbar a {color:#fff;}
+#block-menu-7 a {font-weight: 600;}
+#superfish-main li a {color: #fff;}
+#navbar li.sf-depth-1 a,
+#navbar ul.sf-menu span.nolink {
+    font-family: 'Lato';
+    font-size: 16px;
+    padding: 22px 15px !important;
+    text-decoration: none;
+    transition: all .2s;
+}
+#navbar ul.sf-menu li.menuparent a.menuparent:after {
+    content:"\203A"; 
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+/* Menu ppal colapsado */
+    #superfish-main-toggle, #superfish-menu-header-toggle {
+        transition: all .2s;
+        padding: 10px;
+        font-weight: bold;
+        display: block;
+        font-size: 18px;
+    }
+    #superfish-main-toggle a {color:#fff;}
+    #superfish-main-toggle:before{
+        font-family: FontAwesome;
+        content: "\f0c9";
+        padding: 10px;
+    }
+    #superfish-main-toggle span{
+        display: inline-block;
+        padding: 10px;
+        padding-left: 0px;
+    }
+    #superfish-main-accordion {
+        -webkit-transition: height 5ms ease;
+        -moz-transition: height 5ms ease;
+        -ms-transition: height 5ms ease;
+        -o-transition: height 5ms ease;
+        transition: height 5ms ease;
+    }
+    #superfish-main-accordion {
+        -webkit-transition: height .2s ease;
+        -moz-transition: height .2s ease;
+        -ms-transition: height .2s ease;
+        -o-transition: height .2s ease;
+        transition: height .2s ease;
+    }
+    .sf-has-clone-parent {background: #575757;}
+    ul.sf-has-clone-parent a,
+    ul.sf-has-clone-parent span.nolink {
+        background: #575757;
+        color: #fff;
+    }
+
+/* Menu Gabinete */
+
+    li#main-menu-link-content92dbce43-cab0-4721-aa22-aa8278fdebf8:hover,
+    li#main-menu-link-content92dbce43-cab0-4721-aa22-aa8278fdebf8 ul li 
+        { background-color: #005a8c; }
+    li#main-views-viewviewspaginas-gabinetepage-1 a:hover,
+    li#main-views-viewviewspaginas-gabinetepage-2 a:hover,
+    li#main-views-viewviewspaginas-gabinetepage-3 a:hover,
+    li#main-views-viewviewspaginas-gabinetepage-4 a:hover,
+    li#main-views-viewviewspaginas-gabinetepage-5 a:hover,
+    li#main-views-viewviewspaginas-gabinetepage-6 a:hover,
+    li#main-views-viewviewspaginas-gabinetepage-7 a:hover,
+    li#main-views-viewviewspaginas-gabinetepage-8 a:hover,
+    li#main-views-viewviewspaginas-gabinetepage-9 a:hover
+        { background-color: #0395f0; }
+
+/* Menu conoce fcom */
+
+    li#main-menu-link-contentd2f985cd-dfc1-410d-bf7a-7edfa1f4ae77:hover,
+    li#main-menu-link-contentd2f985cd-dfc1-410d-bf7a-7edfa1f4ae77 a:hover, 
+    li#main-menu-link-contentd2f985cd-dfc1-410d-bf7a-7edfa1f4ae77 ul li a {
+        background-color:  #e3cd11;
+        color:#000;
+    }
+    li#main-menu-link-content2f0cfdfc-9956-4077-b47e-6fe19fd736a9 a:hover,
+    li#main-menu-link-content8578a6a1-390a-4f48-9f04-2b19778e1083 a:hover,
+    li#main-menu-link-content83cf8aa3-8c8d-4cee-bd21-68aec3d85ba3 a:hover,
+    li#main-menu-link-contente7375a43-20e5-4166-93e0-481e190b3165 a:hover,
+    li#main-menu-link-contentd161c0cf-c09b-4bcb-a33f-4419844cde40 a:hover,
+    li#main-views-viewviewsvista-conoce-fcompage-3 a:hover,
+    li#main-menu-link-content00ebcb0a-eb73-449b-bf9c-b7995b4c49e4 a:hover{
+        background-color: #f6e131;
+        color:#000;
+    }
+
+/* Menu Titulos */
+    
+    li#main-menu-link-contentdbb429d1-a7a9-440a-9628-de1f94c80ab5:hover,
+    li#main-menu-link-contentdbb429d1-a7a9-440a-9628-de1f94c80ab5 ul li 
+        { background-color: #247228; }
+
+    li#main-menu-link-contentdbb429d1-a7a9-440a-9628-de1f94c80ab5 a:hover,
+    li#main-menu-link-content9c550e95-d911-4c17-b88b-b86b7b826b6b a:hover ,
+    li#main-menu-link-content36704826-3df9-491a-a07f-684c5c0231c2 a:hover ,
+    li#main-menu-link-contentbbb912ff-2198-4312-a739-eb553a4f2251 a:hover ,
+    li#main-menu-link-content1c5c99bc-cfda-45e8-8b72-9c28c7e40d5a a:hover ,
+    li#main-menu-link-content7bdb27b0-88fe-4c68-b259-32e8fd14e152 a:hover ,
+    li#main-menu-link-content0121ac27-de55-4190-9809-e29016f26515 a:hover 
+        { background-color: #298A08; }
+
+/* Menu Prácticas */
+    li#main-menu-link-contentce8efaf1-9d40-473a-9f7b-c04cb31f1a79:hover,
+    li#main-menu-link-contentce8efaf1-9d40-473a-9f7b-c04cb31f1a79 ul li 
+        { background-color: #cc6600; }
+    li#main-menu-link-contentce8efaf1-9d40-473a-9f7b-c04cb31f1a79 a:hover, 
+    li#main-views-viewviewsnovedades-practicaspage-2 a:hover, 
+    li#main-views-viewviewsnovedades-practicaspage-3 a:hover,
+    li#main-views-viewviewsnovedades-practicaspage-4 a:hover , 
+    li#main-menu-link-content1c9a867f-27dd-40f2-b9d4-c8ab016cf371 a:hover 
+        { background-color: #f79b0c; }
+
+/* Menu Movilidad */
+    li#main-menu-link-contentbab6892a-de8d-4e9e-a7a3-9ce98aeeb5f2:hover,
+    li#main-menu-link-contentbab6892a-de8d-4e9e-a7a3-9ce98aeeb5f2 ul li
+        { background-color: #e37755; }
+
+    li#main-menu-link-contentbab6892a-de8d-4e9e-a7a3-9ce98aeeb5f2 a:hover,
+    li#main-menu-link-content5dc4a8a2-b641-4eb8-824d-6cd7e01c5a03 a:hover,
+    li#main-views-viewviewsmovilidadpage-1 a:hover,
+    li#main-views-viewviewsmovilidadpage-2 a:hover,
+    li#main-menu-link-contente7b61ccc-2d21-4a02-9bcb-f18ed2887b37 a:hover,
+    li#main-menu-link-content04c6d247-5f7e-4201-ba60-0cc096d24c20 a:hover 
+        { background-color: #f69373; }   
+
+/* Menu secretaría */
+    li#main-menu-link-content79d6f8eb-9670-4ae3-8aee-258df7db0d32:hover,
+    li#main-menu-link-content79d6f8eb-9670-4ae3-8aee-258df7db0d32 ul li 
+        { background-color: #b21010; }
+
+    li#main-menu-link-content79d6f8eb-9670-4ae3-8aee-258df7db0d32 a:hover, 
+    li#main-menu-link-contentfeab72ee-6e54-4276-9851-b71d1a105f41 a:hover,
+    li#main-menu-link-contentf62c1ddb-b3b3-411f-bda6-7fd89c22f2ea a:hover,
+    li#main-views-viewviewssecretariapage-1 a:hover,
+    li#main-views-viewviewssecretariapage-2 a:hover,
+    li#main-views-viewviewssecretariapage-3 a:hover 
+        { background-color: #B03F3F ; }
+
+/* Menú Investigación */
+    li#main-menu-link-content930f2f7d-41a4-43e5-9a20-6339ed510fd3:hover,
+    li#main-menu-link-content930f2f7d-41a4-43e5-9a20-6339ed510fd3 ul li 
+        { background-color: #9b7b07; }
+    li#main-views-viewviewsinvestigacionpage-1 a:hover,
+    li#main-views-viewviewsinvestigacionpage-2 a:hover,
+    li#main-menu-link-content138b7020-4ca3-4b5e-b2a4-11d01c64a40b a:hover
+        { background-color: #b28e0c; }
+
+/* Menú Emprendimiento */
+    li#main-views-viewviewsemprendimientopage-2:hover ,
+    li#main-views-viewviewsemprendimientopage-2 ul li 
+        { background-color: #935588; }
+
+    li#main-views-viewviewsemprendimientopage-1 a:hover ,
+    li#main-views-viewviewsemprendimientopage-2 a:hover 
+        { background-color: #aa639d ; }
+
+/* Responsive navbar */
+
+    @media all and (max-width: 768px){
+        #block-menuheader #superfish-menu-header-toggle{
+            font-size: 14px;
+            font-weight: unset;
+        }
+
+        #superfish-main-toggle span {
+            padding: 20px;
+            font-size: 20px;
+        }
+    }
+    
+    @media all and (max-width: 420px){
+        #navbar{margin-top: 0px;}
+        #navbar .l-rw, .pr-navbar__navbar{padding:0px;}
+        #superfish-main-toggle{
+            font-size: 20px;
+            padding: 0px;
+        }
+        
+        #superfish-main-toggle,
+        #superfish-menu-header-toggle {
+            text-align: center;
+            font-weight:initial;
+        }
+    }        
+
+/* highlighted */
+
+#highlighted h2 {
+    margin: 0px;
+}
+/* Navegación */
+    .slick-arrow {box-shadow: none;}
+    .slick-arrow::before {color: #cc0001;}
+    .slick-dotted.slick-slider {
+        margin-bottom: 0;
+        border-bottom: 5px solid #0077cb;
+    }
+    .slick-arrow {box-shadow: none;}
+    .slick-arrow::before {color: #005a8c;}
+    .slick-dots {bottom: -19px;}
+    .slick-dots li { box-shadow: none !important;}
+    .slick-dots li button {
+        opacity: 1 !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+            }
+    .slick-dots li.slick-active button::before {
+        color:#0077cb;
+        opacity: 1;
+        border: 2px solid #0077cb;
+    }
+    .slick-dots li button::before {
+        border: 2px solid #0077cb;
+        color: #fff;
+        opacity: 1 !important;
+        padding: 0 !important;
+        border-radius: 50%;
+        height: 10px;
+        width: 11px;
+    }
+/* Carresuel noticias */
+    #highlighted h2 a,
+    #block-views-block-noticias-de-actualidad-block-2-2 .views-field-field-subtitulo a {
+        color: #fff;
+    }
+    #block-views-block-caruselnoticiasdestacadas-block-1{
+        float: left;
+        //width: 67%;
+        //width: 900px;
+        width: 100%;
+        //height: 400px;
+        //max-height: 400px;
+        margin: 0px;
+        padding: 0px;
+        //padding-right: 20px;
+        //margin-bottom: 40px;
+    }  
+    .slide__constrained {padding-top: 0% !important;}  
+    #block-views-block-caruselnoticiasdestacadas-block-1-title {
+        padding: 0px 0px 10px 10px;
+        display: none;
+    }
+    #block-views-block-caruselnoticiasdestacadas-block-1-title span::before {
+        font-family: FontAwesome;
+        padding-right: 5px;
+        content: '\f0ea';
+    }    
+    .slide__caption {
+        background-color: transparent !important; 
+        padding: 0px !important;
+        min-height: unset;
+        text-align:center;
+        //height: 100% !important;
+        //position: absolute;
+        //top: 0;
+        
+    }
+    .slide__caption p.video-responsive iframe,
+    .slide__caption p.video-responsive object,
+    .slide__caption p.video-responsive embed{
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        max-height: 1024px;
+
+    }
+    .slide__caption p.video-responsive{
+        text-align: center;
+        margin-bottom: 0px;
+        position: relative;
+        padding-bottom: 57.25%; /* 16/9 ratio */
+        //padding-top: 30px; /* IE6 workaround*/
+        height: 0;
+        //overflow: hidden;
+    }
+
+    .video-responsive + h2, .video-responsive + h2 + p {
+        display: none;
+    }
+
+    #highlighted .slide_title {
+        text-align: center;
+    }
+
+    #highlighted .slide_title a{
+        display: block;
+        padding: 15px;
+        background-color:rgba(204, 0, 51, 0.8);
+        /*background-color:rgba(0, 90, 140, 0.8); */
+        /* #005a8c80; */
+    }
+    #highlighted .slide_title a:hover{
+        /*background-color: #005a8c;*/
+        background-color:rgba(204, 0, 51);
+    }
+    .slide_entradilla {
+        padding: 10px 10px 10px 10px;
+        background-color: rgba(0, 0, 0, 0.8);
+        margin-bottom: 0px;
+        //line-height: 42px;
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+    }
+
+/* Destacadas derecha */
+    #block-views-block-noticias-de-actualidad-block-2-2 {
+        float: right;
+        width: 33%;
+        padding: 0px;
+        margin: 0px;
+        padding-left: 27px;
+        display: none;
+    }
+    #block-views-block-noticias-de-actualidad-block-2-2-title {
+        padding: 0px 0px 10px 10px;
+        display: none;
+    }
+    #block-views-block-noticias-de-actualidad-block-2-2-title span::before {
+        font-family: FontAwesome;
+        padding-right: 5px;
+        content: '\f1ea';
+    }   
+    #block-views-block-noticias-de-actualidad-block-2-2 .view-noticias-de-actualidad {
+        width: 100%;
+        position: relative;
+    }
+    #block-views-block-noticias-de-actualidad-block-2-2 .views-row{    
+        width: 93%;
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block;
+        margin-bottom: 25px;
+    }
+    #block-views-block-noticias-de-actualidad-block-2-2 .contenido-destacado-derecha{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    #block-views-block-noticias-de-actualidad-block-2-2 .views-field-title {
+        //position: absolute;
+        //bottom: 0;
+        //width: 100%;
+    }
+    #block-views-block-noticias-de-actualidad-block-2-2 .views-field-title h2.field-content{
+        text-align: center;
+        background-color: transparent;
+        margin: 0px;
+        padding: 0px;
+    }
+    #block-views-block-noticias-de-actualidad-block-2-2 .views-field-title h2.field-content a{
+        display: block;
+        padding: 10px;
+        /*background:rgba(0, 90, 140, 0.8);*/ /* #005a8c80; */
+        background-color:rgba(204, 0, 51, 0.8);
+        font-size: 18px;
+        line-height: 1.2em;
+    }
+    #block-views-block-noticias-de-actualidad-block-2-2 .views-field-title h2.field-content a:hover {
+        /*background: #005a8c;*/
+        background-color:rgba(204, 0, 51);
+    }    
+    #block-views-block-noticias-de-actualidad-block-2-2 .entry-meta {
+        float: left;
+        width: calc(100% - 240px);
+        overflow: hidden;
+        height: 26px;
+        text-align: left;
+    }
+    /*#block-views-block-noticias-de-actualidad-block-2-2 .views-field-field-entradilla*/
+    #block-views-block-noticias-de-actualidad-block-2-2 .views-field-field-subtitulo
+    {
+        /*
+        margin-left: 0px;
+        width: calc(100% - 240px);
+        float: left;
+        max-height: 78px;
+        overflow: hidden;*/
+        text-align: center;
+        padding: 10px 10px 10px 10px;
+        background-color: rgba(0, 0, 0, 0.8);
+        margin-bottom: 0px;
+        color: #fff;
+    }
+    .destacado-derecha.views-row .views-field-view-node {
+        float: left;
+        clear: none;
+    }
+
+/* Responsive highlighted */    
+/* max-width 1024px */
+@media all and (max-width: 1024px) {
+    .pr-highlighted__rw { min-width: 100%; }
+    #block-views-block-caruselnoticiasdestacadas-block-1{
+        max-height: px;
+        height: 100%;
+    }
+    #block-views-block-noticias-de-actualidad-block-2-2 {
+        float: none;
+        min-width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    #block-views-block-noticias-de-actualidad-block-2-2-title { padding: 20px 0px 0px 20px; }
+    #block-views-block-noticias-de-actualidad-block-2-2 .view-noticias-de-actualidad { padding: 20px; }
+    #block-views-block-noticias-de-actualidad-block-2-2 .views-row {
+        max-width: 50%;
+        float: left;
+    }
+    #block-views-block-noticias-de-actualidad-block-2-2 .destacado-derecha { padding-left: 10px; }
+    #block-views-block-noticias-de-actualidad-block-2-2 .destacado-derecha:first-child{
+        padding-right: 10px;
+        padding-left: 0px;
+    }
+    #block-views-block-noticias-de-actualidad-block-2-2 .views-field-title,
+    #block-views-block-noticias-de-actualidad-block-2-2 .views-field-field-subtitulo { width: calc(100% - 10px); }
+}
+
+/* max-width 960px */
+@media all and (max-width: 960px){
+                                
+    #block-views-block-noticias-de-actualidad-block-2-2 div.contenido-destacado-derecha div.views-field-field-subtitulo { display: none; }
+        
+    #block-views-block-noticias-de-actualidad-block-2-2 .views-field-title {
+        position: absolute;
+        bottom: 0;
+    }
+    .slide__caption p.video-responsive iframe,
+    .slide__caption p.video-responsive object,
+    .slide__caption p.video-responsive embed 
+        { top: 0px; }
+    .slide__caption p.video-responsive{ padding-top: 0px; }/* IE6 workaround*/
+    .slide_title{ width: 100%; }
+    .video-responsive + h2 {                
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    .video-responsive + h2 + p { display: none; }
+}
+    
+/* max-width 768px*/
+@media all and (max-width: 768px){
+
+    /**** Carrusel (highlighted) *******/
+    #block-views-block-caruselnoticiasdestacadas-block-1 { float: none; }
+    #block-views-block-caruselnoticiasdestacadas-block-1 .slide__constrained { min-height: unset; }
+    #block-views-block-noticias-de-actualidad-block-2-2 { padding: 0px; }
+    #block-views-block-noticias-de-actualidad-block-2-2 .views-row {
+        max-width: 100%;
+        float: left;
+        padding-left: 0px;
+        max-height: 250px;
+    }
+    #block-views-block-noticias-de-actualidad-block-2-2 .views-row .views-field-field-imagen img{ max-height: 250px; }
+    #block-views-block-noticias-de-actualidad-block-2-2 .destacado-derecha {
+        padding: 0px;
+        margin: 0px;
+    }
+    #block-views-block-noticias-de-actualidad-block-2-2 div.contenido-destacado-derecha { position: initial; }
+    #block-views-block-noticias-de-actualidad-block-2-2 div.destacado-derecha:first-child {
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-bottom: 25px;
+    }
+    #block-views-block-noticias-de-actualidad-block-2-2 .views-field-title { width: 100%; }
+}
+
+/* max-width 480px */
+@media all and (max-width: 480px) {
+    
+    #highlighted {
+        border-bottom: none;
+        background: transparent;
+        padding-top: 25px;
+    }
+    .pr-highlighted__rw{ padding: 0px; }
+    /**** Carrusel  (highlighted) *******/
+    #block-views-block-caruselnoticiasdestacadas-block-1 {
+        padding: 0px;
+        max-height: unset;
+        min-height: 450px;
+    }
+    #block-views-block-noticias-de-actualidad-block-2-2 .view-noticias-de-actualidad {
+        margin-top: 30px;
+        padding: 0px;
+    }
+}
+
+/* max-width 320px */
+@media all and (max-width: 320px) {
+    
+    #block-views-block-caruselnoticiasdestacadas-block-1{ min-height: 400px; }
+}
+
+/* features (columnas Home) */
+
+#block-views-block-noticias-de-actualidad-block-11,
+#block-views-block-noticias-de-actualidad-block-1,
+#block-views-block-noticias-de-actualidad-block-3,
+#block-views-block-noticias-de-actualidad-block-4,
+#block-views-block-noticias-de-actualidad-block-5,
+#block-views-block-noticias-de-actualidad-block-9,
+#block-views-block-noticias-de-actualidad-block-10,
+#block-views-block-novedades-covid-19
+    { height: 500px; }
+
+#block-views-block-noticias-de-actualidad-block-3 .views-field-field-fotoinvestigador img {
+    padding: 0px;
+    width: 100%;
+    height: 240px;
+}
+#block-views-block-noticias-de-actualidad-block-5 img { width: 85%; }
+
+
+/* pr-features__features-first (Home columna izquierda) */
+
+    .pr-features__features-first { padding: 20px 10px; }
+
+    #block-views-block-noticias-de-actualidad-block-11,
+    #block-views-block-noticias-de-actualidad-block-1,
+    #block-views-block-noticias-de-actualidad-block-3,
+    #block-views-block-noticias-de-actualidad-block-4,
+    #block-views-block-novedades-covid-19 
+        { margin-bottom: 20px; }
+    
+    h2#block-views-block-noticias-de-actualidad-block-11-title, /* Actualidad fcom-pre.us.es */
+    h2#block-views-block-noticias-de-actualidad-block-1-title,  /* Actividades y Eventos */
+    h2#block-views-block-noticias-de-actualidad-block-3-title,  /* Premios y Becas */
+    h2#block-views-block-noticias-de-actualidad-block-4-title { /* Actualidad fcom.us.es */
+        margin: 0px;
+        width: 100%;
+        padding: 15px;
+        border-top: 2px solid rgba(204,0,51);
+        border-bottom: 2px solid #bbb;
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+    h2#block-views-block-noticias-de-actualidad-block-11-title span::before, 
+    h2#block-views-block-noticias-de-actualidad-block-1-title span::before,
+    h2#block-views-block-noticias-de-actualidad-block-3-title span::before,
+    h2#block-views-block-noticias-de-actualidad-block-4-title span::before {
+        font-family: FontAwesome;
+        padding-right: 5px;
+    }
+    h2#block-views-block-noticias-de-actualidad-block-11-title span::before { content: "\f0c5"; }
+    h2#block-views-block-noticias-de-actualidad-block-1-title span::before { content: "\f26c"; }
+    h2#block-views-block-noticias-de-actualidad-block-3-title span::before { content: "\f201"; }
+    h2#block-views-block-noticias-de-actualidad-block-4-title span::before { content: "\f0c5"; }
+
+    #block-views-block-noticias-de-actualidad-block-11 .views-row,
+    #block-views-block-noticias-de-actualidad-block-1 .views-row,
+    #block-views-block-noticias-de-actualidad-block-3 .views-row, 
+    #block-views-block-noticias-de-actualidad-block-4 .views-row {
+        padding: 0px;
+        text-align: center;
+    }
+    #block-views-block-noticias-de-actualidad-block-11 .views-field-field-iframeyoutube,
+    #block-views-block-noticias-de-actualidad-block-11 .views-field-field-imagen,
+    #block-views-block-noticias-de-actualidad-block-1 .views-field-field-imagen,
+    #block-views-block-noticias-de-actualidad-block-3 .views-field-field-imagen,
+    #block-views-block-noticias-de-actualidad-block-3 .views-field-field-fotoinvestigador, 
+    #block-views-block-noticias-de-actualidad-block-4 .views-field-field-imagen 
+        { margin-bottom: 5px; }
+    
+    .views-field-field-iframeyoutube iframe {
+        width: unset;
+        min-width: 100%;
+        max-width: 100%;
+        height: unset;
+        min-height: 280px;
+    }
+    #block-views-block-noticias-de-actualidad-block-11 .views-field-title,
+    #block-views-block-noticias-de-actualidad-block-1 .views-field-title,
+    #block-views-block-noticias-de-actualidad-block-3 .views-field-title, 
+    #block-views-block-noticias-de-actualidad-block-4 .views-field-title {
+        font-size: 19px;
+        line-height: 1.2em;
+        text-align: left;
+        padding: 10px 10px 10px 10px;
+        color: #005a8c;
+        text-align: center;
+    }
+    #block-views-block-noticias-de-actualidad-block-11 .views-field-field-subtitulo,
+    #block-views-block-noticias-de-actualidad-block-1 .views-field-field-subtitulo,
+    #block-views-block-noticias-de-actualidad-block-3 .views-field-field-subtitulo, 
+    #block-views-block-noticias-de-actualidad-block-4 .views-field-field-subtitulo
+        { font-weight: bold; }    
+    
+/* pr-features__features-second */
+
+    .pr-features__features-second { padding: 20px 30px; }
+
+    #block-views-block-noticias-de-actualidad-block-5,
+    #block-views-block-noticias-de-actualidad-block-9,
+    #block-views-block-noticias-de-actualidad-block-10 { margin-bottom: 20px; }
+    #block-views-block-noticias-de-actualidad-block-5 { padding-bottom: 53px; }
+    #block-views-block-noticias-de-actualidad-block-10 .view-noticias-de-actualidad { padding: 10px 5px;}
+
+    h2#block-views-block-noticias-de-actualidad-block-9-title,
+    h2#block-views-block-noticias-de-actualidad-block-10-title,
+    h2#block-views-block-novedades-covid-19-title {
+        padding: 15px;
+        text-align: center;
+        border: 2px solid #333;
+        background-color: #333;
+        color: #fff;
+        margin-bottom: 5px;
+    }
+
+    h2#block-views-block-novedades-covid-19-title {
+        border: 2px solid #C03;
+        background-color: #C03;
+    }
+    h2#block-views-block-noticias-de-actualidad-block-9-title {
+        background-color: #298A08;
+        border: 2px solid #298A08;
+    }
+    #block-views-block-noticias-de-actualidad-block-9 .block__content,
+    #block-views-block-noticias-de-actualidad-block-10 .block__content {
+        border-radius: 7px;
+        padding: 15px;
+    }
+    #block-twitterblock .block__content, 
+    #block-facebook .block__content,
+    #block-instagramblock .block__content{
+        height: auto;
+        min-height: auto;
+        max-width: 470px;
+        overflow-y: auto;
+        overflow-x: unset;
+    }        
+    #block-views-block-noticias-de-actualidad-block-9-title span::before {
+        content: "\f073";
+        font-family: FontAwesome;
+        padding-right: 5px;
+    }
+    #block-views-block-noticias-de-actualidad-block-10-title span::before,
+    #block-views-block-novedades-covid-19-title span::before {
+        content: "\f27a";
+        font-family: FontAwesome;
+        padding-right: 5px;
+    }  
+    
+    .novedades-covid-pdipas-front a,
+    .novedades-covid-estudiantes-front a,
+    .novedades-covid-institucional-front a,
+    .novedades-secretaria-front a,
+    .novedades-practicas-front a,
+    .novedades-movilidad-front a  {color:rgb(54,54,54);}    
+  
+    .novedades-covid-pdipas-front span small,
+    .novedades-covid-estudiantes-front span small,
+    .novedades-covid-institucional-front span small,
+    .novedades-secretaria-front span small,
+    .novedades-practicas-front span small,
+    .novedades-movilidad-front span small {     
+        margin: 0px 5px;
+        font-size: 12px;
+        font-weight: 600;
+        text-align: right;
+        display: block;
+    }
+
+    .novedades-covid-pdipas-front span small {color: #cc6600}
+    .novedades-covid-estudiantes-front span small {color: #e37755;}
+    .novedades-covid-institucional-front span small {color: #b21010;}
+    .novedades-secretaria-front span small {color: #b21010;}
+    .novedades-practicas-front span small {color: #cc6600}
+    .novedades-movilidad-front span small {color: #e37755;}
+    .agenda-de-la-semana.views-row {
+         position: relative;
+         background: #fff;
+         box-shadow: -4px 4px 2px -2px rgba(0,0,0,0.1);
+         margin: 10px 0;
+         overflow: hidden;
+         transition: all .2s;
+         padding-right: 10px;
+         padding-bottom: 0px;
+         padding-top: 13px;
+         padding-left: 20px;
+    }
+    .agenda-de-la-semana.views-row:hover { box-shadow: -6px 6px 4px -2px rgba(0,0,0,0.3); }
+    #block-views-block-noticias-de-actualidad-block-9 .pager {
+        padding-top: 0px; 
+        margin: 10px auto;
+    }
+    .pager__items.js-pager__items ul {
+        display: inline-block;
+        margin-top: 10px;
+    }
+    #block-views-block-noticias-de-actualidad-block-9 .agendaSemana .pager__items__next-last,
+    #block-views-block-noticias-de-actualidad-block-9 .pager__items__first-previous 
+        { float: inherit; }
+    .dia-semana-agenda-de-la-semana {
+        font-family: 'Oswald', sans-serif;
+        color:#c03;
+    }
+
+/* pr-features__features-third */
+
+    .pr-features__features-third { padding: 20px; }
+    #block-views-block-noticias-de-actualidad-block-5,
+    #block-twitterblock, 
+    #block-facebook ,        
+    #block-views-block-enlaces-de-interes-alumnos-block-servicios-fcom,
+    #block-views-block-enlaces-de-interes-alumnos-block-utilidades-fcom,
+    #block-block-enlaces-interes-alumnos,
+    #block-utilidades-contex-suffix {
+        padding: 0px;
+        margin-bottom: 20px;
+        text-align: center;
+        overflow: hidden;
+    }
+    #block-instagramblock {
+        padding: 0px;            
+        text-align: center;
+        overflow: hidden;   
+    }
+    #block-instagramblock p { margin:0px; }
+    #block-twitterblock{
+        max-height: 300px;
+        height: 300px;
+        overflow: auto;
+    }
+    #block-snapwidgetinstagramgabifcom{ max-height: 200px; }
+    #block-facebook { max-height: 500px; }
+
+     #block-views-block-enlaces-de-interes-alumnos-block-servicios-fcom{
+        width: 100%;
+        max-height: 260px;
+        height: 260px;
+    }
+
+    #block-views-block-enlaces-de-interes-alumnos-block-utilidades-fcom {
+        width: 100%;
+        max-height: 200px;
+        height: 200px;
+    }
+
+    #block-utilidades-contex-suffix { max-height: none; }
+    #block-instagramblock {
+        pointer-events: none;
+        cursor: default;
+        text-decoration: none;
+        color: black;
+    }
+    #block-instagramblock .block__content { padding-top: 29px; }
+    #block-block-enlaces-interes-alumnos { border: 1px solid #005a8c; }      
+    h2#block-views-block-noticias-de-actualidad-block-5-title,
+    h2#block-twitterblock-title,
+    h2#block-facebook-title,
+    h2#block-instagramblock-title,
+    h2#block-snapwidgetinstagramgabifcom-title,
+    h2#block-block-enlaces-interes-alumnos-title,
+    h2#block-views-block-enlaces-de-interes-alumnos-block-servicios-fcom-title,
+    h2#block-views-block-enlaces-de-interes-alumnos-block-utilidades-fcom-title,
+    h2#block-utilidades-contex-suffix-title {
+        padding: 15px;
+        text-align: center;
+        color: #fff;
+    }
+    h2#block-utilidades-contex-suffix-title {color:#444;}
+    h2#block-views-block-noticias-de-actualidad-block-5-title {
+        border: 2px solid #005A8C;
+        background-color: #005A8C;
+    }
+    h2#block-views-block-enlaces-de-interes-alumnos-block-servicios-fcom-title{
+        background-color: #F79B0C;
+        border:2px solid #F79B0C;
+    }
+    #block-views-block-enlaces-de-interes-alumnos-block-utilidades-fcom-title{
+        border: 2px solid #c03;
+        background-color: #CC0033;
+    }
+    h2#block-twitterblock-title{
+        background-color: #00aced;
+        border:2px solid #00aced;
+    }
+    h2#block-facebook-title {
+        background-color: #3A5897;
+        border:2px solid #3A5897;
+    }
+    h2#block-instagramblock-title,
+    h2#block-snapwidgetinstagramgabifcom-title {
+        background-color: #8a3ab9;
+        border: 2px solid #8a3ab9;
+    }
+    h2#block-block-enlaces-interes-alumnos-title { background-color: #005a8c; }
+    #block-instagramblock div.block__content a img {
+        border: 1px solid #ccc;
+        max-width: 49%;
+    } 
+    #block-block-enlaces-interes-alumnos .views-enlace,
+    #block-utilidades-contex-suffix .views-enlace {
+        display: inline-block;
+        width: 32%;
+        vertical-align: top;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    #block-block-enlaces-interes-alumnos .icono-utilidades-front,
+    #block-views-block-enlaces-de-interes-alumnos-block-servicios-fcom .icono-utilidades-front ,
+    #block-views-block-enlaces-de-interes-alumnos-block-utilidades-fcom .icono-utilidades-front ,
+    #block-utilidades-contex-suffix .icono-utilidades-front {
+        display: inline-block;
+        font-size: 36px;
+        margin: 0;
+        text-align: center;
+        padding:10px;
+    }
+    #servicios-FCom .views-field-field-icono ,
+    #servicios-FCom .views-field-title
+        { color: #F79B0C; }
+
+    #servicios-FCom .views-field-field-icono{
+        width: 60px;
+        float: left;
+        height: 59px;
+        text-align: left;
+    }
+    #servicios-FCom .views-field-title{
+        width: calc(100% - 60px);
+        float: left;
+        line-height: 58px;
+        text-align: left;
+    }
+    #app-FCom .views-field-field-icono ,
+    #app-FCom .views-field-title
+        { color: #CC0033; }
+    #servicios-FCom .views-enlace:hover { box-shadow: 0px 6px 4px -2px #F79B0C; }
+    #app-FCom .views-enlace:hover { box-shadow: 0px 6px 4px -2px #CC0033; }
+    #servicios-FCom, #estudiantes-FCom, #app-FCom, #centro-FCom , #utilidadesUS { float:left; }
+    #servicios-FCom h3, #estudiantes-FCom h3, #app-FCom h3, #centro-FCom h3 , #utilidadesUS h3{
+        margin: 0px;
+        padding-bottom: 30px;
+        text-align: center;
+        font-size: 24px;
+    }
+    #servicios-FCom {
+        width: 100%;
+        display: inline-block;
+    } 
+    #app-FCom {
+        width: 100%;            
+        display: inline-flex;
+        padding: 10% 0px;
+    }
+    #servicios-FCom  .views-enlace{
+        width: 100%;
+        border-bottom: 0.5px solid #F79B0C;
+        display: inline-block;
+        padding: 0px 5px;
+    }
+    #app-FCom .views-enlace { width: 50%; }
+    #estudiantes-FCom, #utilidadesUS { width: 40%; }
+    #centro-FCom{ width: 20%; }
+    #estudiantes-FCom .views-enlace , #utilidadesUS .views-enlace{ width: 20%;}
+    #centro-FCom .views-enlace { width: 44%; }
+
+/** Responsive features: SEPARAR POR COLUMNAS **/
+    /* max-width 1024px */
+    @media all and (max-width: 1024px) {
+        .pr-features__features-first,
+        .pr-features__features-second,
+        .pr-features__features-third {
+            max-width: 100%;
+            float: left;
+            padding: 0px 20px;
+        }
+        #block-views-block-noticias-de-actualidad-block-5, 
+        #block-block-enlaces-interes-alumnos, 
+        #block-utilidades-contex-suffix {
+            max-width: 100%;
+            width: 100%;
+        }
+        #block-twitterblock,
+        #block-facebook, 
+        #block-instagramblock {
+            min-width: unset;
+            width: 100%;
+        }
+        #block-facebook iframe {
+            max-width: 280px;
+            min-width: unset;
+        }
+        #facebook{
+            margin: 0px auto;
+            border: 1px solid yellow;
+            width: 275px;
+        }
+        #block-instagramblock .block__content { padding-top: 0px; }
+        #block-instagramblock div.block__content a img {
+            border: 1px solid #ccc;
+            max-width: 49%;
+        } 
+
+        #estudiantes-FCom, #utilidadesUS { width: 37%; }
+        #centro-FCom{ width: 25%; }
+
+        //.mailto  { float: left !important; }
+    }
+        
+    /* max-width 960px */
+    @media all and (max-width: 960px){
+
+        .pr-features__features-first,
+        .pr-features__features-second,
+        .pr-features__features-third{
+            width: 100%;
+            max-width: 100%;    
+            float: none;
+            padding: 0px;
+        }
+        #block-views-block-noticias-de-actualidad-block-5 { float:none; }
+        #block-utilidades-contex-suffix .views-enlace { width: 47%; }
+
+        #block-views-block-noticias-de-actualidad-block-11,
+        #block-views-block-noticias-de-actualidad-block-1,
+        #block-views-block-noticias-de-actualidad-block-3,
+        #block-views-block-noticias-de-actualidad-block-4,
+        #block-views-block-noticias-de-actualidad-block-5,
+        #block-views-block-noticias-de-actualidad-block-9,
+        #block-views-block-noticias-de-actualidad-block-10,
+        #block-views-block-novedades-covid-19 {
+            min-height: 490px;
+            max-height: 495px;
+            height: auto;
+            margin: 0px;
+        }
+        #block-twitterblock,
+        #block-facebook, 
+        { width: 100%; }
+
+        #block-instagramblock{
+            height: auto;
+            min-height: unset;
+            max-height: unset;
+        }
+        #block-twitterblock iframe {
+            max-height: 390px;
+            overflow-y: auto;
+            overflow-x: unset;
+        }
+        .accordeon { margin-right: 0px !important; }
+        div.icono-utilidades{
+            text-align: left !important;
+            display: inherit !important;
+        }
+        #block-views-block-investigacion-block-1 div.views-field-field-apellidos-nombre { max-width: 100% !important; }
+        div.views-field-field-subtitulo-publicacion-mes { float: none !important; }
+
+       
+
+        #block-facebook iframe{
+            height: 380px;
+        }
+        #estudiantes-FCom, #utilidadesUS { width: 37%; }
+        #centro-FCom{ width: 25%; }
+    }
+    /* max-width 768px */
+    @media all and (max-width: 768px){
+        
+        //.mailto { float: none !important; }
+         #estudiantes-FCom, #utilidadesUS { width: 35%; }
+        #centro-FCom{ width: 30%; }
+    }
+    
+    /* min-width 420px nad max-width 720px REPASAR: 720??? */
+    @media all and (max-width: 720px){
+
+        #block-views-block-noticias-de-actualidad-block-11,
+        #block-views-block-noticias-de-actualidad-block-1,
+        #block-views-block-noticias-de-actualidad-block-3,
+        #block-views-block-noticias-de-actualidad-block-4,
+        #block-views-block-noticias-de-actualidad-block-5,
+        #block-views-block-noticias-de-actualidad-block-9,
+        #block-views-block-noticias-de-actualidad-block-10,
+        #block-views-block-novedades-covid-19,
+        #block-twitterblock, 
+        #block-facebook ,
+        #block-instagramblock{
+            min-height: auto;
+            height: auto;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+        h2#block-views-block-caruselnoticiasdestacadas-block-1-title,
+        h2#block-views-block-noticias-de-actualidad-block-11-title,
+        h2#block-views-block-noticias-de-actualidad-block-1-title,
+        h2#block-views-block-noticias-de-actualidad-block-3-title,
+        h2#block-views-block-noticias-de-actualidad-block-4-title {
+            text-align: center;
+            width: 100%;
+            padding: 15px;
+            margin: 20px auto;
+            display: block;
+        }
+        #block-views-block-noticias-de-actualidad-block-11 .views-field-field-imagen img,
+        #block-views-block-noticias-de-actualidad-block-1 .views-field-field-imagen img, 
+        #block-views-block-noticias-de-actualidad-block-3 .views-field-field-imagen img, 
+        #block-views-block-noticias-de-actualidad-block-3 .views-field-field-fotoinvestigador img, 
+        #block-views-block-noticias-de-actualidad-block-4 .views-field-field-imagen img {
+            width: auto;
+            float: left;
+        }
+        .accordeon { margin-right: 0px !important; }
+        div.icono-utilidades{
+            text-align: left;
+            display: inherit;
+        }
+        .views-view-grid .views-col { width: 100% !important; } 
+        #servicios-FCom, #estudiantes-FCom, #app-FCom, #centro-FCom { width: 100%; }
+    }
+
+    /* max-width 540px */
+    @media all and (max-width: 540px){
+    
+        #features { padding: 0px; }
+        #blockInsta span { font-size: 20px }
+        #estudiantes-FCom, #utilidadesUS,#centro-FCom { width: 100%; }
+    
+    }
+    
+    /* max-width 420px */
+    @media all and (max-width: 420px){
+           
+        div.fila-informacion *{ text-align: left; }
+        #features h2 { 
+            font-size: 18px;
+            line-height: 1em;
+        }
+        #features{
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+
+        .pr-features__rw { padding: 0px; }
+
+        .pr-features__features-second,
+        .pr-features__features-third { margin-top: 30px; }
+
+        /* pr-features__features-first */
+        #block-views-block-noticias-de-actualidad-block-11, 
+        #block-views-block-noticias-de-actualidad-block-1,  
+        #block-views-block-noticias-de-actualidad-block-3,
+        #block-views-block-noticias-de-actualidad-block-4,
+        /* pr-features__features-second */
+        #block-views-block-noticias-de-actualidad-block-5, 
+        #block-views-block-noticias-de-actualidad-block-9,
+        #block-views-block-noticias-de-actualidad-block-10,
+        #block-views-block-novedades-covid-19,
+        /* pr-features__features-third */
+        #block-twitterblock, 
+        #block-facebook ,
+        #block-instagramblock {
+            height: auto;
+            padding-bottom: 0px;
+        }
+        #block-views-block-noticias-de-actualidad-block-11 .views-field-field-imagen img,
+        #block-views-block-noticias-de-actualidad-block-1 .views-field-field-imagen img,
+        #block-views-block-noticias-de-actualidad-block-3 .views-field-field-imagen img,
+        #block-views-block-noticias-de-actualidad-block-3 .views-field-field-fotoinvestigador img,
+        #block-views-block-noticias-de-actualidad-block-4 .views-field-field-imagen img 
+            { float: none; }
+        #block-views-block-noticias-de-actualidad-block-11 .views-field-field-entradilla,
+        #block-views-block-noticias-de-actualidad-block-1 .views-field-field-entradilla,
+        #block-views-block-noticias-de-actualidad-block-3 .views-field-field-entradilla,
+        #block-views-block-noticias-de-actualidad-block-4 .views-field-field-entradilla 
+            { padding: 0px 2%; }
+        .accordeon { margin-right: 0px !important; }
+        div.icono-utilidades{
+            text-align: left !important;
+            display: inherit !important;
+        }
+        //.mailto { float: none !important; }
+    }   
+
+    /* max-width 320px */
+    @media all and (max-width: 320px){
+            
+        //.mailto { float: left !important; }
+        .views-view-grid .views-col { width: 100% !important; }      
+    }   
+
+/* content-prefix */
+
+#content-prefix img { padding-bottom: 0px; }
+#content-prefix #block-breadcrumbs-2  {
+     padding: 0px 1rem;
+     max-width: 1420px;
+     margin-left: auto;
+     margin-right: auto
+ }    
+
+/* main-content */
+
+.views-field-created,
+.views-field-changed {
+    font-size: 12px;
+    font-style: normal;
+    text-align: center;
+    color: #666;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.24s ease-in-out;
+    -moz-transition: opacity 0.24s ease-in-out;
+    transition: opacity 0.24s ease-in-out;
+    padding: 2px 0px 5px 0px;
+    padding-top:2px;
+    text-decoration-line: underline;
+}
+#main-content .views-field-body{ text-align: justify; }
+
+/*Vistas Páginas Menú Gabinete*/
+    .fila-pagina-gabinete {
+        border-bottom: 1px solid #bbb;
+        padding: 10px 0px;
+    }
+        
+    .view-investigacion, 
+    .view-paginas-gabinete .views-row,
+    .fila-movilidad,
+    .fila-secretaria,
+    .fila-practicas,
+    .fila-emprendimiento,
+    .fila-investigacion {
+        padding: 10px 0px 40px 0px;
+        width: 100%;
+        display: inline-block;
+    }
+    .view-paginas-gabinete .views-field-field-entradilla{ text-align: justify; }
+    
+    .view-paginas-gabinete .views-row:nth-child(2n),
+    .fila-movilidad:nth-child(2n),
+    .fila-secretaria:nth-child(2n),
+    .fila-practicas:nth-child(2n),
+    .view-investigacion:nth-child(2n),
+    .fila-emprendimiento:nth-child(2n),
+    .fila-investigacion:nth-child(2n) {
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+    }
+
+    .view-paginas-gabinete .noticias-boletines{ padding: 20px 0px; }
+
+    .noticias-boletines .views-row:nth-child(2n){
+        background-color: transparent;
+        border: none;
+    }
+    .view-paginas-gabinete .views-field-field-imagen,
+    .fila-emprendimiento .views-field-field-imagen,
+    .imagen-lista-contenido {
+        min-width: 220px;
+        float: left;
+        margin-right: 20px;
+        width: 25%;
+    }
+    
+    .view-investigacion .views-field-field-imagen{ margin: 10px 0px; }
+
+/* Vista Elecciones */
+    div.view-paginas-gabinete div.content-item-list-elecciones ul.item-list-elecciones {
+        list-style: none;
+        padding-left: 0px;
+    }
+    div.view-paginas-gabinete div.content-item-list-elecciones ul.item-list-elecciones li.elecciones { margin: 20px auto; }
+    
+    div.view-paginas-gabinete div.content-item-list-elecciones ul.item-list-elecciones li.elecciones div.views-field-created {
+        color: #555;
+        font-size: 12px;
+        border-bottom: 2px solid #bbb;
+        border-top: 2px solid #bbb;
+        padding: 10px 20px;
+        display: inline-block;
+    }
+    .views-field.views-field-title.titulo-vista-elecciones span::before {
+        font-family: fontAwesome;
+        content: "\f00c";
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    .views-field.views-field-title.titulo-vista-elecciones span {
+        display: block;
+        margin-top: 20px;
+    }
+
+/* Busqueda avanzada en gabinete de comunicación */
+    #views-exposed-form-noticias-de-actualidad-page-1 {
+        background: #eeeeee4d;
+        padding: 20px;
+    }
+    #views-exposed-form-noticias-de-actualidad-page-1 label {display:inline;}
+    #views-exposed-form-noticias-de-actualidad-page-1 input {
+        height: 32px;
+        font-size: 16px;;
+    }
+    #views-exposed-form-noticias-de-actualidad-page-1 .form-item{
+        margin-top: 5px;
+        width: 100%;
+    }
+    #views-exposed-form-noticias-de-actualidad-page-1 .form-item-created-1-min, 
+    #views-exposed-form-noticias-de-actualidad-page-1 .form-item-created-1-max {
+        width: 49%;
+        float: left;
+    }
+    #views-exposed-form-noticias-de-actualidad-page-1 .form-item-changed-min, 
+    #views-exposed-form-noticias-de-actualidad-page-1 .form-item-changed-max
+        { width: 45%; }
+    
+    #views-exposed-form-noticias-de-actualidad-page-1 .description {
+        font-size: 10px;
+        color: #333; 
+        margin-top: 5px;
+    }
+    #views-exposed-form-noticias-de-actualidad-page-1 input[type=text], 
+    #views-exposed-form-noticias-de-actualidad-page-1 .form-select {
+        border-top: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        height: 32px;
+        font-size: 16px;
+    }
+    #views-exposed-form-noticias-de-actualidad-page-1 input[type="submit"]{
+        font-size: 18px;
+        height: 32px;
+        background-color: #333;
+    }
+    #views-exposed-form-noticias-de-actualidad-page-1 input[type="submit"]:hover { background-color:#333; }
+    
+/* Página de enlaces de menú */
+
+/*Conoce FCOM*/
+    .node--id-4 li,
+    .node--id-480 li,
+    .view-vista-conoce-fcom ul.listado-entradas li,
+    ul.listado-entradas ul li 
+        { border-bottom:1px solid #eee; }
+
+/* directorio pdi &amp;&amp; pas */
+    span.views-summary-unformatted {
+        visibility: hidden;
+        display: none;
+    }
+    .view-buscador-docentes-e-investigadores  div.views-summary-unformatted  {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        font-weight: bold;
+        padding: 0;
+        color: #ccc;
+        border-radius: 3px;
+        background: #f7f7f7;
+        line-height: 30px;
+        margin: 0.9px;
+    }
+    /* ficha profesor - ficha pas */
+        #profesorDirectorio {line-height: 15px;}        
+        div.views-field-field-imagen-personalizada {
+            display: inline-block;
+            vertical-align: top;
+        }
+        div.views-field-field-imagen-personalizada img {
+            vertical-align: top;
+            //border: 1px solid #19343D;
+            padding: 0px;
+            max-width: 168px;
+        }
+        div.view-buscador-docentes-e-investigadores div.views-field-body{
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        @media all and (max-width: 540px){
+            div.view-buscador-docentes-e-investigadores {
+                padding: 1px;
+            }
+            div.views-field-field-imagen-personalizada {
+                max-width: 50%;
+                float:left;
+            }
+            div.views-field-field-imagen-personalizada img {
+                max-width: 100%;
+            }
+            div.view-buscador-docentes-e-investigadores div.views-field-body{
+                max-width: 50%;
+                vertical-align: text-top;
+                float:left;
+            }
+        }
+
+        
+        .views-field-field-nombredirectorio div {
+            background: #19343D;
+            color: #FFFFFF;
+            margin-bottom: 0px;
+            padding: 10px;
+            font-size: 20px;
+        }
+        .views-field-field-puesto-directorio div
+       {
+            background: #E3CD11;
+            padding: 10px;
+            font-weight: bold;
+      
+        }
+        .view-buscador-docentes-e-investigadores img {
+            /*padding:10px;
+            float: left;*/
+        }
+        #profesorDirectorio p {
+           padding-left: 10px;
+           line-height: normal;
+           margin-bottom: 10px;
+           margin-top: 5px;
+           text-align: left;
+        }
+        .enlace-alumni {
+            padding: 3px;
+            padding-top: 1px;
+            font-family: cursive;
+        }
+        .correo, .web, .enlace-alumni {
+            margin-bottom: 5px;
+            padding-left: 10px;
+        }
+        .correo:before{
+             font-family: FontAwesome;
+             content: "\f0e0";
+             padding-right: 5px;
+        }
+        .web:before{
+             font-family: FontAwesome;
+             content: "\f108";
+             padding-right: 5px;
+        }
+    /* Glosario directorio */
+        .view-id-alumni .view-buscador-docentes-e-investigadores div.views-summary-unformatted a {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            color: #666;
+            text-decoration: none;
+            transition: all .2s;
+            border-radius: 3px;
+            background: #efefef;
+        }
+        .view-id-alumni  .view-buscador-docentes-e-investigadores div.views-summary-unformatted a:hover {
+            background: #19343D;
+            color: #FFFFFF;
+        }
+        .view-id-alumni .view-buscador-docentes-e-investigadores div.views-summary-unformatted a:active {background: #FFFFFF;}
+        .view-id-buscador_docentes_e_investigadores .form--inline{    
+            padding-left: 5px;
+            padding-top: 15px;
+        }
+
+/* Acordeon */
+    .fila-acordeon span a { text-align: left; } 
+    
+    .accordeon{
+        margin-bottom: 10px;
+        margin-right: 40px;
+    }
+    .ui-accordion .ui-accordion-header { padding:0px; }
+    
+    .ui-accordion .ui-accordion-content {
+        background: transparent;
+        border-color: #709ae3;
+    }
+    .ui-state-default, 
+    .ui-widget-content .ui-state-default, 
+    .ui-widget-header .ui-state-default {
+        border: none;
+        background: none;
+    }
+    .ui-accordion-content a         { color: #005a8c; }
+    .ui-accordion-content a:hover   { color: #0066CC; }
+    
+    .views-accordion-header a {
+        width: 100%;
+        padding: 20px;
+        display: inline-block;
+        border-bottom: 1px solid #eee;
+        font-size: 18px;
+    }
+    .views-accordion-header a:before {
+        content: "\203A";
+        color: #37C3C1;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+    .views-accordion-header a:hover , .ui-state-active a {
+         background: #005a8c;
+         color: white;
+    }
+    .views-accordion-header .ui-icon { display:none; }
+
+/* Actividades y Eventos */
+    .view-noticias-de-actualidad .views-field-field-fecha-de-inicio-actividad- .field-content:before{
+        font-family: FontAwesome;
+        content: "\f274";
+        padding-right: 5px;
+        color: #333;
+        font-size: 22px;
+    }
+
+/* Boletín */
+    .views-field-field-cabecera-boletines .ui-accordion .ui-accordion-content{
+        display: inline-block;
+        background-color: white;
+        width: 100%;
+    }
+    div.cabeceraBoletines{
+        width: 100%;
+        margin-bottom: 20px;
+        height: 165px;
+    }
+    div#logoGabifcom {
+        display: flex;
+        width: 29%;
+        float: left;
+        height: 165px;
+        justify-content: left;
+    }
+    div#textoBoletin {
+        display: flex;
+        width: 58%;
+        height: 165px;
+        margin: 0px;
+        float: left;
+        justify-content: center;
+        align-items: center;
+    }
+    div#textoBoletin p{
+        text-align: center;
+        font-size: 18px;
+        line-height: 26px;
+        margin: 10px auto;
+    }
+    div#redesBoletin{
+        display: flex;    
+        width: 13%;
+        float: left;
+        height: 165px;
+        justify-content: right;
+        align-items: end;
+        padding-right: 5px;
+    }
+    div#redesBoletin div.content-redesBoletin p,
+    div#redesBoletin div.content-redesBoletin ul,
+    div#redesBoletin div.content-redesBoletin ul li{
+        text-align: right;
+        margin: 0px;
+        padding-right: 0px;
+    }
+
+    div#redesBoletin div.content-redesBoletin ul {
+        padding-left: 0px;
+    }
+
+       
+        @media all and (max-width: 1024px){
+            
+            div#textoBoletin{
+                width: 53%;
+            }
+
+            div#redesBoletin{
+                width: 16%;
+            }
+        }    
+
+        @media all and (max-width: 768px){
+            
+            div#logoGabifcom {
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+
+        @media all and (max-width: 480px){
+            
+            div.cabeceraBoletines{
+                display: inline-table;
+            }
+
+            div#logoGabifcom {
+                width: 100%;
+                text-align: left;
+                min-width: 223px;
+                }
+
+            div#textoBoletin{
+                width: 100%;
+                height: unset;
+                padding: 0px;
+            }
+
+            div#redesBoletin{
+                width: 100%;
+                margin: 0px;
+                padding: 0px;
+                height: unset;
+                justify-content: center;
+            }
+            
+            div#redesBoletin div.content-redesBoletin p,
+            div#redesBoletin div.content-redesBoletin ul,
+            div#redesBoletin div.content-redesBoletin ul li{
+                padding: 0px;
+            }
+
+            div#redesBoletin div.content-redesBoletin img.img_redes{
+                width: 20px;
+                display: inline-block;
+                margin: 0px;
+                padding: 0px;
+            }
+
+        }
+
+    
+       
+
+    div.noticias-boletines h4{
+        color:#fff;
+        padding: 10px;    
+    }
+    div.noticias-boletines h4.boletines-institucional{background-color: #800000;}
+    div.views-field-field-institucional a, 
+    div.views-field-field-institucional a:visited, 
+    div.views-field-field-institucional a:hover
+        {color: #800000;} 
+    div.noticias-boletines h4.boletines-estudiantes{background-color: #84942b;}
+    div.views-field-field-estudiantes a, 
+    div.views-field-field-estudiantes a:visited,
+    div.views-field-field-estudiantes a:hover
+        {color: #84942b;} 
+    div.noticias-boletines h4.boletines-profesorado{background-color: #5a6782;}
+    div.views-field-field-profesorado a, 
+    div.views-field-field-profesorado a:visited,
+    div.views-field-field-profesorado a:hover
+        {color: #5a6782;} 
+    div.noticias-boletines h4.boletines-pas{background-color: #deb009;}
+    div.views-field-field-pas a, 
+    div.views-field-field-pas a:visited, 
+    div.views-field-field-pas a:hover
+        {color: #deb009;} 
+    div.noticias-boletines h4.boletines-congresos{background-color: #6c096e;}
+    div.views-field-field-congresos-jornadas-y-semin a, 
+    div.views-field-field-congresos-jornadas-y-semin a:visited,
+    div.views-field-field-congresos-jornadas-y-semin a:hover{color: #6c096e;} 
+    div.noticias-boletines .pager__item--next {
+       float: right;
+       display: block;
+       width: 25%;
+    }
+    div.noticias-boletines .ui-accordion-content .views-field-created {
+        font-size: 14px;
+        color: #005a8c;
+        padding: 10px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+    }
+
+/* Página Grados */
+    ul#listado-grados, ul#listado-masteres { padding-left: 0px;list-style: none; }
+    ul#listado-grados li, ul#listado-masteres li{
+        border-radius: 7px;
+        margin-top: 3px;
+        font-weight: 200;
+        font-size: 18px;
+        list-style: none;
+        padding: 20px;
+    }
+    ul#listado-grados li { background-color: #247228; }
+    ul#listado-grados li:hover {background-color: #298A08;}
+    ul#listado-masteres li { background-color: #aa084d; }
+    ul#listado-masteres li:hover {background-color:#F31D7A}
+    ul#listado-grados li a, ul#listado-masteres li a {color:#fff;}
+
+/*  Publicaciones premiadas */ 
+    div.pr-main__sidebar-first div.fila-investigacion-del-mes .views-field-title {
+        font-size: 32px;
+        padding: 0px 0px 10px 0px;
+        text-align: center;
+    }
+    div.pr-main__sidebar-first div.fila-investigacion-del-mes div.views-field-field-fotoinvestigador img {
+        min-width: 250px;
+        float: left;
+    }
+    div.pr-main__content div.fila-investigacion-del-mes div.views-field-field-fotoinvestigador {
+        min-width: 250px;
+        float: left;
+        margin-right: 20px;
+        width: 30%;
+        border: 1px solid #ddd;
+    }
+    div.pr-main__sidebar-first div.fila-investigacion-del-mes div.views-field-field-apellidos-nombre {
+        float: left;
+        width: auto;
+        font-size: 18px;
+        padding: 0px;
+        text-align: center;
+    }
+    div.fila-investigacion-del-mes div.views-field-field-grupo-de-investigacion {
+        padding: 0px 0px 10px 0px;
+        float: left;
+        width: 75%;
+        font-style: italic;
+    }
+    div.fila-investigacion-del-mes div.views-field-body-1{
+        padding: 5px 2px;
+        float: left;
+        text-align: center;
+    }
+    div.fila-investigacion-del-mes div.views-field-body-1{
+        padding: 5px 2px;
+        float: left;
+        text-align: center;
+    }
+    div.fila-investigacion-del-mes div.views-field-field-url-publicacion {
+        width: 75%;
+        padding: 0px 2px;
+        float: left;
+    }
+
+/* Paginación */
+    .pager {
+        padding: 20px;
+    }
+    
+    .pager li a {
+        background: #fff;
+        cursor: pointer;
+        color: #999;
+        padding: 20px;
+    }
+    
+    .pager li a.pager__link:hover { background: #efeaea; }
+
+    .pager li a.pager__link--is-active {
+        background-color: #999;
+        color: #fff;
+    }
+    .pager li a.pager__link--is-active:hover { color: #999999; }
+
+/** Responsive main-content **/
+
+/* max-width 540px */
+@media all and (max-width: 540px) {
+    .view-paginas-gabinete .views-field-field-imagen,
+    .fila-emprendimiento .views-field-field-imagen {
+        width: 100%;
+        max-width: 100%;
+    }
+    .view-noticias-de-actualidad .views-field-body{
+        width: 100%;
+        padding: 10px;
+    }
+    .views-field.views-field-view-node { text-align: center; }
+    
+    .imagen-lista-contenido,
+    .view-paginas-gabinete .views-field-field-imagen,
+    .fila-emprendimiento .views-field-field-imagen {
+        min-width: unset;
+        float: none;
+        margin: 0px;
+        width: 100%;
+    }
+    #main-content .views-field-title {
+        text-align: center;
+        padding: 15px 0px;
+    }
+
+    /*** Vista acordeón de boletín no necesita alineación de texto centro y padding ******/
+    #main-content .noticias-boletines .views-field-title {
+        text-align: left;
+        padding: unset;
+    }
+    
+    .listado-entradas li a { text-align: left; }
+ }   
+
+/* max-width 420px */
+@media all and (max-width: 420px){
+   
+    .views-field.views-field-field-entradilla .field-content {
+        text-align: left;
+        padding: 0px 10px;
+    }
+}    
+    
+
+/* pr-main__sidebar-first (columna derecha contenido completo)*/
+
+    .pr-main__sidebar-first                 { padding-left: 3%; }
+    .pr-main__sidebar-first .field-content  { text-align: left; }
+
+/* Busqueda en páginas del menú Gabinete */
+    #block-formulariobuscadordenoticiasparasidebarderecho form h2 { display:none; }
+    #edit-keys{
+        height: 50px;
+        font-size: 18px;
+    }
+    #edit-submit{
+        height: 50px;
+        font-size: 18px;
+        width: 50px;
+    }
+
+/* Conoce-fcom, practicas, secretaría */
+
+    h2#block-views-block-vista-conoce-fcom-block-2-title span:before,
+    h2#block-views-block-movilidad-block-2-title span:before,
+    h2#block-views-block-secretaria-block-3-title span:before,
+    h2#block-views-block-secretaria-block-1-title span:before,
+    h2#block-views-block-novedades-practicas-block-1-title span:before,
+    h2#block-views-block-novedades-practicas-block-3-title span:before,
+    h2#block-views-block-movilidad-block-4-title span:before,
+    h2#block-views-block-vista-conoce-fcom-block-5-title span:before {
+        font-family: FontAwesome;
+        content: "\f05a";
+        padding-right: 3px;
+        font-size: 40px;
+    }
+    .fila-informacion {
+        background-color: #FFFFFF;
+        border: 1px solid #aaaaaa;
+        border-radius: 7px;
+        padding: 20px 15px;
+    }
+    #citaPrevia{
+        background: #B21010;
+        font-weight: 200;
+        border-radius: 7px;
+        font-size: 18px;
+        list-style: none;
+        padding: 20px;
+        margin-bottom: 12px;
+        }
+    #citaPrevia a { color: #fff; }
+    #citaPrevia:hover{ background-color: #ad4141;}
+
+    #citaPrevia::before {
+        font-family: FontAwesome;
+        content: "\f073";
+        color: #fff;
+        padding: 10px;
+    }
+
+/* Conoce-fcom */
+    .fila-informacion a#informacion-calendario::before,
+    .fila-informacion a#informacion-fcom-guia-super-vivencia::before,
+    .fila-informacion #información-horarioCentro::before,
+    .fila-informacion #informacion-horarioBiblioteca::before,
+    .fila-informacion #informacion-ordenacionAcademica::before,
+    .fila-informacion #informacion-practicasResponsable::before,
+    .fila-informacion #informacion-direccion::before,
+    .fila-informacion #informacion-calendario::before {
+        font-family: FontAwesome;
+        padding: 10px;
+        padding-left: 0px;
+    }
+    .fila-informacion a#informacion-calendario::before {
+        content: "\f073";
+        color:#555;
+    }
+    .fila-informacion a#informacion-fcom-guia-super-vivencia::before {
+        content: "\f02d";
+        color:#555;
+    }
+    .fila-informacion #información-horarioCentro::before,
+    .fila-informacion #informacion-horarioBiblioteca::before
+        { content: "\f017"; }
+
+    .fila-informacion #informacion-direccion::before            { content: "\f277"; }
+    .fila-informacion #informacion-ordenacionAcademica::before  { content: "\f19d"; }
+    .fila-informacion #informacion-practicasResponsable::before { content: "\f007"; }
+
+    .fila-informacion a#informacion-calendario,
+    .fila-informacion a#informacion-fcom-guia-super-vivencia {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+/* Org. docente Grados - Másteres */
+    div.pr-main__sidebar-first div.view-grados-y-licenciaturas,
+    div.pr-main__sidebar-first div.view-postgrado {
+        border: 1px solid #aaaaaa;
+        border-radius: 7px;
+        padding: 20px 15px;
+    }
+    div.view-grados-y-licenciaturas .views-enlace,
+    div.view-postgrado .views-enlace {
+        padding:15px;
+        border-bottom: 1px solid #eee; 
+    }
+    #block-views-block-grados-y-licenciaturas-block-1 .views-field-title, /*Periodismo*/
+    #block-views-block-grados-y-licenciaturas-block-2 .views-field-title, /*Cav*/
+    #block-views-block-grados-y-licenciaturas-block-3 .views-field-title, /*Publicidad y RRPP*/
+    #block-views-block-grados-y-licenciaturas-block-4 .views-field-title, /*Doble Grado*/
+    #block-views-block-postgrado-block-2 .views-field-title, /*Master Guion AV*/
+    #block-views-block-postgrado-block-3 .views-field-title, /*Master Com y politica*/
+    #block-views-block-postgrado-block-4 .views-field-title, /*Master Com y culturaDoble Grado*/
+    #block-views-block-postgrado-block-8 .views-field-title, /*Master escritura creativa*/
+    div.view-postgrado .views-field-title,
+    div.view-grados-y-licenciaturas .views-field-title {
+        color: #222;
+        font-weight: 300;
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    div.icono-utilidades {
+        display: inline-block;
+        font-size: 36px;
+    }
+    div.view-grados-y-licenciaturas div.icono-utilidades a        { color: #247228; }
+    div.view-grados-y-licenciaturas div.icono-utilidades a:hover  {color:#298A08;}
+    div.view-postgrado div.icono-utilidades a                     {color:#AA084D;}
+    div.view-postgrado div.icono-utilidades a:hover               {color:#F31D7A;}
+
+/* Menús Pestañas */
+    #block-views-block-vista-conoce-fcom-block-3,           /* conoce-fcom */
+    #block-views-block-vista-conoce-fcom-block-5,
+    #block-views-block-vista-conoce-fcom-block-2,
+    #block-views-block-novedades-practicas-block-1,
+    #block-views-block-movilidad-block-1,                   /* movilidad */
+    #block-views-block-movilidad-block-2,
+    #block-views-block-movilidad-block-3, 
+    #block-views-block-informacion-conoce-fcom-block-3,     /* Oferta de grados */
+    #block-views-block-grados-y-licenciaturas-block-1,      /* Org. Docente Periodismo */
+
+    #block-views-block-grados-y-licenciaturas-block-2,      /* Org. Docente CAV */
+    #block-views-block-grados-y-licenciaturas-block-3,      /* Org. Docente Publicidad */
+    #block-views-block-grados-y-licenciaturas-block-4,      /* Org. Docente Doble Grado */
+    #block-views-block-informacion-conoce-fcom-block-7-2,   /* Másteres */
+    #block-views-block-postgrado-block-4,                   /* Org Docente Master Comunicación y Cultura */
+    #block-views-block-postgrado-block-8,                   /* Org Docente Master Escritura creativa */
+    #block-views-block-postgrado-block-2,                   /* Org Docente Master Guión AV */
+    #block-views-block-postgrado-block-3,                   /* Org. Docente Máster Comunicación Institucional */    
+    #block-views-block-novedades-practicas-block-2,         /* Pestañas Prácticas */
+    #block-views-block-novedades-practicas-block-4,         /* Pestañas Prácticas paginas*/
+    #block-views-block-secretaria-block-1 ,                  /* Pestañas Secretaría */
+    #block-views-block-secretaria-block-2,
+    #block-views-block-secretaria-block-3,
+    #block-views-block-secretaria-block-4                   /* Pestañas Secretaría dupilcada*/
+        {margin-bottom: 20px;}
+    .icono-practicas a ,
+    .icono-movilidad a ,
+    .icono-secretaria a ,
+    .icono-postgrado a ,
+    .icono-gabinete a,
+    #block-views-block-secretaria-block-2 a,
+    #block-views-block-secretaria-block-4 a,
+    #block-views-block-vista-conoce-fcom-block-3 a,
+    #block-views-block-informacion-conoce-fcom-block-3 a,
+    #block-views-block-novedades-practicas-block-2 a,
+    #block-views-block-novedades-practicas-block-4 a,
+    #block-views-block-movilidad-block-1  a ,  #block-views-block-movilidad-block-3 a {
+        color:#FFFFFF;
+        font-weight: 200;
+        font-size: 16px;
+        text-align: left;
+    }
+    
+    .icono-conocefcom a                     {color:#000000;}
+    .icono-gabinete                         {background-color: #005a8c;}
+    .icono-conocefcom                       {background-color: #e3cd11;}
+    .icono-gradosylicenciaturas             {background-color: #247228;}
+    .icono-practicas                        {background-color:#cc6600}
+    .icono-movilidad                        {background-color:#e37755}
+    .icono-secretaria                       {background-color:#b21010}
+    .icono-postgrado                        {background-color:#aa084d}
+    .icono-gradosylicenciaturas a           {color:#e9ebed;}
+    .icono-gradosylicenciaturas a:hover     {color:#e9ebed;}
+    .icono-gabinete:hover                   {background-color: #0395f0;}
+    .icono-conocefcom:hover                 {background-color: #f6e131;}
+    .icono-gradosylicenciaturas:hover       {background-color: #298A08;}
+    .icono-practicas:hover                  {background-color:#f79b0c}
+    .icono-movilidad:hover                  {background-color:#F69373}
+    .icono-secretaria:hover                 {background-color:#B03F3F}
+    .icono-postgrado:hover                  {background-color:#F31D7A}
+    .icono-movilidad a:hover                {background-color:#F69373}
+    .icono-secretaria a:hover               {background-color:#B03F3F}
+    .icono-postgrado a:hover                {background-color:#F31D7A}    
+    
+    /* conoce-fcom */
+    #block-views-block-vista-conoce-fcom-block-3 li {background:#e3cd11;}
+    #block-views-block-vista-conoce-fcom-block-3 li:hover {background:#F6E131;}
+    #block-views-block-vista-conoce-fcom-block-3 a,
+    #block-views-block-vista-conoce-fcom-block-3 a:before {color: #000000;}
+    /* Prácticas */    
+    #block-views-block-novedades-practicas-block-2 li {background:#cc6600;}
+    #block-views-block-novedades-practicas-block-2 li:hover {background:#F79B0C;}
+    #block-views-block-novedades-practicas-block-2  a,
+    #block-views-block-novedades-practicas-block-4 li {background:#cc6600;}
+    #block-views-block-novedades-practicas-block-4 li:hover {background:#F79B0C;}
+    #block-views-block-novedades-practicas-block-4  a,
+    #block-views-block-movilidad-block-1 a , #block-views-block-movilidad-block-3 a {color:  #FFFFFF;}
+    /* Secretaría*/
+    #block-views-block-secretaria-block-2  li {background:#B21010;}
+    #block-views-block-secretaria-block-2 li:hover {background:#B03F3F;}
+    #block-views-block-secretaria-block-2  a {color: #FFFFFF;}
+    
+    #block-views-block-secretaria-block-4  li {background:#B21010;}
+    #block-views-block-secretaria-block-4 li:hover {background:#B03F3F;}
+    #block-views-block-secretaria-block-4  a {color: #FFFFFF;}
+    /* Movilidad*/
+    #block-views-block-movilidad-block-1  li ,
+    #block-views-block-movilidad-block-3 li             { background:#e37755; }
+    #block-views-block-movilidad-block-1  li:hover,
+    #block-views-block-movilidad-block-3 li:hover       {background:#F69373;}
+    #block-views-block-movilidad-block-1  a,
+    #block-views-block-movilidad-block-3 a              {color: #FFFFFF;}
+
+/* Investigación: publicación del mes */
+    #block-views-block-investigacion-block-1 div.view-investigacion{
+        border: 1px solid #aaaaaa;
+        border-radius: 7px;
+        padding: 20px 15px;
+        float:left;
+    }
+    #block-views-block-investigacion-block-1 div.views-field-field-fotoinvestigador img{float:left;}
+    #block-views-block-investigacion-block-1 div.views-field-field-apellidos-nombre,
+    #block-views-block-investigacion-block-1 div.views-field-field-grupo-de-investigacion {
+        padding: 5px 10px;
+        width: 100%;
+        font-size: 18px;
+        font-style: normal; 
+        font-family: Economia;
+        font-weight: bold;
+    }
+    #block-views-block-investigacion-block-1 div.views-field-field-apellidos-nombre {
+        background: #19343D;
+        color: #FFFFFF;
+        width: 100%;
+        max-width: 325px;
+    }
+    #block-views-block-investigacion-block-1 div.views-field-field-apellidos-nombre .field-content{
+        text-align: center;
+    }
+    div.views-field-field-subtitulo-publicacion-mes{
+        text-align: center;
+        color: #000;
+        font-size: 22px;
+        margin: 10px;
+        float: left;
+    }
+    div.views-field-field-entradilla-publicacion-mes{ padding-top: 10px; }
+    #block-views-block-investigacion-block-1 div.views-field-field-grupo-de-investigacion{background: #E3CD11;} 
+
+/* Responsive */    
+    @media all and (max-width: 960px){
+        .pr-main__sidebar-first{
+            padding: 20px 0px;
+        }
+    }
+    
+/* footer */
+.pr-footer { background: rgb(204,0,51); }
+.pr-footer p { margin: 0; }
+#footer h2.block__title  {
+    color: #fff;
+    font-weight: 500;
+    margin: 0 0 20px;
+    padding-bottom: 10px;
+    padding-top: 20PX;
+}
+#block-datosdecontacto-3, #block-avisolegal {padding-top:40px;}
+#block-datosdecontacto-3, #block-avisolegal {
+    float: left;
+    padding-right: 30px;
+    padding-left:20px;
+    width: 40%;
+}
+#block-formulariodebusqueda {
+    
+    padding-left: 47px;
+    padding-right:35px;
+    
+}
+#block-datosdecontacto-3 a , #block-avisolegal a  {color: #FFFFFF;}
+#block-datosdecontacto-3 a:hover , #block-avisolegal a:hover  {color: #005a8c;}
+#block-datosdecontacto-3 p{margin: 0,0,0,10;}
+#block-avisolegal {
+    float: left;
+    padding-right:11px;
+    width: 30%;
+}
+
+//.google-maps
+//,.video-youtube 
+//{
+//    position: relative;
+//    padding-bottom: 75%; 
+//    height: 0;
+//    overflow: hidden;
+//    margin:10px;
+//}
+//.google-maps iframe 
+//,.video-youtube iframe 
+//{
+//    position: absolute;
+//    top: 0;
+//    left: 0;
+//    width: 100% !important;
+//    height: 100% !important;
+//}
+
+#mapa {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive footer */
+
+/* max-width 980px */
+@media all and (max-width: 980px){
+    
+    #block-datosdecontacto-3, 
+    #mapa, 
+    #block-avisolegal,
+    #block-formulariodebusqueda {
+        float: none;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+/* max-width 768px */
+@media all and (max-width: 768px){
+
+     #block-datosdecontacto-3, 
+     #block-avisolegal, 
+     #block-formulariodebusqueda {
+        width: 100%;
+        padding: 0px;
+    }
+     #footer h2.block__title {
+        text-align: center;
+    }
+}
