@@ -325,6 +325,10 @@ ul#superfish-u0922-headerleft, ul#superfish-u0922-headerright{
 #block-logouses{
     float: left;
     width: 30%;
+    color:black;
+}
+#block-logouses img {
+    width: 200px;
 }
 #block-logo30aniversario{
     float: left;
