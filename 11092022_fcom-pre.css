@@ -641,7 +641,7 @@ em.site-branding__name{
         background-color: white;
     }
 
-.pr-navbar a {color:#fff;}
+.pr-navbar a {color:#000;}
 #block-menu-7 a {font-weight: 600;}
 #superfish-main li a {color: #fff;}
 #navbar li.sf-depth-1 a,
