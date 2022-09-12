@@ -2632,7 +2632,7 @@ em.site-branding__name{
     }
     
 /* footer */
-.pr-footer { background: rgb(204,0,51); }
+.pr-footer { background: #a90533; }
 .pr-footer p { margin: 0; }
 #footer h2.block__title  {
     color: #fff;
