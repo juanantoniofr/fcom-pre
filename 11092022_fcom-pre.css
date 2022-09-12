@@ -201,7 +201,7 @@ ul#superfish-u0922-headerleft li a, ul#superfish-u0922-headerright li a {
 
     /*u092022*/
     
-    height: 2.8em;
+    height: 4.8em;
     margin-top: 5px;
     background: #a90533;
 
@@ -214,7 +214,6 @@ div#block-u0922-headerleft .block__content {
 }
 
 div#block-u0922-headerright .block__content{
-    width: 30%;
     float: right;
 }
 
@@ -2651,8 +2650,8 @@ em.site-branding__name{
 }
 #block-formulariodebusqueda {
     
-    padding-left: 47px;
-    padding-right:35px;
+    width: 70%;
+    margin-top: 5px;
     
 }
 #block-datosdecontacto-3 a , #block-avisolegal a  {color: #FFFFFF;}
