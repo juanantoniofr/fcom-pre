@@ -324,20 +324,17 @@ ul#superfish-u0922-headerleft, ul#superfish-u0922-headerright{
 }
 #block-logouses{
     float: left;
+    width: 30%;
 }
 #block-logo30aniversario{
     float: left;
     //margin-left: 4%;
 }
-#block-logouses img {
-   //margin-left: 10px;
-   //margin-bottom: 8px;
-   //margin-top: -17px;
-}
+
 #block-logouses p {
     margin: 0px;
 }
-#block-logouses .block__content , 
+
 #block-logo30aniversario .block__content{
     width: 83px;
     height: 85px;
@@ -635,12 +632,11 @@ em.site-branding__name{
 }
 
 /* navbar */
-.pr-navbar  {margin: 10px 0px 0px 0px;}
-.pr-navbar  {
-    /*background-color: #333;*/ 
-    /*background-color: #005a8c;*/
-    background-color: #c03;
-}
+    .pr-navbar  {
+        margin: 0px;
+        background-color: white;
+    }
+
 .pr-navbar a {color:#fff;}
 #block-menu-7 a {font-weight: 600;}
 #superfish-main li a {color: #fff;}
