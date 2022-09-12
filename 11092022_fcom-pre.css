@@ -201,7 +201,7 @@ ul#superfish-u0922-headerleft li a, ul#superfish-u0922-headerright li a {
 
     /*u092022*/
     
-    height: 4.8em;
+    height: 3.7em;
     margin-top: 5px;
     background: #a90533;
 
@@ -311,7 +311,7 @@ ul.listado-entradas li ul {
 }
 
 ul#superfish-u0922-headerleft, ul#superfish-u0922-headerright{
-    height: 3.7em;
+    height: 57px;
     vertical-align: middle;
     display: table-cell;   
 }
