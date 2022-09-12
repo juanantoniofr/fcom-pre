@@ -1,5 +1,10 @@
 /*  CSS */
+<<<<<<< HEAD
+miamlinea
+debajo
+=======
 holaa
+>>>>>>> 51d8f9acc56d07d412a5573e06a7314ee36ae05e
 /* typografia */
 html {
     font-size: 100%;
@@ -2061,9 +2066,9 @@ em.site-branding__name{
 /* Actividades y Eventos */
     .view-noticias-de-actualidad .views-field-field-fecha-de-inicio-actividad- .field-content:before{
         font-family: FontAwesome;
-        content: "\f274";
-        padding-right: 5px;
-        color: #333;
+        width: 100%;
+        margin-bottom: 20px;
+        height: 165px;
         font-size: 22px;
     }
 
