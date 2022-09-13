@@ -270,133 +270,135 @@ img {
 .node__container .node__content h4 + p {margin:1em 0px}
 
 /* listas */
-ul.links {
-    list-style:none;
-}
-ul.listado-entradas {
-    list-style:none;
-    padding-left: 0px;
-}
-ul.listado-entradas ul {
-    list-style:none;
-}
-.node li {
-    margin-bottom: 10px;
-    text-align: justify;
-}
-.pr-main__sidebar-first ul li,
-div.menusidebar {
-    padding: 5px;
-    border-radius: 7px;
-    margin-top: 3px;
-}
-ul.listado-entradas li a,
-.menusidebar a {
-    padding: 20px 5px;
-    display: block;
-    font-size: 16px;
-    font-weight: 500;
-}
-ul.listado-entradas li a:before{
-    font-family: FontAwesome;
-    content: "\f101";
-    padding-right: 10px;
-    font-size: 10px;
-}
+    ul.links {
+        list-style:none;
+    }
+    ul.listado-entradas {
+        list-style:none;
+        padding-left: 0px;
+    }
+    ul.listado-entradas ul {
+        list-style:none;
+    }
+    .node li {
+        margin-bottom: 10px;
+        text-align: justify;
+    }
+    .pr-main__sidebar-first ul li,
+    div.menusidebar {
+        padding: 5px;
+        border-radius: 7px;
+        margin-top: 3px;
+    }
+    ul.listado-entradas li a,
+    .menusidebar a {
+        padding: 20px 5px;
+        display: block;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    ul.listado-entradas li a:before{
+        font-family: FontAwesome;
+        content: "\f101";
+        padding-right: 10px;
+        font-size: 10px;
+    }
 
-ul.listado-entradas li ul {
-    list-style: none;
-}
+    ul.listado-entradas li ul {
+        list-style: none;
+    }
 
-ul#superfish-u0922-headerleft, ul#superfish-u0922-headerright{
-    height: 57px;
-    vertical-align: middle;
-    display: table-cell;   
-}
+    ul#superfish-u0922-headerleft, ul#superfish-u0922-headerright{
+        height: 57px;
+        vertical-align: middle;
+        display: table-cell;   
+    }
 
-/* leaderboard */
+    /* leaderboard */
 
-#leaderboard {
-    padding-top: 15px;
-    padding-bottom: 5px;
-}
-#block-logouses{
-    float: left;
-    width: 30%;
-    color:black;
-}
-#block-logouses img {
-    width: 200px;
-}
-#block-logo30aniversario{
-    float: left;
-    //margin-left: 4%;
-}
+    #leaderboard {
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+    #block-logouses{
+        float: left;
+        width: 20%;
+        color:black;
+    }
+    #block-logouses img {
+        width: 8em;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    #block-logo30aniversario{
+        float: left;
+    }
 
-#block-logouses p {
-    margin: 0px;
-}
+    #block-logouses p {
+        margin: 0px;
+    }
 
-#block-logo30aniversario .block__content{
-    width: 83px;
-    height: 85px;
-}
-#block-menuheader {
-    float: right;
-    width: 27%;
-}
-strong.site-branding__name,
-em.site-branding__name{
-    margin: 0px auto;
-}
-#block-menuheader li {
-    float: right;
-    padding:0px;
-    margin:0px;
-}
-#block-menuheader li.sf-depth-1 a {
-    padding-left: 1px;
-    padding-right: 10px;
-    font-size: 14px;
-    padding-top: 10px;
-}
-#block-at-fcom-branding {
-    width: 58%;
-    float:left;
-}
-#block-at-fcom-branding span {
-    width: 380px;
-    margin: 0px auto;
-    line-height: 30px;
-}
-#block-at-fcom-branding strong.site-branding__name a.site-branding__name-link {
-    font-size: 36px;
-    color: rgb(204,0,51);
-    font-family: 'Oswald', sans-serif;
-    font-weight: 600;
-}
-#block-at-fcom-branding em.site-branding__slogan {
-    font-size: 1.4em;
-    color: rgb(51,51,51);
-}   
-#block-alternadordeidioma    {
-    width: 58%;
-    float: left;
-    font-size: 12px;
-}
-#block-alternadordeidioma ul {
-    width: 381px;
-    margin: 0px auto;
-    padding-left: 0px;
-}
-#block-alternadordeidioma ul li {
-    float: left;
-    margin-right: 10px;
-}
-#block-redessociales {
-    float: right;
-    width: 26%;
-}
+    #block-logo30aniversario .block__content{
+        width: 83px;
+        height: 85px;
+    }
+    #block-menuheader {
+        float: right;
+        width: 27%;
+    }
+    strong.site-branding__name,
+    em.site-branding__name{
+        margin: 0px auto;
+    }
+    #block-menuheader li {
+        float: right;
+        padding:0px;
+        margin:0px;
+    }
+    #block-menuheader li.sf-depth-1 a {
+        padding-left: 1px;
+        padding-right: 10px;
+        font-size: 14px;
+        padding-top: 10px;
+    }
+    #block-at-fcom-branding {
+        width: 58%;
+        float:left;
+    }
+    #block-at-fcom-branding span {
+        width: 380px;
+        margin: 0px auto;
+        line-height: 30px;
+    }
+    #block-at-fcom-branding strong.site-branding__name a.site-branding__name-link {
+        font-size: 36px;
+        color: rgb(204,0,51);
+        font-family: 'Oswald', sans-serif;
+        font-weight: 600;
+    }
+    #block-at-fcom-branding em.site-branding__slogan {
+        font-size: 1.4em;
+        color: rgb(51,51,51);
+    }   
+    #block-alternadordeidioma    {
+        width: 58%;
+        float: left;
+        font-size: 12px;
+    }
+    #block-alternadordeidioma ul {
+        width: 381px;
+        margin: 0px auto;
+        padding-left: 0px;
+    }
+    #block-alternadordeidioma ul li {
+        float: left;
+        margin-right: 10px;
+    }
+    #block-redessociales {
+        float: right;
+        width: 26%;
+    }
 
 /* Menu colectivos */
 
