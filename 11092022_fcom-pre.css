@@ -138,7 +138,7 @@
     .page {background: #fff;} 
     #highlighted, #masthead, #features {margin-bottom:0px}
     #highlighted {
-        border: 1px solid #999;
+        border-bottom: 1px solid #999;
         width: 90%;
         margin-left: auto;
         margin-right: auto;
@@ -150,6 +150,10 @@
         margin-bottom: 2px;
     }
 
+    #navbar {
+        margin-bottom: 2px;
+        margin-top: 15px;
+    }
     
     .pr-highlighted__rw {
         margin: 0px auto;
@@ -1259,10 +1263,11 @@
         margin: 0px;
         width: 100%;
         padding: 15px;
-        border-top: 2px solid rgba(204,0,51);
-        border-bottom: 2px solid #bbb;
         margin-bottom: 15px;
-        font-size: 18px;
+        border-bottom: 1px solid rgb(255, 0, 0);
+        margin-bottom: 15px;
+        font-size: 24px;
+        
     }
     h2#block-views-block-noticias-de-actualidad-block-11-title span::before, 
     h2#block-views-block-noticias-de-actualidad-block-1-title span::before,
@@ -1306,7 +1311,7 @@
         line-height: 1.2em;
         text-align: left;
         padding: 10px 10px 10px 10px;
-        color: #005a8c;
+        color: #a90533;
         text-align: center;
     }
     #block-views-block-noticias-de-actualidad-block-11 .views-field-field-subtitulo,
