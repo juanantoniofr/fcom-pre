@@ -714,6 +714,18 @@
         color:white;
     }
 
+    a.u0922-imprescindibles-link::before {
+        font-family: FontAwesome;
+        margin-right: 5px;
+    }
+
+    #u0922-imprescindibles-menu-link-contente65dfa15-0f12-4559-a9d6-7fc1fe315076 a::before {
+        content: "\f073";
+    }
+    #u0922-imprescindibles-menu-link-content7b7d399f-5814-4b18-a2b5-ba13edf36a50 a::before {
+        content: "\f15b";
+    }
+
 .pr-navbar a {color:#000;}
 #block-menu-7 a {font-weight: 600;}
 #superfish-main li a {color: #000;}
