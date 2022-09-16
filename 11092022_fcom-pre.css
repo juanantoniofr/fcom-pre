@@ -2724,7 +2724,7 @@
 /* footer */
 
 
-.pr-footer { background: #a90533; }
+.pr-footer { background: #a90533; padding: 50px}
 .pr-footer p { margin: 0; }
 #footer h2.block__title  {
     color: #fff;
