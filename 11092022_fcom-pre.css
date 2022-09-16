@@ -143,7 +143,7 @@
         margin-left: auto;
         margin-right: auto;
     }
-    #masthead, #navbar {
+    #masthead, #navbar, #features, #footer  {
         width: 90%;
         margin-left: auto;
         margin-right: auto;
@@ -159,11 +159,7 @@
         margin: 0px auto;
         padding: 0px;
     }
-    #features {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;    
-    }
+
     #features .l-rw {
         padding: 0px;
         margin-left: unset;
@@ -2726,12 +2722,7 @@
     }
     
 /* footer */
-#footer {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 100px;
-    }
+
 
 .pr-footer { background: #a90533; }
 .pr-footer p { margin: 0; }
