@@ -474,6 +474,7 @@
     
     .dropdown:hover .dropdown-content {
         display: block;
+        width: 55%;
     }
     
     .dropdown:hover .dropbtn {
@@ -485,6 +486,12 @@
         font-family: fontAwesome;
         content: '\f0dd';
     }
+
+    #narrativa, #narrativa-l2 {
+        display: inline-block;
+    }
+
+    
 
     #block-u0922-menu-principal {
         width: 65%;
