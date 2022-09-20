@@ -137,19 +137,24 @@
     
     .page {background: #fff;} 
     #highlighted, #masthead, #features {margin-bottom:0px}
-    #highlighted {
-        border-bottom: 1px solid #999;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #masthead, #navbar, #features, #footer  {
+    
+
+    #highlighted, #masthead, #navbar, #features, #footer, #block-views-block-u0922-comunidad-block-1  {
         width: 90%;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 2px;
     }
 
+    #highlighted {
+        border-bottom: 1px solid #999;
+        margin-bottom: 0px;
+    }
+
+    #block-views-block-u0922-comunidad-block-1 {
+        margin-bottom: 50px;
+    }
+    
     #navbar {
         margin-bottom: 2px;
         margin-top: 15px;
@@ -401,6 +406,34 @@
     #block-redessociales {
         float: right;
         width: 26%;
+    }
+    
+    #block-formulariodebusqueda {
+    
+        margin-right: 30%;
+        line-height: 45px;
+        height: 40px;
+        margin-top: 5px;
+        
+    }
+
+    #edit-keys{
+        height: 45px;
+        font-size: 18px;
+        margin: 0px 0px 5px 0px;
+        background-color: #a90533;
+        opacity: 0.7;
+        border-radius: 7px;
+        color: #f8ebef;
+    }
+    #block-formulariodebusqueda #edit-submit{
+        width: 50px;
+        font-size: 18px;
+        margin: 2px 10px 5px 7px;
+        background-color: transparent;
+        opacity: 1;
+        border: 0px;
+        box-shadow: none;
     }
 
 /* Menu colectivos */
@@ -2482,24 +2515,7 @@
 
 /* Busqueda en páginas del menú Gabinete */
     #block-formulariobuscadordenoticiasparasidebarderecho form h2 { display:none; }
-    #edit-keys{
-        height: 45px;
-        font-size: 18px;
-        margin: 0px 0px 5px 0px;
-        background-color: #a90533;
-        opacity: 0.7;
-        border-radius: 7px;
-        color: #f8ebef;
-    }
-    #edit-submit{
-        width: 50px;
-        font-size: 18px;
-        margin: 2px 10px 5px 7px;
-        background-color: transparent;
-        opacity: 1;
-        border: 0px;
-        box-shadow: none;
-    }
+    
 
 /* Conoce-fcom, practicas, secretaría */
 
@@ -2768,37 +2784,12 @@
     padding: 40px;
     width: 50%;
 }
-#block-formulariodebusqueda {
-    
-    margin-right: 30%;
-    line-height: 45px;
-    height: 40px;
-    margin-top: 5px;
-    
-}
+
 #block-datosdecontacto-3 a , #block-avisolegal a  {color: #FFFFFF;}
 #block-datosdecontacto-3 a:hover , #block-avisolegal a:hover  {color: #005a8c;}
 #block-datosdecontacto-3 p{margin: 0,0,0,10;}
 
 
-//.google-maps
-//,.video-youtube 
-//{
-//    position: relative;
-//    padding-bottom: 75%; 
-//    height: 0;
-//    overflow: hidden;
-//    margin:10px;
-//}
-//.google-maps iframe 
-//,.video-youtube iframe 
-//{
-//    position: absolute;
-//    top: 0;
-//    left: 0;
-//    width: 100% !important;
-//    height: 100% !important;
-//}
 
 #mapa {
     float: left;
