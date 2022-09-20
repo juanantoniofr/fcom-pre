@@ -478,6 +478,12 @@
     
     .dropdown:hover .dropbtn {
         background-color: transparent;
+        color: #a90533;
+    }
+
+    .dropbtn::after {
+        font-family: fontAwesome;
+        content: '\f0dd';
     }
 
     #block-u0922-menu-principal {
