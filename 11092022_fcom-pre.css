@@ -743,6 +743,10 @@
         border-radius: 14px;
         background: #a90533;
     }
+
+    #u0922_comunidad a {
+        display: inline-block;
+    }
     
 
 .pr-navbar a {color:#000;}
