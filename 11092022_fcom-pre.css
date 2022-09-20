@@ -443,9 +443,10 @@
 
     .dropbtn {
         background-color: transparent;
-        color: red;
         padding: 16px;
-        font-size: 20px;
+        color: #a90533;
+        font-size: 26px;
+        font-weight: 600;
         border: none;
         cursor: pointer;
     }
@@ -476,7 +477,7 @@
     }
     
     .dropdown:hover .dropbtn {
-        background-color: #3e8e41;
+        background-color: transparent;
     }
 
     #block-u0922-menu-principal {
