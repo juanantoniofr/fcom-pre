@@ -794,18 +794,27 @@
         padding: 25% 0px 0px 0px;
     }
 
-    #superfish-u0922-imprescindibles ul.sf-menu ul {
-        width: 15em;
+    #superfish-u0922-imprescindibles li ul {
+        width: 20em;
     }
 
+    #superfish-u0922-imprescindibles ul li{
+        left:-49%;
+    }
     #superfish-u0922-imprescindibles li {
         border-radius: 20px 0px 0px 20px;
-        border: 1px solid #600;
         background: #a90533;
     }
 
     #superfish-u0922-imprescindibles li ul li {
         border-radius: unset;
+        display: flex;
+    }
+    
+    #superfish-u0922-imprescindibles li ul li a{
+        font-size: 18px;
+        display: flex;
+        align-items: center;
     }
     
     #superfish-u0922-imprescindibles li ul {
@@ -819,6 +828,8 @@
     a.u0922-imprescindibles-link::before {
         font-family: FontAwesome;
         margin-right: 5px;
+        font-size: 45px;
+        padding: 10px;
     }
 
     #u0922-imprescindibles-menu-link-contente65dfa15-0f12-4559-a9d6-7fc1fe315076 a::before {
@@ -896,7 +907,6 @@
 #navbar li.sf-depth-1 a,
 #navbar ul.sf-menu span.nolink {
     font-family: 'Lato';
-    font-size: 16px;
     padding: 22px 15px !important;
     text-decoration: none;
     transition: all .2s;
