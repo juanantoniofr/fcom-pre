@@ -474,7 +474,8 @@
     
     .dropdown:hover .dropdown-content {
         display: block;
-        width: 55%;
+        width: 80%;
+        margin-left: -15%;
     }
     
     .dropdown:hover .dropbtn {
@@ -489,12 +490,24 @@
 
     #narrativa, #narrativa-l2 {
         display: inline-block;
+        width: 49%;
+        color: black;
+        padding: 10px 10px;
+        border-right: 1px solid #ddd;
+        margin-bottom: 10px;
     }
 
     #narrativa img {
-        width: 80%;
-        padding: 3%;
-        }    
+        width: 50%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    #narrativa p {
+        display: inline-block;
+        width: 49%;
+        padding: 30px;
+    }
 
     #block-u0922-menu-principal {
         width: 65%;
@@ -505,7 +518,7 @@
     }
 
     #block-u0922-menu-principal .block__content{
-        padding: 14% 0px 0px 77px;
+        padding: 14% 0px 0px 20px;
     }
 
     #u0922_menu_principal a {
