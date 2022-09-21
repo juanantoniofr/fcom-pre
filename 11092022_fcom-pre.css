@@ -787,12 +787,15 @@
 
     #block-u0922-imprescindibles {
         height: 40%;
-        width: 10%;
         float: right;
     }
 
     #superfish-u0922-imprescindibles{
         padding: 25% 0px 0px 0px;
+    }
+
+    #superfish-u0922-imprescindibles ul.sf-menu ul {
+        width: 15em;
     }
 
     #superfish-u0922-imprescindibles li {
