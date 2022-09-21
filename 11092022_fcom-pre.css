@@ -491,7 +491,10 @@
         display: inline-block;
     }
 
-    
+    #narrativa img {
+        width: 80%;
+        padding: 3%;
+        }    
 
     #block-u0922-menu-principal {
         width: 65%;
