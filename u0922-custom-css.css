@@ -182,11 +182,11 @@ html, body, .page {
         float: right;
     }
 
-    #superfish-u0922-imprescindibles{padding: 25% 0px 0px 0px;}
+    #superfish-u0922-imprescindibles{padding: 25px 0px 0px 0px;}
 
-    #superfish-u0922-imprescindibles li ul {width: 20em;}
+    #superfish-u0922-imprescindibles li ul {width: 15em;}
 
-    #superfish-u0922-imprescindibles ul li{left:-49%;}
+    
     #superfish-u0922-imprescindibles li {
         border-radius: 20px 0px 0px 20px;
         background: #a90533;
@@ -198,9 +198,10 @@ html, body, .page {
     }
     
     #superfish-u0922-imprescindibles li ul li a{
-        font-size: 18px;
-        display: flex;
+        font-size: 16px;
         align-items: center;
+        padding: 5px;
+        display: flex;
     }
     
     #superfish-u0922-imprescindibles li ul { margin-top: 20px; }
@@ -211,7 +212,7 @@ html, body, .page {
         font-family: FontAwesome;
         margin-right: 5px;
         font-size: 45px;
-        padding: 10px;
+        padding: 2px;
     }
 
     #u0922-imprescindibles-menu-link-contente65dfa15-0f12-4559-a9d6-7fc1fe315076 a::before { content: "\f073"; }
