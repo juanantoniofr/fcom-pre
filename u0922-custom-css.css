@@ -268,6 +268,10 @@ html, body, .page {
         color: #a90533;
     }
 
+    #features img{
+        width: 95%;
+    }
+
 /* content-suffix */
 
     #content-suffix {
