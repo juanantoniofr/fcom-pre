@@ -88,11 +88,11 @@ html, body, .page {
     #block-logouses{
         width: 25%;
         border: 1px solid red;
-        display: inline-flex;
+        display: inline-block;
     }
     
     #block-logouses img {
-        width: 130px;
+        width: 40%;
         margin-left: auto;
         margin-right: auto;
         display: block;
@@ -103,19 +103,19 @@ html, body, .page {
         font-weight: 800;
         color: #a90533;
         margin-bottom: 0px;
-        margin-left: 13%;
+        margin-left: 2px;
     }
 
     #block-logouses p {
         margin: 0px;
-        margin-left: 13%;
+        margin-left: 2px;
     }
 
     /* Menu principal */
     #block-u0922-menu-principal {
-        width: 65%;
+        width: 64%;
         border: 1px solid red;
-        display: inline-flex;
+        display: inline-block;
     }
 
     #block-u0922-menu-principal .block__content{ padding: 14% 0px 0px 20px; }
@@ -181,7 +181,8 @@ html, body, .page {
     #block-u0922-imprescindibles {
         height: 40%;
         border: 1px solid red;
-        display: inline-flex;
+        width: 10%;
+        float: right;
     }
 
     #superfish-u0922-imprescindibles{padding: 25% 0px 0px 0px;}
@@ -230,8 +231,9 @@ html, body, .page {
     #block-alternadordeidioma    {
         
         border: 1px solid red;
-        display: inline-flex;
-        align-items: baseline;
+        width: 10%;
+        float: right;
+        text-align: right;
     }
     
     #block-alternadordeidioma ul {
