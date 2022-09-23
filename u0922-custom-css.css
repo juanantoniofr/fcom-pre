@@ -87,7 +87,6 @@ html, body, .page {
     /* logo */
     #block-logouses{
         width: 25%;
-        border: 1px solid red;
         display: inline-block;
     }
     
@@ -114,7 +113,6 @@ html, body, .page {
     /* Menu principal */
     #block-u0922-menu-principal {
         width: 64%;
-        border: 1px solid red;
         display: inline-block;
     }
 
@@ -180,7 +178,6 @@ html, body, .page {
     /* Menu Imprescidibles */
     #block-u0922-imprescindibles {
         height: 40%;
-        border: 1px solid red;
         width: 10%;
         float: right;
     }
@@ -228,21 +225,23 @@ html, body, .page {
     #u0922-imprescindibles-menu-link-content32846535-6647-45c8-b6ba-1ebcd4e2e16b a::before { content: "\f292"; }
 
     /* alternador de idiomas */
+    
     #block-alternadordeidioma    {
-        
-        border: 1px solid red;
         width: 10%;
         float: right;
         text-align: right;
     }
     
     #block-alternadordeidioma ul {
-        padding: 0px;
+        padding: 0px; 
+        margin-top: -17px;
     }
     #block-alternadordeidioma ul li {
         margin: 3px;
         display: inline-flex;
     }
+
+    #block-alternadordeidioma ul li img { width: 42px; }
 
 /* highlighted */
 
