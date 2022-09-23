@@ -480,18 +480,7 @@
         padding: 0px;
     }*/
 
-    #block-alternadordeidioma    {
-        float: right;
-        margin: -3% 0px 0px 0px;
-    }
     
-    #block-alternadordeidioma ul {
-        padding: 0px;
-    }
-    #block-alternadordeidioma ul li {
-        margin: 3px;
-        display: inline-flex;
-    }
 
     /*link amigos fcom*/
     #menu-header-menu-link-content06ec2f5e-0acd-4531-8029-64f8532333dd a:before{
@@ -602,14 +591,7 @@
         text-align: center;
     }
 
-    #block-alternadordeidioma {
-        width: auto;
-    }
 
-    #block-alternadordeidioma ul {
-        width: 100%;
-    }
-        
     #block-redessociales {
         width: auto;
     }
@@ -662,23 +644,8 @@
             font-size: 16px;
             text-align: center;
         }
-        #block-alternadordeidioma {
-            width: 100%;
-            text-align: center;
-            float: right;
-            min-width: unset;
-            padding-top: 0px;
-            font-size: 14px;
-        }
-        #block-alternadordeidioma ul {
-            text-align: center;
-            width: 100%;
-        }
-        #block-alternadordeidioma ul li{
-            display: inline;
-            padding: 0px 5px 0px 5px;
-            float: none;
-        }
+        
+        
 
         
         #block-redessociales{

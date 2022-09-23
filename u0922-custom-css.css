@@ -86,8 +86,9 @@ html, body, .page {
 
     /* logo */
     #block-logouses{
-        float: left;
         width: 25%;
+        border: 1px solid red;
+        display: inline-flex;
     }
     
     #block-logouses img {
@@ -113,7 +114,8 @@ html, body, .page {
     /* Menu principal */
     #block-u0922-menu-principal {
         width: 65%;
-        float: left;
+        border: 1px solid red;
+        display: inline-flex;
     }
 
     #block-u0922-menu-principal .block__content{ padding: 14% 0px 0px 20px; }
@@ -178,7 +180,8 @@ html, body, .page {
     /* Menu Imprescidibles */
     #block-u0922-imprescindibles {
         height: 40%;
-        float: right;
+        border: 1px solid red;
+        display: inline-flex;
     }
 
     #superfish-u0922-imprescindibles{padding: 25% 0px 0px 0px;}
@@ -223,27 +226,71 @@ html, body, .page {
     #u0922-imprescindibles-menu-link-contentca0ad077-c36c-4a43-a91e-cb75b9634182 a::before { content: "\f044"; }
     #u0922-imprescindibles-menu-link-content32846535-6647-45c8-b6ba-1ebcd4e2e16b a::before { content: "\f292"; }
 
-/* content-suffix */
+    /* alternador de idiomas */
+    #block-alternadordeidioma    {
+        
+        border: 1px solid red;
+        display: inline-flex;
+        align-items: baseline;
+    }
+    
+    #block-alternadordeidioma ul {
+        padding: 0px;
+    }
+    #block-alternadordeidioma ul li {
+        margin: 3px;
+        display: inline-flex;
+    }
 
-    #content-suffix {
-        padding-top: 30px;
-        margin-top: 130px;
+/* highlighted */
+
+    #highlighted {
         width: 90%;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 50px;
+        }
+
+/*  features */
+
+    #features {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: transparent;
+    }
+
+    #features h2 {
+        padding: 0px 0px 10px 10px;
+        border-bottom: 1px solid rgba(204,0,51);
+    }
+
+    #features h2 a {
+        color: #a90533;
+    }
+
+/* content-suffix */
+
+    #content-suffix {
+        
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1%;
+        margin-bottom: 1%;
     }
 
     #u0922_comunidad_icons{
         width: 100%;
         margin-left: auto;
         margin-right: auto;
+        text-align: center;
+        margin-top: 3%;
     } 
     
     #u0922_comunidad svg {
-        height: 125px;
-        width: 125px;
-        padding: 19px;
+        height: 100px;
+        width: 100px;
+        padding: 15px;
         background-color: #a90533;
         color: white;
     }
@@ -266,7 +313,6 @@ html, body, .page {
 
     #u0922_comunidad a {
         display: inline-table;
-        padding: 10px;
         text-align: center;
         font-size: 16px;
         font-weight: 400;
