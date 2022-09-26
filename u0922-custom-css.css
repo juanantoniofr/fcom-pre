@@ -170,6 +170,7 @@ html, body, .page {
         background-color: white;
         z-index: 10;
         display: flex;
+        align-items: stretch;
     }
     
     .dropdown:hover .dropbtn {
@@ -179,7 +180,7 @@ html, body, .page {
 
     #narrativa {
         display: flex;
-        align-items: flex-start;
+        align-items: stretch;
         width: 55%;
     }
 
@@ -211,7 +212,6 @@ html, body, .page {
     .narrativa-l22 {
         width: 49%;
         display: block;
-        border: 1px solid;
         float: right;
     }
 
