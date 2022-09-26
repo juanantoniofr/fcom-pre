@@ -134,6 +134,11 @@ html, body, .page {
         font-weight: 600;
         border: none;
         cursor: pointer;
+        display: inline-flex;
+    }
+
+    .dropbtn:hover {
+        text-decoration: underline;
     }
 
     .dropbtn::after {
@@ -167,6 +172,7 @@ html, body, .page {
     .dropdown:hover .dropdown-content {
         width: 80%;
         margin-left: -15%;
+        margin-top: 60px;
         background-color: white;
         z-index: 10;
         display: flex;
@@ -177,6 +183,11 @@ html, body, .page {
         background-color: transparent;
         color: #a90533;
     }
+
+    .dropbtn:focus {
+        background-color: white;
+        color: #a90533;
+      }
 
     .narrativa {
         display: flex;
