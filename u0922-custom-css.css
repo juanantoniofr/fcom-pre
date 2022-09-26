@@ -178,25 +178,25 @@ html, body, .page {
         color: #a90533;
     }
 
-    #narrativa {
+    .narrativa {
         display: flex;
         align-items: stretch;
         flex: 1;
     }
 
-    #narrativa-l2 {
+    .narrativa-l2 {
         display: flex;
         width: stretch;
         align-items: stretch;
         flex: 1;
     }
     
-    #narrativa img {
+    .narrativa img {
         padding: 20px;
         width: 430px;
     }
     
-    #narrativa p {
+    .narrativa p {
         padding: 20px;
         align-items: stretch;
         display: flex;
