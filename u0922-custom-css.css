@@ -272,15 +272,32 @@ html, body, .page {
 
     #features img{
         width: 95%;
+        margin-left: 5%;
+        border-bottom: 5px solid #a90533;
     }
 
-    #features .views-field-field-imagen {
-        text-align: right;
+    #features .views-field-title a {
+        width: 95%;
+        display: block;
+        margin-left: 5%;
+        text-align: center;
+        }
+
+    #features .views-field-field-subtitulo {
+        width: 95%;
+        display: 5%;
+        margin-left: 5%;
+        text-align: justify;
     }
 
-    #features .view-noticias-de-actualidad{
-        text-align: right;
+    #features .views-element-container {
+        min-height: 610px;
     }
+
+    #features .views-field {
+        margin-top: 20px;
+    }
+
 
 /* content-suffix */
 
