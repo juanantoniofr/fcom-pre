@@ -175,6 +175,62 @@ html, body, .page {
         color: #a90533;
     }
 
+    #narrativa {
+        border: 1px solid red;
+        display: flex;
+        align-items: flex-start;
+        width: 55%;
+    }
+
+    #narrativa-l2 {
+            border: 1px solid green;
+            display: flex;
+            width: 45%;
+    }
+    
+    #narrativa img {
+        padding: 20px;
+        max-height: 75%;
+    }
+    
+    #narrativa p {
+        padding: 20px;
+    }
+        
+    .narrativa-l21 {
+        padding: 20px;
+        border: 1px solid black;
+        width: 100%;
+    }
+        
+    .narrativa-l211 {
+        width: 50%;
+        border: 1px solid black;
+        display: block;
+        float: left;
+    }
+        
+    .narrativa-l22 {
+        width: 49%;
+        display: block;
+        border: 1px solid;
+        float: right;
+    }
+        
+    .narrativa-l2111 {
+        border: 1px solid red;
+        width: 80%;
+        margin-left: 20%;
+    }
+        
+    .narrativa-l2111 a {
+        padding: 6px;
+    }
+        
+    .narrativa-l2111 {
+        margin-top: 20px;
+    }
+
     /* Menu Imprescidibles */
     #block-u0922-imprescindibles {
         height: 40%;
