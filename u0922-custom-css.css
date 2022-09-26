@@ -175,7 +175,7 @@ html, body, .page {
     
     .dropdown:hover .dropdown-content {
         width: 80%;
-        margin-left: -16%;
+        margin-left: -13%;
         background-color: white;
         z-index: 10;
         display: flex;
@@ -183,9 +183,13 @@ html, body, .page {
     }
 
     .dropdown:hover #dropdown-content-titulos{
-        margin-left: -28%;
+        margin-left: -25%;
     }
     
+    .dropdown:hover #dropdown-content-practicas {
+        margin-left: -33%;
+    }
+
     .dropdown:hover .dropbtn {
         background-color: transparent;
         color: #a90533;
@@ -202,6 +206,24 @@ html, body, .page {
         flex: 1;
     }
 
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+    }
+
+    .border-row {
+        border-left: 1px solid #aaa;
+        padding-left: 30px;
+    }    
     .narrativa-l2 {
         display: flex;
         width: stretch;
@@ -211,7 +233,7 @@ html, body, .page {
     
     .narrativa img {
         padding: 20px;
-        width: 430px;
+        width: 400px;
     }
     
     .narrativa p {
