@@ -126,6 +126,10 @@ html, body, .page {
         color: #a90533;
     }
 
+    .dropdown {
+        display: inline-block;
+    }
+
     .dropbtn {
         background-color: transparent;
         padding: 16px;
