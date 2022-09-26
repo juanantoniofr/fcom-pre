@@ -319,7 +319,8 @@ html, body, .page {
 
     #features h2 {
         padding: 0px 0px 10px 10px;
-        border-bottom: 1px solid rgba(204,0,51);
+        border-bottom: 1px solid #a90533;
+        color: #a90533;
     }
 
     #features h2 a {
@@ -337,6 +338,7 @@ html, body, .page {
         display: block;
         margin-left: 5%;
         text-align: center;
+        color: #a90533;
         }
 
     #features .views-field-field-subtitulo {
