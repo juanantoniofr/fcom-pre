@@ -274,6 +274,14 @@ html, body, .page {
         width: 95%;
     }
 
+    #features .views-field-field-imagen {
+        text-align: right;
+    }
+
+    #features .view-noticias-de-actualidad{
+        text-align: right;
+    }
+
 /* content-suffix */
 
     #content-suffix {
