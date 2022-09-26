@@ -178,16 +178,14 @@ html, body, .page {
     }
 
     #narrativa {
-        border: 1px solid red;
         display: flex;
         align-items: flex-start;
         width: 55%;
     }
 
     #narrativa-l2 {
-            border: 1px solid green;
-            display: flex;
-            width: 45%;
+        display: flex;
+        width: 45%;
     }
     
     #narrativa img {
@@ -201,13 +199,11 @@ html, body, .page {
         
     .narrativa-l21 {
         padding: 20px;
-        border: 1px solid black;
         width: 100%;
     }
         
     .narrativa-l211 {
         width: 50%;
-        border: 1px solid black;
         display: block;
         float: left;
     }
@@ -222,7 +218,6 @@ html, body, .page {
     
         
     .narrativa-l2111 {
-        border: 1px solid red;
         width: 80%;
         margin-left: 20%;
         margin-top: 20px;
