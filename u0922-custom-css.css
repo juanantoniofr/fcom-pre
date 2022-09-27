@@ -422,7 +422,7 @@ html, body, .page {
     #block-views-block-noticias-de-actualidad-block-5 img { border:none}
 
     #block-views-block-noticias-de-actualidad-block-5 .row {
-        border-bottom: 5px solid #a90533;
+        border-bottom: 10px solid #a90533;
         min-height: 438px;
         align-items: center;
     }
@@ -432,6 +432,7 @@ html, body, .page {
         width: 15%;
         height: 40%;
         float: left;
+        margin-right: 10px;
     }
 
     #features .views-field-title-1 a{
