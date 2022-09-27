@@ -429,6 +429,9 @@ html, body, .page {
 
     #features .views-field-title-1 svg {
         color: #a90533;
+        width: 15%;
+        height: 40%;
+        float: left;
     }
 
 /* content-prefix */
