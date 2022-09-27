@@ -440,24 +440,47 @@ html, body, .page {
     }
 
     #content-prefix .block {
-        height: 350px;
         margin: 0px;
     }
 
     div.cenefa {
         background-image: url("/sites/fcom/files/inline-images/cenefa-conoce-fcom.jpg");
         height: 350px;
+        align-items: flex-end;
     }
 
     div.cenefa h1{
-        position: relative;
-        top: -104px;
-        left: 142px;
         background: #a90533;
         color: white;
         padding: 20px;
         display: inline-flex;
         width: 45%;
+        margin-left: 7%;
+    }
+
+    div.cenefa-home {
+        background: #a90533;
+        color: white;
+        padding: 5px;
+        display: block;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    
+    div.cenefa-home a {
+        font-size: 22px;
+        color: white;
+        margin-right: 10px;
+        font-weight: 600;
+    }
+    
+    div.cenefa-texto {
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px;
     }
 
     div.cenefa-l1 img {
