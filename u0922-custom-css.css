@@ -440,6 +440,11 @@ html, body, .page {
         margin: 0px;
     }
 
+    div.cenefa {
+        background-image: url("/sites/fcom/files/inline-images/cenefa-conoce-fcom.jpg");
+        height: 350px;
+    }
+
     div.cenefa h1{
         position: relative;
         top: -104px;
