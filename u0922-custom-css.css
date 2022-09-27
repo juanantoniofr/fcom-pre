@@ -446,7 +446,7 @@ html, body, .page {
 /* content-prefix */
 
     #content-prefix {
-        width: 90%;
+        width: 85%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -454,6 +454,14 @@ html, body, .page {
     #content-prefix .block {
         margin: 0px;
     }
+
+    #content-prefix h2 {
+        text-align: center;
+        background:#a90533;
+        border-radius: 10px 10px 10px 10px;
+        font-size: 22px;
+    }
+
 
     div.cenefa {
         background-image: url("/sites/fcom/files/inline-images/cenefa-conoce-fcom.jpg");
