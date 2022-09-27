@@ -469,7 +469,7 @@ html, body, .page {
         width: 85%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 10px;
+        margin-top: 20px;
     }
     
     div.cenefa-home a {
@@ -483,7 +483,7 @@ html, body, .page {
       width: 85%;
       margin-left: auto;
       margin-right: auto;
-      margin-top: 10px;
+      margin-top: 20px;
     }
 
     div.cenefa-l1 img {
@@ -491,10 +491,14 @@ html, body, .page {
     }
 /* main-content */
 
-h1.node__title {
-    font-size: 26px;
-    color: #a90533;
-}
+    h1.node__title {
+        font-size: 26px;
+        color: #a90533;
+    }
+
+    #main-content img {
+        padding: 20px;
+    }
 
 /* content-suffix */
 
