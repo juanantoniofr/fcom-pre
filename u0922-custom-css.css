@@ -427,6 +427,34 @@ html, body, .page {
         align-items: center;
     }
 
+/* content-prefix */
+
+    #content-prefix {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div.cenefa h1{
+        position: relative;
+        top: -104px;
+        left: 142px;
+        background: #a90533;
+        color: white;
+        padding: 20px;
+        display: inline-flex;
+        width: 45%;
+    }
+
+    div.cenefa-l1 img {
+        height: 380px;
+    }
+/* main-content */
+
+h1.node__title {
+    font-size: 26px;
+    color: #a90533;
+}
 
 /* content-suffix */
 
@@ -478,12 +506,6 @@ html, body, .page {
         font-weight: 400;
     }
 
-/* main-content */
-
-h1.node__title {
-    font-size: 26px;
-    color: #a90533;
-}
 
 /* footer */
 
