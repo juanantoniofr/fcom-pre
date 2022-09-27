@@ -387,7 +387,6 @@ html, body, .page {
         margin-left: 5%;
         text-align: center;
         color: #a90533;
-        text-decoration: none;
         }
 
     #features .views-field-field-subtitulo {
@@ -441,6 +440,7 @@ html, body, .page {
         align-items: center;
         display: flex;
         color: black;
+        text-decoration: none;
 }
 
 /* content-prefix */
