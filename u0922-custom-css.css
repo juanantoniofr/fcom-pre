@@ -378,7 +378,7 @@ html, body, .page {
     #features img{
         width: 95%;
         margin-left: 5%;
-        border-bottom: 5px solid #a90533;
+        border-bottom: 10px solid #a90533;
     }
 
     #features .views-field-title a {
@@ -425,6 +425,10 @@ html, body, .page {
         border-bottom: 5px solid #a90533;
         min-height: 438px;
         align-items: center;
+    }
+
+    #features .views-field-title-1 svg {
+        color: #a90533;
     }
 
 /* content-prefix */
