@@ -435,6 +435,11 @@ html, body, .page {
         margin-right: auto;
     }
 
+    #content-prefix .block {
+        height: 350px;
+        margin: 0px;
+    }
+
     div.cenefa h1{
         position: relative;
         top: -104px;
@@ -447,7 +452,7 @@ html, body, .page {
     }
 
     div.cenefa-l1 img {
-        height: 380px;
+        height: 350px;
     }
 /* main-content */
 
