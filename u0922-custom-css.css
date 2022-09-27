@@ -455,12 +455,18 @@ html, body, .page {
         margin: 0px;
     }
 
+    #content-prefix .block__inner{
+        width: 45%;
+        margin-left: 30px;
+    }
+
     #content-prefix h2 {
         text-align: center;
         background:#a90533;
         border-radius: 10px 10px 10px 10px;
         font-size: 22px;
         color: #f9f9f9;
+        padding: 8px;
     }
 
 
