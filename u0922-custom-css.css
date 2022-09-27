@@ -359,7 +359,7 @@ html, body, .page {
 /*  features */
 
     #features {
-        width: 80%;
+        width: 85%;
         margin-left: auto;
         margin-right: auto;
         background-color: transparent;
@@ -397,11 +397,34 @@ html, body, .page {
     }
 
     #features .views-element-container {
-        min-height: 610px;
+        min-height: 625px;
     }
 
     #features .views-field {
         margin-top: 20px;
+    }
+
+    /* second features */
+    /* column css */
+    #block-views-block-noticias-de-actualidad-block-5 .view-header,
+    #block-views-block-noticias-de-actualidad-block-5 .view-content
+    {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+    }
+
+    #block-views-block-noticias-de-actualidad-block-5 .view-header {
+        flex: 2;
+    }
+
+    #block-views-block-noticias-de-actualidad-block-5 img { border:none}
+
+    #block-views-block-noticias-de-actualidad-block-5 .row {
+        border-bottom: 5px solid #a90533;
+        min-height: 438px;
+        align-items: center;
     }
 
 
@@ -409,7 +432,7 @@ html, body, .page {
 
     #content-suffix {
         
-        width: 80%;
+        width: 85%;
         margin-left: auto;
         margin-right: auto;
         padding-top: 1%;
@@ -436,7 +459,7 @@ html, body, .page {
         color: black;
         font-size: 16px;
         padding-top: 10px;
-        width: 167px;
+        width: 175px;
     }
 
     #u0922_comunidad h3{
