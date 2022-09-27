@@ -455,6 +455,13 @@ html, body, .page {
         font-weight: 400;
     }
 
+/* main-content */
+
+h1.node__title {
+    font-size: 26px;
+    color: #a90533;
+}
+
 /* footer */
 
     #footer {
