@@ -44,9 +44,15 @@ html, body, .page {
     }
 
     /* menu header derecha */
+    div#block-u0922-headerright {
+        width: auto;
+        margin-left: 12%;
+        margin-bottom: 0px;
+        margin-top: 13px;
+    }
+
     div#block-u0922-headerright .block__content{
         float: right;
-        margin-top: 13px;
     }
 
     /* formulario de busqueda */
