@@ -8,6 +8,7 @@ html, body, .page {
 /* regions */
 
     .regions { background-color: transparent; }
+    .l-rw { padding: 0px; }
 
 /* masthead */
     
@@ -315,6 +316,8 @@ html, body, .page {
         display: flex;
     }
     
+    #superfish-u0922-imprescindibles a { padding: 1em 1.3em; }
+
     #superfish-u0922-imprescindibles li ul li a{
         font-size: 16px;
         align-items: center;
@@ -460,7 +463,7 @@ html, body, .page {
 /* content-prefix */
 
     #content-prefix {
-        width: 85%;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -469,11 +472,7 @@ html, body, .page {
         margin: 0px;
     }
 
-    #content-prefix .block__inner{
-        width: 45%;
-        margin-left: 50px;
-    }
-
+    
     #content-prefix h2 {
         text-align: center;
         background:#a90533;
@@ -483,6 +482,10 @@ html, body, .page {
         padding: 8px;
     }
 
+    div#block-cenefaconocefcom-3 .block__inner {
+        width: 100%;
+        margin: 0px;
+    }
 
     div.cenefa {
         background-image: url("/sites/fcom/files/inline-images/cenefa-conoce-fcom.jpg");
