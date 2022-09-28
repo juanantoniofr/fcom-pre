@@ -20,6 +20,10 @@ html, body, .page {
         background: #a90533;
     }
 
+    #masthead div.l-r:nth-child(2) {
+        height: 60px;
+    }
+    
     #masthead a {
         color:white;
         padding: 10px;
@@ -30,7 +34,10 @@ html, body, .page {
         width: auto;
         float: left;
         margin-left: 12%;
+        margin-bottom: 0px;
+        margin-top: 13px;
     }
+    
     
     div#block-u0922-headerleft .block__content {
         align-content: center;
@@ -39,6 +46,7 @@ html, body, .page {
     /* menu header derecha */
     div#block-u0922-headerright .block__content{
         float: right;
+        margin-top: 13px;
     }
 
     /* formulario de busqueda */
