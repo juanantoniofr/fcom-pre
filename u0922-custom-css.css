@@ -484,12 +484,22 @@ html, body, .page {
 
     .column-50 {
         flex: 50%;
+        padding: 25%;
     }
 
     .row-imprescindibles {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+    }
+
+    h2#block-views-block-padre-block-1-2-title {
+        background: #f9f9f9;
+        color:#a90533;
+        text-align: left;
+        border-bottom: 1px solid #a90533;
+        border-radius: unset;
+        padding-left: 37px;
     }
 
     /* cenefas */
