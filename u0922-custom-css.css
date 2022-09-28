@@ -484,7 +484,7 @@ html, body, .page {
 
     .column-50 {
         flex: 50%;
-        padding: 25%;
+        padding: 25px;
     }
 
     .row-imprescindibles {
