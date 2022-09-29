@@ -522,7 +522,7 @@ html, body, .page {
         box-shadow: -6px 6px 4px -2px rgba(0,0,0,0.3);
     }
 
-    .view-noticias-de-actualidad {
+    .agenda-de-la-semana span.views-field {
         color: #a90533;
     }
 
