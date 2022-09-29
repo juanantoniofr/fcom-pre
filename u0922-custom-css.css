@@ -502,14 +502,30 @@ html, body, .page {
         padding-left: 37px;
     }
 
+    .agenda-de-la-semana a {
+        color: black;
+    }
+
+    div.views-field-title {
+        margin-top: 5px;
+    }
+
     div.agenda-de-la-semana {
-        border-left: 1px solid #c9c9c9;
-        border-bottom : 1px solid #c9c9c9;
-        padding: 10px;
+        padding: 8px;
         margin-left: 15%;
         margin-right: 15%;
-        margin-bottom: 5%;
+        margin-bottom: 2%;
+        box-shadow: -4px 4px 2px -2px rgba(0,0,0,0.1);
     }
+
+    div.agenda-de-la-semana:hover {
+        box-shadow: -6px 6px 4px -2px rgba(0,0,0,0.3);
+    }
+
+    .view-noticias-de-actualidad {
+        color: #a90533;
+    }
+
 
     /* cenefas */
     div#block-cenefaconocefcom-3 .block__inner {
