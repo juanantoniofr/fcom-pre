@@ -530,10 +530,14 @@ html, body, .page {
         margin-left: 15%;
         margin-right: 15%;
         text-align: center;
+        margin-top: 5px;
+        text-decoration: none;
     }
 
-    div.novedades-secretaria-front span {
+    .novedades-secretaria-front .views-field-nothing,  .novedades-practicas-front .views-field-nothing, .novedades-movilidad-front .views-field-nothing{
         text-align: right;
+        font-size: 20px;
+        color: #a90533;
     }
 
     /* cenefas */
