@@ -502,6 +502,15 @@ html, body, .page {
         padding-left: 37px;
     }
 
+    div.agenda-de-la-semana {
+        border-left: 1px solid #c9c9c9;
+        border-bottom : 1px solid #c9c9c9;
+        padding: 10px;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 5%;
+    }
+
     /* cenefas */
     div#block-cenefaconocefcom-3 .block__inner {
         width: 100%;
