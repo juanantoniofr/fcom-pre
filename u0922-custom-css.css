@@ -1,4 +1,3 @@
-
 /* boby - html - .page */
 
 html, body, .page {
@@ -524,8 +523,18 @@ html, body, .page {
 
     .agenda-de-la-semana span.views-field {
         color: #a90533;
+        text-decoration: none;
     }
 
+    div.novedades-secretaria-front, .novedades-practicas-front, .novedades-movilidad-front {
+        margin-left: 15%;
+        margin-right: 15%;
+        text-align: center;
+    }
+
+    div.novedades-secretaria-front span {
+        text-align: right;
+    }
 
     /* cenefas */
     div#block-cenefaconocefcom-3 .block__inner {
