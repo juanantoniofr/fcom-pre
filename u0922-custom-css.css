@@ -371,6 +371,48 @@ html, body, .page {
         margin-left: auto;
         margin-right: auto;
         }
+    
+    /* carrusel */ 
+
+    #slick-views-caruselnoticiasdestacadas-block-1-1 .slide__constrained {
+        margin-left: -725px;
+        border: 1px solid;
+        width: 50%;
+    }
+
+    h2.slide_title { 
+        background: #a90533; 
+        padding: 23px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        color: #f9f9f9;
+        font-size: 34px;
+        margin-bottom: 6px;
+    }
+
+    .slide__caption h3 {
+        background: #a90533;
+        padding: 23px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        color: #f9f9f9;
+        font-size: 32px;
+        margin-bottom: 6px;
+    }
+
+    .slide_entradilla {
+        background: #a90533;
+        padding: 23px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #f9f9f9;
+        font-size: 26px;
+    }
+    
+    .slide_title a { color: #f9f9f9; }
+
 
 /*  features */
 
