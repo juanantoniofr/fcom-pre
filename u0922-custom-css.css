@@ -599,6 +599,20 @@ html, body, .page {
         color: #a90533;
     }
 
+    #app-FCom, #servicios-FCom {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #app-FCom, #servicios-FCom .views-field-field-icono {
+        padding-right: 5%;
+    }
+
+    #app-FCom a,  #servicios-FCom a{
+        color: black;
+        display: flex;
+    }
+
     /* cenefas */
     div#block-cenefaconocefcom-3 .block__inner {
         width: 100%;
