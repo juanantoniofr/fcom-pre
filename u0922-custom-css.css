@@ -752,6 +752,7 @@ html, body, .page {
         font-stretch: condensed;
     }
 
+    .cenefa-title { justify-content: center; }
     #content-prefix .cenefa-subtitle h2 {
         padding: 30px;
         border-radius: unset;
@@ -763,7 +764,7 @@ html, body, .page {
         margin-left: auto;
         margin-right: auto;
     }
-    
+
 /* main-content */
 
     h1.node__title {
