@@ -733,6 +733,35 @@ html, body, .page {
     div.cenefa-l1 img {
         height: 350px;
     }
+
+    .cenefa-solotexto {
+        height: 350px;
+        align-items: center;
+        border: 1px solid;
+        flex-direction: column;
+        padding-top: 50px;
+        background: #1a214c;
+        color: #f9f9f9;
+    }
+
+    .cenefa-solotexto h1 {
+        font-weight: bold;
+        font-size: 40px;
+        font-stretch: condensed;
+    }
+
+    #content-prefix .cenefa-subtitle h2 {
+        padding: 30px;
+        border-radius: unset;
+        font-size: 32px;
+    }
+
+    .cenefa-subtitle {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
 /* main-content */
 
     h1.node__title {
