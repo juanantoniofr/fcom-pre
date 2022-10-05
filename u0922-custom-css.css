@@ -494,7 +494,7 @@ html, body, .page {
     }
 
     #features .views-element-container {
-        min-height: 640px;
+        min-height: 650px;
     }
 
     #features .views-field {
@@ -520,7 +520,7 @@ html, body, .page {
 
     #block-views-block-noticias-de-actualidad-block-5 .row {
         border-bottom: 10px solid #a90533;
-        min-height: 455px;
+        min-height: 465px;
         align-items: center;
     }
 
