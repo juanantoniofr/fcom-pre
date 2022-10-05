@@ -649,8 +649,7 @@ html, body, .page {
         align-items: center;
     }
     
-    #app-FCom, #servicios-FCom .views-field-field-icono {
-    
+    #app-FCom .views-enlace, #servicios-FCom .views-enlace {
         padding-top: 5%;
     }
     
