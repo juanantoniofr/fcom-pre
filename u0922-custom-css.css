@@ -643,11 +643,32 @@ html, body, .page {
         padding-right: 10%;
     }
 
-    #app-FCom, #servicios-FCom .views-field-field-icono {
+    #app-FCom .views-enlace, #servicios-FCom .views-enlace {
+        padding-top: 5%;
+    }
+    
+    #app-FCom .views-field-field-icono, #servicios-FCom .views-field-field-icono {
         padding-right: 5%;
+     }
+    
+
+    #app-FCom .views-field-title, #servicios-FCom .views-field-title {
+        border: 1px solid #a90533;
+        padding: 2%;
+        text-align: justify;
+    }
+
+    #app-FCom svg, #servicios-FCom svg {
+        height: 75px;
+        width: 75px;
+        background: #a90533;
+        color: white;
+        border-radius: 40px;
+        padding: 20%;
     }
 
     #app-FCom a,  #servicios-FCom a{
+        text-decoration: none;
         color: black;
         display: flex;
     }
