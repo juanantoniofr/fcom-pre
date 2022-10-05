@@ -575,7 +575,11 @@ html, body, .page {
     #content-prefix .view-noticias-de-actualidad .pager__item a:active { background-color: #999; }
 
     #content-prefix .pager__link.pager__link--is-active:hover { background-color: #efeaea; }
-    
+
+    #content-prefix .view-noticias-de-actualidad a {text-decoration: none; color: black; }
+  
+    #content-prefix .views-field-changed, #content-prefix .views-field-created {text-decoration-line: underline;}
+
     div.agenda-de-la-semana:hover { box-shadow: -6px 6px 4px -2px rgba(0,0,0,0.3); }
 
     .agenda-de-la-semana span.views-field {
