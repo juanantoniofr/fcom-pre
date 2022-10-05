@@ -643,7 +643,14 @@ html, body, .page {
         padding-right: 10%;
     }
 
-    #app-FCom .views-enlace, #servicios-FCom .views-enlace {
+    #app-FCom .views-enlace a, #servicios-FCom .views-enlace a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    #app-FCom, #servicios-FCom .views-field-field-icono {
+    
         padding-top: 5%;
     }
     
