@@ -638,6 +638,8 @@ html, body, .page {
         color: #a90533;
     }
 
+    .view-empty { padding: 5%;}
+
     #app-FCom, #servicios-FCom {
         padding-left: 10%;
         padding-right: 10%;
