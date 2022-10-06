@@ -785,6 +785,7 @@ html, body, .page {
         padding: 30px;
         border-radius: unset;
         font-size: 45px;
+        margin-left: -5%;
     }
 
 /* main-content */
