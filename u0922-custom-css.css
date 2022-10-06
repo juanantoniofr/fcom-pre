@@ -795,19 +795,15 @@ html, body, .page {
         color: #a90533;
     }
 
-        #main-content img {
+    #main-content img {
         padding: 20px;
     }
 
     /* vista Conoce FCom */
 
-    .view-vista-conoce-fcom .node__title {
-        display: none;
-    }
-
-    .ui-id-1 {
+    .views-accordion-header {
         border: none;
-        background-color: none;
+        background: none;
     }
 
     /* vista practicas -> SoyESTUDIANTE*/
