@@ -812,10 +812,6 @@ html, body, .page {
         color: #a90533;
         font-size: x-large;
     }
-
-    .accordeon .ui-state-active {
-        color: chartreuse
-    }
     
     .view-vista-conoce-fcom .node__title {
         display: none;
