@@ -694,6 +694,7 @@ html, body, .page {
     div.cenefa-texto p {
         font-size: 24px;
         line-height: 1.2em;
+        text-align: justify;
     }
     
     div.cenefa h1{
