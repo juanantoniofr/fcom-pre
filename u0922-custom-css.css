@@ -801,9 +801,10 @@ html, body, .page {
 
     /* vista Conoce FCom */
 
-    .accordion div {
+    .accordeon div {
         border: none;
         background: none;
+        color: #a90533;
     }
 
     .view-vista-conoce-fcom .node__title {
