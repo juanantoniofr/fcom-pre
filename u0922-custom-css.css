@@ -4,6 +4,8 @@ html, body, .page {
     background-color: transparent;
 }
 
+.text-center { text-align: center; }
+
 /* regions */
 
     .regions { background-color: transparent; }
@@ -818,6 +820,10 @@ html, body, .page {
 
     /* vista practicas -> SoyESTUDIANTE*/
 
+    .jumbotron {
+        padding: 4rem 2rem;
+    }
+    
     .view-u0922-practicas .container .row {
         justify-content: center;
     }
@@ -830,11 +836,27 @@ html, body, .page {
         margin: 50px 0px;
     }
 
+    .container-view-u0922-practicas h3 {
+        font-size: 1.75rem;
+        margin-bottom: .5rem;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    
     .view-u0922-practicas a { color: black; }
 
     .view-u0922-practicas .container svg {
         color: #A90533;
         font-size: x-large;
+    }
+
+    .container-view-u0922-practicas {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1140px;
     }
 
     .view-u0922-practicas .container .col-sm-3 p {
@@ -845,12 +867,21 @@ html, body, .page {
     }
 
     .col-sm-3 { margin: 20px; }
+    .col-sm-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+      }
 
     p.display-4 {
         font-size: 55px;
         text-align: center;
     }
 
+    .container-view-u0922-practicas svg {
+        margin: 14px;
+        color: #a90533;
+        font-size: 2.9rem;
+    }
 /* content-suffix */
 
     #content-suffix {
