@@ -801,10 +801,16 @@ html, body, .page {
 
     /* vista Conoce FCom */
 
-    .views-accordion-header {
+    .accordion div {
         border: none;
         background: none;
     }
+
+    .view-vista-conoce-fcom .node__title {
+        display: none;
+    }
+
+
 
     /* vista practicas -> SoyESTUDIANTE*/
 
