@@ -804,6 +804,9 @@ html, body, .page {
     .accordeon div {
         border: none;
         background: none;
+    }
+
+    .accordeon a {
         color: #a90533;
     }
 
