@@ -795,6 +795,10 @@ html, body, .page {
         color: #a90533;
     }
 
+    .view-vista-conoce-fcom .node__title {
+        display: none;
+    }
+
     #main-content img {
         padding: 20px;
     }
