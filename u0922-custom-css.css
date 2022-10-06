@@ -813,7 +813,7 @@ html, body, .page {
         font-size: x-large;
     }
 
-    
+    /*
     .views-accordion-header a {
         width: 100%;
         padding: 20px;
@@ -827,6 +827,8 @@ html, body, .page {
         margin-right: 10px;
         font-weight: bold;
     }
+
+    */
 
     .view-vista-conoce-fcom .node__title {
         display: none;
