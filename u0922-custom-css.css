@@ -808,7 +808,7 @@ html, body, .page {
         background: none;
     }
 
-    .accordeon a {
+    .accordeon .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button {
         color: #a90533;
     }
 
