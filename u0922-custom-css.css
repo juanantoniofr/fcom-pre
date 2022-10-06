@@ -813,9 +813,30 @@ html, body, .page {
         font-size: x-large;
     }
 
+    
+    .views-accordion-header a {
+        width: 100%;
+        padding: 20px;
+        display: inline-block;
+        border-bottom: 1px solid #eee;
+        font-size: 18px;
+    }
+    .views-accordion-header a:before {
+        content: "\203A";
+        color: #37C3C1;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+
     .view-vista-conoce-fcom .node__title {
         display: none;
     }
+
+    .views-accordion-header a:hover , .ui-state-active a {
+        background: #005a8c;
+        color: white;
+    }
+
 
     /* vista practicas -> SoyESTUDIANTE*/
 
@@ -887,6 +908,8 @@ html, body, .page {
         font-size: 55px;
         text-align: center;
         margin-bottom: 1rem;
+        line-height: 1.2;
+        color: black;
     }
 
     .container-view-u0922-practicas svg {
