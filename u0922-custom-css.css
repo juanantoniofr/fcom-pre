@@ -765,11 +765,11 @@ html, body, .page {
     }
 
     .cenefa-solotexto-masopciones {
-        height: 150px;
+        height: 125px;
         align-items: center;
         border: 1px solid;
         flex-direction: column;
-        padding-top: 50px;
+        padding-top: 12px;
         background: #a90533;
         color: #f9f9f9;
     }
