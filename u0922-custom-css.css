@@ -810,6 +810,7 @@ html, body, .page {
 
     .accordeon .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button {
         color: #a90533;
+        font-size: x-large;
     }
 
     .view-vista-conoce-fcom .node__title {
