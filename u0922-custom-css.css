@@ -795,35 +795,25 @@ html, body, .page {
         color: #a90533;
     }
 
+        #main-content img {
+        padding: 20px;
+    }
+
+    /* vista Conoce FCom */
+
     .view-vista-conoce-fcom .node__title {
         display: none;
     }
 
-    #main-content img {
-        padding: 20px;
+    .ui-id-1 {
+        border: none;
+        background-color: none;
     }
 
-
-    /* vista practicas -> YoPractico - SoyESTUDIANTE*/
+    /* vista practicas -> SoyESTUDIANTE*/
 
     .view-u0922-practicas .container .row {
         justify-content: center;
-        margin-right: -15px;
-        margin-left: -15px;
-    }
-    
-    .jumbotron {
-        margin-bottom: 0px;
-        padding: 4rem 2rem;
-    }
-    .container-view-u0922-practicas {
-        max-width: 1140px;
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-        text-align: center;
     }
     
     .view-u0922-practicas h1 {
@@ -832,18 +822,6 @@ html, body, .page {
         flex-direction: row;
         justify-content: center;
         margin: 50px 0px;
-        font-weight: 300;
-    }
-
-    .view-u0922-practicas h3 {
-        border: 3px solid #ccc;
-        border-radius: 10px;
-        padding-bottom: 70px;
-        padding-top: 60px;
-        margin-bottom: .5rem;
-        font-weight: 500;
-        line-height: 1.2;
-        text-align: center;
     }
 
     .view-u0922-practicas a { color: black; }
@@ -861,13 +839,7 @@ html, body, .page {
     }
 
     .col-sm-3 { margin: 20px; }
-    .col-sm-4 { 
-        flex: 0 0 33.333333%;
-        max-width: 33.333333%;
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-    }
+
     p.display-4 {
         font-size: 55px;
         text-align: center;
