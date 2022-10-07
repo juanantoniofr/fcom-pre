@@ -807,36 +807,31 @@ html, body, .page {
         border: none;
         background: none;
     }
-
-    .accordeon .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button {
+ 
+    .accordeon .ui-state-default a {
         color: #a90533;
         font-size: x-large;
     }
 
-    /**/
-    .views-accordion-header a {
-        width: 100%;
-        padding: 20px;
-        display: inline-block;
-        border-bottom: 1px solid #eee;
-        font-size: 18px;
-    }
-    .views-accordion-header a:before {
-        content: "\203A";
-        color: #37C3C1;
-        margin-right: 10px;
-    }
-    /**/
 
+    .ui-state-active a, div.ui-state-active { 
+        color: #f9f9f9; 
+        background-color: #a90533;
+    }
+
+    .ui-state-visited a {
+        background-color: #a90533;
+        color: #f9f9f9;
+    }
+
+    .ui-accordion .ui-accordion-header {
+        border: 3px solid yellow;
+    }
+
+    
     .view-vista-conoce-fcom .node__title {
         display: none;
     }
-
-    .views-accordion-header a:hover , .ui-state-active a {
-        background: #005a8c;
-        color: white;
-    }
-
 
     /* vista practicas -> SoyESTUDIANTE*/
 
