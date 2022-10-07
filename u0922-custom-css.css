@@ -815,7 +815,7 @@ html, body, .page {
 
 
     .ui-state-active a, div.ui-state-active { 
-        color: #f9f9f9; 
+        color: #f9f9f9 !important; 
         background-color: #a90533;
     }
 
