@@ -824,11 +824,6 @@ html, body, .page {
         color: #f9f9f9;
     }
 
-    .ui-accordion .ui-accordion-header {
-        border: 3px solid yellow;
-    }
-
-    
     .view-vista-conoce-fcom .node__title {
         display: none;
     }
