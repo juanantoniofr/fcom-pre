@@ -790,6 +790,8 @@ html, body, .page {
         margin-left: -5%;
     }
 
+    
+
 /* main-content */
 
     h1.node__title {
@@ -814,7 +816,8 @@ html, body, .page {
     }
 
 
-    .ui-state-active a, div.ui-state-active { 
+    .ui-state-active a, div.ui-state-active,
+    .accordeon .ui-state-active a::before { 
         color: #f9f9f9 !important; 
         background-color: #a90533;
     }
@@ -824,16 +827,27 @@ html, body, .page {
         color: #f9f9f9;
     }
 
-    .view-vista-conoce-fcom .view-header {
-        display: none;
+    .accordeon a::before {
+        font-family: fontAwesome;
+        content: "\f0dd";
+        margin-right: 10px;
     }
 
-    /* vista practicas -> SoyESTUDIANTE*/
+    
+
+    
+    /* vista practicas -&gt; SoyESTUDIANTE*/
 
     .jumbotron {
         padding: 4rem 2rem;
     }
-    
+
+    .firma-vicedecanato{
+        background-color:#fff;
+        color:#A90533;
+        margin-bottom: 0;
+    }
+
     .view-u0922-practicas .container .row {
         justify-content: center;
     }
@@ -852,8 +866,17 @@ html, body, .page {
         margin-bottom: .5rem;
         font-weight: 500;
         line-height: 1.2;
+        border:3px solid #ccc; 
+        border-radius: 10px; 
+        padding-bottom:70px;
+        padding-top:60px;
     }
-    
+
+    .container-view-u0922-practicas span  {
+        font-size:60px;
+        color:#A90533;
+    }
+        
     .view-u0922-practicas a { color: black; }
 
     .view-u0922-practicas .container svg {
@@ -886,12 +909,14 @@ html, body, .page {
         width: 100%;
         padding-right: 15px;
         padding-left: 15px;
+        margin-top:50px;
     }
 
-    p..display-1 {
+    .display-1 {
         font-size: 6rem;
         font-weight: 300;
         line-height: 1.2;
+        color:#A90533;
     }
 
     p.display-4 {
