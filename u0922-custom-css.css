@@ -815,17 +815,16 @@ html, body, .page {
 
 
     .ui-state-active a, div.ui-state-active { 
-        color: #f9f9f9 !important; 
+        color: #f9f9f9; 
         background-color: #a90533;
     }
 
-    
     .ui-state-visited a {
         background-color: #a90533;
         color: #f9f9f9;
     }
 
-    .view-vista-conoce-fcom .node__title {
+    .view-vista-conoce-fcom .view-header {
         display: none;
     }
 
