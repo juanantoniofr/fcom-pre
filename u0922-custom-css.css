@@ -830,8 +830,9 @@ html, body, .page {
 
     .accordeon a::before {
         font-family: fontAwesome;
-        content: "\f0dd";
+        content: "\f054";
         margin-right: 10px;
+        font-size: large
     }
 
     
