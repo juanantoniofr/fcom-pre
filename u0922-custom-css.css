@@ -828,7 +828,8 @@ html, body, .page {
         color: #f9f9f9;
     }
 
-    .accordeon a::before {
+    .accordeon .ui-state-active a::before,
+    .accordeon .ui-state-default a::before {
         font-family: fontAwesome;
         content: "\f054";
         margin-right: 10px;
