@@ -724,6 +724,7 @@ html, body, .page {
         color: white;
         margin-right: 10px;
         font-weight: 600;
+        text-decoration: none;
     }
     
     div.cenefa-texto {
@@ -828,8 +829,7 @@ html, body, .page {
         color: #f9f9f9;
     }
 
-    .accordeon .ui-state-active a::before,
-    .accordeon .ui-state-default a::before {
+    .accordeon a::before {
         font-family: fontAwesome;
         content: "\f054";
         margin-right: 10px;
