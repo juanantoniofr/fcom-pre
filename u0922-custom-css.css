@@ -808,6 +808,7 @@ html, body, .page {
     .accordeon div {
         border: none;
         background: none;
+        padding: 9px;
     }
  
     .accordeon .ui-state-default a {
