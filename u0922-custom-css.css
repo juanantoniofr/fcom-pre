@@ -4,6 +4,10 @@ html, body, .page {
     background-color: transparent;
 }
 
+a, a:hover, a:visited { color: #A90533;}
+a:hover { text-decoration: none;}
+
+
 .text-center { text-align: center; }
 
 /* regions */
