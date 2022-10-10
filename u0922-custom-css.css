@@ -4,7 +4,7 @@ html, body, .page {
     background-color: transparent;
 }
 
-a, a:hover, a:visited { color: #A90533;}
+a, a:hover, a:visited, a:active { color: #A90533;}
 a:hover { text-decoration: none;}
 
 
