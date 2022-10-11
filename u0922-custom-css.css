@@ -198,6 +198,10 @@ a:hover { text-decoration: none;}
         color: #a90533;
         font-weight: 600;
     }
+
+    .dropdown p {
+        text-align: justify;
+    }
     
     .dropdown-content a:hover {
         background-color: #f1f1f1;
