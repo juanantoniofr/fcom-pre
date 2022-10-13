@@ -6,7 +6,17 @@
     a:hover { text-decoration: none;}
     .text-center { text-align: center; }
 
-/* Colapsive menu */
+/* header menu left/right */
+
+    ul.fcom-menu { 
+        list-style: none;
+    }
+    ul.fcom-menu a {
+        display: block;
+        position: relative;
+        margin: 0px;
+    }
+/* Collapsive menu */
 
     input[type='checkbox'] { display: none; } 
     /*.wrap-collabsible { margin: 1.2rem 0; } */
