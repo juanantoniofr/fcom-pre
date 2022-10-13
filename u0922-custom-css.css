@@ -84,6 +84,9 @@
     }
 
     /*menu header first derecha e izquierda */
+
+    .pr-header__header-first { display: flex; }
+
     div#block-u0922-headerleft,
     div#block-u0922-headerright {
         margin-top: auto;
