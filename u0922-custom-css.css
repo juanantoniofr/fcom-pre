@@ -999,6 +999,15 @@ a:hover { text-decoration: none;}
         text-decoration: none;
     }
 
+    /** Responsive content-suffix **/
+
+        /* max-width 1024px */
+
+        @media all and (max-width: 1024px){
+            #u0922_comunidad .u0922_text_icon { padding-top: 0px; }
+            #u0922_comunidad a { padding: 5px; }
+        }
+
 
 /* footer */
 
