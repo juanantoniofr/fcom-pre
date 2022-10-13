@@ -555,6 +555,17 @@ a:hover { text-decoration: none;}
         text-decoration: none;
 }
 
+
+    /** Responsive features **/
+
+        /* max-width 1024px */
+
+        @media all and (max-width: 1024px){
+            #features .views-element-container { min-height: 500px; }
+            #block-views-block-noticias-de-actualidad-block-5 .row { min-height: 250px; }
+        }
+
+
 /* content-prefix */
 
     #content-prefix {
