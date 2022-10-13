@@ -82,33 +82,34 @@
         padding: 10px;
         font-size: 12px;
     }
-    /*menu header izquierda */
-    div#block-u0922-headerleft {
-        width: 60%;
-        margin-left: 10%;
-    }
-    
+
+    /*menu header first derecha e izquierda */
     div#block-u0922-headerleft,
     div#block-u0922-headerright {
         margin-top: auto;
         margin-bottom: 0px;
         height: 55px;
         align-content: center;
-        justify-content: start;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
     
-    /* menu header derecha */
+    /* menu header first derecha */
     div#block-u0922-headerright {
         width: 30%;
+        justify-content: end;
     }
 
-    div#block-u0922-headerright .block__content{
-        float: right;
+    /*menu header first izquierda */
+    div#block-u0922-headerleft {
+        width: 60%;
+        margin-left: 10%;
+        justify-content: start;
     }
+    
 
+    
     /* formulario de busqueda */
     #block-formulariodebusqueda {
     
