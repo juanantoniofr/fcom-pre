@@ -653,6 +653,13 @@
             #block-views-block-noticias-de-actualidad-block-5 .row { min-height: 250px; }
         }
 
+        /* max-width 480px */
+
+        @media all and (max-width: 480px){
+            #features .views-element-container { min-height: 400px; }
+            /*#block-views-block-noticias-de-actualidad-block-5 .row { min-height: 250px; }*/
+        }
+
 
 
 /* content-prefix */
