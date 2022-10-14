@@ -10,12 +10,15 @@
 
     ul.fcom-menu { 
         list-style: none;
+        display: inline-flex;
     }
     ul.fcom-menu a {
         display: block;
         position: relative;
         margin: 0px;
     }
+
+    
 /* Collapsive menu */
 
     input[type='checkbox'] { display: none; } 
@@ -97,6 +100,20 @@
 
     .pr-header__header-first { display: flex; }
 
+    #block-u0922-menu-header { 
+        margin: 0px;
+        width: 100%;
+    }
+    
+    #block-u0922-menu-header .field__item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    #block-u0922-menu-header .clearfix { margin-bottom: 0px; }
+
     div#block-u0922-headerleft,
     div#block-u0922-headerright {
         margin-top: auto;
@@ -110,14 +127,14 @@
     
     /* menu header first derecha */
     div#block-u0922-headerright {
-        width: 30%;
+        
         justify-content: end;
     }
 
     /*menu header first izquierda */
     div#block-u0922-headerleft {
-        width: 60%;
-        margin-left: 10%;
+        width: 80%;
+        margin-left: 8%;
         justify-content: start;
     }
     
