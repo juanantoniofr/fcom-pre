@@ -1058,27 +1058,6 @@
         text-decoration: none;
     }
 
-    /** Responsive content-suffix **/
-
-        /* max-width 1024px */
-
-        @media all and (max-width: 1024px){
-            #u0922_comunidad .u0922_text_icon { padding-top: 0px; }
-            #u0922_comunidad a { padding: 5px; }
-        }
-
-        /* max-width 768px */
-
-        @media all and (max-width: 768px){
-            #u0922_comunidad a { padding: 20px; }
-        }
-
-        /* max-width 480px */
-
-        @media all and (max-width: 480px){
-            #u0922_comunidad a { padding: 10px; }
-        }
-
 
 /* footer */
 
@@ -1100,7 +1079,7 @@
     }
 
 
-/***** Responive css *****/
+/***** Responsive css *****/
 
 /* Smartphones (portrait & landscape) 
 #Dispositivo = Mayoría de teléfonos móviles (vertical y horizontal) 
@@ -1179,7 +1158,8 @@
  
 /* iPads (portrait & landscape) */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-
+    #u0922_comunidad .u0922_text_icon { padding-top: 0px; }
+    #u0922_comunidad a { padding: 5px; }
 }
  
 /* iPads (landscape) 
