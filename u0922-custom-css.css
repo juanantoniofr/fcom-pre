@@ -495,14 +495,6 @@
         font-size: 100px;
     }
 
-    /** Responsive Carrusel **/
-
-        /* max-width 1024px */
-
-        @media all and (max-width: 1024px){
-            .slick-arrow::before { font-size: 60px; }
-        }
-
 
 /*  features */
 
