@@ -35,10 +35,7 @@
 
     /*menu header first derecha e izquierda */
 
-    /* input[type='checkbox'], label.lbl-toggle { display: none; } */
-    input#collapsible, label.lbl-toggle { display: none; }
-     
-
+    input[type='checkbox'] { display: none; } 
 
     .pr-header__header-first { display: flex; }
 
@@ -85,7 +82,7 @@
         list-style: none;
         display: inline-flex;
     }
-
+    
     ul.fcom-menu a {
         display: block;
         position: relative;
@@ -1085,13 +1082,13 @@
 #Dispositivo = Mayoría de teléfonos móviles (vertical y horizontal) 
 #Resolución = B/w 320px to 479px */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  
+    
 }
 
 /* #Dispositivo = Tablets de baja resolución y teléfonos Móviles (horizontal) 
 #Resolución = B/w 481px to 767px */
 @media (min-width: 481px) and (max-width: 767px) {
-  
+    #u0922_comunidad a { padding: 20px; }
 }
   
 /* Smartphones (landscape) */
@@ -1104,8 +1101,7 @@
 
 /* Collapsive menu */
 
-    /*input[type='checkbox'] { display: block; } */
-    label.lbl-toggle { display: block; }
+    input[type='checkbox'] { display: inline; } 
     /*.wrap-collabsible { margin: 1.2rem 0; } */
     .lbl-toggle { 
         display: block;
