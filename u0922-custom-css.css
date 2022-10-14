@@ -1065,6 +1065,7 @@
     
     /** features **/
     #features .views-element-container { min-height: 400px; }
+    #block-views-block-noticias-de-actualidad-block-5 .row { min-height: 300px; }
 
     /** content-prefix **/
     .column-50 { flex: 100%; padding: 5px; }
