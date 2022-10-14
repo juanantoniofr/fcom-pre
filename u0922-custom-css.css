@@ -1097,6 +1097,13 @@
             #u0922_comunidad a { padding: 20px; }
         }
 
+        /* max-width 480px */
+
+        @media all and (max-width: 480px){
+            #u0922_comunidad a { padding: 5px; }
+        }
+
+
 /* footer */
 
     #footer {
