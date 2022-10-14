@@ -1083,11 +1083,15 @@
 #Resolución = B/w 320px to 479px */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     
+    /** content-suffix **/
+    #u0922_comunidad a { padding: 10px; }
 }
 
 /* #Dispositivo = Tablets de baja resolución y teléfonos Móviles (horizontal) 
 #Resolución = B/w 481px to 767px */
 @media (min-width: 481px) and (max-width: 767px) {
+    
+    /** content-suffix **/
     #u0922_comunidad a { padding: 20px; }
 }
   
@@ -1154,6 +1158,8 @@
  
 /* iPads (portrait & landscape) */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    
+    /** content-suffix **/
     #u0922_comunidad .u0922_text_icon { padding-top: 0px; }
     #u0922_comunidad a { padding: 5px; }
 }
