@@ -38,7 +38,8 @@
 
     /*menu header first derecha e izquierda */
 
-    input[type='checkbox'] { display: none; } 
+    /* input[type='checkbox'], label.lbl-toggle { display: none; } */
+    input#collapsible[type='checkbox'], label.lbl-toggle { display: none; } 
 
     .pr-header__header-first { display: flex; }
 
