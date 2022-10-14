@@ -777,6 +777,14 @@
         display: flex;
     }
 
+        /** Responsive content-prefix **/
+
+        /* max-width 480px */
+
+        @media all and (max-width: 480px){
+            .column-50 { flex: 100%; padding: 25px; }
+        }
+
     /* cenefas */
     div#block-cenefaconocefcom-3 .block__inner {
         width: 100%;
