@@ -1067,10 +1067,19 @@
     #features .views-element-container { min-height: 400px; }
 
     /** content-prefix **/
-    .column-50 { flex: 100%; padding: 25px; }
+    .column-50 { flex: 100%; padding: 5px; }
 
     /** content-suffix **/
     #u0922_comunidad a { padding: 10px; }
+
+    /** footer **/
+    #block-datosdecontacto-3, #block-avisolegal {
+        float: none;
+        padding: 0px;
+        width: 100%;
+        padding-top: 0px;
+        text-align: justify;
+    }
 }
 
 /* #Dispositivo = Tablets de baja resolución y teléfonos Móviles (horizontal) 
