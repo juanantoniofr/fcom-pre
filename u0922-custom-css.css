@@ -1092,6 +1092,14 @@
         }
 
 
+        /** Responsive content-suffix **/
+
+        /* max-width 768px */
+
+        @media all and (max-width: 768px){
+            #u0922_comunidad a { padding: 20px; }
+        }
+
 /* footer */
 
     #footer {
