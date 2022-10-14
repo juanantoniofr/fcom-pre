@@ -35,7 +35,10 @@
 
     /*menu header first derecha e izquierda */
 
-    input[type='checkbox'] { display: none; } 
+    /* input[type='checkbox'], label.lbl-toggle { display: none; } */
+    input#collapsible, label.lbl-toggle { display: none; }
+     
+
 
     .pr-header__header-first { display: flex; }
 
@@ -82,7 +85,7 @@
         list-style: none;
         display: inline-flex;
     }
-    
+
     ul.fcom-menu a {
         display: block;
         position: relative;
@@ -1122,7 +1125,8 @@
 
 /* Collapsive menu */
 
-    input[type='checkbox'] { display: inline; } 
+    /*input[type='checkbox'] { display: block; } */
+    label.lbl-toggle { display: block; }
     /*.wrap-collabsible { margin: 1.2rem 0; } */
     .lbl-toggle { 
         display: block;
