@@ -1,6 +1,9 @@
 /* boby - html - .page */
 
-    html, body, .page { background-color: transparent; }
+    html, body, .page { 
+        font-size: 16px; /* 1em => 16px */
+        background-color: transparent; 
+    }
 
     a, a:hover, a:visited, a:active { color: #A90533;}
     a:hover { text-decoration: none;}
@@ -141,29 +144,31 @@
     }
     
     #block-logouses .clearfix { margin-bottom: 0px; }
+
+    #block-logouses .field__item {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-left: 40px;
+    }
     
     #block-logouses img {
-        display: block;
-        width: 201px;
-        margin-left: 146px;
-        display: block;
-        margin-bottom: 9px;
+        width: 200px;
+        min-width: 150px;
     }
     
     #block-logouses h1 {
-        font-size: 28px;
+        font-size: 1.2em;
         font-weight: 800;
         color: #a90533;
         margin-bottom: 0px;
         line-height: 28px;
-        margin-left: 40px;
         font-stretch: condensed;
     }
 
     #block-logouses p {
         margin: 0px;
         color: #454545;
-        margin-left: 40px;
         font-stretch: condensed;
     }
 
@@ -1084,9 +1089,12 @@
 /* Smartphones (portrait) */
 @media only screen and (max-width : 320px) {
 
-/* Collapsive menu */
+    /* masthead */
 
-    input[type='checkbox'] { display: inline; } 
+    /* Collapsive menu */
+
+    /*input[type='checkbox'] { display: block; } */
+    label.lbl-toggle { display: block; }
     /*.wrap-collabsible { margin: 1.2rem 0; } */
     .lbl-toggle { 
         display: block;
