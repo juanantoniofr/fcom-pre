@@ -145,15 +145,16 @@
     }
 
     /* logo */
-    #block-logouses{ display: flex; }
+    #block-logouses{ 
+        display: flex;
+        min-width: 260px;
+    }
     
     #block-logouses .clearfix { margin-bottom: 0px; }
 
     #block-logouses .field__item {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        padding-left: 40px;
     }
     
     #block-logouses img {
@@ -179,15 +180,21 @@
     /* Menu principal */
     #block-u0922-menu-principal {
         display: flex;
+        width: 100%;
     }
 
     #block-u0922-menu-principal .block__content{ 
         padding: 0px 0px 0px 0px;
-        float: right;
-        margin-right: 10px; 
     }
 
+
     #u0922_menu_principal { vertical-align: baseline; }
+
+    #block-u0922-menu-principal  .block__inner {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
 
     #u0922_menu_principal a {
         padding: 0px 7px;
@@ -201,7 +208,8 @@
         display: inline-block;
     }
 
-    .dropbtn {
+    #block-u0922-menu-principal .dropbtn, 
+    #container_imprescindibles_mas_idiomas .dropbtn {
         background-color: transparent;
         padding: 8px;
         color: #a90533;
@@ -212,11 +220,12 @@
         display: inline-flex;
     }
 
-    .dropbtn:hover {
+    #block-u0922-menu-principal .dropbtn:hover, 
+    #container_imprescindibles_mas_idiomas .dropbtn:hover {
         text-decoration: underline;
     }
 
-    .dropbtn::after {
+    #block-u0922-menu-principal .dropbtn::after {
         font-family: fontAwesome;
         content: "\f0dd";
     }
@@ -282,12 +291,14 @@
         opacity: 0.5;
       }
 
-    .dropdown:hover .dropbtn {
+    #block-u0922-menu-principal .dropdown:hover .dropbtn, 
+    #container_imprescindibles_mas_idiomas .dropdown:hover .dropbtn {
         background-color: transparent;
         color: #a90533;
     }
 
-    .dropbtn:focus {
+    #block-u0922-menu-principal .dropbtn:focus, 
+    #container_imprescindibles_mas_idiomas .dropbtn:focus {
         background-color: white;
         color: #a90533;
       }
@@ -359,7 +370,10 @@
 
     /* Menu Imprescidibles && Idiomas */
 
-    #block-u0922-imprescindibles-mas-idiomas { display: flex; } 
+    #block-u0922-imprescindibles-mas-idiomas { 
+        display: flex;
+        justify-content: center;
+    } 
 
     #container_imprescindibles_mas_idiomas {
         display: flex;
@@ -425,8 +439,8 @@
     
     #block-alternadordeidioma ul {
         padding: 0px; 
-        margin-top: -35px;
     }
+    
     #block-alternadordeidioma ul li {
         margin: 3px;
         display: inline-flex;
