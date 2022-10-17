@@ -208,8 +208,7 @@
         display: inline-block;
     }
 
-    #block-u0922-menu-principal .dropbtn, 
-    #container_imprescindibles_mas_idiomas .dropbtn {
+    #block-u0922-menu-principal .dropbtn {
         background-color: transparent;
         padding: 8px;
         color: #a90533;
@@ -218,6 +217,11 @@
         border: none;
         cursor: pointer;
         display: inline-flex;
+    }
+
+    #container_imprescindibles_mas_idiomas .dropbtn{
+        color: white;
+        font-size: 16px;
     }
 
     #block-u0922-menu-principal .dropbtn:hover, 
@@ -292,13 +296,12 @@
       }
 
     #block-u0922-menu-principal .dropdown:hover .dropbtn, 
-    #container_imprescindibles_mas_idiomas .dropdown:hover .dropbtn {
+    {
         background-color: transparent;
         color: #a90533;
     }
 
-    #block-u0922-menu-principal .dropbtn:focus, 
-    #container_imprescindibles_mas_idiomas .dropbtn:focus {
+    #block-u0922-menu-principal .dropbtn:focus {
         background-color: white;
         color: #a90533;
       }
@@ -381,15 +384,42 @@
     }
     
     /* Menu Imprescidibles */
-    #menu-u0922-imprescindibles{padding: 30px 0px 0px 0px;}
+    #menu-u0922-imprescindibles{ padding: 30px 0px 0px 0px; }
+
+    #container_imprescindibles_mas_idiomas .dropbtn,
+    #container_imprescindibles_mas_idiomas .dropbtn:hover {
+        background: #a90533;
+        border: none;
+        border-radius: 20px 0px 0px 20px;
+        height: 55px;
+        padding: 0px 22px;
+    }
+
+    #container_imprescindibles_mas_idiomas .dropdown:hover .dropdown-content {
+        width: fit-content;
+        padding: 0px;
+        margin-right: 0px;
+        margin-left: unset;
+        right: 5%;
+    }
+
+    #menu-u0922-imprescindibles ul {
+        background: #a90533;
+        padding: 0px;
+        flex-direction: column;
+        min-width: 250px;
+    }
 
     #menu-u0922-imprescindibles li ul {width: 15em;}
 
     
     #menu-u0922-imprescindibles li {
-        border-radius: 20px 0px 0px 20px;
-        background: #a90533;
-        float: right;
+        
+        list-style: none;
+        display: inline;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #menu-u0922-imprescindibles li ul li {
@@ -400,7 +430,14 @@
     
     #menu-u0922-imprescindibles a { 
         padding: 17px 12px;
+        font-size: 12px;  
+        line-height: 36px; 
+    }
+
+    #menu-u0922-imprescindibles a:hover { 
+        padding: 17px 12px;
         font-size: 12px;    
+        background-color: #A90533;
     }
 
     #menu-u0922-imprescindibles li ul li a{
