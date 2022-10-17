@@ -408,6 +408,7 @@
         padding: 0px;
         flex-direction: column;
         min-width: 250px;
+        display: flex;
     }
 
     #menu-u0922-imprescindibles li ul {width: 15em;}
@@ -416,10 +417,11 @@
     #menu-u0922-imprescindibles li {
         
         list-style: none;
-        display: inline;
         width: 90%;
         margin-left: auto;
         margin-right: auto;
+        display: flex;
+        
     }
 
     #menu-u0922-imprescindibles li ul li {
@@ -432,12 +434,15 @@
         padding: 17px 12px;
         font-size: 12px;  
         line-height: 36px; 
+        display: flex;
+        align-items: center;
     }
 
     #menu-u0922-imprescindibles a:hover { 
         padding: 17px 12px;
         font-size: 12px;    
         background-color: #A90533;
+        color: white;
     }
 
     #menu-u0922-imprescindibles li ul li a{
