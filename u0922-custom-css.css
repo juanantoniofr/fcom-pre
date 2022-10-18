@@ -179,7 +179,7 @@
     /* Menu principal */
     #block-u0922-menu-principal {
         display: flex;
-        width: Calc(100% - 420px);
+        width: Calc(100% - 470px);
         justify-content: center;
     }
 
@@ -271,7 +271,7 @@
         display: flex;
         align-items: stretch;
         padding-top: 10px;
-        margin-top: 60px;
+        margin-top: 30px;
     }
 
     .dropdown:hover #dropdown-content-titulos{
@@ -410,7 +410,7 @@
         padding: 0px;
         margin-right: 0px;
         margin-left: unset;
-        transform: translate(-93px);
+        transform: translate(-93px, 30px);
     }
 
     #menu-u0922-imprescindibles ul {
@@ -522,7 +522,7 @@
     }
 
     #slick-views-caruselnoticiasdestacadas-block-1-1 .slide__constrained {
-        margin-left: -725px;
+        
         width: 55%;
     }
 
@@ -537,6 +537,7 @@
         margin-bottom: 6px;
     }
 
+    .slide__caption { padding: 0px;}
     .slide__caption h3 {
         background: #a90533;
         padding: 23px;
@@ -555,7 +556,7 @@
         white-space: nowrap;
         color: #f9f9f9;
         font-size: 26px;
-        margin-bottom: 35px;
+        margin-bottom: 10px;
     }
     
     .slide_title a { color: #f9f9f9; }
