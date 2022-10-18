@@ -129,9 +129,6 @@
 /* navBar */
 
     #navbar {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
         margin-bottom: 2px;
         margin-top: 7px;
         background: transparent;
@@ -142,6 +139,8 @@
         display: flex;
         flex-direction: row;
         align-items: self-end;
+        flex-wrap: wrap;
+        justify-content: end;
     }
 
     /* logo */
@@ -180,7 +179,8 @@
     /* Menu principal */
     #block-u0922-menu-principal {
         display: flex;
-        width: 100%;
+        width: 74%;
+        justify-content: center;
     }
 
     #block-u0922-menu-principal .block__content{ 
@@ -190,12 +190,13 @@
 
     #u0922_menu_principal { vertical-align: baseline; }
 
-    #block-u0922-menu-principal  .block__inner {
+    #block-u0922-menu-principal  .block__inner{
         display: flex;
-        width: 100%;
-        justify-content: center;
+        justify-content: end;
+        flex-wrap: wrap;
     }
 
+    
     #u0922_menu_principal a {
         padding: 0px 7px;
         font-size: 26px;
@@ -205,12 +206,12 @@
     
 
     .dropdown {
-        display: inline-block;
+        display: inline-flex;
+        min-height: 32px;
     }
 
     #block-u0922-menu-principal .dropbtn {
         background-color: transparent;
-        padding: 8px;
         color: #a90533;
         font-size: 26px;
         font-weight: 600;
@@ -261,7 +262,8 @@
         background-color: #f1f1f1;
     }
     
-    .dropdown:hover .dropdown-content {
+    .dropdown:hover .dropdown-content,
+    .dropdown:focus .dropdown-content{
         width: 80%;
         margin-left: -13%;
         background-color: white;
@@ -269,6 +271,7 @@
         display: flex;
         align-items: stretch;
         padding-top: 10px;
+        margin-top: 30px;
     }
 
     .dropdown:hover #dropdown-content-titulos{
@@ -295,7 +298,7 @@
         opacity: 0.5;
       }
 
-    #block-u0922-menu-principal .dropdown:hover .dropbtn, 
+    #block-u0922-menu-principal .dropdown:hover .dropbtn
     {
         background-color: transparent;
         color: #a90533;
@@ -376,15 +379,20 @@
     #block-u0922-imprescindibles-mas-idiomas { 
         display: flex;
         justify-content: center;
-    } 
+    }
+    
+    #block-u0922-imprescindibles-mas-idiomas .clearfix {
+        margin-bottom: 0px;
+    }
 
     #container_imprescindibles_mas_idiomas {
         display: flex;
         flex-direction: column;
+        gap: 40px;
     }
     
     /* Menu Imprescidibles */
-    #menu-u0922-imprescindibles{ padding: 30px 0px 0px 0px; }
+    #menu-u0922-imprescindibles { padding: 30px 0px 0px 0px; }
 
     #container_imprescindibles_mas_idiomas .dropbtn,
     #container_imprescindibles_mas_idiomas .dropbtn:hover {
@@ -395,7 +403,8 @@
         padding: 0px 22px;
     }
 
-    #container_imprescindibles_mas_idiomas .dropdown:hover .dropdown-content {
+    #container_imprescindibles_mas_idiomas .dropdown:hover .dropdown-content,
+    #container_imprescindibles_mas_idiomas .dropdown:focus .dropdown-content {
         width: fit-content;
         padding: 0px;
         margin-right: 0px;
@@ -481,17 +490,21 @@
     
     #block-alternadordeidioma ul {
         padding: 0px; 
+        display: flex;
+        list-style: none;
+        justify-content: end;
     }
     
     #block-alternadordeidioma ul li {
         margin: 3px;
-        display: inline-flex;
     }
 
     #block-alternadordeidioma ul li img { 
-        width: 42px; 
-        height: 28px;
+        width: 30px; 
+        height: 20px;
     }
+
+    
 
 /* highlighted */
 
@@ -1230,7 +1243,7 @@
 
     .toggle:checked+.lbl-toggle::before,
     .toggle:checked+.lbl-toggle-masthead::before { transform: rotate(90deg) translateX(-3px); }
-    
+
     .collapsible-content,
     .collapsible-masthead-content { 
         max-height: 0px;
@@ -1253,6 +1266,7 @@
         border-bottom-left-radius: 7px;
         border-bottom-right-radius: 7px;
         padding: .5rem 1rem; }
+    
     .collapsible-content p,
     .collapsible-masthead-content p { margin-bottom: 0; }
 
