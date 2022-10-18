@@ -966,6 +966,12 @@
         list-style: none;
     }
 
+    .superior_periodismo ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
     
     /* vista practicas -&gt; SoyESTUDIANTE*/
 
