@@ -960,6 +960,11 @@
 
     .view-vista-conoce-fcom li { padding-top: 10px; }
     
+    /* vista Titulos */
+
+    .body_periodismo li {
+        list-style: none;
+    }
 
     
     /* vista practicas -&gt; SoyESTUDIANTE*/
