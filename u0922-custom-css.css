@@ -203,10 +203,14 @@
         color: #a90533;
     }
 
-    
+    .collapsible-content .content-inner {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
     .dropdown {
-        display: inline-flex;
+        display: flex;
         min-height: 32px;
     }
 
@@ -243,6 +247,7 @@
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
+        left: 150px;
     }
     
     .dropdown-content a {
@@ -264,7 +269,7 @@
     
     .dropdown:hover .dropdown-content,
     .dropdown:focus .dropdown-content{
-        width: 80%;
+        width: Calc(90% - 150px);
         margin-left: -13%;
         background-color: white;
         z-index: 10;
@@ -275,23 +280,23 @@
     }
 
     .dropdown:hover #dropdown-content-titulos{
-        margin-left: -24%;
+        
     }
     
     .dropdown:hover #dropdown-content-practicas {
-        margin-left: -31%;
+        
     }
 
     .dropdown:hover #dropdown-content-movilidad {
-        margin-left: -39%;
+        
     }
 
     .dropdown:hover #dropdown-content-secretaria {
-        margin-left: -48%;
+        
     }
 
     .dropdown:hover #dropdown-content-noticias-fcom {
-        margin-left: -57%;
+        
     }
 
     .opacity0-50 {
@@ -1263,6 +1268,8 @@
         overflow: hidden;
         transition: max-height .25s ease-in-out;
     }
+
+    
 
     .toggle:checked + .lbl-toggle + .collapsible-content,
     .toggle:checked + .lbl-toggle-masthead + .collapsible-masthead-content { max-height: 350px; }
