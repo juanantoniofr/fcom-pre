@@ -247,7 +247,8 @@
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
-        left: 150px;
+        left: Calc(26% - 100px);
+        max-width: 80%;
     }
     
     .dropdown-content a {
@@ -274,6 +275,7 @@
         background-color: white;
         z-index: 10;
         display: flex;
+        flex-wrap: wrap;
         align-items: stretch;
         padding-top: 10px;
         margin-top: 30px;
@@ -316,6 +318,7 @@
 
     .narrativa {
         display: flex;
+        flex-wrap: wrap;
         align-items: stretch;
         flex: 1;
     }
@@ -344,6 +347,7 @@
         padding: 20px;
         width: 400px;
         height: 300px;
+        display: flex;
     }
     
     .narrativa p {
@@ -356,7 +360,7 @@
     .narrativa-l2 { /**/
         display: flex;
         width: stretch;
-        align-items: stretch;
+        align-items: normal;
         flex: 1;
     }
 
