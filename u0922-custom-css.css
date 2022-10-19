@@ -1352,7 +1352,7 @@
 /**** fin css for Smartphones (portrait) @media only screen and (max-width : 320px) */
  
 /* iPads (portrait & landscape) */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px), (max-width : 1024px) {
     
     /** navbar **/
     #slick-views-caruselnoticiasdestacadas-block-1-1 .slide__constrained {
