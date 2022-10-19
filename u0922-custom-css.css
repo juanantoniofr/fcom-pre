@@ -247,6 +247,9 @@
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
+    }
+
+    #block-u0922-menu-principal .dropdown-content{
         left: Calc(26% - 100px);
         max-width: 80%;
     }
@@ -533,8 +536,8 @@
     }
 
     #slick-views-caruselnoticiasdestacadas-block-1-1 .slide__constrained {
-        
         width: 55%;
+        margin-left: -42%;
     }
 
     h2.slide_title { 
