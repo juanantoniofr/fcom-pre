@@ -980,19 +980,20 @@
     .superior_periodismo ul {
         display: flex;
         /*flex-direction: row;*/
-        justify-content: space-evenly;
+        /*justify-content: space-evenly;*/
     }
 
     .superior_periodismo li {
         display: flex;
-        width: 8em;
-        height: 8em;
-        border-radius: 70px;
+        width: 9em;
+        height: 9em;
+        border-radius: 75px;
         background: #a90533;
         align-items: center;
         padding: 1%;
         color: #f9f9f9;
         text-align: center;
+        margin: 30px;
     }
 
     .superior_periodismo a {
