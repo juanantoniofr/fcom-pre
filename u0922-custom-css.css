@@ -284,26 +284,6 @@
         margin-top: 30px;
     }
 
-    .dropdown:hover #dropdown-content-titulos{
-        
-    }
-    
-    .dropdown:hover #dropdown-content-practicas {
-        
-    }
-
-    .dropdown:hover #dropdown-content-movilidad {
-        
-    }
-
-    .dropdown:hover #dropdown-content-secretaria {
-        
-    }
-
-    .dropdown:hover #dropdown-content-noticias-fcom {
-        
-    }
-
     .opacity0-50 {
         opacity: 0.5;
       }
@@ -542,12 +522,13 @@
 
     h2.slide_title { 
         background: #a90533; 
-        padding: 23px;
+        padding: 10px;
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
         color: #f9f9f9;
         font-size: 32px;
+        line-height: 40px;
         margin-bottom: 6px;
     }
 
@@ -1357,6 +1338,18 @@
  
 /* iPads (portrait & landscape) */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    
+    /** navbar **/
+    .slide__constrained {
+        margin-left: 0px;
+        width: 100%;
+        padding-top: 3%;
+    }
+
+    h2.slide_title {
+        overflow: unset;
+        white-space: unset;
+    }
     
     /** features **/
     #features .views-element-container { min-height: 500px; }
