@@ -1003,6 +1003,14 @@
         color: #f9f9f9;
     }
 
+    .inferior_periodismo h3 {
+        padding: 15px;
+        border: #a90533 solid 1px;
+        color: #a90533;
+        font-size: 2em;
+        font-weight: bold;
+    }
+
     
     /* vista practicas -&gt; SoyESTUDIANTE*/
 
