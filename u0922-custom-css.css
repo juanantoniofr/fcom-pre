@@ -1183,6 +1183,33 @@
 #Resolución = B/w 320px to 479px */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     
+    /** masthead **/
+
+    #block-u0922-menu-header .collapsible-masthead-content .content-inner {
+        flex-wrap: wrap;
+        flex-direction: column;
+        border: 1px solid white;
+    }
+
+    #superfish-u0922-headerleft {
+        height: fit-content;
+        margin: 0px;
+        padding-bottom: 10px;
+    }
+
+    #superfish-u0922-headerleft,
+    #superfish-u0922-headerright {
+        flex-direction: column;
+    }
+
+    #block-u0922-headerright {
+        height: fit-content;
+        justify-content: start;
+        border-top: 1px solid white;
+        padding-top: 10px;
+        margin: 0px;
+    }
+
     /** features **/
     #features .views-element-container { min-height: 400px; }
     #block-views-block-noticias-de-actualidad-block-5 .row { min-height: 300px; align-items: inherit;}
