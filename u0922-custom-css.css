@@ -65,8 +65,8 @@
 
     #block-u0922-menu-header .clearfix { margin-bottom: 0px; }
 
-    div#block-u0922-headerleft,
-    div#block-u0922-headerright {
+    #block-u0922-headerleft,
+    #block-u0922-headerright {
         margin-top: auto;
         margin-bottom: 0px;
         height: 55px;
@@ -77,12 +77,12 @@
     }
     
     /* menu header first derecha */
-    div#block-u0922-headerright {        
+    #block-u0922-headerright {        
         justify-content: end;
     }
 
     /*menu header first izquierda */
-    div#block-u0922-headerleft {
+    #block-u0922-headerleft {
         margin-left: 8%;
         justify-content: start;
     }
@@ -1185,13 +1185,17 @@
     
     /** masthead **/
 
+    #masthead {
+        width: 100%;
+    }
+
     #block-u0922-menu-header .collapsible-masthead-content .content-inner {
         flex-wrap: wrap;
         flex-direction: column;
         border: 1px solid white;
     }
 
-    #superfish-u0922-headerleft {
+    #block-u0922-headerleft {
         height: fit-content;
         margin: 0px;
         padding-bottom: 10px;
@@ -1208,6 +1212,24 @@
         border-top: 1px solid white;
         padding-top: 10px;
         margin: 0px;
+    }
+
+    /** navbar **/
+
+    #navbar .pr-navbar__rw {
+        max-width: unset;
+    }
+
+    #block-logouses,
+    #block-logouses .field__item {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #block-logouses .field__item {
+        text-align: center;
+        margin: 10px 0px;
+        padding: 0px;
     }
 
     /** features **/
@@ -1246,18 +1268,7 @@
 /* Smartphones (portrait) */
 @media only screen and (max-width : 320px) {
 
-    /* masthead */
-
-    #block-logouses,
-    #block-logouses .field__item {
-        width: 100%;
-        }
-    
-    #block-logouses .field__item {
-        text-align: center;
-        margin: 10px 0px;
-        padding: 0px;
-    }
+    /* navbar */
 
     #block-logouses .field__item h1 {
         text-align: center
