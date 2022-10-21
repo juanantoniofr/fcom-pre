@@ -1020,20 +1020,10 @@
         margin-bottom: 0;
     }
 
-    .view-u0922-practicas .container .row {
-        justify-content: center;
-    }
     
-    .view-u0922-practicas h1 {
-        font-size: 100px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 50px 0px;
-        font-weight: 400;
-    }
-
-    .container-view-u0922-practicas h3 {
+    
+    
+    .soy h3 {
         font-size: 1.75rem;
         margin-bottom: .5rem;
         font-weight: 500;
@@ -1044,19 +1034,28 @@
         padding-top:60px;
     }
 
-    .container-view-u0922-practicas span  {
+    .soy h3 a {
+        flex-direction: column;
+    }
+
+    .soy span  {
         font-size:60px;
         color:#A90533;
     }
         
-    .view-u0922-practicas a { color: black; }
+    .soy a { 
+        color: black; 
+        display: flex;
+        align-items: center;
+    }
 
-    .view-u0922-practicas .container svg {
+    .soy svg {
         color: #A90533;
         font-size: x-large;
     }
 
-    .container-view-u0922-practicas {
+    .container-view-u0922-practicas,
+    .view-u0922-mitfg  {
         width: 100%;
         padding-right: 15px;
         padding-left: 15px;
@@ -1066,10 +1065,10 @@
         margin-bottom: 6rem;
     }
 
-    .view-u0922-practicas .container .col-sm-3 p {
+    .soy .col-sm-3 p {
         border: 3px solid #ccc;
         border-radius: 6px;
-        padding: 25px 50px;
+        padding: 5px 50px;
         text-align: center;
     }
 
@@ -1086,9 +1085,14 @@
 
     .display-1 {
         font-size: 6rem;
-        font-weight: 300;
         line-height: 1.2;
         color:#A90533;
+        font-size: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 50px 0px;
+        font-weight: 400;
     }
 
     p.display-4 {
@@ -1099,10 +1103,14 @@
         color: black;
     }
 
-    .container-view-u0922-practicas svg {
+    .soy svg {
         margin: 14px;
         color: #a90533;
         font-size: 2.9rem;
+    }
+
+    .soy {
+        justify-content: center;
     }
 /* content-suffix */
 
