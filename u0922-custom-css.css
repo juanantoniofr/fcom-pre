@@ -1135,15 +1135,37 @@
         border: 1px solid #dfdfdf;
     }
 
-    .row-accordion-soy .ui-state-visited a {
+    .row-accordion-soy .ckeditor-accordion-container dl {
+        border: 1px solid #dfdfdf;
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+    
+    
+
+    .row-accordion-soy .row-accordion-soy .ui-state-visited a {
         background-color: #a90533;
         color: #f9f9f9;
+    }
+
+    .row-accordion-soy .ckeditor-accordion-toggle::before,
+    .row-accordion-soy .ckeditor-accordion-toggle::after {
+        content: unset !important;
+    }
+
+    .row-accordion-soy .ckeditor-accordion-container dl dt a {
+        border-bottom: 1px solid #dfdfdf;
+        padding: 10px 15px;
     }
 
     .row-accordion-soy .ckeditor-accordion-container  dl dt a,
     .row-accordion-soy .ckeditor-accordion-container dl dt.active a {
         background: #f7f7f7;
-        color: black;
+        color:inherit;
+    }
+
+    .row-accordion-soy .ckeditor-accordion-container  dl dd {
+        padding: 15px;
     }
 
 
