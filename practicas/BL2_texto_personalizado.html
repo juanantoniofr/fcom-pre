@@ -1,0 +1,44 @@
+/*** SOY ESTUDIANTE ***/
+
+{% if raw_arguments.tid == 136  %}
+   I. CARACTERÍSTICAS DE LAS PRÁCTICAS 
+{% elseif raw_arguments.tid == 137  %}
+      II. PROCESOS DE SOLICITUD DE PRÁCTICAS 
+{% elseif raw_arguments.tid == 147  %}
+      III. PROCESOS DE REALIZACIÓN DE PRÁCTICAS 
+{% elseif raw_arguments.tid == 148  %}
+      IV. ¿PUEDO...? 
+{% elseif raw_arguments.tid == 149  %}
+      V. DOCUMENTACIÓN, NORMATIVA, MANUALES, LISTADOS Y DIRECTORIO 
+{% else %}
+    CATEGORÍA NO ENCONTRADA 
+{% endif %}
+
+
+/*** SOY DOCENTE ***/
+
+{% if raw_arguments.tid == 150  %}
+   I. CARACTERÍSTICAS DE LAS PRÁCTICAS 
+{% elseif raw_arguments.tid == 151  %}
+   II. PROCESOS DE SOLICITUD DE PRÁCTICAS 
+{% elseif raw_arguments.tid == 152  %}
+   III. PROCESOS DE REALIZACIÓN DE PRÁCTICAS 
+{% elseif raw_arguments.tid == 153  %}
+   IV. ¿PUEDO...? {{ raw_arguments.tid }}
+{% else %}
+    CATEGORÍA NO ENCONTRADA 
+{% endif %}
+
+/*** SOY EMPRESA ***/
+
+{% if raw_arguments.tid == 157  %}
+   I. CARACTERÍSTICAS DE LAS PRÁCTICAS 
+{% elseif raw_arguments.tid == 155  %}
+   II. PROCESOS DE SOLICITUD DE PRÁCTICAS 
+{% elseif raw_arguments.tid == 156  %}
+   III. PROCESOS DE REALIZACIÓN DE PRÁCTICAS 
+{% elseif raw_arguments.tid == 154  %}
+   IV. ¿PUEDO...? {{ raw_arguments.tid }}
+{% else %}
+    CATEGORÍA NO ENCONTRADA 
+{% endif %}

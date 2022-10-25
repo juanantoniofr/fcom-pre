@@ -935,7 +935,7 @@
         font-size: xx-large;
     }
 
-
+    .row-accordion-soy
     .ui-state-active a, div.ui-state-active,
     .accordeon .ui-state-active a::before { 
         color: #f9f9f9 !important; 
@@ -1020,9 +1020,6 @@
         margin-bottom: 0;
     }
 
-    
-    
-    
     .soy h3 {
         font-size: 1.75rem;
         margin-bottom: .5rem;
@@ -1049,10 +1046,26 @@
         align-items: center;
     }
 
+    .soy .col-sm-3 a { 
+        flex-direction: column;
+    }
     .soy svg {
         color: #A90533;
         font-size: x-large;
+        margin: 14px;
+        color: #a90533;
+        font-size: 2.9rem;
     }
+
+    .soy .col-sm-3 svg {
+        margin: 14px;
+        font-size: 2rem;
+    }
+
+    .soy {
+        justify-content: center;
+    }
+
 
     .container-view-u0922-practicas,
     .view-u0922-mitfg  {
@@ -1095,6 +1108,10 @@
         font-weight: 400;
     }
 
+    .display-1 a, .display-1 a:hover, .display-1 a:active, .display-1 a:focus {
+        color: black;
+    }
+
     p.display-4 {
         font-size: 55px;
         text-align: center;
@@ -1103,22 +1120,35 @@
         color: black;
     }
 
-    .soy svg {
-        margin: 14px;
-        color: #a90533;
-        font-size: 2.9rem;
-    }
-
-    .soy {
-        justify-content: center;
-    }
-
+    
     .row-accordion-soy .views-accordion-header {
         padding: 20px;
         font-size: 1.2em;
         color: black;
     }
 
+    .row-accordion-soy .ui-state-active a,
+    .row-accordion-soy div.ui-state-active,
+    .row-accordion-soy .accordeon .ui-state-active a::before { 
+        color: black !important;
+        background-color: #f7f7f7;
+        border: 1px solid #dfdfdf;
+    }
+
+    .row-accordion-soy .ui-state-visited a {
+        background-color: #a90533;
+        color: #f9f9f9;
+    }
+
+    .row-accordion-soy .ckeditor-accordion-container  dl dt a,
+    .row-accordion-soy .ckeditor-accordion-container dl dt.active a {
+        background: #f7f7f7;
+        color: black;
+    }
+
+
+
+    
 /* content-suffix */
 
     #content-suffix {
