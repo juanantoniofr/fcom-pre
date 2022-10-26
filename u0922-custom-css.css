@@ -942,6 +942,11 @@
     }
  
     .accordeon .ui-state-default a {
+        color: #f9f9f9;
+        font-size: xx-large;
+    }
+
+    .accordeon .ui-accordion-header-collapsed a{
         color: #a90533;
         font-size: xx-large;
     }
