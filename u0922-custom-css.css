@@ -971,7 +971,20 @@
     }
 
     .view-vista-conoce-fcom li { padding-top: 10px; }
+
+    .google-maps {
+        position: relative;
+        padding-bottom: 50% !important;
+        overflow: hidden;
+    }
     
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
     /* vista Titulos */
 
     .body_periodismo li {
