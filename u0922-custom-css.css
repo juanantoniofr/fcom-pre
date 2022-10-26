@@ -214,6 +214,11 @@
         min-height: 32px;
     }
 
+    #block-u0922-menu-principal .dropdown {
+        align-items: baseline;
+        padding: 0px 4px;
+    }
+
     #block-u0922-menu-principal .dropbtn {
         background-color: transparent;
         color: #a90533;
@@ -222,24 +227,25 @@
         border: none;
         cursor: pointer;
         display: inline-flex;
+        padding: 0px;
     }
 
+    #block-u0922-menu-principal .dropbtn:hover {
+        border-bottom: 1px solid #a90533;
+    }    
+    
     #container_imprescindibles_mas_idiomas .dropbtn{
         color: white;
         font-size: 16px;
     }
 
-    #block-u0922-menu-principal .dropbtn:hover, 
-    #container_imprescindibles_mas_idiomas .dropbtn:hover {
-        text-decoration: underline;
-    }
-
-    #block-u0922-menu-principal .dropbtn::after {
+    #block-u0922-menu-principal .dropdown::after {
         font-family: fontAwesome;
         content: "\f0dd";
         margin-left: 0.1em;
         font-size: 16px;
-        align-self: center;
+        align-self: initial;
+        color: #a90533;
     }
 
     .dropdown-content {
@@ -295,6 +301,9 @@
     {
         background-color: transparent;
         color: #a90533;
+        padding: 0px;
+        margin: 0px 2px;
+        border-bottom: 1px solid #a90533;
     }
 
     #block-u0922-menu-principal .dropbtn:focus {
