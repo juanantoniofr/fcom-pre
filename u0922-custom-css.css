@@ -237,6 +237,9 @@
     #block-u0922-menu-principal .dropbtn::after {
         font-family: fontAwesome;
         content: "\f0dd";
+        margin-left: 0.1em;
+        font-size: 16px;
+        align-self: center;
     }
 
     .dropdown-content {
