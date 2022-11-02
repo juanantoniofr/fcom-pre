@@ -23,10 +23,11 @@ h4.ident {
     font-size: 1.5em;
     font-weight: bold;
     line-height: 1.2em;
-    border-bottom: 1px solid #dfdfdf;
+    border-bottom: 1px solid #a90533;
     margin-left: 50px;
     padding-bottom: 5px;
     padding-left: 0px;
+    color: #a90533;
 }
 
 p.ident{
