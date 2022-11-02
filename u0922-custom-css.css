@@ -9,6 +9,80 @@
     a:hover, a:focus { text-decoration: none;}
     .text-center { text-align: center; }
 
+    table {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    h4.ident {
+        padding: 15px;
+        color: initial;
+        font-size: 1.5em;
+        font-weight: bold;
+        line-height: 1.2em;
+        border-bottom: 1px solid #dfdfdf;
+        margin-left: 50px;
+        padding-bottom: 5px;
+        padding-left: 0px;
+    }
+
+    p.ident{
+        padding: 30px 50px;
+    }
+
+/* ckeditor-accordion-container */
+
+.ckeditor-accordion-container dl dd {
+    padding: 20px 50px;
+}
+.ckeditor-accordion-container dl dt a {
+    background: transparent;
+    border: none;
+    color: #a90533;
+    font-size: xx-large;
+    font-weight: normal;
+    line-height: 1em;
+}
+
+.ck-accordion-ident.styled a {
+    font-size: x-large;
+}
+
+
+.ckeditor-accordion-container dl dt a:hover,
+.ckeditor-accordion-container dl dt.active a {
+    background: transparent;
+    font-weight: normal;
+}
+
+.ckeditor-accordion-container ul li {
+    list-style: disc;
+    padding: 10px;
+}
+
+.ckeditor-accordion-container ul li a {
+    font-size: initial;  
+} 
+
+.ckeditor-accordion-container ul li a::before {
+    content: unset;
+}
+
+.ckeditor-accordion-container .styled {
+    border: none;
+    padding: 10px 0px;
+}
+
+.ckeditor-accordion-container dt {
+    margin: 10px 0px;
+}
+
+dd.active {
+    border: 1px solid #dfdfdf;
+}
 
 /* regions */
 
@@ -963,7 +1037,7 @@
         color: #f9f9f9;
     }
 
-    .accordeon a::before {
+    .accordeon .views-accordion-header a::before {
         font-family: fontAwesome;
         content: "\f054";
         margin-right: 10px;
@@ -972,6 +1046,7 @@
 
     .view-vista-conoce-fcom li { padding-top: 10px; }
 
+    
     .google-maps {
         position: relative;
         padding-bottom: 50% !important;
@@ -986,6 +1061,15 @@
         height: 100% !important;
     }
 
+    .container-docs iframe{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 550px !important;
+    }
+
+   
     .video-youtube {
         position: relative;
         width: 100%;
@@ -1035,23 +1119,26 @@
         color: #a90533;
         font-size: 2em;
         font-weight: bold;
+        line-height: 1.2em;
     }
 
-    .inferior_periodismo a::before {
+    .inferior_periodismo dt a::before {
         font-family: fontAwesome;
         content: "\f054";
         margin-right: 10px;
         font-size: large;
     }
 
-    .inferior_periodismo a {
+    .inferior_periodismo dt a {
         font-size: x-large;
     }
 
-    .inferior_periodismo li {
+    .inferior_periodismo ul.opciones li {
         padding-top: 20px;
         padding-bottom: 20px; 
+        line-height: 1.7em;
     }
+
     
     /* vista practicas -&gt; SoyESTUDIANTE*/
 
@@ -1267,6 +1354,53 @@
     }
 
 
+    /*** bloque + opciones ***/
+    .mas_en {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .mas_en h3 {
+        display: block;
+        border-bottom: 1px solid #a90533;
+        width: 100%;
+        color: #a90533;
+        font-weight: 600;
+    }
+
+    .container-mas-en{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .container-mas-en .opcion_menu {
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        flex-wrap: wrap;
+        max-width: 50%;
+        width: 50%;
+    }
+
+    .container-mas-en .opcion_menu img {
+        width: 30%;
+        margin-right: 20px;
+
+    }
+
+    .container-mas-en .opcion_menu .descripcion{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 65%;
+        flex-direction: column;
+        width: 65%;
+    }
+    .container-mas-en .opcion_menu .descripcion h4 {
+        color: #a90533;
+    }
 /* footer */
 
     #footer {

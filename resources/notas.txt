@@ -1,0 +1,5 @@
+Grado en Periodismo
+ 1. Url relativas
+ 2. target="_blank" link a otras webs
+ 3. tfqué se elimina.
+ 4. embed documentos siempre que sea posible (https://products.aspose.app/html/es/iframe-generator)
