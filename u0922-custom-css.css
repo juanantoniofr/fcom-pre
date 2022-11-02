@@ -1087,16 +1087,16 @@ dd.active {
     
     /* vista Titulos */
 
-    .body_periodismo li {
+    .body_grado li {
         list-style: none;
     }
 
-    .superior_periodismo ul {
+    .superior_grado ul {
         display: flex;
         justify-content: center;
     }
 
-    .superior_periodismo li {
+    .superior_grado li {
         display: flex;
         width: 9em;
         height: 9em;
@@ -1109,11 +1109,11 @@ dd.active {
         margin: 30px;
     }
 
-    .superior_periodismo a {
+    .superior_grado a {
         color: #f9f9f9;
     }
 
-    .inferior_periodismo h3 {
+    .inferior_grado h3 {
         padding: 15px;
         border: #a90533 solid 1px;
         color: #a90533;
@@ -1122,23 +1122,26 @@ dd.active {
         line-height: 1.2em;
     }
 
-    .inferior_periodismo dt a::before {
+    .inferior_grado dt a::before {
         font-family: fontAwesome;
         content: "\f054";
         margin-right: 10px;
         font-size: large;
     }
 
-    .inferior_periodismo dt a {
+    .inferior_grado dt a {
         font-size: x-large;
     }
 
-    .inferior_periodismo ul.opciones li {
+    .inferior_grado ul.opciones li {
         padding-top: 20px;
         padding-bottom: 20px; 
         line-height: 1.7em;
     }
 
+    .node--id-44 h1 {
+        display: none;
+    }
     
     /* vista practicas -&gt; SoyESTUDIANTE*/
 
