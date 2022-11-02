@@ -42,7 +42,7 @@ padding: 20px 50px;
 background: transparent;
 border: none;
 color: #a90533;
-font-size: xx-large;
+font-size: x-large;
 font-weight: normal;
 line-height: 1em;
 }
@@ -1131,14 +1131,15 @@ h1.node__title {
 
 .inferior_grado dt a {
     font-size: x-large;
+    padding: 10px 0px;
 }
 
-/*
+
 .inferior_grado ul.opciones li {
     padding-top: 20px;
     padding-bottom: 20px; 
     line-height: 1.7em;
-}*/
+}
 
 .inferior_grado ul li a::before {
     font-family: fontAwesome;
@@ -1148,7 +1149,7 @@ h1.node__title {
 }
 
 .inferior_grado ul li a {
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 .node--id-44 h1 {
