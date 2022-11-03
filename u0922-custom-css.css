@@ -1142,7 +1142,7 @@ h1.node__title {
     line-height: 1.7em;
 }
 
-.inferior_grado ul li a::before {
+.inferior_grado ul.opciones li a::before {
     font-family: fontAwesome;
     content: "\f0c1";
     margin-right: 10px;
@@ -1152,6 +1152,10 @@ h1.node__title {
 .inferior_grado ul li a {
     font-size: x-large;
 }
+
+.inferior_grado dd.active ul li a {
+    font-size: larger;
+  }
 
 .node--id-44 h1 {
     display: none;
