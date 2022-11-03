@@ -1160,7 +1160,8 @@ h1.node__title {
     font-size: larger;
   }
 
-.node--id-44 h1 {
+.node--id-44 h1, 
+.node--id-3775 h1 {
     display: none;
 }
 
