@@ -9,6 +9,7 @@ a, a:hover, a:visited, a:active, a:hover, a:focus { color: #A90533;}
 a:hover, a:focus { text-decoration: none;}
 .text-center { text-align: center; }
 .display-none { display: none !important; }
+a.cursor-default:hover { cursor: default; }
 
 .pager {
     margin: 60px 0px;
