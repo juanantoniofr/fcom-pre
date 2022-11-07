@@ -4,7 +4,7 @@
     <div class="container-mas-en">
         
             <!-- 1.Grados -->
-            <div class="opcion_menu {% if url ends with 'grados' %} display_none {% endif %}">
+            <div class="opcion_menu {% if url ends with 'grados' %} display-none {% endif %}">
                 <img src="/sites/fcom/files/menu-ppal/titulos.png" />
 
                 <div class="descripcion">
@@ -14,7 +14,7 @@
             </div>
             
             <!-- 2.Periodismo -->
-            <div class="opcion_menu {% if url ends with 'periodismo' %} display_none {% endif %}">
+            <div class="opcion_menu {% if url ends with 'periodismo' %} display-none {% endif %}">
                 <img src="/sites/fcom/files/menu-ppal/titulos.png" />
 
                 <div class="descripcion">
@@ -24,7 +24,7 @@
             </div>
             
             <!-- 4.Publicidad y RRPP -->
-            <div class="opcion_menu {% if url ends with 'publicidad-y-relaciones-publicas' %} display_none {% endif %}">
+            <div class="opcion_menu {% if url ends with 'publicidad-y-relaciones-publicas' %} display-none {% endif %}">
                 <img src="/sites/fcom/files/menu-ppal/titulos.png" />
 
                 <div class="descripcion">
@@ -33,8 +33,8 @@
                 </div>
             </div>
 
-            <!-- 3.CAV -->doblegrado-PER-CAV
-            <div class="opcion_menu {% if url ends with 'comunicacion-audiovisual' %} display_none {% endif %}">
+            <!-- 3.CAV -->
+            <div class="opcion_menu {% if url ends with 'comunicacion-audiovisual' %} display-none {% endif %}">
                 <img src="/sites/fcom/files/menu-ppal/titulos.png" />
 
                 <div class="descripcion">
@@ -44,7 +44,7 @@
             </div>
 
             <!-- 5.Doble Grado -->
-            <div class="opcion_menu">
+            <div class="opcion_menu {% if url ends with 'doblegrado-PER-CAV' %} display-none {% endif %}">
                 <img src="/sites/fcom/files/menu-ppal/titulos.png" />
 
                 <div class="descripcion">
@@ -54,7 +54,7 @@
             </div>
 
             <!-- 6.doctorado -->
-            <div class="opcion_menu">
+            <div class="opcion_menu {% if url ends with 'doctorados' %} display-none {% endif %}">
                 <img src="/sites/fcom/files/menu-ppal/titulos.png" />
 
                 <div class="descripcion">
@@ -64,7 +64,7 @@
             </div>
 
             <!-- 7.másteres -->
-            <div class="opcion_menu">
+            <div class="opcion_menu {% if url ends with 'masteres' %} display-none {% endif %}">
                 <img src="/sites/fcom/files/menu-ppal/titulos.png" />
 
                 <div class="descripcion">
@@ -73,38 +73,8 @@
                 </div>
             </div>
 
-            <!-- 8.Escritura Creativa -->
-            <div class="opcion_menu">
-                <img src="/sites/fcom/files/menu-ppal/titulos.png" />
-
-                <div class="descripcion">
-                    <h4>Máster Escritura Creativa</h4>
-                    <p>Lorem ipsum.....</p>
-                </div>
-            </div>
-
-            <!-- 9.Comunicación y Cultura -->
-            <div class="opcion_menu">
-                <img src="/sites/fcom/files/menu-ppal/titulos.png" />
-
-                <div class="descripcion">
-                    <h4>Máster Comunicación y Cultura</h4>
-                    <p>Lorem ipsum.....</p>
-                </div>
-            </div>
-            
-            <!-- 10.Guión, Narrativa y ... -->
-            <div class="opcion_menu">
-                <img src="/sites/fcom/files/menu-ppal/titulos.png" />
-
-                <div class="descripcion">
-                    <h4>Máster Guion, Narrativa y Creatividad Audiovisual</h4>
-                    <p>Lorem ipsum.....</p>
-                </div>
-            </div>
-
-            <!-- 11.Comunicación institucional .... -->
-            <div class="opcion_menu">
+            <!-- 8.Comunicación institucional .... -->
+            <div class="opcion_menu {% if url ends with 'comunicacion-institucional-politica' %} display-none {% endif %}">
                 <img src="/sites/fcom/files/menu-ppal/titulos.png" />
 
                 <div class="descripcion">
@@ -113,8 +83,38 @@
                 </div>
             </div>
 
+            <!-- 9.Comunicación y Cultura -->
+            <div class="opcion_menu {% if url ends with 'comunicacion-cultura' %} display-none {% endif %}">
+                <img src="/sites/fcom/files/menu-ppal/titulos.png" />
+
+                <div class="descripcion">
+                    <h4>Máster Comunicación y Cultura</h4>
+                    <p>Lorem ipsum.....</p>
+                </div>
+            </div>
+
+            <!-- 10.Escritura Creativa -->
+            <div class="opcion_menu {% if url ends with 'escritura-creativa' %} display-none {% endif %}">
+                <img src="/sites/fcom/files/menu-ppal/titulos.png" />
+
+                <div class="descripcion">
+                    <h4>Máster Escritura Creativa</h4>
+                    <p>Lorem ipsum.....</p>
+                </div>
+            </div>
+
+            <!-- 11.Guión, Narrativa y ... -->
+            <div class="opcion_menu {% if url ends with 'guion-narrativa' %} display-none {% endif %}">
+                <img src="/sites/fcom/files/menu-ppal/titulos.png" />
+
+                <div class="descripcion">
+                    <h4>Máster Guion, Narrativa y Creatividad Audiovisual</h4>
+                    <p>Lorem ipsum.....</p>
+                </div>
+            </div>
+
             <!-- 12.Publicidad y Gestión... -->
-            <div class="opcion_menu">
+            <div class="opcion_menu {% if url ends with 'publicidad-gestion-contenidos' %} display-none {% endif %}">
                 <img src="/sites/fcom/files/menu-ppal/titulos.png" />
 
                 <div class="descripcion">
