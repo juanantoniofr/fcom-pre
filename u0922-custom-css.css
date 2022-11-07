@@ -23,6 +23,10 @@ a.pager__link, a.pager__link:hover, a.pager__link:active, a.pager__link:focus  {
     background: #a90533;
 }
 
+.ui-widget-content a{
+    color: #A90533;
+}
+
 table {
     width: 90%;
     margin-left: auto;
@@ -60,12 +64,12 @@ p.ident{
 padding: 20px 50px;
 }
 .ckeditor-accordion-container dl dt a {
-background: transparent;
-border: none;
-color: #a90533;
-font-size: x-large;
-font-weight: normal;
-line-height: 1em;
+    background: transparent;
+    border: none;
+    color: #a90533;
+    font-weight: normal;
+    font-size: 1.1em;
+    line-height: 1.8em;
 }
 
 .ck-accordion-ident.styled a {
@@ -75,34 +79,30 @@ font-size: x-large;
 
 .ckeditor-accordion-container dl dt a:hover,
 .ckeditor-accordion-container dl dt.active a {
-background: transparent;
-font-weight: normal;
+    background: transparent;
+    font-weight: normal;
 }
 
 .ckeditor-accordion-container ul li {
-list-style: disc;
-padding: 10px;
+    list-style: disc;
+    padding: 10px;
 }
 
 .ckeditor-accordion-container ul li a {
-font-size: initial;  
+    font-size: initial;  
 } 
 
 .ckeditor-accordion-container ul li a::before {
-content: unset;
+    content: unset;
 }
 
 .ckeditor-accordion-container .styled {
-border: none;
-padding: 10px 0px;
-}
-
-.ckeditor-accordion-container dt {
-margin: 10px 0px;
+    border: none;
+    padding: 10px 0px;
 }
 
 dd.active {
-border: 1px solid #dfdfdf;
+    border: 1px solid #dfdfdf;
 }
 
 /* regions */
@@ -1201,7 +1201,6 @@ h1.node__title {
 }
 
 .firma-vicedecanato{
-    background-color:#fff;
     color:#A90533;
     margin-bottom: 0;
 }
