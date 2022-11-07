@@ -10,6 +10,11 @@ a:hover, a:focus { text-decoration: none;}
 .text-center { text-align: center; }
 .display-none { display: none !important; }
 
+.pager {
+    margin: 60px 0px;
+    text-align: left;
+}
+
 a.pager__link, a.pager__link:hover, a.pager__link:active, a.pager__link:focus  {
     padding: 20px;
     font-size: 22px;
@@ -41,6 +46,12 @@ h4.ident {
 
 p.ident{
     padding: 30px 50px;
+}
+
+.views-field.views-field-changed {
+    font-size: 0.9em;
+    font-style: italic;
+    color: #444;
 }
 
 /* ckeditor-accordion-container */
@@ -1463,6 +1474,10 @@ p.display-4 {
     padding-top: 20px;
 }
 
+.pr-footer a {
+    color: white;
+    text-decoration: underline;
+}
 
 /***** Responsive css *****/
 
