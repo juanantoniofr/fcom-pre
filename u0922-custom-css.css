@@ -10,6 +10,14 @@ a:hover, a:focus { text-decoration: none;}
 .text-center { text-align: center; }
 .display-none { display: none !important; }
 
+a.pager__link, a.pager__link:hover, a.pager__link:active, a.pager__link:focus  {
+    padding: 20px;
+    font-size: 22px;
+    color: white;
+    border-radius: 14px;
+    background: #a90533;
+}
+
 table {
     width: 90%;
     margin-left: auto;
