@@ -1,0 +1,56 @@
+{% set url = url('<current>')|render|render %}
+    <div class="mas_en">
+        <h3>+ Prácticas</h3>
+        <div class="container-mas-en">
+            
+                <!-- 1.Novedades -->
+                <div class="opcion_menu {% if url ends with 'novedades' %} display-none {% endif %}">
+                    <img src="/sites/fcom/files/menu-ppal/titulos.png" />
+    
+                    <div class="descripcion">
+                        <h4>Novedades</h4>
+                        <p>Lorem ipsum.....</p>
+                    </div>
+                </div>
+                
+                <!-- 2.#soyEstudiante -->
+                <div class="opcion_menu {% if url ends with 'soyEstudiante' %} display-none {% endif %}">
+                    <img src="/sites/fcom/files/menu-ppal/titulos.png" />
+    
+                    <div class="descripcion">
+                        <h4>#SoyEstudiante</h4>
+                        <p>Lorem ipsum.....</p>
+                    </div>
+                </div>
+                
+                <!-- 3.#SoyDocente -->
+                <div class="opcion_menu {% if url ends with 'soyDocente' %} display-none {% endif %}">
+                    <img src="/sites/fcom/files/menu-ppal/titulos.png" />
+    
+                    <div class="descripcion">
+                        <h4>#SoyDocente</h4>
+                        <p>Lorem ipsum.....</p>
+                    </div>
+                </div>
+    
+                <!-- 4.#SoyEntidad -->
+                <div class="opcion_menu {% if url ends with 'soyentidad' %} display-none {% endif %}">
+                    <img src="/sites/fcom/files/menu-ppal/titulos.png" />
+    
+                    <div class="descripcion">
+                        <h4>#SoyEntidad</h4>
+                        <p>Lorem ipsum.....</p>
+                    </div>
+                </div>
+    
+                <!-- 5.#YoPractico -->
+                <div class="opcion_menu {% if url ends with 'yopractico' %} display-none {% endif %}">
+                    <img src="/sites/fcom/files/menu-ppal/titulos.png" />
+    
+                    <div class="descripcion">
+                        <h4>#YoPRACTICO</h4>
+                        <p>Lorem ipsum.....</p>
+                    </div>
+                </div>
+        </div>
+    </div>
