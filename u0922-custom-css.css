@@ -10,7 +10,7 @@ a:hover, a:focus { text-decoration: none;}
 .text-center { text-align: center; }
 .display-none { display: none !important; }
 a.cursor-default:hover { cursor: default; }
-
+article.node { background-color: transparent; }
 .pager {
     margin: 60px 0px;
     text-align: left;
@@ -71,6 +71,10 @@ padding: 20px 50px;
     font-weight: normal;
     font-size: 1.1em;
     line-height: 1.8em;
+}
+
+.accordion-ckeditor-title .ckeditor-accordion-container dl dt a {
+    padding: 0px;
 }
 
 .ck-accordion-ident.styled a {
@@ -1135,7 +1139,8 @@ h1.node__title {
     color: #f9f9f9;
 }
 
-.inferior_grado h3 {
+.inferior_grado h3,
+h1.node__title {
     padding: 15px;
     border: #a90533 solid 1px;
     color: #a90533;
@@ -1144,18 +1149,29 @@ h1.node__title {
     line-height: 1.2em;
 }
 
-.inferior_grado dt a::before {
+.inferior_grado dt a::before,
+.accordion-ckeditor-title-ConoceFcom dt a::before{
     font-family: fontAwesome;
     content: "\f054";
     margin-right: 10px;
     font-size: large;
 }
 
-.inferior_grado dt a {
+.inferior_grado dt a,
+.accordion-ckeditor-title-ConoceFcom dt a {
     font-size: x-large;
     padding: 10px 0px;
 }
 
+.field-content.accordion-ckeditor-title-ConoceFcom a.ckeditor-accordion-toggler{
+    padding: 0px;
+}
+
+.accordion-ckeditor-title-ConoceFcom a.ckeditor-accordion-toggler span.ckeditor-accordion-toggle::before, 
+.accordion-ckeditor-title-ConoceFcom a.ckeditor-accordion-toggler span.ckeditor-accordion-toggle::after {
+    display: none !important;
+    content: "" !important;
+}
 
 .inferior_grado ul.opciones li {
     padding-top: 10px;
