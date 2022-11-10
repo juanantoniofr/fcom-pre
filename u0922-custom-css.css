@@ -145,9 +145,11 @@ dd.active {
 }
 
 input#collapsible[type='checkbox'],
-input#collapsible-masthead[type='checkbox'],  
+input#collapsible-masthead[type='checkbox'],
+input#collapsible-ConoceFcom[type='checkbox']  
 label.lbl-toggle,
-label.lbl-toggle-masthead { display: none; } 
+label.lbl-toggle-masthead,
+label.lbl-toggle-ConoceFcom { display: none; } 
 
 .pr-header__header-first { display: flex; }
 
@@ -1671,10 +1673,12 @@ p.display-4 {
 
     /*input[type='checkbox'] { display: block; } */
     label.lbl-toggle,
-    label.lbl-toggle-masthead { display: block; }
+    label.lbl-toggle-masthead,
+    label.lbl-toggle-ConoceFcom { display: block; }
     /*.wrap-collabsible { margin: 1.2rem 0; } */
     .lbl-toggle,
-    .lbl-toggle-masthead { 
+    .lbl-toggle-masthead,
+    .lbl-toggle-ConoceFcom { 
         display: block;
         text-align: center;
         padding: 1rem;
@@ -1686,10 +1690,12 @@ p.display-4 {
     }
 
     .lbl-toggle:hover, 
-    .lbl-toggle-masthead:hover { color: #FFF; }
+    .lbl-toggle-masthead:hover,
+    .lbl-toggle-ConoceFcom:hover { color: #FFF; }
 
     .lbl-toggle::before,
-    .lbl-toggle-masthead::before { 
+    .lbl-toggle-masthead::before,
+    .lbl-toggle-ConoceFcom::before { 
         content: ' ';  
         display: inline-block; 
         border-top: 5px solid transparent;
@@ -1701,7 +1707,9 @@ p.display-4 {
     }
 
     .toggle:checked+.lbl-toggle::before,
-    .toggle:checked+.lbl-toggle-masthead::before { transform: rotate(90deg) translateX(-3px); }
+    .toggle:checked+.lbl-toggle-masthead::before,
+    .toggle:checked+.lbl-toggle-ConoceFcom::before 
+    { transform: rotate(90deg) translateX(-3px); }
 
     .collapsible-content,
     .collapsible-masthead-content { 
@@ -1718,10 +1726,13 @@ p.display-4 {
 
 
     .toggle:checked + .lbl-toggle + .collapsible-content,
-    .toggle:checked + .lbl-toggle-masthead + .collapsible-masthead-content { max-height: 350px; }
+    .toggle:checked + .lbl-toggle-masthead + .collapsible-masthead-content,
+    .toggle:checked + .lbl-toggle-ConoceFcom + .collapsible-ConoceFcom-content
+    { max-height: 350px; }
 
     .toggle:checked+.lbl-toggle,
-    .toggle:checked+.lbl-toggle-masthead {
+    .toggle:checked+.lbl-toggle-masthead,
+    .toggle:checked+.lbl-toggle-ConoceFcom {
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
     }
