@@ -290,7 +290,7 @@ ul.fcom-menu a {
 
 #u0922_menu_principal { vertical-align: baseline; }
 
-#block-u0922-menu-principal  .block__inner{
+#block-u0922-menu-principal .block__inner{
     display: flex;
     justify-content: end;
     flex-wrap: wrap;
@@ -1662,6 +1662,11 @@ p.display-4 {
         align-self: initial;
         color: #ddd;
     }
+
+    #block-u0922-menu-principal .block__inner{
+        flex-direction: column;
+        justify-content: initial;
+    }
     /* Collapsive menu responsive*/
 
     /*input[type='checkbox'] { display: block; } */
@@ -1707,6 +1712,8 @@ p.display-4 {
 
     .collapsible-content .content-inner {
         width: 100%;
+        flex-direction: column;
+        height: fit-content;
     }
 
 
@@ -1720,8 +1727,6 @@ p.display-4 {
     }
     .collapsible-content .content-inner,
     .collapsible-masthead-content .content-inner {
-        border-bottom-left-radius: 7px;
-        border-bottom-right-radius: 7px;
         padding: .5rem 1rem; 
         background: #A90533;
         align-content: center
