@@ -324,7 +324,7 @@ ul.fcom-menu a {
 #block-u0922-menu-principal .dropbtn {
     background-color: transparent;
     color: #a90533;
-    font-size: 26px;
+    font-size: 1.6em;
     font-weight: 600;
     border: none;
     cursor: pointer;
@@ -1026,353 +1026,376 @@ div.cenefa-l1 img {
 
 /* main-content */
 
-h1.node__title {
-    font-size: 26px;
-    color: #a90533;
-}
+    h1.node__title {
+        font-size: 26px;
+        color: #a90533;
+    }
 
-#main-content img {
-    padding: 20px;
-}
+    #main-content img {
+        padding: 20px;
+    }
 
-/* vista Conoce FCom */
+    /* vista Conoce FCom */
 
-.accordeon div {
-    border: none;
-    background: none;
-    padding: 9px;
-}
+    .accordeon div {
+        border: none;
+        background: none;
+        padding: 9px;
+    }
 
-.accordeon .ui-state-default a {
-    color: #f9f9f9;
-    font-size: xx-large;
-}
+    .accordeon .ui-state-default a {
+        color: #f9f9f9;
+        font-size: xx-large;
+    }
 
-.accordeon .ui-accordion-header-collapsed a{
-    color: #a90533;
-    font-size: xx-large;
-}
+    .accordeon .ui-accordion-header-collapsed a{
+        color: #a90533;
+        font-size: xx-large;
+    }
 
-.row-accordion-soy
-.ui-state-active a, div.ui-state-active,
-.accordeon .ui-state-active a::before { 
-    color: #f9f9f9 !important; 
-    background-color: #a90533;
-}
+    .row-accordion-soy
+    .ui-state-active a, div.ui-state-active,
+    .accordeon .ui-state-active a::before { 
+        color: #f9f9f9 !important; 
+        background-color: #a90533;
+    }
 
-.ui-state-visited a {
-    background-color: #a90533;
-    color: #f9f9f9;
-}
+    .ui-state-visited a {
+        background-color: #a90533;
+        color: #f9f9f9;
+    }
 
-.accordeon .views-accordion-header a::before {
-    font-family: fontAwesome;
-    content: "\f054";
-    margin-right: 10px;
-    font-size: large
-}
+    .accordeon .views-accordion-header a::before {
+        font-family: fontAwesome;
+        content: "\f054";
+        margin-right: 10px;
+        font-size: large
+    }
 
-.view-vista-conoce-fcom li { padding-top: 10px; }
-
-
-.google-maps {
-    position: relative;
-    padding-bottom: 50% !important;
-    overflow: hidden;
-}
-
-.google-maps iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important;
-}
-
-.container-docs iframe{
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 550px !important;
-}
+    .view-vista-conoce-fcom li { padding-top: 10px; }
 
 
-.video-youtube {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25% !important;
-}
+    .google-maps {
+        position: relative;
+        padding-bottom: 50% !important;
+        overflow: hidden;
+    }
 
-.video-youtube iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
 
-/* vista Titulos */
+    .container-docs iframe{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 550px !important;
+    }
 
-.body_grado li {
-    list-style: none;
-}
 
-.superior_grado ul {
-    display: flex;
-    justify-content: center;
-}
+    .video-youtube {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25% !important;
+    }
 
-.superior_grado li {
-    display: flex;
-    width: 9em;
-    height: 9em;
-    border-radius: 75px;
-    background: #a90533;
-    align-items: center;
-    padding: 1%;
-    color: #f9f9f9;
-    text-align: center;
-    margin: 30px;
-}
+    .video-youtube iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 
-.superior_grado a {
-    color: #f9f9f9;
-}
+    /* vista Titulos */
 
-.inferior_grado h3,
-h1.node__title {
-    padding: 15px;
-    border: #a90533 solid 1px;
-    color: #a90533;
-    font-size: 2em;
-    font-weight: bold;
-    line-height: 1.2em;
-}
+    .body_grado li {
+        list-style: none;
+    }
 
-.inferior_grado dt a::before,
-.accordion-ckeditor-title-ConoceFcom dt a::before{
-    font-family: fontAwesome;
-    content: "\f054";
-    margin-right: 10px;
-    font-size: large;
-}
+    .superior_grado ul {
+        display: flex;
+        justify-content: center;
+    }
 
-.inferior_grado dt a,
-.accordion-ckeditor-title-ConoceFcom dt a {
-    font-size: x-large;
-    padding: 10px 0px;
-}
+    .superior_grado li {
+        display: flex;
+        width: 9em;
+        height: 9em;
+        border-radius: 75px;
+        background: #a90533;
+        align-items: center;
+        padding: 1%;
+        color: #f9f9f9;
+        text-align: center;
+        margin: 30px;
+    }
 
-.field-content.accordion-ckeditor-title-ConoceFcom a.ckeditor-accordion-toggler{
-    padding: 0px;
-}
+    .superior_grado a {
+        color: #f9f9f9;
+    }
 
-.accordion-ckeditor-title-ConoceFcom a.ckeditor-accordion-toggler span.ckeditor-accordion-toggle::before, 
-.accordion-ckeditor-title-ConoceFcom a.ckeditor-accordion-toggler span.ckeditor-accordion-toggle::after {
-    display: none !important;
-    content: "" !important;
-}
+    .inferior_grado h3,
+    h1.node__title {
+        padding: 15px;
+        border: #a90533 solid 1px;
+        color: #a90533;
+        font-size: 2em;
+        font-weight: bold;
+        line-height: 1.2em;
+    }
 
-.inferior_grado ul.opciones li {
-    padding-top: 10px;
-    padding-bottom: 20px; 
-    line-height: 1.7em;
-    list-style: none;
-    padding-left: initial;
-}
+    .inferior_grado dt a::before,
+    .accordion-ckeditor-title-ConoceFcom dt a::before{
+        font-family: fontAwesome;
+        content: "\f054";
+        margin-right: 10px;
+        font-size: large;
+    }
 
-.inferior_grado ul.opciones li a::before {
-    font-family: fontAwesome;
-    content: "\f0c1";
-    margin-right: 10px;
-    font-size: x-large;
+    .inferior_grado dt a,
+    .accordion-ckeditor-title-ConoceFcom dt a {
+        font-size: x-large;
+        padding: 10px 0px;
+    }
 
-}
+    .field-content.accordion-ckeditor-title-ConoceFcom a.ckeditor-accordion-toggler{
+        padding: 0px;
+    }
 
-.inferior_grado ul li a {
-    font-size: x-large;
-}
+    .accordion-ckeditor-title-ConoceFcom a.ckeditor-accordion-toggler span.ckeditor-accordion-toggle::before, 
+    .accordion-ckeditor-title-ConoceFcom a.ckeditor-accordion-toggler span.ckeditor-accordion-toggle::after {
+        display: none !important;
+        content: "" !important;
+    }
 
-.inferior_grado dd.active ul li a {
-    font-size: larger;
-  }
+    .inferior_grado ul.opciones li {
+        padding-top: 10px;
+        padding-bottom: 20px; 
+        line-height: 1.7em;
+        list-style: none;
+        padding-left: initial;
+    }
 
-.node--id-44 h1, 
-.node--id-3775 h1,
-.node--id-56 h1,
-.node--id-58 h1,
-.node--id-108 h1,
-.node--id-109 h1,
-.node--id-110 h1,
-.node--id-3702 h1,
-.node--id-91 h1,
-.node--id-90 h1,
-.node--id-111 h1 {
-    display: none;
-}
+    .inferior_grado ul.opciones li a::before {
+        font-family: fontAwesome;
+        content: "\f0c1";
+        margin-right: 10px;
+        font-size: x-large;
 
-/* vista practicas -&gt; SoyESTUDIANTE*/
+    }
 
-.jumbotron {
-    padding: 4rem 2rem;
-}
+    .inferior_grado ul li a {
+        font-size: x-large;
+    }
 
-.firma-vicedecanato{
-    color:#A90533;
-    margin-bottom: 0;
-}
+    .inferior_grado dd.active ul li a {
+        font-size: larger;
+    }
 
-.soy h3 {
-    font-size: 1.75rem;
-    margin-bottom: .5rem;
-    font-weight: 500;
-    line-height: 1.2;
-    border:3px solid #ccc; 
-    border-radius: 10px; 
-    padding-bottom:70px;
-    padding-top:60px;
-}
+    .node--id-44 h1, 
+    .node--id-3775 h1,
+    .node--id-56 h1,
+    .node--id-58 h1,
+    .node--id-108 h1,
+    .node--id-109 h1,
+    .node--id-110 h1,
+    .node--id-3702 h1,
+    .node--id-91 h1,
+    .node--id-90 h1,
+    .node--id-111 h1 {
+        display: none;
+    }
 
-.soy h3 a {
-    flex-direction: column;
-}
+    /* vista practicas -&gt; SoyESTUDIANTE*/
 
-.soy span  {
-    font-size:60px;
-    color:#A90533;
-}
+    .jumbotron {
+        padding: 4rem 2rem;
+    }
+
+    .firma-vicedecanato{
+        color:#A90533;
+        margin-bottom: 0;
+    }
+
+    .soy h3 {
+        font-size: 1.75rem;
+        margin-bottom: .5rem;
+        font-weight: 500;
+        line-height: 1.2;
+        border:3px solid #ccc; 
+        border-radius: 10px; 
+        padding-bottom:70px;
+        padding-top:60px;
+    }
+
+    .soy h3 a {
+        flex-direction: column;
+    }
+
+    .soy span  {
+        font-size:60px;
+        color:#A90533;
+    }
+        
+    .soy a { 
+        color: black; 
+        display: flex;
+        align-items: center;
+    }
+
+    .soy .col-sm-3 a { 
+        flex-direction: column;
+    }
+    .soy svg {
+        color: #A90533;
+        font-size: x-large;
+        margin: 14px;
+        color: #a90533;
+        font-size: 2.9rem;
+    }
+
+    .soy .col-sm-3 svg {
+        margin: 14px;
+        font-size: 2rem;
+    }
+
+    .soy {
+        justify-content: center;
+    }
+
+
+    .container-view-u0922-practicas  {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1140px;
+        margin-bottom: 6rem;
+    }
+
+    .soy .col-sm-3 p {
+        border: 3px solid #ccc;
+        border-radius: 6px;
+        padding: 5px 50px;
+        text-align: center;
+    }
+
+    .col-sm-3 { margin: 20px; }
+    .col-sm-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-top:50px;
+    }
+
+    .display-1 {
+        font-size: 6rem;
+        line-height: 1.2;
+        color:#A90533;
+        font-size: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 50px 0px;
+        font-weight: 400;
+    }
+
+    .display-1 a, .display-1 a:hover, .display-1 a:active, .display-1 a:focus {
+        color: black;
+    }
+
+    p.display-4 {
+        font-size: 55px;
+        text-align: center;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+        color: black;
+    }
+
+
+    .row-accordion-soy .views-accordion-header {
+        padding: 20px;
+        font-size: 1.2em;
+        color: black;
+    }
+
+    .row-accordion-soy .ui-state-active a,
+    .row-accordion-soy div.ui-state-active,
+    .row-accordion-soy .accordeon .ui-state-active a::before { 
+        color: black !important;
+        background-color: #f7f7f7;
+        border: 1px solid #dfdfdf;
+    }
+
+    .row-accordion-soy .ckeditor-accordion-container dl {
+        border: 1px solid #dfdfdf;
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+
+
+
+    .row-accordion-soy .row-accordion-soy .ui-state-visited a {
+        background-color: #a90533;
+        color: #f9f9f9;
+    }
+
+    .row-accordion-soy .ckeditor-accordion-toggle::before,
+    .row-accordion-soy .ckeditor-accordion-toggle::after {
+        content: unset !important;
+    }
+
+    .row-accordion-soy .ckeditor-accordion-container dl dt a {
+        border-bottom: 1px solid #dfdfdf;
+        padding: 10px 15px;
+    }
+
+    .row-accordion-soy .ckeditor-accordion-container  dl dt a,
+    .row-accordion-soy .ckeditor-accordion-container dl dt.active a {
+        background: #f7f7f7;
+        color:inherit;
+    }
+
+    .row-accordion-soy .ckeditor-accordion-container  dl dd {
+        padding: 15px;
+    }
+
+    /* Noticias Fcom */
+    .view-paginas-gabinete .views-field.views-field-title {
+        font-size: 1.6em;
+        line-height: 1.2em;
+        min-height: 95px;
+    }
     
-.soy a { 
-    color: black; 
-    display: flex;
-    align-items: center;
-}
-
-.soy .col-sm-3 a { 
-    flex-direction: column;
-}
-.soy svg {
-    color: #A90533;
-    font-size: x-large;
-    margin: 14px;
-    color: #a90533;
-    font-size: 2.9rem;
-}
-
-.soy .col-sm-3 svg {
-    margin: 14px;
-    font-size: 2rem;
-}
-
-.soy {
-    justify-content: center;
-}
-
-
-.container-view-u0922-practicas  {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1140px;
-    margin-bottom: 6rem;
-}
-
-.soy .col-sm-3 p {
-    border: 3px solid #ccc;
-    border-radius: 6px;
-    padding: 5px 50px;
-    text-align: center;
-}
-
-.col-sm-3 { margin: 20px; }
-.col-sm-4 {
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-top:50px;
-}
-
-.display-1 {
-    font-size: 6rem;
-    line-height: 1.2;
-    color:#A90533;
-    font-size: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 50px 0px;
-    font-weight: 400;
-}
-
-.display-1 a, .display-1 a:hover, .display-1 a:active, .display-1 a:focus {
-    color: black;
-}
-
-p.display-4 {
-    font-size: 55px;
-    text-align: center;
-    margin-bottom: 1rem;
-    line-height: 1.2;
-    color: black;
-}
-
-
-.row-accordion-soy .views-accordion-header {
-    padding: 20px;
-    font-size: 1.2em;
-    color: black;
-}
-
-.row-accordion-soy .ui-state-active a,
-.row-accordion-soy div.ui-state-active,
-.row-accordion-soy .accordeon .ui-state-active a::before { 
-    color: black !important;
-    background-color: #f7f7f7;
-    border: 1px solid #dfdfdf;
-}
-
-.row-accordion-soy .ckeditor-accordion-container dl {
-    border: 1px solid #dfdfdf;
-    padding: 0px;
-    margin-bottom: 0px;
-}
-
-
-
-.row-accordion-soy .row-accordion-soy .ui-state-visited a {
-    background-color: #a90533;
-    color: #f9f9f9;
-}
-
-.row-accordion-soy .ckeditor-accordion-toggle::before,
-.row-accordion-soy .ckeditor-accordion-toggle::after {
-    content: unset !important;
-}
-
-.row-accordion-soy .ckeditor-accordion-container dl dt a {
-    border-bottom: 1px solid #dfdfdf;
-    padding: 10px 15px;
-}
-
-.row-accordion-soy .ckeditor-accordion-container  dl dt a,
-.row-accordion-soy .ckeditor-accordion-container dl dt.active a {
-    background: #f7f7f7;
-    color:inherit;
-}
-
-.row-accordion-soy .ckeditor-accordion-container  dl dd {
-    padding: 15px;
-}
-
-
-
+    #main-content .view-paginas-gabinete .views-field.views-field-field-imagen img {
+        padding-left: 0px;
+    }
+    
+    .view-paginas-gabinete .views-field.views-field-field-entradilla {
+        padding-top: 20px;
+        text-align: justify;
+        padding-right: 30px;
+        min-height: 145px;
+    }
+    
+    .view-paginas-gabinete .views-field.views-field-created {
+        font-size: 0.8em;
+        font-weight: 600;
+        font-style: italic;
+        margin-top: 5px;
+    }
+   
 
 /* content-suffix */
 
@@ -1641,8 +1664,9 @@ p.display-4 {
 
     #block-u0922-menu-principal .dropbtn{
         color: #ddd;
-        font-size: initial;
+        font-size: 0.9em;
         box-shadow: unset;
+        display: inline;
     }
 
     #block-u0922-menu-principal .dropdown:hover .dropbtn{
@@ -1659,12 +1683,7 @@ p.display-4 {
     }
 
     #block-u0922-menu-principal .dropdown::before {
-        font-family: fontAwesome;
-        content: "\f0dd";
-        margin-right: 0.1em;
-        font-size: 16px;
-        align-self: initial;
-        color: #ddd;
+        content: unset;
     }
 
     #block-u0922-menu-principal .block__inner{
@@ -1714,7 +1733,8 @@ p.display-4 {
     { transform: rotate(90deg) translateX(-3px); }
 
     .collapsible-content,
-    .collapsible-masthead-content { 
+    .collapsible-masthead-content,
+    .collapsible-ConoceFcom-content { 
         max-height: 0px;
         overflow: hidden;
         transition: max-height .25s ease-in-out;
@@ -1728,9 +1748,14 @@ p.display-4 {
 
 
     .toggle:checked + .lbl-toggle + .collapsible-content,
-    .toggle:checked + .lbl-toggle-masthead + .collapsible-masthead-content,
-    .toggle:checked + .lbl-toggle-ConoceFcom + .collapsible-ConoceFcom-content
+    .toggle:checked + .lbl-toggle-masthead + .collapsible-masthead-content
     { max-height: 350px; }
+
+    .toggle:checked + .lbl-toggle-ConoceFcom + .collapsible-ConoceFcom-content{
+        max-height:550px;
+        display: flex;
+        margin-top: 30px;
+    }
 
     .toggle:checked+.lbl-toggle,
     .toggle:checked+.lbl-toggle-masthead,
