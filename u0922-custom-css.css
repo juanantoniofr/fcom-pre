@@ -146,10 +146,10 @@ dd.active {
 
 input#collapsible[type='checkbox'],
 input#collapsible-masthead[type='checkbox'],
-input#collapsible-ConoceFcom[type='checkbox']  
+input#collapsible-ConoceFcom[type='checkbox'],  
 label.lbl-toggle,
-label.lbl-toggle-masthead,
-label.lbl-toggle-ConoceFcom { display: none; } 
+label.lbl-toggle-masthead
+ { display: none; } 
 
 .pr-header__header-first { display: flex; }
 
@@ -1564,6 +1564,8 @@ p.display-4 {
             margin-left: 0;
             padding-top: 0px;
         }
+
+        
 
         #block-u0922-menu-principal .dropdown-content {
             left: 0;
