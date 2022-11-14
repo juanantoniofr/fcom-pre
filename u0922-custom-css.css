@@ -145,10 +145,10 @@ dd.active {
     justify-content: space-between;
 }
 
-input#collapsible[type='checkbox'],
-input#collapsible-masthead[type='checkbox'],
-input#collapsible-ConoceFcom[type='checkbox'],
-input#collapsible-Titulos[type='checkbox'],  
+input#collapsible[type="checkbox"],
+input#collapsible-masthead[type="checkbox"],
+input#collapsible-ConoceFcom[type="checkbox"],
+input#collapsible-Titulos[type="checkbox"],  
 label.lbl-toggle,
 label.lbl-toggle-masthead
  { display: none; } 
