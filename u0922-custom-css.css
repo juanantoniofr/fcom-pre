@@ -1,3 +1,4 @@
+
 /* boby - html - .page */
 
 html, body, .page { 
@@ -1373,7 +1374,7 @@ div.cenefa-l1 img {
     }
 
     /* Noticias Fcom */
-    .view-paginas-gabinete .views-field.views-field-title {
+    .class-doscolumnas-noticiasfcom .views-field.views-field-title {
         font-size: 1.6em;
         line-height: 1.2em;
         min-height: 95px;
