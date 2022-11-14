@@ -146,7 +146,8 @@ dd.active {
 
 input#collapsible[type='checkbox'],
 input#collapsible-masthead[type='checkbox'],
-input#collapsible-ConoceFcom[type='checkbox'],  
+input#collapsible-ConoceFcom[type='checkbox'],
+input#collapsible-Titulos[type='checkbox'],  
 label.lbl-toggle,
 label.lbl-toggle-masthead
  { display: none; } 
@@ -1380,6 +1381,7 @@ div.cenefa-l1 img {
     
     #main-content .view-paginas-gabinete .views-field.views-field-field-imagen img {
         padding-left: 0px;
+        float: left;
     }
     
     .view-paginas-gabinete .views-field.views-field-field-entradilla {
@@ -1588,11 +1590,10 @@ div.cenefa-l1 img {
             padding-top: 0px;
         }
 
-        
-
         #block-u0922-menu-principal .dropdown-content {
             left: 0;
             max-width: unset;
+            flex-direction: column;
         }
 
         .border-row {
@@ -1673,17 +1674,13 @@ div.cenefa-l1 img {
         color: #DDD;
     }
 
-    #block-u0922-menu-principal .dropdown::after {
-        font-family: fontAwesome;
-        content: unset;
-        margin-left: 0.1em;
-        font-size: 16px;
-        align-self: initial;
-        color: #a90533;
-    }
-
+    #block-u0922-menu-principal .dropdown::after,
     #block-u0922-menu-principal .dropdown::before {
         content: unset;
+    }
+
+    #block-u0922-menu-principal .dropbtn:hover {
+        border-bottom: none !important;
     }
 
     #block-u0922-menu-principal .block__inner{
@@ -1695,11 +1692,13 @@ div.cenefa-l1 img {
     /*input[type='checkbox'] { display: block; } */
     label.lbl-toggle,
     label.lbl-toggle-masthead,
-    label.lbl-toggle-ConoceFcom { display: block; }
+    label.lbl-toggle-ConoceFcom,
+    label.lbl-toggle-Titulos { display: block; }
     /*.wrap-collabsible { margin: 1.2rem 0; } */
     .lbl-toggle,
     .lbl-toggle-masthead,
-    .lbl-toggle-ConoceFcom { 
+    .lbl-toggle-ConoceFcom,
+    .lbl-toggle-Titulos { 
         display: block;
         text-align: center;
         padding: 1rem;
@@ -1712,11 +1711,13 @@ div.cenefa-l1 img {
 
     .lbl-toggle:hover, 
     .lbl-toggle-masthead:hover,
-    .lbl-toggle-ConoceFcom:hover { color: #FFF; }
+    .lbl-toggle-ConoceFcom:hover,
+    .lbl-toggle-Titulos:hover { color: #FFF; }
 
     .lbl-toggle::before,
     .lbl-toggle-masthead::before,
-    .lbl-toggle-ConoceFcom::before { 
+    .lbl-toggle-ConoceFcom::before,
+    .lbl-toggle-Titulos::before { 
         content: ' ';  
         display: inline-block; 
         border-top: 5px solid transparent;
@@ -1734,7 +1735,8 @@ div.cenefa-l1 img {
 
     .collapsible-content,
     .collapsible-masthead-content,
-    .collapsible-ConoceFcom-content { 
+    .collapsible-ConoceFcom-content,
+    .collapsible-Titulo-content { 
         max-height: 0px;
         overflow: hidden;
         transition: max-height .25s ease-in-out;
@@ -1751,7 +1753,8 @@ div.cenefa-l1 img {
     .toggle:checked + .lbl-toggle-masthead + .collapsible-masthead-content
     { max-height: 350px; }
 
-    .toggle:checked + .lbl-toggle-ConoceFcom + .collapsible-ConoceFcom-content{
+    .toggle:checked + .lbl-toggle-ConoceFcom + .collapsible-ConoceFcom-content,
+    .toggle:checked + .lbl-toggle-Titulo + .collapsible-Titulo-content{
         max-height:550px;
         display: flex;
         margin-top: 30px;
@@ -1759,7 +1762,8 @@ div.cenefa-l1 img {
 
     .toggle:checked+.lbl-toggle,
     .toggle:checked+.lbl-toggle-masthead,
-    .toggle:checked+.lbl-toggle-ConoceFcom {
+    .toggle:checked+.lbl-toggle-ConoceFcom,
+    .toggle:checked+.lbl-toggle-Titulo {
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
     }
