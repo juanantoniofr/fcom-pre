@@ -1380,12 +1380,12 @@ div.cenefa-l1 img {
         min-height: 95px;
     }
     
-    #main-content .view-paginas-gabinete .views-field.views-field-field-imagen img {
+    #main-content .class-doscolumnas-noticiasfcom .views-field.views-field-field-imagen img {
         padding-left: 0px;
         float: left;
     }
     
-    .view-paginas-gabinete .views-field.views-field-field-entradilla {
+    .class-doscolumnas-noticiasfcom .views-field.views-field-field-entradilla {
         padding-top: 20px;
         text-align: justify;
         padding-right: 30px;
