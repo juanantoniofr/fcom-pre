@@ -1537,16 +1537,20 @@ div.cenefa-l1 img {
 
     /** masthead **/
 
-        #masthead {
-            width: 100%;
-        }
+        #masthead { width: 100%; }
 
         #block-u0922-menu-header .collapsible-masthead-content .content-inner {
             flex-wrap: wrap;
             flex-direction: column;
-            border: 1px solid white;
         }
 
+        #block-u0922-headerleft {
+            margin: 2px 10px;
+            width: 100%;
+        }
+    
+        #block-u0922-headerright { margin: 2px 10px; }
+    
         #block-u0922-headerleft {
             height: fit-content;
             margin: 0px;
@@ -1554,9 +1558,7 @@ div.cenefa-l1 img {
         }
 
         #superfish-u0922-headerleft,
-        #superfish-u0922-headerright {
-            flex-direction: column;
-        }
+        #superfish-u0922-headerright { flex-direction: column; }
 
         #block-u0922-headerright {
             height: fit-content;
@@ -1564,6 +1566,39 @@ div.cenefa-l1 img {
             border-top: 1px solid white;
             padding-top: 10px;
             margin: 0px;
+        }
+
+        #menu-u0922-imprescindibles { display: none; }
+    
+        #reponsive-menu-u0922-imprescindibles { 
+            display: flex;
+            border-top: 1px solid white;
+            margin: 2px 10px;
+        }
+
+        .dropdown-content-imprescindible {
+            padding-top: 20px;
+            display: flex;
+        }
+
+        .dropdown-content-imprescindible ul {
+            list-style: none;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .dropdown-content-imprescindible ul li {
+            line-height: 2.5em;
+            align-items: center;
+        }
+
+        .dropdown-content-imprescindible ul li a { display: flex; }
+
+        #block-formulariodebusqueda {
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
         }
 
     /** navbar responsive **/
@@ -1584,11 +1619,11 @@ div.cenefa-l1 img {
             padding: 0px;
         }
 
+        #block-logouses .field__item h1 { text-align: center }
+    
         /** menu ppal responsive **/
-        .narrativa img {
-            display: none;
-        }
-        
+        .narrativa img { display: none; }
+            
         .dropdown:hover .dropdown-content,
         .dropdown:focus .dropdown-content {
             width: 100%;
@@ -1605,6 +1640,188 @@ div.cenefa-l1 img {
         .border-row {
             border-left: unset;
             padding-left: unset;
+        }
+
+        #block-u0922-menu-principal {
+            width: 100%;
+            display: block;
+        }
+    
+        #block-u0922-menu-principal .dropbtn{
+            color: #ddd;
+            font-size: 0.9em;
+            box-shadow: unset;
+            display: inline;
+        }
+    
+        #block-u0922-menu-principal .dropdown:hover .dropbtn{
+            color: #DDD;
+        }
+    
+        #block-u0922-menu-principal .dropdown::after,
+        #block-u0922-menu-principal .dropdown::before {
+            content: unset;
+        }
+    
+        #block-u0922-menu-principal .dropbtn:hover {
+            border-bottom: none !important;
+        }
+    
+        #block-u0922-menu-principal .block__inner{
+            flex-direction: column;
+            justify-content: initial;
+        }
+        /* Collapsive menu ppal responsive*/
+    
+        
+        label.lbl-toggle,
+        label.lbl-toggle-masthead,
+        label.lbl-toggle-ConoceFcom,
+        label.lbl-toggle-Titulos,
+        label.lbl-toggle-Practicas,
+        label.lbl-toggle-Movilidad,
+        label.lbl-toggle-Secretaria,
+        label.lbl-toggle-NoticiasFcom { display: block; }
+        
+        .lbl-toggle,
+        .lbl-toggle-masthead,
+        .lbl-toggle-ConoceFcom,
+        .lbl-toggle-Titulos,
+        .lbl-toggle-Practicas,
+        .lbl-toggle-Movilidad,
+        .lbl-toggle-Secretaria,
+        .lbl-toggle-NoticiasFcom { 
+            display: block;
+            text-align: center;
+            padding: 1rem;
+            color: #DDD;
+            background: #A90533;
+            cursor: pointer;
+            border-radius: unset;
+            transition: all 0.25s ease-out;
+        }
+    
+        .lbl-toggle:hover, 
+        .lbl-toggle-masthead:hover,
+        .lbl-toggle-ConoceFcom:hover,
+        .lbl-toggle-Titulos:hover,
+        .lbl-toggle-Practicas:hover,
+        .lbl-toggle-Movilidad:hover,
+        .lbl-toggle-Secretaria:hover,
+        .lbl-toggle-NoticiasFcom:hover { color: #FFF; }
+    
+        .lbl-toggle::before,
+        .lbl-toggle-masthead::before,
+        .lbl-toggle-ConoceFcom::before,
+        .lbl-toggle-Titulos::before,
+        .lbl-toggle-Practicas::before,
+        .lbl-toggle-Movilidad::before,
+        .lbl-toggle-Secretaria::before,
+        .lbl-toggle-NoticiasFcom::before { 
+            content: ' ';  
+            display: inline-block; 
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent; 
+            border-left: 5px solid currentColor;
+            vertical-align: middle;
+            margin-right: .7rem; transform: translateY(-2px);
+            transition: transform .2s ease-out; 
+        }
+    
+        .toggle:checked+.lbl-toggle::before,
+        .toggle:checked+.lbl-toggle-masthead::before,
+        .toggle:checked+.lbl-toggle-ConoceFcom::before,
+        .toggle:checked+.lbl-toggle-Titulos::before,
+        .toggle:checked+.lbl-toggle-Practicas::before,
+        .toggle:checked+.lbl-toggle-Movilidad::before,
+        .toggle:checked+.lbl-toggle-Secretaria::before,
+        .toggle:checked+.lbl-toggle-NoticiasFcom::before { transform: rotate(90deg) translateX(-3px); }
+    
+        .collapsible-content,
+        .collapsible-masthead-content,
+        .collapsible-ConoceFcom-content,
+        .collapsible-Titulos-content,
+        .collapsible-Practicas-content,
+        .collapsible-Movilidad-content,
+        .collapsible-Secretaria-content,
+        .collapsible-NoticiasFcom-content { 
+            max-height: 0px;
+            overflow: hidden;
+            transition: max-height .25s ease-in-out;
+        }
+    
+        .collapsible-masthead-content { z-index: 1; }
+    
+        .collapsible-ConoceFcom-content { z-index: 8; }
+    
+        .collapsible-Titulos-content { z-index: 7; }
+    
+        .collapsible-Practicas-content { z-index: 6; }
+    
+        .collapsible-Movilidad-content { z-index: 5; }
+    
+        .collapsible-Secretaria-content { z-index: 4; }
+    
+        .collapsible-NoticiasFcom-content { z-index: 3; }
+    
+        .collapsible-content .content-inner {
+            width: 100%;
+            flex-direction: column;
+            height: fit-content;
+        }
+    
+        .toggle:checked + .lbl-toggle + .collapsible-content,
+        .toggle:checked + .lbl-toggle-masthead + .collapsible-masthead-content { max-height: fit-content; }
+    
+        .toggle:checked + .lbl-toggle-ConoceFcom + .collapsible-ConoceFcom-content,
+        .toggle:checked + .lbl-toggle-Titulos + .collapsible-Titulos-content,
+        .toggle:checked + .lbl-toggle-Practicas + .collapsible-Practicas-content,
+        .toggle:checked + .lbl-toggle-Movilidad + .collapsible-Movilidad-content,
+        .toggle:checked + .lbl-toggle-Secretaria + .collapsible-Secretaria-content,
+        .toggle:checked + .lbl-toggle-NoticiasFcom + .collapsible-NoticiasFcom-content {
+            max-height:fit-content;
+            display: flex;
+            margin-top: 30px;
+        }
+    
+        .toggle:checked+.lbl-toggle,
+        .toggle:checked+.lbl-toggle-masthead,
+        .toggle:checked+.lbl-toggle-ConoceFcom,
+        .toggle:checked+.lbl-toggle-Titulos,
+        .toggle:checked+.lbl-toggle-Practicas,
+        .toggle:checked+.lbl-toggle-Movilidad,
+        .toggle:checked+.lbl-toggle-Secretaria,
+        .toggle:checked+.lbl-toggle-NoticiasFcom {
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        .collapsible-content .content-inner,
+        .collapsible-masthead-content .content-inner {
+            padding: .5rem 1rem; 
+            background: #A90533;
+            align-content: center
+        }
+    
+        .collapsible-content p,
+        .collapsible-masthead-content p { margin-bottom: 0; }
+
+        #block-alternadordeidioma {
+            display: block;
+            width: 100%;
+            float: none;
+        }
+    
+    /** highlighted **/
+
+        .slick-arrow::before { font-size: 40px; }
+
+        .slick__arrow { top: 100px; }
+
+        .slick-prev,
+        .slick-next {
+            top: 0px;
+            width: unset;
+            height: unset;
         }
 
     /** features **/
@@ -1630,9 +1847,8 @@ div.cenefa-l1 img {
 #Resolución = B/w 481px to 767px */
 @media (min-width: 481px) and (max-width: 767px) {
 
-
-/** content-suffix **/
-#u0922_comunidad a { padding: 20px; }
+    /** content-suffix **/
+    #u0922_comunidad a { padding: 20px; }
 }
 
 /* Smartphones (landscape) */
@@ -1642,239 +1858,7 @@ div.cenefa-l1 img {
 
 /* Smartphones (portrait) */
 @media only screen and (max-width : 320px) {
-
-    /* navbar */
-
-    #block-logouses .field__item h1 {
-        text-align: center
-    }
-
-    #block-u0922-headerleft {
-        margin: 2px 10px;
-        width: 100%;
-    }
-
-    #block-u0922-headerright {
-        margin: 2px 10px;
-    }
-
-    #block-formulariodebusqueda {
-        width: 95%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #block-u0922-menu-principal {
-        width: 100%;
-        display: block;
-    }
-
-    #block-u0922-menu-principal .dropbtn{
-        color: #ddd;
-        font-size: 0.9em;
-        box-shadow: unset;
-        display: inline;
-    }
-
-    #block-u0922-menu-principal .dropdown:hover .dropbtn{
-        color: #DDD;
-    }
-
-    #block-u0922-menu-principal .dropdown::after,
-    #block-u0922-menu-principal .dropdown::before {
-        content: unset;
-    }
-
-    #block-u0922-menu-principal .dropbtn:hover {
-        border-bottom: none !important;
-    }
-
-    #block-u0922-menu-principal .block__inner{
-        flex-direction: column;
-        justify-content: initial;
-    }
-    /* Collapsive menu responsive*/
-
-    /*input[type='checkbox'] { display: block; } */
-    label.lbl-toggle,
-    label.lbl-toggle-masthead,
-    label.lbl-toggle-ConoceFcom,
-    label.lbl-toggle-Titulos,
-    label.lbl-toggle-Practicas,
-    label.lbl-toggle-Movilidad,
-    label.lbl-toggle-Secretaria,
-    label.lbl-toggle-NoticiasFcom
-     { display: block; }
-    /*.wrap-collabsible { margin: 1.2rem 0; } */
-    .lbl-toggle,
-    .lbl-toggle-masthead,
-    .lbl-toggle-ConoceFcom,
-    .lbl-toggle-Titulos,
-    .lbl-toggle-Practicas,
-    .lbl-toggle-Movilidad,
-    .lbl-toggle-Secretaria,
-    .lbl-toggle-NoticiasFcom { 
-        display: block;
-        text-align: center;
-        padding: 1rem;
-        color: #DDD;
-        background: #A90533;
-        cursor: pointer;
-        border-radius: unset;
-        transition: all 0.25s ease-out;
-    }
-
-    .lbl-toggle:hover, 
-    .lbl-toggle-masthead:hover,
-    .lbl-toggle-ConoceFcom:hover,
-    .lbl-toggle-Titulos:hover,
-    .lbl-toggle-Practicas:hover,
-    .lbl-toggle-Movilidad:hover,
-    .lbl-toggle-Secretaria:hover,
-    .lbl-toggle-NoticiasFcom:hover { color: #FFF; }
-
-    .lbl-toggle::before,
-    .lbl-toggle-masthead::before,
-    .lbl-toggle-ConoceFcom::before,
-    .lbl-toggle-Titulos::before,
-    .lbl-toggle-Practicas::before,
-    .lbl-toggle-Movilidad::before,
-    .lbl-toggle-Secretaria::before,
-    .lbl-toggle-NoticiasFcom::before { 
-        content: ' ';  
-        display: inline-block; 
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent; 
-        border-left: 5px solid currentColor;
-        vertical-align: middle;
-        margin-right: .7rem; transform: translateY(-2px);
-        transition: transform .2s ease-out; 
-    }
-
-    .toggle:checked+.lbl-toggle::before,
-    .toggle:checked+.lbl-toggle-masthead::before,
-    .toggle:checked+.lbl-toggle-ConoceFcom::before,
-    .toggle:checked+.lbl-toggle-Titulos::before,
-    .toggle:checked+.lbl-toggle-Practicas::before,
-    .toggle:checked+.lbl-toggle-Movilidad::before,
-    .toggle:checked+.lbl-toggle-Secretaria::before,
-    .toggle:checked+.lbl-toggle-NoticiasFcom::before
-    { transform: rotate(90deg) translateX(-3px); }
-
-    .collapsible-content,
-    .collapsible-masthead-content,
-    .collapsible-ConoceFcom-content,
-    .collapsible-Titulos-content,
-    .collapsible-Practicas-content,
-    .collapsible-Movilidad-content,
-    .collapsible-Secretaria-content,
-    .collapsible-NoticiasFcom-content { 
-        max-height: 0px;
-        overflow: hidden;
-        transition: max-height .25s ease-in-out;
-    }
-
-    .collapsible-masthead-content {
-        z-index: 1;
-    }
-
-    .collapsible-ConoceFcom-content {
-        z-index: 8;
-    }
-
-    .collapsible-Titulos-content {
-        z-index: 7;
-    }
-
-    .collapsible-Practicas-content {
-        z-index: 6;
-    }
-
-    .collapsible-Movilidad-content {
-        z-index: 5;
-    }
-
-    .collapsible-Secretaria-content {
-        z-index: 4;
-    }
-
-    .collapsible-NoticiasFcom-content {
-        z-index: 3;
-    }
-
-    .collapsible-content .content-inner {
-        width: 100%;
-        flex-direction: column;
-        height: fit-content;
-    }
-
-    .toggle:checked + .lbl-toggle + .collapsible-content,
-    .toggle:checked + .lbl-toggle-masthead + .collapsible-masthead-content
-    { max-height: 350px; }
-
-    .toggle:checked + .lbl-toggle-ConoceFcom + .collapsible-ConoceFcom-content,
-    .toggle:checked + .lbl-toggle-Titulos + .collapsible-Titulos-content,
-    .toggle:checked + .lbl-toggle-Practicas + .collapsible-Practicas-content,
-    .toggle:checked + .lbl-toggle-Movilidad + .collapsible-Movilidad-content,
-    .toggle:checked + .lbl-toggle-Secretaria + .collapsible-Secretaria-content,
-    .toggle:checked + .lbl-toggle-NoticiasFcom + .collapsible-NoticiasFcom-content {
-        max-height:fit-content;
-        display: flex;
-        margin-top: 30px;
-    }
-
-    .toggle:checked+.lbl-toggle,
-    .toggle:checked+.lbl-toggle-masthead,
-    .toggle:checked+.lbl-toggle-ConoceFcom,
-    .toggle:checked+.lbl-toggle-Titulos,
-    .toggle:checked+.lbl-toggle-Practicas,
-    .toggle:checked+.lbl-toggle-Movilidad,
-    .toggle:checked+.lbl-toggle-Secretaria,
-    .toggle:checked+.lbl-toggle-NoticiasFcom {
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-    }
-    .collapsible-content .content-inner,
-    .collapsible-masthead-content .content-inner {
-        padding: .5rem 1rem; 
-        background: #A90533;
-        align-content: center
-    }
-
-    .collapsible-content p,
-    .collapsible-masthead-content p { margin-bottom: 0; }
-
     
-    #block-alternadordeidioma {
-        display: block;
-        width: 100%;
-        float: none;
-    }
-
-    #menu-u0922-imprescindibles { display: none; }
-    
-    #reponsive-menu-u0922-imprescindibles { 
-        display: block;
-        border: 1px solid white;
-    } 
-
-    /** highlighted **/
-
-    .slick-arrow::before {
-        font-size: 40px;
-    }
-
-    .slick__arrow {
-        top: 100px;
-    }
-
-    .slick-prev,
-    .slick-next {
-        top: 0px;
-        
-        width: unset;
-        height: unset;
-    }
 }
 /**** fin css for Smartphones (portrait) @media only screen and (max-width : 320px) */
 
