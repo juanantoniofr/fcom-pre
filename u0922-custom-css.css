@@ -1665,18 +1665,12 @@ div.cenefa-l1 img {
             display: inline;
         }
     
-        #block-u0922-menu-principal .dropdown:hover .dropbtn{
-            color: #DDD;
-        }
+        #block-u0922-menu-principal .dropdown:hover .dropbtn{ color: #DDD; }
     
         #block-u0922-menu-principal .dropdown::after,
-        #block-u0922-menu-principal .dropdown::before {
-            content: unset;
-        }
+        #block-u0922-menu-principal .dropdown::before { content: unset; }
     
-        #block-u0922-menu-principal .dropbtn:hover {
-            border-bottom: none !important;
-        }
+        #block-u0922-menu-principal .dropbtn:hover { border-bottom: none !important; }
     
         #block-u0922-menu-principal .block__inner{
             flex-direction: column;
@@ -1824,6 +1818,11 @@ div.cenefa-l1 img {
     
     /** highlighted **/
 
+        #highlighted {
+            width: 100%;
+            margin: 0px;
+        }
+        
         .slick-arrow::before { font-size: 40px; }
 
         .slick__arrow { top: 100px; }
