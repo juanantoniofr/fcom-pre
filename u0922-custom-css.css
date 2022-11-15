@@ -1415,6 +1415,31 @@ div.cenefa-l1 img {
         line-height: 1em;
     }
    
+    /* */
+    .content-redesBoletin a img { 
+        width: 5%;
+    }
+
+    div.cabeceraBoletines {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #logoGabifcom {
+        width: 33%;
+        text-align: left;
+    }
+
+    #textoBoletin {
+        width: 33%;
+        text-align: center;
+    }
+
+    #redesBoletin {
+        width: 33%;
+        text-align: right;
+        box-sizing: inherit;
+    }
 
 /* content-suffix */
 
