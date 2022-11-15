@@ -1403,6 +1403,17 @@ div.cenefa-l1 img {
         font-style: italic;
         margin-top: 5px;
     }
+
+        /* Boletines */
+    
+    .noticias-boletines h4 {
+        padding: 10px;
+        border: #a90533 solid 1px;
+        color: #a90533;
+        font-size: 1em;
+        font-weight: bold;
+        line-height: 1em;
+    }
    
 
 /* content-suffix */
