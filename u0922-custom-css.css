@@ -1851,9 +1851,12 @@ div.cenefa-l1 img {
         float: none;
     }
 
-    #block-u0922-imprescindibles { display: none; }
+    #menu-u0922-imprescindibles { display: none; }
     
-    #reponsive-menu-u0922-imprescindibles { display: flex; } 
+    #reponsive-menu-u0922-imprescindibles { 
+        display: block;
+        border: 1px solid white;
+    } 
 
     /** highlighted **/
 
