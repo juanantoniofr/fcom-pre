@@ -1415,9 +1415,8 @@ div.cenefa-l1 img {
         line-height: 1em;
     }
    
-    /* */
     .content-redesBoletin a img { 
-        width: 5%;
+        width: 20%;
     }
 
     div.cabeceraBoletines {
@@ -1439,6 +1438,14 @@ div.cenefa-l1 img {
         width: 33%;
         text-align: right;
     }
+
+    .content-redesBoletin ul {
+        list-style-type: none;
+      }
+
+    .content-redesBoletin li {
+        display: inline;
+     }
 
 /* content-suffix */
 
