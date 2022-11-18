@@ -250,6 +250,10 @@ form#search-form + h2 + div li::marker {
     font-size: larger;
 }
 
+form#search-form + h2 + div ol {
+    padding-top: 20px;
+}
+
 
 /* fin masthead */
 
