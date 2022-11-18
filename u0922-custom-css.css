@@ -240,6 +240,7 @@ form#search-form + h2 {
 display: none;
 }
 
+
 form#search-form + h2 + div h3 {
     font-size: larger;
  }
