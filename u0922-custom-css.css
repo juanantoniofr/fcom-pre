@@ -231,11 +231,12 @@ ul.fcom-menu a {
     box-shadow: none;
 }
 
-#search-form {
+form#search-form {
     display: none;
 }
 
-#search-form + h2 {
+
+form#search-form + h2 {
     border: 1px solid #a90533;
     margin-top: 3%;
     margin-bottom: 3%;
@@ -243,12 +244,13 @@ ul.fcom-menu a {
     padding: 5px;
 }
 
-#search-form + h2 + div h3 {
+form#search-form + h2 + div h3 {
     font-size: larger;
-  }
+ }
 
-#search-form + h2 + div li::marker {
+form#search-form + h2 + div li::marker {
     color: #A90533;
+    font-size: larger;
 }
 
 
