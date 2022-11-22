@@ -1556,6 +1556,7 @@ div.cenefa-l1 img {
     flex-wrap: wrap;
     max-width: 50%;
     width: 50%;
+    text-align: justify;
 }
 
 .container-mas-en .opcion_menu img {
