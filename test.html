@@ -1,0 +1,54 @@
+{% set url = url('<current>')|render|render %}
+<div class="mas_en">
+    <h3>+ Movilidad</h3>
+    <div class="container-mas-en">
+        
+            <!-- 1. Novedades -->
+                <a href="/movilidad/novedades" class="link_masEn">
+                    <div class="opcion_menu {% if url ends with 'novedades' %} display-none {% endif %}">
+                        <img src="/sites/fcom/files/menu-ppal/titulos.png" />
+                        <div class="descripcion">
+                            <h4>Novedades</h4>
+                            <p>Lorem ipsum.....</p>
+                        </div>
+                    </div>
+                </a>
+            <!-- 2. Resuelva sus dudas en #YoMeMuevo -->
+            <a href="/movilidad/novedades" class="link_masEn">
+                <div class="opcion_menu {% if url ends with 'yomemuevo' %} display-none {% endif %}">
+                    <img src="/sites/fcom/files/menu-ppal/titulos.png" />
+
+                    <div class="descripcion">
+                        <h4>#YoMeMuevo</h4>
+                        <p>Lorem ipsum.....</p>
+                    </div>
+                </div>
+            </a>
+            
+
+            <!-- 3. #SoyEstudiante de la FCOM -->
+            <a href="/movilidad/novedades" class="link_masEn">
+                <div class="opcion_menu {% if url ends with 'soyEstudianteFcom' %} display-none {% endif %}">
+                    <img src="/sites/fcom/files/menu-ppal/titulos.png" />
+
+                    <div class="descripcion">
+                        <h4>#SoyEstudiante de la FCOM</h4>
+                        <p>Lorem ipsum.....</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- 4. #SoyEstudiante visitante -->
+            <a href="/movilidad/novedades" class="link_masEn">
+            <div class="opcion_menu {% if url ends with 'soyEstudianteVisitante' %} display-none {% endif %}">
+                <img src="/sites/fcom/files/menu-ppal/titulos.png" />
+
+                <div class="descripcion">
+                    <h4>#SoyEstudiante visitante</h4>
+                    <p>Lorem ipsum....</p>
+                </div>
+            </div>
+            </a>
+           
+    </div>
+</div>
