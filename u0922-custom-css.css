@@ -194,15 +194,33 @@ label.lbl-toggle-masthead
     justify-content: start;
 }
 
-.class_informativa {
-    border: 2px solid #d7d7d7;
-    padding: 10px;
-    border-radius: 10px;
-  }
-
-  .class_informativa h4 {
+.decanato h3 {
+    padding-top: 20px;
     color: #a90533;
   }
+
+.info_decanato {
+    border: 2px solid #d7d7d7;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+
+  .info_decanato h4 {
+    color: #a90533;
+  }
+
+  .datos_decanato {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+   }
+  
 
 /* ul menu */
 ul.fcom-menu { 
