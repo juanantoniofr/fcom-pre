@@ -195,8 +195,9 @@ label.lbl-toggle-masthead
 }
 
 .decanato h3 {
-    padding-top: 20px;
+    padding-top: 10px;
     color: #a90533;
+    font-size: xx-large;
   }
 
 .info_decanato {
@@ -229,6 +230,7 @@ label.lbl-toggle-masthead
     max-width: 23%;
     color: white;
     text-align: center;
+    padding: 20px;
   }
 
 /* ul menu */
