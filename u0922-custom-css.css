@@ -194,6 +194,16 @@ label.lbl-toggle-masthead
     justify-content: start;
 }
 
+.class_informativa {
+    border: 2px solid #d7d7d7;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .class_informativa h4 {
+    color: #a90533;
+  }
+
 /* ul menu */
 ul.fcom-menu { 
     list-style: none;
