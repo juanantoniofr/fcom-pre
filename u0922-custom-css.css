@@ -210,6 +210,8 @@ label.lbl-toggle-masthead
 
   .info_decanato h4 {
     color: #a90533;
+    text-decoration: underline #d7d7d7 2px;
+    font-weight: normal;
   }
 
   .datos_decanato {
@@ -221,6 +223,13 @@ label.lbl-toggle-masthead
     padding-bottom: 25px;
    }
   
+   .datos_decanato div {
+    background: #a90533;
+    min-width: 23%;
+    max-width: 23%;
+    color: white;
+    text-align: center;
+  }
 
 /* ul menu */
 ul.fcom-menu { 
@@ -1278,7 +1287,8 @@ div.cenefa-l1 img {
     .node--id-3702 h1,
     .node--id-91 h1,
     .node--id-90 h1,
-    .node--id-111 h1 {
+    .node--id-111 h1,
+    .node--id-3722 h1 {
         display: none;
     }
 
