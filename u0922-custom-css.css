@@ -215,12 +215,27 @@ label.lbl-toggle-masthead
     font-weight: normal;
   }
 
+  .tit_decanato {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+   }
+
+   .tit_decanato div {
+    min-width: 23%;
+    max-width: 23%;
+    color: #a90533;
+    text-align: center;
+    padding: 10px;
+  }
+
   .datos_decanato {
     display: flex;
     justify-content: space-between;
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 25px;
     padding-bottom: 25px;
    }
   
