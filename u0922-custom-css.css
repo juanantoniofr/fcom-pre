@@ -2013,7 +2013,35 @@ div.cenefa-l1 img {
     }
 
     #app-FCom .views-enlace, #servicios-FCom .views-enlace { margin: 35px 0px; }
+
+    /* Content-Suffix */
+
+    .container-mas-en .opcion_menu img {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .container-mas-en .opcion_menu .descripcion{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .descripcion h4 {
+    padding-top: 10px;
+    }
+
+    .container-mas-en{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
+
+
 
 @media (max-width : 480px) {
 
@@ -2088,6 +2116,39 @@ div.cenefa-l1 img {
             display: flex;
             padding-left: 10px;
             width: fit-content;
+        }
+
+        .container-mas-en .link_masEn {
+            width: 100%;
+            max-width: 85%;
+        }
+
+        .container-mas-en .opcion_menu img {
+        width: 100%;
+        margin-right: 0px;
+        }
+
+        .container-mas-en{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .descripcion h4 {
+            padding-top: 10px;
+        }
+
+        .container-mas-en .opcion_menu .descripcion{
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 100%;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .descripcion h4 {
+            padding-top: 10px;
         }
 
 
