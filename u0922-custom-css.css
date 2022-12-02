@@ -2015,12 +2015,18 @@ div.cenefa-l1 img {
 
     /* Content-Prefix*/
 
+    
     .accordeon div {
         padding-left: 10px;
         padding-right: 10px;
         padding-top: 0px;
         padding-bottom: 0px;
 }
+
+
+    /*Main Content*/
+
+
    
     /* Content-Suffix */
 
@@ -2070,6 +2076,11 @@ div.cenefa-l1 img {
             margin-left: 0px;
         }
 
+        #content-prefix .cenefa-subtitle-masopciones h2 {
+            padding: 20px;
+            font-size: 40px;
+        }
+
      
         
     /** content-prefix **/
@@ -2095,24 +2106,28 @@ div.cenefa-l1 img {
             flex-direction: column;
         }
 
-        .accordeon .views-accordion-header a::before {
-            font-size: initial;
-        }
-    
-        .accordeon .ui-accordion-header-collapsed a {
-            font-size: x-large;
-        }
 
-        .accordeon .ui-state-default a {
-            font-size: x-large;
-        }
 
-        .accordeon div {
-            padding-left: 5px;
-            padding-right: 5px;
-            padding-top: 0px;
-            padding-bottom: 0px;
+    /* Main Content*/
+
+    .accordeon .views-accordion-header a::before {
+        font-size: initial;
     }
+
+    .accordeon .ui-accordion-header-collapsed a {
+        font-size: x-large;
+    }
+
+    .accordeon .ui-state-default a {
+        font-size: x-large;
+    }
+
+    .accordeon div {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+}
 
     /** content-suffix **/
         
@@ -2181,6 +2196,11 @@ div.cenefa-l1 img {
             padding-left: 10px;
             padding-right: 10px;
         }
+
+        div#u0922_comunidad {
+            padding-left: 5px;
+            padding-right: 5px;
+          }
 
     /** footer **/
 
