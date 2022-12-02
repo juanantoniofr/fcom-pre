@@ -1988,8 +1988,7 @@ div.cenefa-l1 img {
     
     /* features */
     #features {
-        width: 95%;
-        
+        width: 95%;  
     }
     
     #features .views-element-container { 
@@ -2014,6 +2013,15 @@ div.cenefa-l1 img {
 
     #app-FCom .views-enlace, #servicios-FCom .views-enlace { margin: 35px 0px; }
 
+    /* Content-Prefix*/
+
+    .accordeon div {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+}
+   
     /* Content-Suffix */
 
     .container-mas-en .opcion_menu img {
@@ -2061,7 +2069,8 @@ div.cenefa-l1 img {
             width: 100%;
             margin-left: 0px;
         }
-        
+
+     
         
     /** content-prefix **/
         
@@ -2086,7 +2095,24 @@ div.cenefa-l1 img {
             flex-direction: column;
         }
 
-        
+        .accordeon .views-accordion-header a::before {
+            font-size: initial;
+        }
+    
+        .accordeon .ui-accordion-header-collapsed a {
+            font-size: x-large;
+        }
+
+        .accordeon .ui-state-default a {
+            font-size: x-large;
+        }
+
+        .accordeon div {
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+    }
 
     /** content-suffix **/
         
@@ -2151,6 +2177,10 @@ div.cenefa-l1 img {
             padding-top: 10px;
         }
 
+        div.mas_en {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
 
     /** footer **/
 
