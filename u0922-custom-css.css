@@ -1556,6 +1556,67 @@ div.cenefa-l1 img {
         margin: 0.9px;
     }
 
+    #views-exposed-form-buscador-docentes-e-investigadores-page-1 {
+        margin: 40px auto;
+    }
+
+    .js-form-item.form-item.js-form-type-textfield.form-type-textfield.js-form-item-title.form-item-title.form-no-label {
+        width: 50%;
+        float: none;
+    }
+    #edit-actions {
+        width: 50%;
+        font-size: 18px;
+        border-radius: 7px;
+        height: 40px;
+        margin: 0 0  1rem;
+        display: flex;
+        align-content: center;
+    }
+    .form--inline.clearfix {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+    }
+    
+    #edit-title {
+        width: 100%;
+        font-size: 18px;
+        border-radius: 7px;
+        color: #363636;
+        height: 40px;
+    }
+
+    #edit-submit-buscador-docentes-e-investigadores {
+        height: 40px;
+        border-radius: 7px;
+        width: 40%;
+        background-color: #a90533;
+        border-color: #a90533;
+        box-shadow: unset;
+    }
+
+
+    .field-type-image__item {
+        width: fit-content;
+    }
+    .field-node--field-subtitulo{
+        max-width: calc(100% - 550px);
+        float: right;
+        height: fit-content;
+    }
+    .field-node--field-imagen{
+        margin-right: 40px;
+        float: left;
+        max-width: 510px;
+        display: inline-flex;
+    }
+    .field-node--field-subtitulo,
+    .field-node--field-entradilla,
+    .field-node--field-body{
+        float: right;
+        max-width: calc(100% - 550px);
+    }
 
 /* content-suffix */
 
