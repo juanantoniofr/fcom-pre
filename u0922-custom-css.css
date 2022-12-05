@@ -1538,6 +1538,23 @@ div.cenefa-l1 img {
         display: inline;
      }
 
+    /* directorio */
+
+    .views-summary.views-summary-unformatted {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        font-weight: bold;
+        padding: 0;
+        color: #ccc;
+        border-radius: 3px;
+        background: #f7f7f7;
+        line-height: 30px;
+        margin: 0.9px;
+    }
 
 
 /* content-suffix */
@@ -2027,7 +2044,7 @@ div.cenefa-l1 img {
 
     /*Main Content*/
 
-
+    
    
     /* Content-Suffix */
 
