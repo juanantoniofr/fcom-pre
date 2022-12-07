@@ -1601,11 +1601,12 @@ div.cenefa-l1 img {
 
     .views-field.views-field-field-nombredirectorio {
         font-size: 2.2em;
-        line-height: 2.4em;
+        line-height: 1.2em;
     }
 
     .views-field-field-puesto-directorio {
         font-size: 1.4em;
+        margin: 20px 0px;
     }
     .views-field.views-field-body {
         line-height: 1.4em;
