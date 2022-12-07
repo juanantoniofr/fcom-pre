@@ -1542,7 +1542,7 @@ div.cenefa-l1 img {
 
     /* directorio */
 
-    .views-summary.views-summary-unformatted {
+    div.views-summary.views-summary-unformatted {
         width: 30px;
         height: 30px;
         position: relative;
@@ -1616,9 +1616,18 @@ div.cenefa-l1 img {
         margin: 0px;
     }
 
+    .view-buscador-docentes-e-investigadores .view-header .view-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
     span.views-summary-unformatted {
         visibility: hidden;
         display: none;
+    }
+
+    .view-buscador-docentes-e-investigadores .views-col {
+        text-align: center;
     }
     /* contenido completo */
     .field-type-image__item {
