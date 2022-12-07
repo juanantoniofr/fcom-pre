@@ -1596,7 +1596,23 @@ div.cenefa-l1 img {
         box-shadow: unset;
     }
 
+    .views-field.views-field-field-nombredirectorio {
+        font-size: 2.2em;
+        line-height: 2.4em;
+    }
 
+    .views-field-field-puesto-directorio {
+        font-size: 1.4em;
+    }
+    .views-field.views-field-body {
+        line-height: 1.4em;
+        margin-top: 30px;
+    }
+    
+    #profesorDirectorio p {
+        margin: 0px;
+    }
+    /* contenido completo */
     .field-type-image__item {
         width: fit-content;
     }
@@ -1617,6 +1633,8 @@ div.cenefa-l1 img {
         float: right;
         max-width: calc(100% - 550px);
     }
+
+
 
 /* content-suffix */
 
