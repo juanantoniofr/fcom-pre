@@ -3,6 +3,7 @@
 html, body, .page { 
     font-size: 16px; /* 1em =&gt; 16px */
     background-color: transparent; 
+    line-height: 1.6em;
 }
 
 a, a:hover, a:visited, a:active, a:hover, a:focus { color: #A90533;}
@@ -1561,26 +1562,27 @@ div.cenefa-l1 img {
     }
 
     .js-form-item.form-item.js-form-type-textfield.form-type-textfield.js-form-item-title.form-item-title.form-no-label {
-        width: 50%;
+        width: fit-content;
         float: none;
     }
     #edit-actions {
-        width: 50%;
+        
         font-size: 18px;
         border-radius: 7px;
         height: 40px;
         margin: 0 0  1rem;
-        display: flex;
-        align-content: center;
+        width: fit-content;
     }
     .form--inline.clearfix {
         display: flex;
-        align-items: center;
         font-size: 18px;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
     }
     
     #edit-title {
-        width: 100%;
+        width: 500px;
         font-size: 18px;
         border-radius: 7px;
         color: #363636;
@@ -1590,7 +1592,7 @@ div.cenefa-l1 img {
     #edit-submit-buscador-docentes-e-investigadores {
         height: 40px;
         border-radius: 7px;
-        width: 40%;
+        width: fit-content;
         background-color: #a90533;
         border-color: #a90533;
         box-shadow: unset;
@@ -1612,28 +1614,31 @@ div.cenefa-l1 img {
     #profesorDirectorio p {
         margin: 0px;
     }
+
+    span.views-summary-unformatted {
+        visibility: hidden;
+        display: none;
+    }
     /* contenido completo */
     .field-type-image__item {
         width: fit-content;
     }
-    .field-node--field-subtitulo{
-        max-width: calc(100% - 550px);
-        float: right;
-        height: fit-content;
-    }
+    
     .field-node--field-imagen{
-        margin-right: 40px;
-        float: left;
-        max-width: 510px;
-        display: inline-flex;
-    }
-    .field-node--field-subtitulo,
-    .field-node--field-entradilla,
-    .field-node--field-body{
         float: right;
-        max-width: calc(100% - 550px);
     }
 
+    .field-node--field-subtitulo {
+        font-size: 1.7em;
+    }
+
+    #main-content .field-node--field-imagen img {
+        padding-top: 0px;
+    }
+
+    .field-node--field-entradilla{
+        color:#A90533;
+    }
 
 
 /* content-suffix */
