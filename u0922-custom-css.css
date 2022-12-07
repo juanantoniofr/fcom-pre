@@ -712,6 +712,12 @@ form#search-form + h2 + div ol {
 
 /* carrusel */ 
 
+.pg-noticiasFCom{
+    display: grid;
+    grid-template-rows: 600px;
+    grid-template-columns: 50% 50%;
+}
+
 #block-views-block-caruselnoticiasdestacadas-block-1 { 
     margin-top: 0px; 
 }
