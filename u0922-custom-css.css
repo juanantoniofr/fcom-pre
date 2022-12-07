@@ -712,11 +712,28 @@ form#search-form + h2 + div ol {
 
 /* carrusel */ 
 
-.pg-noticiasFCom{
-    display: grid;
-    grid-template-rows: 600px;
-    grid-template-columns: 50% 50%;
-}
+    .pg-noticiasFCom {
+        display: grid;
+        grid-template-rows: 600px;
+        grid-template-columns: 50% 50%;
+    }
+
+    #notica-FCom-front h1 {
+        font-size: 66px;
+        line-height: 1.1em;
+
+    }
+
+    #notica-FCom-front h2 {
+        line-height: 1.2em;
+        font-size: 38px;
+    }
+
+    .pg-noticiasFCom img {
+        -webkit-box-shadow: -2px 2px 4px 0px rgba(54,54,54,1);
+        -moz-box-shadow: -2px 2px 4px 0px rgba(54,54,54,1);
+        box-shadow: -2px 2px 4px 0px rgb(54, 54, 54);    
+    }
 
 #block-views-block-caruselnoticiasdestacadas-block-1 { 
     margin-top: 0px; 
