@@ -740,21 +740,23 @@ form#search-form + h2 + div ol {
 
     #block-views-block-noticias-de-actualidad-block-4 .view-content {
         display: grid;
-        grid-template-rows: 50% 50%;
-        grid-template-columns: 50% 50%;
-        grid-gap: 30px;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px 10px;
     }
 
-    #block-views-block-noticias-de-actualidad-block-4 .views-row {
-        display: grid;
-        grid-template-rows: auto [Line1] auto [Line2];
-        grid-template-columns: 45% 45%;
-        grid-gap: 30px;
+    #block-views-block-noticias-de-actualidad-block-4 .view-content .views-row {
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 6fr; 
+        gap: 10px 10px; 
+        grid-template-areas: 
+          "area1 area1"
+          ". .";     
     }
 
     #block-views-block-noticias-de-actualidad-block-4 .views-field-term-node-tid {
-        grid-row: 1 / Line2;
-        grid-column: 1 / span 2;
+        grid-area: area1;
     }
 
     #block-views-block-noticias-de-actualidad-block-4 h1 {
