@@ -743,16 +743,12 @@ form#search-form + h2 + div ol {
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         grid-gap: 10px 10px;
+        justify-items: center;
+        align-items: start;
     }
 
     #block-views-block-noticias-de-actualidad-block-4 .view-content .views-row {
-        display: grid; 
-        grid-template-columns: 1fr 1fr; 
-        grid-template-rows: 1fr 6fr; 
-        gap: 10px 10px; 
-        grid-template-areas: 
-          "area1 area1"
-          ". .";     
+   
     }
 
     #block-views-block-noticias-de-actualidad-block-4 .views-field-term-node-tid {
