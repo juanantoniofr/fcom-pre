@@ -1682,9 +1682,9 @@ div.cenefa-l1 img {
         font-size: x-large;
       }
 
-    .view-buscador-docentes-e-investigadores dl dt a:hover {
+    .view-buscador-docentes-e-investigadores dl dt a:focus {
         background-color: #a90533;
-        color: #d7d7d7;
+        color: white;
     }
 
     .view-buscador-docentes-e-investigadores dl dt {
@@ -1783,9 +1783,15 @@ div.cenefa-l1 img {
     }
 
     #u0922_comunidad_icons{
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        gap: 10px 10px;
+        /*width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 10px;*/
     } 
 
     #u0922_comunidad svg {
@@ -1818,32 +1824,6 @@ div.cenefa-l1 img {
         padding: 5px;
         gap:5px;
     }
-
-    /* For extremely small screen devices (595px and below) */
-    @media only screen and (max-width: 595px) {
-        
-        #u0922_comunidad_icons { grid-template-columns: 1fr; }
-    
-    }
-
-    /* Small screen devices (600px and above) */
-    @media only screen and (min-width: 600px) {
-        #u0922_comunidad_icons { grid-template-columns: 1fr 1fr; }
-    }
-
-    /* Medium screen devices (768px and above) */
-    @media only screen and (min-width: 768px) {}
-
-    /* Big screen devices (889px and above) */
-    @media only screen and (min-width: 889px) {
-
-        #u0922_comunidad_icons { grid-template-columns: 1fr 1fr 1fr 1fr; }
-    }
-
-    /* Extra big screen devices (1200px and above) */
-    @media only screen and (min-width: 1200px) {}
-
-    
     
 /* fin content-sufix */
 
