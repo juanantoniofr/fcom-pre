@@ -1846,30 +1846,37 @@ div.cenefa-l1 img {
         padding: 0px;
         width: 100%;
     }
+    
+    .pr-footer a {
+        color: white;
+        text-decoration: underline;
+    }
+
     /* For extremely small screen devices (595px and below) */
     @media only screen and (max-width: 595px) {}
 
-#footer {
-    background: #a90533;
-    padding: 50px;
-    font-size: larger;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2px;
-}
+    /* Small screen devices (600px and above) */
+    @media only screen and (min-width: 600px) {}
 
     /* Medium screen devices (768px and above) */
     @media only screen and (min-width: 768px) {}
 
-.pr-footer a {
-    color: white;
-    text-decoration: underline;
-}
+    /* Big screen devices (889px and above) */
+    @media only screen and (min-width: 889px) {
+
+        #footer {
+            background: #a90533;
+            padding: 50px;
+            font-size: larger;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2px;
+        }
+    }
 
     /* Extra big screen devices (1200px and above) */
     @media only screen and (min-width: 1200px) {}
-    
 
 /* fin footer */
 
