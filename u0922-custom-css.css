@@ -1682,7 +1682,7 @@ div.cenefa-l1 img {
         font-size: x-large;
       }
 
-    .view-buscador-docentes-e-investigadores dl dt a:visited {
+    .view-buscador-docentes-e-investigadores dl dt a:hover {
         background-color: #a90533;
         color: #d7d7d7;
     }
@@ -1784,7 +1784,6 @@ div.cenefa-l1 img {
 
     #u0922_comunidad_icons{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 10px 10px;
     } 
