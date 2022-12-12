@@ -1840,9 +1840,8 @@ div.cenefa-l1 img {
     #footer a {color: #f4f4f4;}
     #footer a {text-decoration: underline;}
     #block-datosdecontacto-3, #block-avisolegal {
-        float: none;
         padding: 0px;
-        width: 100%;
+        width: 50%;
     }
     
     .pr-footer a {
@@ -1870,6 +1869,10 @@ div.cenefa-l1 img {
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 2px;
+        }
+        #block-datosdecontacto-3, #block-avisolegal {
+            float: left;
+            width: 50%;
         }
     }
 
