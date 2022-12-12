@@ -1789,7 +1789,7 @@ div.cenefa-l1 img {
 
     /* Small screen devices (600px and above) */
     @media only screen and (min-width: 481px) {
-        .column-50 {
+        #content-prefix .column-50 {
             flex: 50%;
             padding: 25px;
         }
@@ -2319,18 +2319,18 @@ div.cenefa-l1 img {
         
 
         
-        #content-prefix .view-noticias-de-actualidad .view-content, 
+        /*#content-prefix .view-noticias-de-actualidad .view-content, 
         #content-prefix .view-noticias-de-actualidad .pager {
             line-height: 2.8em;
-        }
+        }*/
 
-        #block-views-block-noticias-de-actualidad-block-5 .row { 
+        /*#block-views-block-noticias-de-actualidad-block-5 .row { 
             min-height: fit-content;
             align-items: inherit;
             padding-bottom: 30px;
             display: flex;
             flex-direction: column;
-        }
+        }*/
 
 
 
