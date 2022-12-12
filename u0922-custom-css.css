@@ -1682,11 +1682,10 @@ div.cenefa-l1 img {
         font-size: x-large;
       }
 
-      .view-buscador-docentes-e-investigadores dl dt a:active, 
-      .view-buscador-docentes-e-investigadores dl dt a:hover {
+    .view-buscador-docentes-e-investigadores dl dt a:hover {
         background-color: #a90533;
         color: #d7d7d7;
-      }
+    }
 
     .view-buscador-docentes-e-investigadores dl dt {
         border: 1px solid #a90533;
