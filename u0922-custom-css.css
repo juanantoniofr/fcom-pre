@@ -1685,13 +1685,6 @@ div.cenefa-l1 img {
 
 
 /*** bloque + opciones ***/
-.mas_en {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-
 
 .container-mas-en{
     display: flex;
@@ -2363,12 +2356,6 @@ div.cenefa-l1 img {
     padding-top: 10px;
     }
 
-    .container-mas-en{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
 }
 
 
