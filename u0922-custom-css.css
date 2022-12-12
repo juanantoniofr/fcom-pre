@@ -1650,11 +1650,6 @@ div.cenefa-l1 img {
         margin: 0.9px;
     }
 
-    /*
-    #views-exposed-form-buscador-docentes-e-investigadores-page-1 {
-        margin: 40px auto;
-    }*/
-
     .views-exposed-form {
         margin: 40px auto;
     }
@@ -1727,6 +1722,11 @@ div.cenefa-l1 img {
     .view-buscador-docentes-e-investigadores .views-col {
         text-align: center;
     }
+
+    .agenda a {
+        
+    }
+
     /* contenido completo */
     .field-type-image__item {
         width: fit-content;
