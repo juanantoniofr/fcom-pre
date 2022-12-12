@@ -1679,7 +1679,8 @@ div.cenefa-l1 img {
     }
 
     .view-buscador-docentes-e-investigadores dl dt a {
-        font-size: xx-large;
+        font-size: x-large;
+        border: 1px solid #a90533;
       }
 
     /* contenido completo */
