@@ -1778,7 +1778,6 @@ div.cenefa-l1 img {
         width: 85%;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 1%;
         margin-bottom: 1%;
     }
 
@@ -2203,9 +2202,6 @@ div.cenefa-l1 img {
     
     /* features */
     
-    
-    
-
     #app-FCom .views-enlace a, #servicios-FCom .views-enlace a { flex-direction: column; }
     #app-FCom .views-field-field-icono, #servicios-FCom .views-field-field-icono { padding-right: unset; }
 
