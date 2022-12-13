@@ -868,21 +868,6 @@ h2.slide_title {
 }
 
 
-/*  features */
-
-    #features {
-        width: 85%;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: transparent;
-        margin-top: 20px;
-    }
-
-    #features img{ 
-        border-bottom: 10px solid #a90533; 
-        width: 100%;
-    }
-
 
 /* second features */
 /* column css */
@@ -907,22 +892,7 @@ h2.slide_title {
     align-items: center;
 }
 
-    
-
-
-
 /* content-prefix */
-
-
-
-
-
-
-
-
-
-
-
 
 .agenda-de-la-semana a {
     color: black;
@@ -993,24 +963,19 @@ div.novedades-secretaria-front, .novedades-practicas-front, .novedades-movilidad
     padding-right: 10%;
 }
 
-#app-FCom .views-enlace a, #servicios-FCom .views-enlace a {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
+    #app-FCom .views-enlace a, #servicios-FCom .views-enlace a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
 #app-FCom .views-enlace, #servicios-FCom .views-enlace {
     margin: 35px 0px;
 }
 
-#app-FCom .views-field-field-icono, #servicios-FCom .views-field-field-icono {
-    padding-right: 5%;
- }
-
-
 #app-FCom .views-field-title, #servicios-FCom .views-field-title {
     border: 1px solid #a90533;
-    padding: 2%;
+    padding: 8%;
     text-align: justify;
 }
 
@@ -1752,6 +1717,45 @@ div.cenefa-l1 img {
 
 /* fin highlighted */
 
+/* features */
+
+    #features {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: transparent;
+        margin-top: 20px;
+    }
+
+    #features img{ 
+        border-bottom: 10px solid #a90533; 
+        width: 100%;
+    }
+
+
+    /* For extremely small screen devices (480px and below) */
+    @media only screen and (max-width: 480px) {}
+
+    /* Small screen devices (600px and above) */
+    @media only screen and (min-width: 481px) {}
+ 
+    /* Medium screen devices (768px and above) */
+    @media only screen and (min-width: 768px) {
+        #app-FCom .views-enlace a,
+        #servicios-FCom .views-enlace a
+            { flex-direction: column; }        
+    }
+ 
+    /* Big screen devices (889px and above) */
+    @media only screen and (min-width: 889px) {}
+ 
+    /* Extra big screen devices (1200px and above) */
+    @media only screen and (min-width: 1200px) {}
+
+
+
+/* fin features */
+
 /* content-prefix */
 
     #content-prefix {
@@ -2279,19 +2283,6 @@ div.cenefa-l1 img {
     }
 
     #slick-views-caruselnoticiasdestacadas-block-1-1 .slide_entradilla { font-size: initial; }
-    
-    /* features */
-    
-    #app-FCom .views-enlace a, #servicios-FCom .views-enlace a { flex-direction: column; }
-    #app-FCom .views-field-field-icono, #servicios-FCom .views-field-field-icono { padding-right: unset; }
-
-    #app-FCom .views-field-title, #servicios-FCom .views-field-title {
-        padding: 10%;
-        text-align: center;
-        margin-top: 10px;
-        line-height: 1.8em;
-    }
-
     
 
 }
