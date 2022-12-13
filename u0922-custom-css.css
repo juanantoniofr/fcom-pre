@@ -1464,8 +1464,8 @@ div.cenefa-l1 img {
         color: #f9f9f9;
     }
 
-    .ckeditor-accordion-toggle::before,
-    .ckeditor-accordion-toggle::after {
+    .row-accordion-soy .ckeditor-accordion-toggle::before,
+    .row-accordion-soy .ckeditor-accordion-toggle::after {
         content: unset !important;
     }
 
@@ -1646,7 +1646,7 @@ div.cenefa-l1 img {
     }
 
 
-    .view-buscador-docentes-e-investigadores a::before {
+    .view-buscador-docentes-e-investigadores dl dt a::before {
         font-family: fontAwesome;
         content: "\f054";
         margin-right: 10px;
