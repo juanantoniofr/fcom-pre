@@ -1693,13 +1693,7 @@ div.cenefa-l1 img {
     justify-content: space-between;
 }
 
-.container-mas-en .opcion_menu {
-    display: flex;
-    flex-direction: row;
-    padding: 20px;
-    flex-wrap: wrap;
-    text-align: justify;
-}
+.container-mas-en .opcion_menu { text-align: justify; }
 
 .container-mas-en .opcion_menu img {
     width: 30%;
@@ -2368,41 +2362,5 @@ div.cenefa-l1 img {
         padding-top: 0px;
         padding-bottom: 0px;
     }
-
-    /** content-suffix **/
-        
-        .container-mas-en .link_masEn {
-            width: 100%;
-            max-width: 85%;
-        }
-
-        .container-mas-en .opcion_menu img {
-        width: 100%;
-        margin-right: 0px;
-        }
-
-        
-
-        .descripcion h4 {
-            padding-top: 10px;
-        }
-
-        .container-mas-en .opcion_menu .descripcion{
-            display: flex;
-            flex-wrap: wrap;
-            max-width: 100%;
-            flex-direction: column;
-            width: 100%;
-        }
-
-        .descripcion h4 {
-            padding-top: 10px;
-        }
-
-
-        div#u0922_comunidad {
-            padding-left: 5px;
-            padding-right: 5px;
-          }
 
 }
