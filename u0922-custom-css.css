@@ -1464,8 +1464,8 @@ div.cenefa-l1 img {
         color: #f9f9f9;
     }
 
-    .row-accordion-soy .ckeditor-accordion-toggle::before,
-    .row-accordion-soy .ckeditor-accordion-toggle::after {
+    .ckeditor-accordion-toggle::before,
+    .ckeditor-accordion-toggle::after {
         content: unset !important;
     }
 
