@@ -1800,9 +1800,9 @@ div.cenefa-l1 img {
         
         #content-prefix .row-imprescindibles {
             display: grid;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: 1fr 4fr;
-gap: 25px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 4fr;
+            gap: 25px;
         }
 
         #content-prefix .column-50 {
