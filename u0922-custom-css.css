@@ -1645,18 +1645,21 @@ div.cenefa-l1 img {
         text-align: center;
     }
 
-    .view-buscador-docentes-e-investigadores dl dt a {
-        font-size: x-large;
-      }
 
-    .view-buscador-docentes-e-investigadores dl dt a:focus {
-        background-color: #a90533;
-        color: white;
+    .view-buscador-docentes-e-investigadores a::before {
+        font-family: fontAwesome;
+        content: "\f054";
+        margin-right: 10px;
+        font-size: large;
     }
 
     .view-buscador-docentes-e-investigadores dl dt {
-        border: 1px solid #a90533;
-        margin-top: 5px;
+        font-size: x-large;
+    }
+
+    .view-buscador-docentes-e-investigadores dl dt a:hover {
+        background-color: #a90533;
+        color: white;
     }
 
     /* contenido completo */
