@@ -1712,10 +1712,6 @@ div.cenefa-l1 img {
         margin: 0px;
     }
 
-    .pg-noticiasFCom .col-md-5 {
-        width: 100%;
-    }
-
     .pg-noticiasFCom .row { --mdb-gutter-x: 0; }
 
     .pg-noticiasFCom .row .card-body { width: 100%; }
