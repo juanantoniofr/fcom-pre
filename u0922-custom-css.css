@@ -219,9 +219,47 @@
         
     }
 
+    /* formulario de busqueda */
+    
+    #block-formulariodebusqueda {    
+        margin-right: 30%;
+        margin-top: 7px;
+        margin-bottom: 0px;
+    }
+    
+    #block-formulariodebusqueda #edit-keys{
+        font-size: 18px;
+        background-color: #a90533;
+        opacity: 0.7;
+        border-radius: 7px;
+        color: #f8ebef;
+        height: 40px;
+    }
+    
+    #block-formulariodebusqueda #search-block-form .form-submit{
+        width: 50px;
+        font-size: 18px;
+        margin: 2px 10px 5px 7px;
+        background-color: transparent;
+        opacity: 1;
+        border: 0px;
+        box-shadow: none;
+    }
+    /* fin formulario de busqueda */
+
+    @media  (max-width: 767px) {
+
+        #block-formulariodebusqueda {
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
 /* fin masthead */
 
 /* navbar */
+    
     
     #navbar {
         margin-bottom: 2px;
@@ -238,6 +276,64 @@
         justify-content: end;
     }
     
+    @media  (max-width: 767px) {
+        #navbar .pr-navbar__rw { max-width: unset; }
+    }
+
+    /* logo us es */
+
+    #block-logouses{ 
+        display: flex;
+        min-width: 260px;
+    }
+    
+    #block-logouses .clearfix { margin-bottom: 0px; }
+    
+    #block-logouses .field__item {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #block-logouses img {
+        width: 200px;
+        min-width: 150px;
+    }
+    
+    #block-logouses h1 {
+        font-size: 1.2em;
+        font-weight: 800;
+        color: #a90533;
+        margin-bottom: 0px;
+        line-height: 28px;
+        font-stretch: condensed;
+    }
+    
+    #block-logouses p {
+        margin: 0px;
+        color: #454545;
+        font-stretch: condensed;
+    }
+    
+    @media  (max-width: 767px) {
+        
+        #block-logouses,
+        #block-logouses .field__item {
+            width: 100%;
+            justify-content: center;
+        }
+
+        #block-logouses .field__item {
+            text-align: center;
+            margin: 10px 0px;
+            padding: 0px;
+        }
+
+        #block-logouses .field__item h1 { text-align: center }
+    }
+
+    /* fin logo us es*/
+
+    /* menu ppal */
     #block-u0922-menu-principal {
         display: flex;
         width: Calc(100% - 470px);
@@ -424,6 +520,42 @@
 
     @media  (max-width: 767px) {
         
+        #block-u0922-menu-principal {
+            width: 100%;
+            display: block;
+        }
+
+        #block-u0922-menu-principal .dropdown-content {
+            left: 0;
+            max-width: unset;
+            flex-direction: column;
+        }
+
+        #block-u0922-menu-principal .narrativa img { display: none; }
+        
+        #block-u0922-menu-principal .dropdown:hover .dropdown-content,
+        #block-u0922-menu-principal .dropdown:focus .dropdown-content {
+            width: 100%;
+            margin-left: 0;
+            padding-top: 0px;
+        }
+
+        #block-u0922-menu-principal .border-row { border-left: unset; }
+        
+        #block-u0922-menu-principal .dropbtn{
+            color: #DDD;
+            font-size: 0.9em;
+            box-shadow: unset;
+            display: inline;
+        }
+
+        #block-u0922-menu-principal .dropdown:hover .dropbtn{ color: #DDD; }
+
+        #block-u0922-menu-principal .dropdown::after,
+        #block-u0922-menu-principal .dropdown::before { content: unset; }
+        
+        #block-u0922-menu-principal .block__inner{ flex-direction: column; }
+    
         .lbl-toggle,
         .lbl-toggle-ConoceFcom,
         .lbl-toggle-Titulos,
@@ -531,8 +663,45 @@
 
         .collapsible-content p { margin-bottom: 0; }
     }   
+    /* fin menu ppal */
 
+    /* imprescindibles (incluye idiomas) */
+    #reponsive-menu-u0922-imprescindibles { display: none; }
 
+    #block-u0922-imprescindibles-mas-idiomas { 
+        display: flex;
+        justify-content: center;
+    }
+
+    #block-u0922-imprescindibles-mas-idiomas .clearfix { margin-bottom: 0px; }
+
+    #container_imprescindibles_mas_idiomas {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        min-width: 160px;
+    }
+    
+    @media  (max-width: 767px) {
+        #menu-u0922-imprescindibles { display: none; }
+
+        #reponsive-menu-u0922-imprescindibles { 
+            display: flex;
+            border-top: 1px solid white;
+        }
+    
+        .dropdown-content-imprescindible { padding-top: 20px; }
+    
+        .dropdown-content-imprescindible ul {
+            list-style: none;
+            padding: 0px;
+        }
+    
+        .dropdown-content-imprescindible ul li { line-height: 2.5em; }
+    
+        .dropdown-content-imprescindible ul li a { display: flex; }        
+    }
+    /* fin imprescindibles (incluye idiomas) */        
 /*fin navbar */
 
 .decanato h3 {
@@ -603,29 +772,7 @@ ul.fcom-menu a {
 }
 
 /* formulario de busqueda */
-#block-formulariodebusqueda {    
-    margin-right: 30%;
-    margin-top: 7px;
-    margin-bottom: 0px;
-}
 
-#block-formulariodebusqueda #edit-keys{
-    font-size: 18px;
-    background-color: #a90533;
-    opacity: 0.7;
-    border-radius: 7px;
-    color: #f8ebef;
-    height: 40px;
-}
-#block-formulariodebusqueda #search-block-form .form-submit{
-    width: 50px;
-    font-size: 18px;
-    margin: 2px 10px 5px 7px;
-    background-color: transparent;
-    opacity: 1;
-    border: 0px;
-    box-shadow: none;
-}
 
 form#search-form {
     display: none;
@@ -654,61 +801,10 @@ form#search-form + h2 + div ol {
 /* navBar */
 
 
-/* logo */
-#block-logouses{ 
-    display: flex;
-    min-width: 260px;
-}
-
-#block-logouses .clearfix { margin-bottom: 0px; }
-
-#block-logouses .field__item {
-    display: flex;
-    flex-direction: column;
-}
-
-#block-logouses img {
-    width: 200px;
-    min-width: 150px;
-}
-
-#block-logouses h1 {
-    font-size: 1.2em;
-    font-weight: 800;
-    color: #a90533;
-    margin-bottom: 0px;
-    line-height: 28px;
-    font-stretch: condensed;
-}
-
-#block-logouses p {
-    margin: 0px;
-    color: #454545;
-    font-stretch: condensed;
-}
-
 /* Menu principal */
 
 
-    /* Menu Imprescidibles &amp;&amp; Idiomas */
-
-        #reponsive-menu-u0922-imprescindibles { display: none; }
-
-        #block-u0922-imprescindibles-mas-idiomas { 
-            display: flex;
-            justify-content: center;
-        }
-
-        #block-u0922-imprescindibles-mas-idiomas .clearfix {
-            margin-bottom: 0px;
-        }
-
-        #container_imprescindibles_mas_idiomas {
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-            min-width: 160px;
-        }
+    
 
     /* Menu Imprescidibles */
         #menu-u0922-imprescindibles { padding: 30px 0px 0px 0px; }
@@ -2163,102 +2259,5 @@ div.cenefa-l1 img {
         margin: 0px;
     }
 
-    #menu-u0922-imprescindibles { display: none; }
-
-    #reponsive-menu-u0922-imprescindibles { 
-        display: flex;
-        border-top: 1px solid white;
-        margin: 2px 10px;
-    }
-
-    .dropdown-content-imprescindible {
-        padding-top: 20px;
-        display: flex;
-    }
-
-    .dropdown-content-imprescindible ul {
-        list-style: none;
-        padding: 0px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .dropdown-content-imprescindible ul li {
-        line-height: 2.5em;
-        align-items: center;
-    }
-
-    .dropdown-content-imprescindible ul li a { display: flex; }
-
-    #block-formulariodebusqueda {
-        width: 95%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    /** navbar responsive **/
-
-    #navbar .pr-navbar__rw { max-width: unset; }
-
-    #block-logouses,
-    #block-logouses .field__item {
-        width: 100%;
-        justify-content: center;
-    }
-
-    #block-logouses .field__item {
-        text-align: center;
-        margin: 10px 0px;
-        padding: 0px;
-    }
-
-    #block-logouses .field__item h1 { text-align: center }
-
-    .narrativa img { display: none; }
-        
-    .dropdown:hover .dropdown-content,
-    .dropdown:focus .dropdown-content {
-        width: 100%;
-        margin-left: 0;
-        padding-top: 0px;
-    }
-
-    #block-u0922-menu-principal .dropdown-content {
-        left: 0;
-        max-width: unset;
-        flex-direction: column;
-    }
-
-    .border-row {
-        border-left: unset;
-        padding-left: unset;
-    }
-
-    #block-u0922-menu-principal {
-        width: 100%;
-        display: block;
-    }
-
-    #block-u0922-menu-principal .dropbtn{
-        color: #ddd;
-        font-size: 0.9em;
-        box-shadow: unset;
-        display: inline;
-    }
-
-    #block-u0922-menu-principal .dropdown:hover .dropbtn{ color: #DDD; }
-
-    #block-u0922-menu-principal .dropdown::after,
-    #block-u0922-menu-principal .dropdown::before { content: unset; }
-
-    #block-u0922-menu-principal .dropbtn:hover { border-bottom: none !important; }
-
-    #block-u0922-menu-principal .block__inner{
-        flex-direction: column;
-        justify-content: initial;
-    }
     
-    
-
-
 }
