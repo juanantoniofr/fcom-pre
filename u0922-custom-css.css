@@ -136,10 +136,7 @@
     input#collapsible-Practicas[type="checkbox"],
     input#collapsible-Movilidad[type="checkbox"],
     input#collapsible-Secretaria[type="checkbox"],
-    input#collapsible-NoticiasFcom[type="checkbox"], 
-    label.lbl-toggle,
-    label.lbl-toggle-masthead
-        { display: none; } 
+    input#collapsible-NoticiasFcom[type="checkbox"] { display: none; } 
 
     .pr-header__header-first { display: flex; }
 
