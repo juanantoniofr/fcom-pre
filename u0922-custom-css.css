@@ -2171,7 +2171,6 @@ div.cenefa-l1 img {
     .lbl-toggle-NoticiasFcom:hover { color: #FFF; }
 
     .lbl-toggle::before,
-    .lbl-toggle-masthead::before,
     .lbl-toggle-ConoceFcom::before,
     .lbl-toggle-Titulos::before,
     .lbl-toggle-Practicas::before,
@@ -2188,8 +2187,12 @@ div.cenefa-l1 img {
         transition: transform .2s ease-out; 
     }
 
+    .lbl-toggle-masthead::before{
+        font-family: awesome;
+        content: "\f0c9";
+    }
+
     .toggle:checked+.lbl-toggle::before,
-    .toggle:checked+.lbl-toggle-masthead::before,
     .toggle:checked+.lbl-toggle-ConoceFcom::before,
     .toggle:checked+.lbl-toggle-Titulos::before,
     .toggle:checked+.lbl-toggle-Practicas::before,
@@ -2238,7 +2241,9 @@ div.cenefa-l1 img {
     .toggle:checked + .lbl-toggle-Practicas + .collapsible-Practicas-content,
     .toggle:checked + .lbl-toggle-Movilidad + .collapsible-Movilidad-content,
     .toggle:checked + .lbl-toggle-Secretaria + .collapsible-Secretaria-content,
-    .toggle:checked + .lbl-toggle-NoticiasFcom + .collapsible-NoticiasFcom-content {
+    .toggle:checked + .lbl-toggle-NoticiasFcom + .collapsible-NoticiasFcom-content,
+    .toggle:checked + .lbl-toggle-masthead + .collapsible-masthead-content
+     {
         max-height:fit-content;
         display: flex;
         margin-top: 30px;
@@ -2264,11 +2269,5 @@ div.cenefa-l1 img {
 
     .collapsible-content p,
     .collapsible-masthead-content p { margin-bottom: 0; }
-
-    #block-alternadordeidioma {
-        display: block;
-        width: 100%;
-        float: none;
-    }
 
 }
