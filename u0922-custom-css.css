@@ -1784,13 +1784,6 @@ div.cenefa-l1 img {
         margin-left: -5%;
     }
 
-    
-
-    #content-prefix .column-50 { 
-        flex: 100%;
-        padding: 5px;
-    }
-
     /* For extremely small screen devices (480px and below) */
     @media only screen and (max-width: 480px) {}
 
@@ -1799,26 +1792,22 @@ div.cenefa-l1 img {
         
         #content-prefix .row-imprescindibles {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 4fr;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 25px;
         }
 
-        #content-prefix .column-50 {
-            flex: 50%;
-            padding: 25px;
-        }
+        
     }
  
     /* Medium screen devices (768px and above) */
-    @media only screen and (min-width: 768px) {
-        content-prefix .row-imprescindibles {
-            grid-template-rows: 1fr 3fr;
-        }
-    }
+    @media only screen and (min-width: 768px) {}
  
     /* Big screen devices (889px and above) */
-    @media only screen and (min-width: 889px) {}
+    @media only screen and (min-width: 889px) {
+        #content-prefix .row-imprescindibles {
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+        }
+    }
  
     /* Extra big screen devices (1200px and above) */
     @media only screen and (min-width: 1200px) {}
