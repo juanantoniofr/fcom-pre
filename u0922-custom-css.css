@@ -1887,6 +1887,10 @@ div.cenefa-l1 img {
         color: white;
     }
 
+    #u0922_comunidad .dropdown-content a:hover {
+        color: transparent;
+    }
+
     .mas_en h3 {
         border-bottom: 1px solid #a90533;
         width: 100%;
