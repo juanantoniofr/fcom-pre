@@ -1811,7 +1811,11 @@ div.cenefa-l1 img {
     }
  
     /* Medium screen devices (768px and above) */
-    @media only screen and (min-width: 768px) {}
+    @media only screen and (min-width: 768px) {
+        content-prefix .row-imprescindibles {
+            grid-template-rows: 1fr 3fr;
+        }
+    }
  
     /* Big screen devices (889px and above) */
     @media only screen and (min-width: 889px) {}
