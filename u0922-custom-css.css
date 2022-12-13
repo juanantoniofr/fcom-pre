@@ -1000,7 +1000,7 @@ div.novedades-secretaria-front, .novedades-practicas-front, .novedades-movilidad
 }
 
 #app-FCom .views-enlace, #servicios-FCom .views-enlace {
-    padding-top: 5%;
+    margin: 35px 0px;
 }
 
 #app-FCom .views-field-field-icono, #servicios-FCom .views-field-field-icono {
@@ -1792,7 +1792,7 @@ div.cenefa-l1 img {
         
         #content-prefix .row-imprescindibles {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: 1fr 1fr;
             gap: 25px;
         }
 
@@ -1803,11 +1803,7 @@ div.cenefa-l1 img {
     @media only screen and (min-width: 768px) {}
  
     /* Big screen devices (889px and above) */
-    @media only screen and (min-width: 889px) {
-        #content-prefix .row-imprescindibles {
-            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-        }
-    }
+    @media only screen and (min-width: 889px) { }
  
     /* Extra big screen devices (1200px and above) */
     @media only screen and (min-width: 1200px) {}
@@ -2296,7 +2292,7 @@ div.cenefa-l1 img {
         line-height: 1.8em;
     }
 
-    #app-FCom .views-enlace, #servicios-FCom .views-enlace { margin: 35px 0px; }
+    
 
 }
 
