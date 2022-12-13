@@ -176,143 +176,367 @@
     }
 
     @media  (max-width: 767px) {
-        label.lbl-toggle,
-    label.lbl-toggle-masthead,
-    label.lbl-toggle-ConoceFcom,
-    label.lbl-toggle-Titulos,
-    label.lbl-toggle-Practicas,
-    label.lbl-toggle-Movilidad,
-    label.lbl-toggle-Secretaria,
-    label.lbl-toggle-NoticiasFcom { display: block; }
+        
+        label.lbl-toggle-masthead { 
+            display: block;
+            text-align: center;
+            padding: 1rem;
+            color: #DDD;
+            background: #A90533;
+            cursor: pointer;
+            border-radius: unset;
+            transition: all 0.25s ease-out;
+        }
+        
+        .lbl-toggle-masthead:hover { color: #FFF; }
+        
+        
+
+        .lbl-toggle-masthead::before{
+            font-family: fontAwesome;
+            content: "\f0c9";
+        }
+
+        .collapsible-masthead-content  { 
+            max-height: 0px;
+            overflow: hidden;
+            transition: max-height .25s ease-in-out;
+        }
+        
+        .collapsible-masthead-content { z-index: 1; }
+
+        .toggle:checked + .lbl-toggle-masthead + .collapsible-masthead-content { max-height: fit-content; }
+
+        .toggle:checked+.lbl-toggle-masthead {
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        .collapsible-masthead-content .content-inner {
+            padding: .5rem 1rem; 
+            background: #A90533;
+            align-content: center
+        }
+        
+        .collapsible-masthead-content p { margin-bottom: 0; }
+        
+    }
+
+/* fin masthead */
+
+/* navbar */
     
-    .lbl-toggle,
-    .lbl-toggle-masthead,
-    .lbl-toggle-ConoceFcom,
-    .lbl-toggle-Titulos,
-    .lbl-toggle-Practicas,
-    .lbl-toggle-Movilidad,
-    .lbl-toggle-Secretaria,
-    .lbl-toggle-NoticiasFcom { 
-        display: block;
-        text-align: center;
-        padding: 1rem;
-        color: #DDD;
-        background: #A90533;
-        cursor: pointer;
-        border-radius: unset;
-        transition: all 0.25s ease-out;
+    #navbar {
+        margin-bottom: 2px;
+        margin-top: 7px;
+        background: transparent;
+        color: black;
     }
 
-    .lbl-toggle:hover, 
-    .lbl-toggle-masthead:hover,
-    .lbl-toggle-ConoceFcom:hover,
-    .lbl-toggle-Titulos:hover,
-    .lbl-toggle-Practicas:hover,
-    .lbl-toggle-Movilidad:hover,
-    .lbl-toggle-Secretaria:hover,
-    .lbl-toggle-NoticiasFcom:hover { color: #FFF; }
-
-    .lbl-toggle::before,
-    .lbl-toggle-ConoceFcom::before,
-    .lbl-toggle-Titulos::before,
-    .lbl-toggle-Practicas::before,
-    .lbl-toggle-Movilidad::before,
-    .lbl-toggle-Secretaria::before,
-    .lbl-toggle-NoticiasFcom::before { 
-        content: ' ';  
-        display: inline-block; 
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent; 
-        border-left: 5px solid currentColor;
-        vertical-align: middle;
-        margin-right: .7rem; transform: translateY(-2px);
-        transition: transform .2s ease-out; 
-    }
-
-    .lbl-toggle-masthead::before{
-        font-family: fontAwesome;
-        content: "\f0c9";
-    }
-
-    .toggle:checked+.lbl-toggle::before,
-    .toggle:checked+.lbl-toggle-ConoceFcom::before,
-    .toggle:checked+.lbl-toggle-Titulos::before,
-    .toggle:checked+.lbl-toggle-Practicas::before,
-    .toggle:checked+.lbl-toggle-Movilidad::before,
-    .toggle:checked+.lbl-toggle-Secretaria::before,
-    .toggle:checked+.lbl-toggle-NoticiasFcom::before { transform: rotate(90deg) translateX(-3px); }
-
-    .collapsible-content,
-    .collapsible-masthead-content,
-    .collapsible-ConoceFcom-content,
-    .collapsible-Titulos-content,
-    .collapsible-Practicas-content,
-    .collapsible-Movilidad-content,
-    .collapsible-Secretaria-content,
-    .collapsible-NoticiasFcom-content { 
-        max-height: 0px;
-        overflow: hidden;
-        transition: max-height .25s ease-in-out;
-    }
-
-    .collapsible-masthead-content { z-index: 1; }
-
-    .collapsible-ConoceFcom-content { z-index: 8; }
-
-    .collapsible-Titulos-content { z-index: 7; }
-
-    .collapsible-Practicas-content { z-index: 6; }
-
-    .collapsible-Movilidad-content { z-index: 5; }
-
-    .collapsible-Secretaria-content { z-index: 4; }
-
-    .collapsible-NoticiasFcom-content { z-index: 3; }
-
-    .collapsible-content .content-inner {
-        width: 100%;
-        flex-direction: column;
-        height: fit-content;
-    }
-
-    .toggle:checked + .lbl-toggle + .collapsible-content,
-    .toggle:checked + .lbl-toggle-masthead + .collapsible-masthead-content { max-height: fit-content; }
-
-    .toggle:checked + .lbl-toggle-ConoceFcom + .collapsible-ConoceFcom-content,
-    .toggle:checked + .lbl-toggle-Titulos + .collapsible-Titulos-content,
-    .toggle:checked + .lbl-toggle-Practicas + .collapsible-Practicas-content,
-    .toggle:checked + .lbl-toggle-Movilidad + .collapsible-Movilidad-content,
-    .toggle:checked + .lbl-toggle-Secretaria + .collapsible-Secretaria-content,
-    .toggle:checked + .lbl-toggle-NoticiasFcom + .collapsible-NoticiasFcom-content,
-    .toggle:checked + .lbl-toggle-masthead + .collapsible-masthead-content
-     {
-        max-height:fit-content;
+    #navbar .l-r {
         display: flex;
+        flex-direction: row;
+        align-items: self-end;
+        flex-wrap: wrap;
+        justify-content: end;
+    }
+    
+    #block-u0922-menu-principal {
+        display: flex;
+        width: Calc(100% - 470px);
+        justify-content: center;
+    }
+    
+    #block-u0922-menu-principal .block__content{ padding: 0px 0px 0px 0px; }
+    
+    #u0922_menu_principal { vertical-align: baseline; }
+    
+    #block-u0922-menu-principal .block__inner{
+        display: flex;
+        justify-content: end;
+        flex-wrap: wrap;
+    }
+        
+    #u0922_menu_principal a {
+        padding: 0px 7px;
+        font-size: 26px;
+        color: #a90533;
+    }
+    
+    .collapsible-content .content-inner {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .dropdown {
+        display: flex;
+        min-height: 32px;
+    }
+    
+    #block-u0922-menu-principal .dropdown {
+        align-items: baseline;
+        padding: 0px 4px;
+    }
+    
+    #block-u0922-menu-principal .dropbtn {
+        background-color: transparent;
+        color: #a90533;
+        font-size: 1.6em;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        display: inline-flex;
+        padding: 0px;
+    }
+    
+    #block-u0922-menu-principal .dropbtn:hover { border-bottom: 1px solid #a90533; }    
+    
+    #container_imprescindibles_mas_idiomas .dropbtn{
+        color: white;
+        font-size: 16px;
+    }
+    
+    #block-u0922-menu-principal .dropdown::after {
+        font-family: fontAwesome;
+        content: "\f0dd";
+        margin-left: 0.1em;
+        font-size: 16px;
+        align-self: initial;
+        color: #a90533;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    
+    #block-u0922-menu-principal .dropdown-content{
+        left: Calc(26% - 100px);
+        max-width: 80%;
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 4px 10px;
+        text-decoration: none;
+        display: block;
+        color: #a90533;
+        font-weight: 600;
+    }
+    
+    .dropdown p { text-align: justify; }
+    
+    .dropdown:hover .dropdown-content,
+    .dropdown:focus .dropdown-content{
+        width: Calc(90% - 150px);
+        margin-left: -13%;
+        background-color: white;
+        z-index: 10;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        padding-top: 10px;
         margin-top: 30px;
     }
-
-    .toggle:checked+.lbl-toggle,
-    .toggle:checked+.lbl-toggle-masthead,
-    .toggle:checked+.lbl-toggle-ConoceFcom,
-    .toggle:checked+.lbl-toggle-Titulos,
-    .toggle:checked+.lbl-toggle-Practicas,
-    .toggle:checked+.lbl-toggle-Movilidad,
-    .toggle:checked+.lbl-toggle-Secretaria,
-    .toggle:checked+.lbl-toggle-NoticiasFcom {
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
+    
+    .opacity0-50 { opacity: 0.5; }
+    
+    #block-u0922-menu-principal .dropdown:hover .dropbtn {
+        background-color: transparent;
+        color: #a90533;
+        padding: 0px;
+        border-bottom: 1px solid #a90533;
     }
-    .collapsible-content .content-inner,
-    .collapsible-masthead-content .content-inner {
-        padding: .5rem 1rem; 
-        background: #A90533;
-        align-content: center
+    
+    #block-u0922-menu-principal .dropbtn:focus {
+        background-color: white;
+        color: #a90533;
+      }
+    
+    .narrativa {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        flex: 1;
+    }
+    
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    .column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+    }
+    
+    .border-row {
+        border-left: 1px solid #aaa;
+        padding-left: 30px;
+    }    
+    
+    .narrativa img {
+        padding: 20px;
+        display: flex;
+        flex: 1;
+        max-width: 400px;
+        max-height: 300px;
+    }
+    
+    .narrativa p {
+        padding: 20px;
+        align-items: stretch;
+        display: flex;
+        margin-bottom: 0px;
+        flex: 2;
+    }
+    
+    .narrativa-l2 { /**/
+        display: flex;
+        width: stretch;
+        align-items: normal;
+        flex: 1;
+    }
+    
+    .narrativa-l21 { /**/
+        padding: 20px;
+        width: 100%;
+        align-items: stretch;
+        display: flex;
+    }
+        
+    .narrativa-l2111 { 
+        width: 80%;
+        margin-left: 15%;
+        margin-top: 10px;
+    }
+        
+    .narrativa-l2111 a {
+        font-weight: unset;
+        padding: 4px;
     }
 
-    .collapsible-content p,
-    .collapsible-masthead-content p { margin-bottom: 0; }
+    @media  (max-width: 767px) {
+        
+        .lbl-toggle,
+        .lbl-toggle-ConoceFcom,
+        .lbl-toggle-Titulos,
+        .lbl-toggle-Practicas,
+        .lbl-toggle-Movilidad,
+        .lbl-toggle-Secretaria,
+        .lbl-toggle-NoticiasFcom { 
+            display: block;
+            text-align: center;
+            padding: 1rem;
+            color: #DDD;
+            background: #A90533;
+            cursor: pointer;
+            border-radius: unset;
+            transition: all 0.25s ease-out;
+        }
 
-    }
+        .lbl-toggle:hover, 
+        .lbl-toggle-ConoceFcom:hover,
+        .lbl-toggle-Titulos:hover,
+        .lbl-toggle-Practicas:hover,
+        .lbl-toggle-Movilidad:hover,
+        .lbl-toggle-Secretaria:hover,
+        .lbl-toggle-NoticiasFcom:hover { color: #FFF; }
+
+        .lbl-toggle::before,
+        .lbl-toggle-ConoceFcom::before,
+        .lbl-toggle-Titulos::before,
+        .lbl-toggle-Practicas::before,
+        .lbl-toggle-Movilidad::before,
+        .lbl-toggle-Secretaria::before,
+        .lbl-toggle-NoticiasFcom::before { 
+            content: ' ';  
+            display: inline-block; 
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent; 
+            border-left: 5px solid currentColor;
+            vertical-align: middle;
+            margin-right: .7rem; transform: translateY(-2px);
+            transition: transform .2s ease-out; 
+        }
+
+        .toggle:checked+.lbl-toggle::before,
+        .toggle:checked+.lbl-toggle-ConoceFcom::before,
+        .toggle:checked+.lbl-toggle-Titulos::before,
+        .toggle:checked+.lbl-toggle-Practicas::before,
+        .toggle:checked+.lbl-toggle-Movilidad::before,
+        .toggle:checked+.lbl-toggle-Secretaria::before,
+        .toggle:checked+.lbl-toggle-NoticiasFcom::before { transform: rotate(90deg) translateX(-3px); }
+
+        .collapsible-content,
+        .collapsible-ConoceFcom-content,
+        .collapsible-Titulos-content,
+        .collapsible-Practicas-content,
+        .collapsible-Movilidad-content,
+        .collapsible-Secretaria-content,
+        .collapsible-NoticiasFcom-content { 
+            max-height: 0px;
+            overflow: hidden;
+            transition: max-height .25s ease-in-out;
+        }
+
+        .collapsible-ConoceFcom-content { z-index: 8; }
+        .collapsible-Titulos-content { z-index: 7; }
+        .collapsible-Practicas-content { z-index: 6; }
+        .collapsible-Movilidad-content { z-index: 5; }
+        .collapsible-Secretaria-content { z-index: 4; }
+        .collapsible-NoticiasFcom-content { z-index: 3; }
+        .collapsible-content .content-inner {
+            width: 100%;
+            flex-direction: column;
+            height: fit-content;
+        }
+
+        .toggle:checked + .lbl-toggle + .collapsible-content { max-height: fit-content; }
+
+        .toggle:checked + .lbl-toggle-ConoceFcom + .collapsible-ConoceFcom-content,
+        .toggle:checked + .lbl-toggle-Titulos + .collapsible-Titulos-content,
+        .toggle:checked + .lbl-toggle-Practicas + .collapsible-Practicas-content,
+        .toggle:checked + .lbl-toggle-Movilidad + .collapsible-Movilidad-content,
+        .toggle:checked + .lbl-toggle-Secretaria + .collapsible-Secretaria-content,
+        .toggle:checked + .lbl-toggle-NoticiasFcom + .collapsible-NoticiasFcom-content
+        {
+            max-height:fit-content;
+            display: flex;
+            margin-top: 30px;
+        }
+
+        .toggle:checked+.lbl-toggle,
+        .toggle:checked+.lbl-toggle-ConoceFcom,
+        .toggle:checked+.lbl-toggle-Titulos,
+        .toggle:checked+.lbl-toggle-Practicas,
+        .toggle:checked+.lbl-toggle-Movilidad,
+        .toggle:checked+.lbl-toggle-Secretaria,
+        .toggle:checked+.lbl-toggle-NoticiasFcom {
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        .collapsible-content .content-inner {
+            padding: .5rem 1rem; 
+            background: #A90533;
+            align-content: center
+        }
+
+        .collapsible-content p { margin-bottom: 0; }
+    }   
+
+
+/*fin navbar */
 
 .decanato h3 {
         padding-top: 10px;
@@ -430,24 +654,8 @@ form#search-form + h2 + div ol {
 }
 
 
-/* fin masthead */
-
 /* navBar */
 
-#navbar {
-    margin-bottom: 2px;
-    margin-top: 7px;
-    background: transparent;
-    color: black;
-}
-
-#navbar .l-r {
-    display: flex;
-    flex-direction: row;
-    align-items: self-end;
-    flex-wrap: wrap;
-    justify-content: end;
-}
 
 /* logo */
 #block-logouses{ 
@@ -483,204 +691,7 @@ form#search-form + h2 + div ol {
 }
 
 /* Menu principal */
-#block-u0922-menu-principal {
-    display: flex;
-    width: Calc(100% - 470px);
-    justify-content: center;
-}
 
-#block-u0922-menu-principal .block__content{ 
-    padding: 0px 0px 0px 0px;
-}
-
-
-#u0922_menu_principal { vertical-align: baseline; }
-
-#block-u0922-menu-principal .block__inner{
-    display: flex;
-    justify-content: end;
-    flex-wrap: wrap;
-}
-
-
-#u0922_menu_principal a {
-    padding: 0px 7px;
-    font-size: 26px;
-    color: #a90533;
-}
-
-.collapsible-content .content-inner {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.dropdown {
-    display: flex;
-    min-height: 32px;
-}
-
-#block-u0922-menu-principal .dropdown {
-    align-items: baseline;
-    padding: 0px 4px;
-}
-
-#block-u0922-menu-principal .dropbtn {
-    background-color: transparent;
-    color: #a90533;
-    font-size: 1.6em;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-    display: inline-flex;
-    padding: 0px;
-}
-
-#block-u0922-menu-principal .dropbtn:hover {
-    border-bottom: 1px solid #a90533;
-}    
-
-#container_imprescindibles_mas_idiomas .dropbtn{
-    color: white;
-    font-size: 16px;
-}
-
-#block-u0922-menu-principal .dropdown::after {
-    font-family: fontAwesome;
-    content: "\f0dd";
-    margin-left: 0.1em;
-    font-size: 16px;
-    align-self: initial;
-    color: #a90533;
-}
-
-.dropdown-content {
-  
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-#block-u0922-menu-principal .dropdown-content{
-    left: Calc(26% - 100px);
-    max-width: 80%;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 4px 10px;
-    text-decoration: none;
-    display: block;
-    color: #a90533;
-    font-weight: 600;
-}
-
-.dropdown p {
-    text-align: justify;
-}
-
-
-.dropdown:hover .dropdown-content,
-.dropdown:focus .dropdown-content{
-    width: Calc(90% - 150px);
-    margin-left: -13%;
-    background-color: white;
-    z-index: 10;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    padding-top: 10px;
-    margin-top: 30px;
-}
-
-.opacity0-50 {
-    opacity: 0.5;
-  }
-
-#block-u0922-menu-principal .dropdown:hover .dropbtn
-{
-    background-color: transparent;
-    color: #a90533;
-    padding: 0px;
-    border-bottom: 1px solid #a90533;
-}
-
-#block-u0922-menu-principal .dropbtn:focus {
-    background-color: white;
-    color: #a90533;
-  }
-
-.narrativa {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    flex: 1;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-}
-
-.border-row {
-    border-left: 1px solid #aaa;
-    padding-left: 30px;
-}    
-
-
-.narrativa img {
-    padding: 20px;
-    display: flex;
-    flex: 1;
-    max-width: 400px;
-    max-height: 300px;
-}
-
-.narrativa p {
-    padding: 20px;
-    align-items: stretch;
-    display: flex;
-    margin-bottom: 0px;
-    flex: 2;
-}
-
-.narrativa-l2 { /**/
-    display: flex;
-    width: stretch;
-    align-items: normal;
-    flex: 1;
-}
-
-.narrativa-l21 { /**/
-    padding: 20px;
-    width: 100%;
-    align-items: stretch;
-    display: flex;
-}
-    
-    
-.narrativa-l2111 { 
-    width: 80%;
-    margin-left: 15%;
-    margin-top: 10px;
-}
-    
-.narrativa-l2111 a {
-    font-weight: unset;
-    padding: 4px;
-}
 
     /* Menu Imprescidibles &amp;&amp; Idiomas */
 
