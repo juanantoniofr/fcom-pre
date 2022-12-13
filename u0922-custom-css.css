@@ -1861,12 +1861,26 @@ div.cenefa-l1 img {
         gap:5px;
     }
 
-    div.dropdown {
-        border: solid;
+    #u0922_comunidad div.dropdown {
         display: flex;
         align-items: center;
         gap: 5px;
         padding: 5px;
+    }
+
+    #u0922_comunidad div.dropdown ul {
+        list-style: none;
+    }
+   
+    #u0922_comunidad .dropdown:hover .dropdown-content,
+    #u0922_comunidad .dropdown:focus .dropdown-content {
+        width: Calc(25% - 150px);
+        margin-left: 5%;
+        background-color: #a90533;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 10px;
+        margin-top: 7%;
     }
 
     .mas_en h3 {
