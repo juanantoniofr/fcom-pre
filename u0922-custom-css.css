@@ -1,205 +1,324 @@
 /* boby - html - .page */
 
-html, body, .page { 
-    font-size: 16px; /* 1em =&gt; 16px */
-    background-color: transparent; 
-    line-height: 1.6em;
-}
+    html, body, .page { 
+        font-size: 16px; /* 1em =&gt; 16px */
+        background-color: transparent; 
+        line-height: 1.6em;
+    }
 
-a, a:hover, a:visited, a:active, a:hover, a:focus { color: #A90533;}
-a:hover, a:focus { text-decoration: none;}
-.text-center { text-align: center; }
-.display-none { display: none !important; }
-a.cursor-default:hover { cursor: default; }
-article.node { background-color: transparent; }
-.pager {
-    margin: 60px 0px;
-    text-align: left;
-}
+    a, a:hover, a:visited, a:active, a:hover, a:focus { color: #A90533;}
+    a:hover, a:focus { text-decoration: none;}
+    .text-center { text-align: center; }
+    .display-none { display: none !important; }
+    a.cursor-default:hover { cursor: default; }
+    article.node { background-color: transparent; }
+    .pager {
+        margin: 60px 0px;
+        text-align: left;
+    }
 
-a.pager__link, a.pager__link:hover, a.pager__link:active, a.pager__link:focus  {
-    padding: 20px;
-    font-size: 22px;
-    color: white;
-    border-radius: 14px;
-    background: #a90533;
-}
+    a.pager__link, a.pager__link:hover, a.pager__link:active, a.pager__link:focus  {
+        padding: 20px;
+        font-size: 22px;
+        color: white;
+        border-radius: 14px;
+        background: #a90533;
+    }
 
-.ui-widget-content a{
-    color: #A90533;
-}
+    .ui-widget-content a{ color: #A90533; }
 
-table {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
+    table {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 
-h4.ident {
-    padding: 15px;
-    color: initial;
-    font-size: 1.5em;
-    font-weight: bold;
-    line-height: 1.2em;
-    border-bottom: 1px solid #a90533;
-    margin-left: 50px;
-    padding-bottom: 5px;
-    padding-left: 0px;
-    color: #a90533;
-}
+    h4.ident {
+        padding: 15px;
+        color: initial;
+        font-size: 1.5em;
+        font-weight: bold;
+        line-height: 1.2em;
+        border-bottom: 1px solid #a90533;
+        margin-left: 50px;
+        padding-bottom: 5px;
+        padding-left: 0px;
+        color: #a90533;
+    }
 
-p.ident{
-    padding: 30px 50px;
-}
+    p.ident{ padding: 30px 50px; }
 
-.views-field.views-field-changed {
-    font-size: 0.9em;
-    font-style: italic;
-    color: #444;
-}
+    .views-field.views-field-changed {
+        font-size: 0.9em;
+        font-style: italic;
+        color: #444;
+    }
 
-/* ckeditor-accordion-container */
+    /* ckeditor-accordion-container */
 
-.ckeditor-accordion-container dl dd {
-padding: 20px 50px;
-}
-.ckeditor-accordion-container dl dt a {
-    background: transparent;
-    border: none;
-    color: #a90533;
-    font-weight: normal;
-    font-size: 1.1em;
-    line-height: 1.8em;
-}
+    .ckeditor-accordion-container dl dd { padding: 20px 50px; }
+    .ckeditor-accordion-container dl dt a {
+        background: transparent;
+        border: none;
+        color: #a90533;
+        font-weight: normal;
+        font-size: 1.1em;
+        line-height: 1.8em;
+    }
 
-.accordion-ckeditor-title .ckeditor-accordion-container dl dt a {
-    padding: 0px;
-}
+    .accordion-ckeditor-title .ckeditor-accordion-container dl dt a { padding: 0px; }
 
-.ck-accordion-ident.styled a {
-font-size: x-large;
-}
+    .ck-accordion-ident.styled a { font-size: x-large; }
 
+    .ckeditor-accordion-container dl dt a:hover,
+    .ckeditor-accordion-container dl dt.active a {
+        background: transparent;
+        font-weight: normal;
+    }
 
-.ckeditor-accordion-container dl dt a:hover,
-.ckeditor-accordion-container dl dt.active a {
-    background: transparent;
-    font-weight: normal;
-}
+    .ckeditor-accordion-container ul li {
+        list-style: disc;
+        padding: 10px;
+    }
 
-.ckeditor-accordion-container ul li {
-    list-style: disc;
-    padding: 10px;
-}
+    .ckeditor-accordion-container ul li a { font-size: initial; } 
 
-.ckeditor-accordion-container ul li a {
-    font-size: initial;  
-} 
+    .ckeditor-accordion-container ul li a::before { content: unset; }
 
-.ckeditor-accordion-container ul li a::before {
-    content: unset;
-}
+    .ckeditor-accordion-container .styled {
+        border: none;
+        padding: 10px 0px;
+    }
 
-.ckeditor-accordion-container .styled {
-    border: none;
-    padding: 10px 0px;
-}
+    dd.active { border: 1px solid #dfdfdf; }
 
-dd.active {
-    border: 1px solid #dfdfdf;
-}
+/***************************
+********** regions**********
+****************************/
 
-/* regions */
-
-.regions { background-color: transparent; }
-.l-rw { padding: 0px; }
+    .regions { background-color: transparent; }
+    .l-rw { padding: 0px; }
 
 /* masthead */
 
-#masthead {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2px;
-    margin-top: 4px;
-    background: #a90533;
-}
+    #masthead {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2px;
+        margin-top: 4px;
+        background: #a90533;
+    }
 
-#masthead div.l-r:nth-child(2) { height: 52px; }
+    #masthead div.l-r:nth-child(2) { height: 52px; }
 
-#masthead a {
-    color:white;
-    padding: 10px;
-    font-size: 12px;
-}
+    #masthead a {
+        color:white;
+        padding: 10px;
+        font-size: 12px;
+    }
 
-/*menu header first derecha e izquierda */
+    
+    .collapsible-masthead-content { width: 100%; }
 
-.collapsible-masthead-content { width: 100%; }
+    .collapsible-masthead-content .content-inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
-.collapsible-masthead-content .content-inner {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+    input#collapsible[type="checkbox"],
+    input#collapsible-masthead[type="checkbox"],
+    input#collapsible-ConoceFcom[type="checkbox"],
+    input#collapsible-Titulos[type="checkbox"],
+    input#collapsible-Practicas[type="checkbox"],
+    input#collapsible-Movilidad[type="checkbox"],
+    input#collapsible-Secretaria[type="checkbox"],
+    input#collapsible-NoticiasFcom[type="checkbox"], 
+    label.lbl-toggle,
+    label.lbl-toggle-masthead
+        { display: none; } 
 
-input#collapsible[type="checkbox"],
-input#collapsible-masthead[type="checkbox"],
-input#collapsible-ConoceFcom[type="checkbox"],
-input#collapsible-Titulos[type="checkbox"],
-input#collapsible-Practicas[type="checkbox"],
-input#collapsible-Movilidad[type="checkbox"],
-input#collapsible-Secretaria[type="checkbox"],
-input#collapsible-NoticiasFcom[type="checkbox"], 
-label.lbl-toggle,
-label.lbl-toggle-masthead
- { display: none; } 
+    .pr-header__header-first { display: flex; }
 
-.pr-header__header-first { display: flex; }
+    #block-u0922-menu-header { 
+        margin: 0px;
+        width: 100%;
+    }
 
-#block-u0922-menu-header { 
-    margin: 0px;
-    width: 100%;
-}
+    #block-u0922-menu-header .field__item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
 
-#block-u0922-menu-header .field__item {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-}
+    #block-u0922-menu-header .clearfix { margin-bottom: 0px; }
 
-#block-u0922-menu-header .clearfix { margin-bottom: 0px; }
+    #block-u0922-headerleft,
+    #block-u0922-headerright {
+        margin-top: auto;
+        margin-bottom: 0px;
+        height: 55px;
+        align-content: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
-#block-u0922-headerleft,
-#block-u0922-headerright {
-    margin-top: auto;
-    margin-bottom: 0px;
-    height: 55px;
-    align-content: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
+    #block-u0922-headerright { justify-content: end; }
 
-/* menu header first derecha */
-#block-u0922-headerright {        
-    justify-content: end;
-}
+    #block-u0922-headerleft {
+        margin-left: 8%;
+        justify-content: start;
+    }
 
-/*menu header first izquierda */
-#block-u0922-headerleft {
-    margin-left: 8%;
-    justify-content: start;
-}
+    @media  (max-width: 767px) {
+        label.lbl-toggle,
+    label.lbl-toggle-masthead,
+    label.lbl-toggle-ConoceFcom,
+    label.lbl-toggle-Titulos,
+    label.lbl-toggle-Practicas,
+    label.lbl-toggle-Movilidad,
+    label.lbl-toggle-Secretaria,
+    label.lbl-toggle-NoticiasFcom { display: block; }
+    
+    .lbl-toggle,
+    .lbl-toggle-masthead,
+    .lbl-toggle-ConoceFcom,
+    .lbl-toggle-Titulos,
+    .lbl-toggle-Practicas,
+    .lbl-toggle-Movilidad,
+    .lbl-toggle-Secretaria,
+    .lbl-toggle-NoticiasFcom { 
+        display: block;
+        text-align: center;
+        padding: 1rem;
+        color: #DDD;
+        background: #A90533;
+        cursor: pointer;
+        border-radius: unset;
+        transition: all 0.25s ease-out;
+    }
+
+    .lbl-toggle:hover, 
+    .lbl-toggle-masthead:hover,
+    .lbl-toggle-ConoceFcom:hover,
+    .lbl-toggle-Titulos:hover,
+    .lbl-toggle-Practicas:hover,
+    .lbl-toggle-Movilidad:hover,
+    .lbl-toggle-Secretaria:hover,
+    .lbl-toggle-NoticiasFcom:hover { color: #FFF; }
+
+    .lbl-toggle::before,
+    .lbl-toggle-ConoceFcom::before,
+    .lbl-toggle-Titulos::before,
+    .lbl-toggle-Practicas::before,
+    .lbl-toggle-Movilidad::before,
+    .lbl-toggle-Secretaria::before,
+    .lbl-toggle-NoticiasFcom::before { 
+        content: ' ';  
+        display: inline-block; 
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent; 
+        border-left: 5px solid currentColor;
+        vertical-align: middle;
+        margin-right: .7rem; transform: translateY(-2px);
+        transition: transform .2s ease-out; 
+    }
+
+    .lbl-toggle-masthead::before{
+        font-family: fontAwesome;
+        content: "\f0c9";
+    }
+
+    .toggle:checked+.lbl-toggle::before,
+    .toggle:checked+.lbl-toggle-ConoceFcom::before,
+    .toggle:checked+.lbl-toggle-Titulos::before,
+    .toggle:checked+.lbl-toggle-Practicas::before,
+    .toggle:checked+.lbl-toggle-Movilidad::before,
+    .toggle:checked+.lbl-toggle-Secretaria::before,
+    .toggle:checked+.lbl-toggle-NoticiasFcom::before { transform: rotate(90deg) translateX(-3px); }
+
+    .collapsible-content,
+    .collapsible-masthead-content,
+    .collapsible-ConoceFcom-content,
+    .collapsible-Titulos-content,
+    .collapsible-Practicas-content,
+    .collapsible-Movilidad-content,
+    .collapsible-Secretaria-content,
+    .collapsible-NoticiasFcom-content { 
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height .25s ease-in-out;
+    }
+
+    .collapsible-masthead-content { z-index: 1; }
+
+    .collapsible-ConoceFcom-content { z-index: 8; }
+
+    .collapsible-Titulos-content { z-index: 7; }
+
+    .collapsible-Practicas-content { z-index: 6; }
+
+    .collapsible-Movilidad-content { z-index: 5; }
+
+    .collapsible-Secretaria-content { z-index: 4; }
+
+    .collapsible-NoticiasFcom-content { z-index: 3; }
+
+    .collapsible-content .content-inner {
+        width: 100%;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .toggle:checked + .lbl-toggle + .collapsible-content,
+    .toggle:checked + .lbl-toggle-masthead + .collapsible-masthead-content { max-height: fit-content; }
+
+    .toggle:checked + .lbl-toggle-ConoceFcom + .collapsible-ConoceFcom-content,
+    .toggle:checked + .lbl-toggle-Titulos + .collapsible-Titulos-content,
+    .toggle:checked + .lbl-toggle-Practicas + .collapsible-Practicas-content,
+    .toggle:checked + .lbl-toggle-Movilidad + .collapsible-Movilidad-content,
+    .toggle:checked + .lbl-toggle-Secretaria + .collapsible-Secretaria-content,
+    .toggle:checked + .lbl-toggle-NoticiasFcom + .collapsible-NoticiasFcom-content,
+    .toggle:checked + .lbl-toggle-masthead + .collapsible-masthead-content
+     {
+        max-height:fit-content;
+        display: flex;
+        margin-top: 30px;
+    }
+
+    .toggle:checked+.lbl-toggle,
+    .toggle:checked+.lbl-toggle-masthead,
+    .toggle:checked+.lbl-toggle-ConoceFcom,
+    .toggle:checked+.lbl-toggle-Titulos,
+    .toggle:checked+.lbl-toggle-Practicas,
+    .toggle:checked+.lbl-toggle-Movilidad,
+    .toggle:checked+.lbl-toggle-Secretaria,
+    .toggle:checked+.lbl-toggle-NoticiasFcom {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    .collapsible-content .content-inner,
+    .collapsible-masthead-content .content-inner {
+        padding: .5rem 1rem; 
+        background: #A90533;
+        align-content: center
+    }
+
+    .collapsible-content p,
+    .collapsible-masthead-content p { margin-bottom: 0; }
+
+    }
 
 .decanato h3 {
-    padding-top: 10px;
-    color: #a90533;
-    font-size: xx-large;
-  }
+        padding-top: 10px;
+        color: #a90533;
+        font-size: xx-large;
+    }
 
 .info_decanato {
     border: 2px solid #d7d7d7;
@@ -463,9 +582,6 @@ form#search-form + h2 + div ol {
     text-align: justify;
 }
 
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
 
 .dropdown:hover .dropdown-content,
 .dropdown:focus .dropdown-content{
@@ -1872,8 +1988,7 @@ div.cenefa-l1 img {
         list-style: none;
     }
    
-    #u0922_comunidad .dropdown:hover .dropdown-content,
-    #u0922_comunidad .dropdown:focus .dropdown-content {
+    #u0922_comunidad .dropdown:hover .dropdown-content {
         width: Calc(25% - 150px);
         margin-left: 5%;
         background-color: #a90533;
@@ -1885,10 +2000,6 @@ div.cenefa-l1 img {
 
     #u0922_comunidad .dropdown-content a {
         color: white;
-    }
-
-    #u0922_comunidad .dropdown-content a:hover {
-        color: transparent;
     }
 
     .mas_en h3 {
@@ -2138,140 +2249,7 @@ div.cenefa-l1 img {
         justify-content: initial;
     }
     
-    label.lbl-toggle,
-    label.lbl-toggle-masthead,
-    label.lbl-toggle-ConoceFcom,
-    label.lbl-toggle-Titulos,
-    label.lbl-toggle-Practicas,
-    label.lbl-toggle-Movilidad,
-    label.lbl-toggle-Secretaria,
-    label.lbl-toggle-NoticiasFcom { display: block; }
     
-    .lbl-toggle,
-    .lbl-toggle-masthead,
-    .lbl-toggle-ConoceFcom,
-    .lbl-toggle-Titulos,
-    .lbl-toggle-Practicas,
-    .lbl-toggle-Movilidad,
-    .lbl-toggle-Secretaria,
-    .lbl-toggle-NoticiasFcom { 
-        display: block;
-        text-align: center;
-        padding: 1rem;
-        color: #DDD;
-        background: #A90533;
-        cursor: pointer;
-        border-radius: unset;
-        transition: all 0.25s ease-out;
-    }
 
-    .lbl-toggle:hover, 
-    .lbl-toggle-masthead:hover,
-    .lbl-toggle-ConoceFcom:hover,
-    .lbl-toggle-Titulos:hover,
-    .lbl-toggle-Practicas:hover,
-    .lbl-toggle-Movilidad:hover,
-    .lbl-toggle-Secretaria:hover,
-    .lbl-toggle-NoticiasFcom:hover { color: #FFF; }
-
-    .lbl-toggle::before,
-    .lbl-toggle-ConoceFcom::before,
-    .lbl-toggle-Titulos::before,
-    .lbl-toggle-Practicas::before,
-    .lbl-toggle-Movilidad::before,
-    .lbl-toggle-Secretaria::before,
-    .lbl-toggle-NoticiasFcom::before { 
-        content: ' ';  
-        display: inline-block; 
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent; 
-        border-left: 5px solid currentColor;
-        vertical-align: middle;
-        margin-right: .7rem; transform: translateY(-2px);
-        transition: transform .2s ease-out; 
-    }
-
-    .lbl-toggle-masthead::before{
-        font-family: awesome;
-        content: "\f0c9";
-    }
-
-    .toggle:checked+.lbl-toggle::before,
-    .toggle:checked+.lbl-toggle-ConoceFcom::before,
-    .toggle:checked+.lbl-toggle-Titulos::before,
-    .toggle:checked+.lbl-toggle-Practicas::before,
-    .toggle:checked+.lbl-toggle-Movilidad::before,
-    .toggle:checked+.lbl-toggle-Secretaria::before,
-    .toggle:checked+.lbl-toggle-NoticiasFcom::before { transform: rotate(90deg) translateX(-3px); }
-
-    .collapsible-content,
-    .collapsible-masthead-content,
-    .collapsible-ConoceFcom-content,
-    .collapsible-Titulos-content,
-    .collapsible-Practicas-content,
-    .collapsible-Movilidad-content,
-    .collapsible-Secretaria-content,
-    .collapsible-NoticiasFcom-content { 
-        max-height: 0px;
-        overflow: hidden;
-        transition: max-height .25s ease-in-out;
-    }
-
-    .collapsible-masthead-content { z-index: 1; }
-
-    .collapsible-ConoceFcom-content { z-index: 8; }
-
-    .collapsible-Titulos-content { z-index: 7; }
-
-    .collapsible-Practicas-content { z-index: 6; }
-
-    .collapsible-Movilidad-content { z-index: 5; }
-
-    .collapsible-Secretaria-content { z-index: 4; }
-
-    .collapsible-NoticiasFcom-content { z-index: 3; }
-
-    .collapsible-content .content-inner {
-        width: 100%;
-        flex-direction: column;
-        height: fit-content;
-    }
-
-    .toggle:checked + .lbl-toggle + .collapsible-content,
-    .toggle:checked + .lbl-toggle-masthead + .collapsible-masthead-content { max-height: fit-content; }
-
-    .toggle:checked + .lbl-toggle-ConoceFcom + .collapsible-ConoceFcom-content,
-    .toggle:checked + .lbl-toggle-Titulos + .collapsible-Titulos-content,
-    .toggle:checked + .lbl-toggle-Practicas + .collapsible-Practicas-content,
-    .toggle:checked + .lbl-toggle-Movilidad + .collapsible-Movilidad-content,
-    .toggle:checked + .lbl-toggle-Secretaria + .collapsible-Secretaria-content,
-    .toggle:checked + .lbl-toggle-NoticiasFcom + .collapsible-NoticiasFcom-content,
-    .toggle:checked + .lbl-toggle-masthead + .collapsible-masthead-content
-     {
-        max-height:fit-content;
-        display: flex;
-        margin-top: 30px;
-    }
-
-    .toggle:checked+.lbl-toggle,
-    .toggle:checked+.lbl-toggle-masthead,
-    .toggle:checked+.lbl-toggle-ConoceFcom,
-    .toggle:checked+.lbl-toggle-Titulos,
-    .toggle:checked+.lbl-toggle-Practicas,
-    .toggle:checked+.lbl-toggle-Movilidad,
-    .toggle:checked+.lbl-toggle-Secretaria,
-    .toggle:checked+.lbl-toggle-NoticiasFcom {
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-    }
-    .collapsible-content .content-inner,
-    .collapsible-masthead-content .content-inner {
-        padding: .5rem 1rem; 
-        background: #A90533;
-        align-content: center
-    }
-
-    .collapsible-content p,
-    .collapsible-masthead-content p { margin-bottom: 0; }
 
 }
