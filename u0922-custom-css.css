@@ -2245,47 +2245,4 @@ div.cenefa-l1 img {
         float: none;
     }
 
-    /** highlighted **/
-
-   
-
-    .slick-arrow::before { font-size: 40px; }
-
-    .slick__arrow { top: 100px; }
-
-    .slick-prev,
-    .slick-next {
-        top: 0px;
-        width: unset;
-        height: unset;
-    }
-
-    h2.slide_title {
-        text-align: center;
-        font-size: 22px;
-    }
-
-    #slick-views-caruselnoticiasdestacadas-block-1-1 .slide__constrained { padding: 0px; }
-
-    .slide__caption h3 {
-        font-size: 18px;
-        text-overflow: unset;
-        white-space: unset;
-        line-height: 28px;
-        text-align: center;
-    }
-
-    #slick-views-caruselnoticiasdestacadas-block-1-1 p.slide_entradilla {
-        font-size: initial;
-        text-overflow: unset;
-        white-space: unset;
-        text-align: center;
-    }
-
-    #slick-views-caruselnoticiasdestacadas-block-1-1 .slide_entradilla { font-size: initial; }
-    
-
 }
-
-
-
