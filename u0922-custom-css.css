@@ -1872,8 +1872,7 @@ div.cenefa-l1 img {
         list-style: none;
     }
    
-    #u0922_comunidad .dropdown:hover .dropdown-content,
-    #u0922_comunidad .dropdown:focus .dropdown-content {
+    #u0922_comunidad .dropdown:hover .dropdown-content {
         width: Calc(25% - 150px);
         margin-left: 5%;
         background-color: #a90533;
