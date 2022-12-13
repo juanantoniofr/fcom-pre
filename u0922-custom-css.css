@@ -2000,13 +2000,14 @@ div.cenefa-l1 img {
 
     #u0922_comunidad .dropdown-content a {
         color: white;
+        font-weight: unset;
     }
 
     .mas_en h3 {
         border-bottom: 1px solid #a90533;
         width: 100%;
         color: #a90533;
-        font-weight: inherit;
+        font-weight: 600;
     }
 
     .container-mas-en .opcion_menu img {
