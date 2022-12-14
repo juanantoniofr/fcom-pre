@@ -144,6 +144,39 @@
     #main-content img {padding: 20px;}
     #main-content .field-node--field-imagen img { padding-top: 0px; }
 
+    /** .accordeon (generado en las vistas **/
+
+    .accordeon div { border: none; }
+    .accordeon .ui-state-default a {
+        color: #f9f9f9;
+        font-size: xx-large;
+    }
+
+    .accordeon .ui-accordion-header-collapsed a{
+        color: #a90533;
+        font-size: xx-large;
+        
+    }
+
+    .row-accordion-soy
+    .ui-state-active a, div.ui-state-active,
+    .accordeon .ui-state-active a::before { 
+        color: #f9f9f9 !important; 
+        background-color: #a90533;
+    }
+
+    .ui-state-visited a {
+        background-color: #a90533;
+        color: #f9f9f9;
+    }
+
+    .accordeon .views-accordion-header a::before {
+        font-family: fontAwesome;
+        content: "\f054";
+        margin-right: 10px;
+        font-size: large
+    }
+
 /***************************
 ********** regions**********
 ****************************/
@@ -1134,45 +1167,7 @@
 /* main-content */
 
 
-
-    
-
-
     /* vista Conoce FCom */
-
-    .accordeon div {
-        border: none;
-        background: none;
-    }
-
-    .accordeon .ui-state-default a {
-        color: #f9f9f9;
-        font-size: xx-large;
-    }
-
-    .accordeon .ui-accordion-header-collapsed a{
-        color: #a90533;
-        font-size: xx-large;
-    }
-
-    .row-accordion-soy
-    .ui-state-active a, div.ui-state-active,
-    .accordeon .ui-state-active a::before { 
-        color: #f9f9f9 !important; 
-        background-color: #a90533;
-    }
-
-    .ui-state-visited a {
-        background-color: #a90533;
-        color: #f9f9f9;
-    }
-
-    .accordeon .views-accordion-header a::before {
-        font-family: fontAwesome;
-        content: "\f054";
-        margin-right: 10px;
-        font-size: large
-    }
 
     .view-vista-conoce-fcom li { padding-top: 10px; }
 
