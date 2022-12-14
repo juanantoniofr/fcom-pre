@@ -1914,24 +1914,53 @@
     }
 
     .datos_decanato {
-        display: flex;
-        justify-content: space-between;
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-bottom: 50px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+        gap: 50px;
+        justify-items: legacy;
+        align-items: first baseline;
     }
+    
+    .datos_decanato h2 {
+        text-align: center;
+        font-size: 16px;
+        color: #a90533;
+        margin: 0px;
+      }
 
-    .datos_decanato div {
+    .datos_decanato div.contenido {
         background: #a90533;
-        min-width: 23%;
-        max-width: 23%;
         color: white;
         text-align: center;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 5px;
-        padding-right: 5px;
-    }   
+        min-height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    /* For extremely small screen devices (595px and below) */
+    @media only screen and (max-width: 480px) {}
+
+    /* Small screen devices (600px and above) */
+    @media only screen and (min-width: 481px) {}
+
+    /* Medium screen devices (768px and above) */
+    @media only screen and (min-width: 768px) {
+        .datos_decanato {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    /* Big screen devices (889px and above) */
+    @media only screen and (min-width: 889px) { }
+
+    /* Extra big screen devices (1200px and above) */
+    @media only screen and (min-width: 1200px) {
+        .datos_decanato {
+            grid-template-columns: 1fr 1fr 2fr 1fr;
+        }
+    }
     
 
 /* fin pagina decanato */
