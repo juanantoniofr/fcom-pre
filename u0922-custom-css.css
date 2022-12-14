@@ -1026,6 +1026,8 @@
         padding: 8px;
     }
 
+    /* block front page imprescindibles */
+
     #content-prefix h2#block-views-block-padre-block-1-2-title {
         text-align: left;
         border-bottom: 1px solid #a90533;
@@ -1035,15 +1037,10 @@
         color:#a90533;
     }
 
-    /* block front page imprescindibles */
+    #content-prefix .view-noticias-de-actualidad .pager__item a:active { background-color: #999; }
 
-    #content-prefix .view-noticias-de-actualidad .view-content,
-    #content-prefix .view-noticias-de-actualidad .pager {
-        margin-left: 15%;
-        margin-right: 15%;
-    }
+    /* cenefas */
     
-    /* mas opciones */
     #content-prefix .cenefa-subtitle-masopciones h2 {
         padding: 30px;
         border-radius: unset;
@@ -1067,7 +1064,21 @@
     }
 
     /* Medium screen devices (768px and above) */
-    @media only screen and (min-width: 768px) {}
+    @media only screen and (min-width: 768px) {
+        
+        /* Agenda */
+        #content-prefix .view-noticias-de-actualidad .pager__items {
+            text-align: left;
+            padding-left: 6%;
+            padding-right: 6%;
+        }
+
+        #content-prefix .view-noticias-de-actualidad .view-content,
+        #content-prefix .view-noticias-de-actualidad .pager {
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+    }
 
     /* Big screen devices (889px and above) */
     @media only screen and (min-width: 889px) { }
@@ -1075,20 +1086,11 @@
     /* Extra big screen devices (1200px and above) */
     @media only screen and (min-width: 1200px) {}
 
+    
 
-    #content-prefix .view-noticias-de-actualidad .pager__items {
-        text-align: left;
-        padding-left: 6%;
-        padding-right: 6%;
-    }
+    
 
-    #content-prefix .view-noticias-de-actualidad .pager__item a{ padding: 20px; }
-
-    #content-prefix .view-noticias-de-actualidad .pager__item a:active { background-color: #999; }
-
-    #content-prefix .pager__link.pager__link--is-active:hover { background-color: #efeaea; }
-
-    #content-prefix .view-noticias-de-actualidad a {text-decoration: none; color: black; }
+    
 
     #content-prefix .views-field-changed, #content-prefix .views-field-created {
         text-decoration-line: underline;
