@@ -184,7 +184,7 @@
 
     .field-node--field-subtitulo { font-size: 1.7em;}
 
-    .field-node--field-entradilla{ color:#A90533; 
+    .field-node--field-entradilla{ color:#A90533; }
 /***************************
 ********** regions**********
 ****************************/
@@ -452,6 +452,9 @@
         width: Calc(100% - 470px);
         justify-content: center;
     }
+
+    /* #block-u0922-menu-principal */
+    .lbl-toggle {display: none;} 
     
     #block-u0922-menu-principal .block__content{ padding: 0px 0px 0px 0px; }
     
