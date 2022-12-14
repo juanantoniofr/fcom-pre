@@ -980,14 +980,6 @@
         line-height: 1.2em;
     }
 
-    .agenda-de-la-semana a { color: black; }
-    
-    div.agenda-de-la-semana {
-        padding: 8px;
-        margin-bottom: 2%;
-        box-shadow: -4px 4px 2px -2px rgba(0,0,0,0.1);
-    }
-
     /* For extremely small screen devices (480px and below) */
     @media only screen and (max-width: 480px) {}
 
@@ -1037,7 +1029,20 @@
         color:#a90533;
     }
 
+    /* agenda */
+    
+    div.agenda-de-la-semana { padding: 8px; }
+    div.agenda-de-la-semana a { color: black; }
+
     #content-prefix .view-noticias-de-actualidad .pager__item a:active { background-color: #999; }
+
+    /* novedades */
+
+    #content-prefix .views-field-changed, 
+    #content-prefix .views-field-created {
+        text-decoration-line: underline;
+        font-size: 0.8em;
+    }
 
     /* cenefas */
     
@@ -1087,18 +1092,9 @@
     @media only screen and (min-width: 1200px) {}
 
     
-    #content-prefix .views-field-changed, #content-prefix .views-field-created {
-        text-decoration-line: underline;
-        font-size: 0.8em;
-    }
+    
 
-    .view-noticias-de-actualidad .svg-inline--fa {
-        margin-right: 10px;
-        font-size: 28px;
-        color: #a90533;
-    }
-
-    div.agenda-de-la-semana:hover { box-shadow: -6px 6px 4px -2px rgba(0,0,0,0.3); }
+    
 
     .agenda-de-la-semana span.views-field {
         color: #a90533;
