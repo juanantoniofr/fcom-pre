@@ -177,6 +177,14 @@
         font-size: large
     }
 
+    /* contenido completo */
+    .field-type-image__item { width: fit-content; }
+    
+    .field-node--field-imagen{ float: right;}
+
+    .field-node--field-subtitulo { font-size: 1.7em;}
+
+    .field-node--field-entradilla{ color:#A90533; 
 /***************************
 ********** regions**********
 ****************************/
@@ -1170,14 +1178,12 @@
     /* vista Conoce FCom */
 
     .view-vista-conoce-fcom li { padding-top: 10px; }
-
-
+    
     .google-maps {
         position: relative;
         padding-bottom: 50% !important;
         overflow: hidden;
     }
-
     .google-maps iframe {
         position: absolute;
         top: 0;
@@ -1194,14 +1200,12 @@
         height: 550px !important;
     }
 
-
     .video-youtube {
         position: relative;
         width: 100%;
         height: 0;
         padding-bottom: 56.25% !important;
     }
-
     .video-youtube iframe {
         position: absolute;
         top: 0;
@@ -1212,9 +1216,7 @@
 
     /* vista Titulos */
 
-    .body_grado li {
-        list-style: none;
-    }
+    .body_grado li { list-style: none;}
 
     .superior_grado ul {
         display: flex;
@@ -1234,9 +1236,7 @@
         margin: 30px;
     }
 
-    .superior_grado a {
-        color: #f9f9f9;
-    }
+    .superior_grado a { color: #f9f9f9;}
 
     .inferior_grado h3,
     h1.node__title {
@@ -1262,9 +1262,7 @@
         padding: 10px 0px;
     }
 
-    .field-content.accordion-ckeditor-title-ConoceFcom a.ckeditor-accordion-toggler{
-        padding: 0px;
-    }
+    .field-content.accordion-ckeditor-title-ConoceFcom a.ckeditor-accordion-toggler{ padding: 0px; }
 
     .accordion-ckeditor-title-ConoceFcom a.ckeditor-accordion-toggler span.ckeditor-accordion-toggle::before, 
     .accordion-ckeditor-title-ConoceFcom a.ckeditor-accordion-toggler span.ckeditor-accordion-toggle::after {
@@ -1288,13 +1286,9 @@
 
     }
 
-    .inferior_grado ul li a {
-        font-size: x-large;
-    }
+    .inferior_grado ul li a { font-size: x-large;}
 
-    .inferior_grado dd.active ul li a {
-        font-size: larger;
-    }
+    .inferior_grado dd.active ul li a { font-size: larger;}
 
     .node--id-44 h1, 
     .node--id-3775 h1,
@@ -1313,9 +1307,7 @@
 
     /* vista practicas -&gt; SoyESTUDIANTE*/
 
-    .jumbotron {
-        padding: 4rem 2rem;
-    }
+    .jumbotron { padding: 4rem 2rem;}
 
     .firma-vicedecanato{
         color:#A90533;
@@ -1333,9 +1325,7 @@
         padding-top:60px;
     }
 
-    .soy h3 a {
-        flex-direction: column;
-    }
+    .soy h3 a { flex-direction: column;}
 
     .soy span  {
         font-size:60px;
@@ -1348,9 +1338,7 @@
         align-items: center;
     }
 
-    .soy .col-sm-3 a { 
-        flex-direction: column;
-    }
+    .soy .col-sm-3 a { flex-direction: column;}
     .soy svg {
         color: #A90533;
         font-size: x-large;
@@ -1364,10 +1352,7 @@
         font-size: 2rem;
     }
 
-    .soy {
-        justify-content: center;
-    }
-
+    .soy { justify-content: center;}
 
     .container-view-u0922-practicas  {
         width: 100%;
@@ -1409,7 +1394,10 @@
         font-weight: 400;
     }
 
-    .display-1 a, .display-1 a:hover, .display-1 a:active, .display-1 a:focus {
+    .display-1 a, 
+    .display-1 a:hover,
+    .display-1 a:active,
+    .display-1 a:focus {
         color: black;
     }
 
@@ -1420,7 +1408,6 @@
         line-height: 1.2;
         color: black;
     }
-
 
     .row-accordion-soy .views-accordion-header {
         padding: 20px;
@@ -1441,8 +1428,6 @@
         padding: 0px;
         margin-bottom: 0px;
     }
-
-
 
     .row-accordion-soy .row-accordion-soy .ui-state-visited a {
         background-color: #a90533;
@@ -1465,9 +1450,7 @@
         color:inherit;
     }
 
-    .row-accordion-soy .ckeditor-accordion-container  dl dd {
-        padding: 15px;
-    }
+    .row-accordion-soy .ckeditor-accordion-container  dl dd { padding: 15px; }
 
     /* Noticias Fcom */
     .class-doscolumnas-noticiasfcom .views-field.views-field-title {
@@ -1495,7 +1478,7 @@
         margin-top: 5px;
     }
 
-        /* Boletines */
+    /* Boletines */
     
     .noticias-boletines h4 {
         padding: 10px;
@@ -1505,11 +1488,8 @@
         font-weight: bold;
         line-height: 1em;
     }
-   
     
-    .content-redesBoletin a img { 
-        width: 20%;
-    }
+    .content-redesBoletin a img { width: 20%;}
 
     div.cabeceraBoletines {
         display: flex;
@@ -1531,13 +1511,9 @@
         text-align: right;
     }
 
-    .content-redesBoletin ul {
-        list-style-type: none;
-      }
+    .content-redesBoletin ul { list-style-type: none; }
 
-    .content-redesBoletin li {
-        display: inline;
-     }
+    .content-redesBoletin li { display: inline; }
 
     /* directorio */
 
@@ -1557,16 +1533,14 @@
         margin: 0.9px;
     }
 
-    .views-exposed-form {
-        margin: 40px auto;
-    }
+    .views-exposed-form { margin: 40px auto; }
 
     .js-form-item.form-item.js-form-type-textfield.form-type-textfield.js-form-item-title.form-item-title.form-no-label {
         width: fit-content;
         float: none;
     }
+
     #edit-actions {
-        
         font-size: 18px;
         border-radius: 7px;
         height: 40px;
@@ -1607,28 +1581,26 @@
         font-size: 1.4em;
         margin: 20px 0px;
     }
+
     .views-field.views-field-body {
         line-height: 1.4em;
         margin-top: 30px;
     }
     
-    #profesorDirectorio p {
-        margin: 0px;
-    }
+    #profesorDirectorio p { margin: 0px;}
 
     .view-buscador-docentes-e-investigadores .view-header .view-content {
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
+
     span.views-summary-unformatted {
         visibility: hidden;
         display: none;
     }
 
-    .view-buscador-docentes-e-investigadores .views-col {
-        text-align: center;
-    }
+    .view-buscador-docentes-e-investigadores .views-col { text-align: center;}
 
 
     .view-buscador-docentes-e-investigadores dl dt a::before {
@@ -1638,53 +1610,12 @@
         font-size: large;
     }
 
-    .view-buscador-docentes-e-investigadores dl dt {
-        font-size: x-large;
-    }
+    .view-buscador-docentes-e-investigadores dl dt { font-size: x-large; }
 
     .view-buscador-docentes-e-investigadores dl dt a:hover {
         background-color: #a90533;
         color: white;
     }
-
-    /* contenido completo */
-    .field-type-image__item {
-        width: fit-content;
-    }
-    
-    .field-node--field-imagen{
-        float: right;
-    }
-
-    .field-node--field-subtitulo {
-        font-size: 1.7em;
-    }
-
-    
-
-    .field-node--field-entradilla{
-        color:#A90533;
-    }
-
-
-
-
-/*** bloque + opciones ***/
-
-.container-mas-en{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.container-mas-en .opcion_menu { text-align: justify; }
-
-.container-mas-en .opcion_menu img {
-    width: 30%;
-    margin-right: 20px;
-
-}
 
 /* content-suffix */
 
@@ -1777,6 +1708,21 @@
     }
     .descripcion h4 { padding-top: 10px; }
     .descripcion p { color: black; }
+
+    .container-mas-en{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .container-mas-en .opcion_menu { text-align: justify; }
+    
+    .container-mas-en .opcion_menu img {
+        width: 30%;
+        margin-right: 20px;
+    
+    }
 
     /* For extremely small screen devices (480px and below) */
     @media only screen and (max-width: 480px) {}
