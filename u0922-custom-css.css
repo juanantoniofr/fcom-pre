@@ -203,22 +203,13 @@
         background: #a90533;
     }
 
-    #masthead div.l-r:nth-child(2) { height: 52px; }
-
     #masthead a {
         color:white;
         padding: 10px;
         font-size: 12px;
     }
 
-    
     .collapsible-masthead-content { width: 100%; }
-
-    .collapsible-masthead-content .content-inner {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
 
     input#collapsible[type="checkbox"],
     input#collapsible-masthead[type="checkbox"],
@@ -229,49 +220,113 @@
     input#collapsible-Secretaria[type="checkbox"],
     input#collapsible-NoticiasFcom[type="checkbox"] { display: none; } 
 
-    .pr-header__header-first { display: flex; }
-
     #block-u0922-menu-header { 
         margin: 0px;
         width: 100%;
     }
-
-    #block-u0922-menu-header .field__item {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
+    
+    #block-u0922-headerleft,
+    #block-u0922-headerright {
+            margin-top: auto;
+            margin-bottom: 0px;
+            align-content: center;
     }
 
     #block-u0922-menu-header .clearfix { margin-bottom: 0px; }
 
-    #block-u0922-headerleft,
-    #block-u0922-headerright {
-        margin-top: auto;
-        margin-bottom: 0px;
-        height: 55px;
-        align-content: center;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    #block-u0922-headerright { justify-content: end; }
-
     #block-u0922-headerright ul.fcom-menu a { display: block; }
 
-    #block-u0922-headerleft {
-        margin-left: 8%;
-        justify-content: start;
-    }
-
     
+    /* For extremely small screen devices (480px and below) */
+    @media only screen and (max-width: 480px) {}
+
+    /* Small screen devices (600px and above) */
+    @media only screen and (min-width: 481px) {}
+  
+    /* Medium screen devices (768px and above) */
+    @media only screen and (min-width: 768px) {
+        
+        #masthead div.l-r:nth-child(2) { 
+            width: 100%;
+            display: grid;
+            justify-content: right;
+        }
+           
+        .pr-header .regions {
+            background: inherit;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+        }    
+        
+        .pr-header__header-first {
+            display: grid;
+            float: none !important;
+            width: 100% !important;
+        }
+           
+        .collapsible-masthead-content .content-inner {
+            display: grid;
+            justify-content: space-between;
+            grid-template-columns: 3fr 1fr;
+            gap: 10px;
+        }
+
+        #block-u0922-headerleft,
+        #superfish-u0922-headerright,
+        #superfish-u0922-headerleft {
+            display: grid;
+            grid-gap: 10px;
+        }
+        
+        #block-u0922-headerright {
+            justify-content: end;
+            display: grid;
+        }
+
+        #block-u0922-headerleft {
+            justify-content: start;
+            grid-template-columns: minmax(150px, 892px);
+        }
+
+        #superfish-u0922-headerright { grid-template-columns: 1fr 1fr; }
+        
+        #superfish-u0922-headerleft { grid-template-columns: repeat(auto-fit, minmax(90px, max-content)); }
+
+        .fcom-menu li {
+            display: flex;
+            justify-content: center;
+            align-items: end;
+        }
+    }
+  
+    /* Big screen devices (889px and above) */
+    @media only screen and (min-width: 889px) {}
+  
+    /* Extra big screen devices (1200px and above) */
+    @media only screen and (min-width: 1200px) {}
+
 
     @media  (max-width: 767px) {
 
         #masthead { width: 100%; }
 
-        #block-u0922-menu-header .collapsible-masthead-content .content-inner { flex-direction: column; }
+        .pr-header__header-first { display: flex; }
+
+        #block-u0922-menu-header .field__item {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        #block-u0922-menu-header .collapsible-masthead-content .content-inner { 
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column; 
+            padding: .5rem 1rem; 
+            background: #A90533;
+            align-content: center
+        }
         #block-u0922-headerright {
             height: fit-content;
             justify-content: start;
@@ -288,6 +343,14 @@
     
         #superfish-u0922-headerleft,
         #superfish-u0922-headerright { flex-direction: column; }
+
+        #block-u0922-headerleft,
+        #block-u0922-headerright {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
                 
         label.lbl-toggle-masthead { 
             display: block;
@@ -322,22 +385,17 @@
             border-bottom-left-radius: 0;
         }
 
-        .collapsible-masthead-content .content-inner {
-            padding: .5rem 1rem; 
-            background: #A90533;
-            align-content: center
-        }
-        
         .collapsible-masthead-content p { margin-bottom: 0; }
 
     }
 
     /* formulario de busqueda */
     
+    
     #block-formulariodebusqueda {    
-        margin-right: 30%;
+        margin-right: 10px;
         margin-top: 7px;
-        margin-bottom: 0px;
+        margin-bottom: 3px;
     }
     
     #block-formulariodebusqueda #edit-keys{
@@ -358,6 +416,8 @@
         border: 0px;
         box-shadow: none;
     }
+
+    .search-block-form__form { margin-bottom: 0px; }
     /* fin formulario de busqueda */
 
     @media  (max-width: 767px) {
@@ -381,30 +441,84 @@
         color: black;
     }
 
-    #navbar .l-r {
-        display: flex;
-        flex-direction: row;
-        align-items: self-end;
-        flex-wrap: wrap;
-        justify-content: end;
+    #block-logouses {
+        min-width: 260px;
     }
     
     @media  (max-width: 767px) {
         #navbar .pr-navbar__rw { max-width: unset; }
+        
+        #navbar .l-r {
+            display: flex;
+            flex-direction: row;
+            align-items: self-end;
+            flex-wrap: wrap;
+            justify-content: end;
+        }
+
+        #block-logouses{ display: flex; }
+    }
+
+    /* For extremely small screen devices (480px and below) */
+    @media only screen and (max-width: 480px) {}
+
+    /* Small screen devices (600px and above) */
+    @media only screen and (min-width: 481px) {}
+ 
+    /* Medium screen devices (768px and above) */
+    @media only screen and (min-width: 768px) {
+        
+        .l-r:before, .l-r:after {
+            display: none;
+            content: unset;
+        }
+        
+        #navbar .l-r {
+            display: grid;
+            width: 100%;
+            margin: 0 auto;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr) );
+        }
+        
+        #block-logouses { grid-column: auto / span 4; }
+        
+    }
+ 
+    /* Big screen devices (889px and above) */
+    @media only screen and (min-width: 889px) { }
+ 
+    /* Extra big screen devices (1200px and above) */
+    @media only screen and (min-width: 1200px) {
+
+        
+    }
+
+    /* Extra big screen devices (1440px and above) escritorio medio */
+    @media only screen and (min-width: 1440px) {
+
+        #navbar .l-r { grid-template-columns: minmax(260px, 1fr) auto minmax(260px, 1fr); }
+        #block-logouses { grid-column: unset; }
+        #block-u0922-menu-principal { 
+            grid-column: unset; 
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+            max-width: 1200px;
+        } 
+        
     }
 
     /* logo us es */
 
-    #block-logouses{ 
-        display: flex;
-        min-width: 260px;
-    }
+    
     
     #block-logouses .clearfix { margin-bottom: 0px; }
     
     #block-logouses .field__item {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     
     #block-logouses img {
@@ -447,12 +561,7 @@
     /* fin logo us es*/
 
     /* menu ppal */
-    #block-u0922-menu-principal {
-        display: flex;
-        width: Calc(100% - 470px);
-        justify-content: center;
-    }
-
+    
     /* #block-u0922-menu-principal */
     .lbl-toggle {display: none;} 
     
@@ -524,10 +633,7 @@
         z-index: 1;
     }
     
-    #block-u0922-menu-principal .dropdown-content{
-        left: Calc(26% - 100px);
-        max-width: 80%;
-    }
+    #block-u0922-menu-principal .dropdown-content{ left: Calc(26% - 100px); }
     
     .dropdown-content a {
         color: black;
@@ -639,6 +745,8 @@
         #block-u0922-menu-principal {
             width: 100%;
             display: block;
+            display: flex;
+            justify-content: center;
         }
 
         #block-u0922-menu-principal .dropdown-content {
@@ -778,26 +886,53 @@
         }
 
         .collapsible-content p { margin-bottom: 0; }
-    }   
+    }
+    
+    /* For extremely small screen devices (480px and below) */
+    @media only screen and (max-width: 480px) {}
+
+    /* Small screen devices (600px and above) */
+    @media only screen and (min-width: 481px) {}
+ 
+    /* Medium screen devices (768px and above) */
+    @media only screen and (min-width: 768px) {
+        
+        #block-u0922-menu-principal {
+            grid-column: auto / span 2;
+        }
+        
+    }
+ 
+    /* Big screen devices (889px and above) */
+    @media only screen and (min-width: 889px) {
+        #block-u0922-menu-principal {
+            grid-column: auto / span 3;
+        }
+    }
+ 
+    /* Extra big screen devices (1200px and above) */
+    @media only screen and (min-width: 1200px) {
+        #block-u0922-menu-principal .dropdown-content{ max-width: 90%; }
+        
+    }
+    
+    /* Extra big screen devices (1440px and above) */
+    @media only screen and (min-width: 1440px) {
+        #block-u0922-menu-principal {
+            grid-column: unset;
+        }
+    }
+
+
     /* fin menu ppal */
 
     /* menu imprescindibles (incluye idiomas) */
     #reponsive-menu-u0922-imprescindibles { display: none; }
 
-    #block-u0922-imprescindibles-mas-idiomas { 
-        display: flex;
-        justify-content: center;
-    }
+    #block-u0922-imprescindibles-mas-idiomas { justify-content: center; }
 
     #block-u0922-imprescindibles-mas-idiomas .clearfix { margin-bottom: 0px; }
 
-    #container_imprescindibles_mas_idiomas {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-        min-width: 160px;
-    }
-    
     #menu-u0922-imprescindibles { padding: 30px 0px 0px 0px; }
 
     #container_imprescindibles_mas_idiomas .dropbtn,
@@ -891,6 +1026,10 @@
     #u0922-imprescindibles-menu-link-item-9 a::before { content: "\f292"; }    
 
     @media  (max-width: 767px) {
+        
+        /* menu imprescindibles */
+        #block-u0922-imprescindibles-mas-idiomas { display: flex; }
+
         #menu-u0922-imprescindibles { display: none; }
 
         #reponsive-menu-u0922-imprescindibles { 
@@ -907,7 +1046,41 @@
     
         .dropdown-content-imprescindible ul li { line-height: 2.5em; }
     
-        .dropdown-content-imprescindible ul li a { display: flex; }        
+        .dropdown-content-imprescindible ul li a { display: flex; }
+        
+        #container_imprescindibles_mas_idiomas {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            min-width: 160px;
+        }
+    }
+
+    /* For extremely small screen devices (480px and below) */
+    @media only screen and (max-width: 480px) {}
+
+    /* Small screen devices (600px and above) */
+    @media only screen and (min-width: 481px) {}
+  
+    /* Medium screen devices (768px and above) */
+    @media only screen and (min-width: 768px) {
+        
+        #menu-u0922-imprescindibles {
+            padding: 30px 0px 0px 0px;
+            display: flex;
+            justify-content: end;
+        }
+           
+        #block-u0922-imprescindibles-mas-idiomas {  grid-column: auto / span 1; }
+        
+    }
+  
+    /* Big screen devices (889px and above) */
+    @media only screen and (min-width: 889px) {}
+  
+    /* Extra big screen devices (1200px and above) */
+    @media only screen and (min-width: 1200px) {
+        #block-u0922-imprescindibles-mas-idiomas {  grid-column: unset; }
     }
 
     #block-alternadordeidioma ul {
