@@ -1127,6 +1127,7 @@
         margin-top: 0px;
         margin-right: 0px;
         margin-left: 0px;
+        justify-content: center;
     }
 
     .pg-noticiasFCom .row div {
@@ -1134,6 +1135,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .pg-noticiasFCom .row .col-md-5 img { 
+        max-height: 420px;
+        width: auto;
     }
 
     .pg-noticiasFCom .card-title {
