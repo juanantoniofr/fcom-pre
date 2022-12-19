@@ -2068,6 +2068,10 @@
         justify-items: legacy;
         align-items: first baseline;
     }
+
+    div.datos_decanato {
+        margin-bottom: 40px;
+    }
     
     .datos_decanato h2 {
         text-align: center;
