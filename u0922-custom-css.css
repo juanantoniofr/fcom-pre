@@ -1355,11 +1355,12 @@
         align-items: center; 
         color: black;
         display: flex;
+        gap: 10px;
     }
 
     #app-FCom .views-field-title, #servicios-FCom .views-field-title {
         border: 1px solid #a90533;
-        padding: 8%;
+        padding: 10px;
         text-align: justify;
     }
     
@@ -1380,7 +1381,7 @@
         
         #content-prefix .row-imprescindibles {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
             gap: 25px;
         }
 
