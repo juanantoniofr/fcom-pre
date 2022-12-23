@@ -1446,7 +1446,7 @@
         
         .pg-noticiasFCom .container-horizontal {
             flex-flow: row wrap;
-            padding: 0.9em;
+            padding: 0.9em;}
     }
     /* Big screen devices (1024px and above) */
     @media only screen and (min-width: 1024px) {
@@ -2591,7 +2591,4 @@
     @media only screen and (min-width: 1200px) { 
         div.cenefa-solotexto { flex-direction: column;}
         div.cenefa-subtitle { width: 50%; }
-
     }
-
-/* fin cenefas */
