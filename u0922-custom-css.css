@@ -1617,9 +1617,6 @@
 
     /* Utilidades y Servicios */
 
-    #app-FCom .views-enlace,
-    #servicios-FCom .views-enlace { margin: 35px 0px; }
-
     #app-FCom .views-enlace a, 
     #servicios-FCom .views-enlace a { 
         align-items: center; 
@@ -1644,20 +1641,41 @@
     }
 
     /* For extremely small screen devices (480px and below) */
-    @media only screen and (max-width: 480px) {}
+    @media only screen and (max-width: 480px) {
+        #app-FCom .views-enlace,
+        #servicios-FCom .views-enlace { margin: 35px 0px; }
+    }
 
     /* Small screen devices (481px and above) */
     @media only screen and (min-width: 481px) {
         
         #content-prefix .row-imprescindibles {
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: 1fr; 
             gap: 25px;
         }
 
         
     }
 
+    /* Medium screen devices (600px and above) */
+    @media only screen and (min-width: 600px) {
+
+        #content-prefix .row-imprescindibles { grid-template-columns: 1fr 1fr;  }
+        #app-FCom, #servicios-FCom {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, minmax(330px, 1fr));
+        }
+
+        #app-FCom .views-enlace, #servicios-FCom .views-enlace {
+            display: flex;
+            align-items: center;
+            border: 1px solid black;
+        }
+
+    }
     /* Medium screen devices (768px and above) */
     @media only screen and (min-width: 768px) {
         
