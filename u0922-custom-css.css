@@ -264,7 +264,7 @@
     /* Medium screen devices (768px and above) */
     @media only screen and (min-width: 768px) {
         #main-content .views-element-container,
-        .node--view-mode-full{ padding: 2rem; }
+        .node--view-mode-full{ padding: 2rem 0px;  }
     }
   
     /* Big screen devices (889px and above) */
@@ -1069,6 +1069,16 @@
         grid-gap: 20px;
     }
 
+    .view-u0922-practicas .row,
+    .view-u0922-mitfg .row {
+        grid-template-rows: repeat(1,max-content);
+    }
+
+
+    .view-u0922-movilidad .row {
+        grid-template-rows: repeat(1,120px);
+    }
+
     .soy .col-sm-3 p {
         text-align: center;
         height: 100%;
@@ -1079,6 +1089,14 @@
 
     .soy .col-sm-3 p { padding: 5px 15px; }
 
+    
+    .container-level1 .row {
+        grid-template-columns: repeat(1,minmax(250px, 315px));
+        display: grid;
+        grid-template-rows: repeat(1,1fr);
+    }
+    .container-view-u0922-practicas.container-level1 .row { grid-template-columns: repeat(1,minmax(250px, 315px)); }    
+
     /* For extremely small screen devices (480px and below) */
     @media only screen and (max-width: 480px) {
     }
@@ -1086,8 +1104,13 @@
     /* Small screen devices (600px and above) */
     @media only screen and (min-width: 481px) {
         .row {
-            grid-template-columns: repeat(2,1fr);
+            grid-template-columns: repeat(2,minmax(150px, 250px));
             grid-template-rows: repeat(2,150px);
+        }
+        
+
+        .view-u0922-movilidad .row {
+            grid-template-columns: repeat(1,minmax(150px, 250px));
         }
 
         .col-sm-3 { 
@@ -1096,7 +1119,11 @@
         }
 
     }
- 
+    /* Medium screen devices (600px and above) */
+    @media only screen and (min-width: 600px) {
+        .container-level1 .row { grid-template-columns: repeat(2,minmax(250px, 315px)); }    
+    }
+    
     /* Medium screen devices (768px and above) */
     @media only screen and (min-width: 768px) {
         .soy .col-sm-3 p { padding: 5px 30px; }
@@ -1113,14 +1140,15 @@
 
         .narrativa { max-width: 350px; }
         .narrativa-l2 { width: 430px; }
-
+        .container-view-u0922-practicas.container-level1 .row { grid-template-columns: repeat(3,minmax(250px, 315px)); }
         .row {
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
             grid-template-rows: repeat(2,150px);
-            grid-gap: 20px;
         }
-
+        
+        .view-u0922-movilidad .row {
+            grid-template-columns: repeat(1,minmax(150px, 250px));
+        }
+        
         .col-sm-3 { 
             margin: 0px; 
             height: 100%;
@@ -1138,9 +1166,19 @@
     /* Extra big screen devices (1024px and above) */
     @media only screen and (min-width: 1024px) {
         .row {
-            grid-template-columns: repeat(4,1fr);
             grid-template-rows: repeat(1,170px);
         }
+        .view-u0922-sistema-de-calidad .row {
+            grid-template-columns: repeat(4,1fr);
+        }
+        .view-u0922-practicas .row,
+        .view-u0922-mitfg .row {
+            grid-template-columns: repeat(2,minmax(150px, 250px));
+        }
+
+        
+        .container-level1 .row { grid-template-columns: repeat(2,minmax(250px, 315px)); }
+
     }
 
     /* Extra big screen devices (1200px and above) */
@@ -1624,7 +1662,7 @@
         background:#a90533;
         border-radius: 10px;
         color: #f9f9f9;
-        padding: 15px;
+        line-height: 1.1em;
     }
 
     /* block front page imprescindibles */
@@ -1783,7 +1821,7 @@
 /* main-content */
 
     #main-content {
-        max-width: 90%;
+        max-width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -1907,7 +1945,7 @@
 
     /* vista practicas -&gt; SoyESTUDIANTE*/
 
-    .jumbotron { padding: 2rem;}
+    .jumbotron { padding: 0px;}
 
     .firma-vicedecanato{
         color:#A90533;
@@ -1964,7 +2002,6 @@
         margin-right: auto;
         margin-left: auto;
         max-width: 1140px;
-        margin-bottom: 6rem;
     }
 
     .soy .col-sm-3 p {
@@ -1972,21 +2009,11 @@
         border-radius: 6px;
     }
 
-    .col-sm-4 {
-        flex: 0 0 33.333333%;
-        max-width: 33.333333%;
-        position: relative;
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-top:50px;
-    }
-
     .display-1 {
-        font-size: 11vw;
+        font-size: 42px;
         line-height: 1.2;
         color: #A90533;
-        margin: 0px 0px 40px 0px;
+        margin: 0px 0px 20px 0px;
         font-weight: 400;
         text-align: center;
     }
@@ -1998,12 +2025,13 @@
         color: black;
     }
 
-    p.display-4 {
-        font-size: 55px;
+    .display-4 {
+        font-size: 30px;
         text-align: center;
         margin-bottom: 1rem;
         line-height: 1.2;
         color: black;
+        margin-top: 2rem;
     }
 
     .row-accordion-soy .views-accordion-header {
@@ -2334,12 +2362,20 @@
     /* Small screen devices (600px and above) */
     @media only screen and (min-width: 481px) {
 
+        #main-content { max-width: 90%; }
+        .jumbotron { padding: 2rem;}
         #u0922_comunidad_icons,
         .container-mas-en {
             grid-template-columns: 1fr 1fr;
             display: grid;
             gap: 40px;
-        } 
+        }
+        .display-1 { 
+            font-size: 9vw; 
+            margin: 0px 0px 40px 0px;
+        }
+        .display-4 { font-size: 5vw; }
+
     }
  
 
@@ -2365,8 +2401,6 @@
         .container-mas-en {
             grid-template-columns: 1fr 1fr 1fr 1fr;
         }
-
-        .display-1 { font-size: 9vw; }
     }
     
 /* fin content-suffix */
@@ -2620,6 +2654,18 @@
         align-items: flex-end;
     }
 
+    div.cenefa-solotexto-masopciones.row {
+        grid-template-columns: repeat(1,minmax(200px,max-content));
+        grid-template-rows: repeat(1,200px);
+        padding: 0px 30px;
+        background: #a90533;
+    }
+
+    div.cenefa-subtitle-masopciones.row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     /* For extremely small screen devices (595px and below) */
     @media only screen and (max-width: 480px) { 
         div.cenefa-texto p {
@@ -2644,20 +2690,6 @@
         #content-prefix div.cenefa-subtitle h2 { text-align: left; }
 
         div.cenefa-title { padding: 0px 10px; }
-
-        div.cenefa-solotexto-masopciones.row {
-            grid-template-columns: repeat(1,minmax(200px,max-content));
-            grid-template-rows: repeat(1,200px);
-            padding: 0px 30px;
-            background: #a90533;
-        }
-
-        div.cenefa-subtitle-masopciones.row {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
 
     }
 
