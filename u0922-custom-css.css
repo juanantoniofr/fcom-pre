@@ -276,10 +276,7 @@
     }
   
     /* Extra big screen devices (1200px and above) */
-    @media only screen and (min-width: 1200px) { 
-        #main-content .views-element-container,
-        .node--view-mode-full{ padding: 3rem; }
-    }
+    @media only screen and (min-width: 1200px) { }
 
     /* Super big screen devices (1440px and above) */
     @media only screen and (min-width: 1440px) { }
@@ -859,13 +856,6 @@
         align-items: stretch;
     }
     
-    .row {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-    
     .column {
         display: flex;
         flex-direction: column;
@@ -1072,14 +1062,45 @@
         .collapsible-content p { margin-bottom: 0; }
     }
     
+    .row {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,120px);
+        grid-gap: 20px;
+    }
+
+    .soy .col-sm-3 p {
+        text-align: center;
+        height: 100%;
+        display: flex;
+        align-content: center;
+        align-items: center;
+    }
+
+    .soy .col-sm-3 p { padding: 5px 15px; }
+
     /* For extremely small screen devices (480px and below) */
-    @media only screen and (max-width: 480px) {}
+    @media only screen and (max-width: 480px) {
+    }
 
     /* Small screen devices (600px and above) */
-    @media only screen and (min-width: 481px) {}
+    @media only screen and (min-width: 481px) {
+        .row {
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,150px);
+        }
+
+        .col-sm-3 { 
+            margin: 0px; 
+            height: 100%;
+        }
+
+    }
  
     /* Medium screen devices (768px and above) */
-    @media only screen and (min-width: 768px) {}
+    @media only screen and (min-width: 768px) {
+        .soy .col-sm-3 p { padding: 5px 30px; }
+    }
  
     /* Big screen devices (889px and above) */
     @media only screen and (min-width: 889px) {
@@ -1092,8 +1113,36 @@
 
         .narrativa { max-width: 350px; }
         .narrativa-l2 { width: 430px; }
+
+        .row {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,150px);
+            grid-gap: 20px;
+        }
+
+        .col-sm-3 { 
+            margin: 0px; 
+            height: 100%;
+        }
+
+        .soy .col-sm-3 p {
+            text-align: center;
+            height: 100%;
+            display: flex;
+            align-content: center;
+            align-items: center;
+        }
     }
- 
+    
+    /* Extra big screen devices (1024px and above) */
+    @media only screen and (min-width: 1024px) {
+        .row {
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(1,170px);
+        }
+    }
+
     /* Extra big screen devices (1200px and above) */
     @media only screen and (min-width: 1200px) {
         
@@ -1101,7 +1150,7 @@
 
         .narrativa { max-width: 400px; }
         .narrativa-l2 { width: 600px; }
-        
+
     }
     
     /* Extra big screen devices (1440px and above) */
@@ -1658,12 +1707,18 @@
         }
 
         #app-FCom, #servicios-FCom {
-            grid-template-rows: repeat(4, minmax(130px, 1fr));
             display: grid;
             grid-template-columns: repeat(1,1fr);
             grid-gap: 20px;
         }
+        #app-FCom { grid-template-rows: repeat(3, minmax(130px, 1fr));}
+        #servicios-FCom { grid-template-rows: repeat(4, minmax(130px, 1fr));}
         
+        #app-FCom .views-enlace, #servicios-FCom .views-enlace {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         #app-FCom .views-field-title, #servicios-FCom .views-field-title { height: 100%; }
         #app-FCom .views-enlace a, #servicios-FCom .views-enlace a { height: 100%; }
 
@@ -1674,18 +1729,11 @@
     @media only screen and (min-width: 600px) {
 
         #content-prefix .row-imprescindibles { grid-template-columns: 1fr 1fr;  }
-        #app-FCom, #servicios-FCom {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(4, minmax(335px, 1fr));
-        }
-
-        #app-FCom .views-enlace, #servicios-FCom .views-enlace {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        #app-FCom .views-field-title, #servicios-FCom .views-field-title  { height: 80%; }
+        #app-FCom { grid-template-rows: repeat(3, minmax(335px, 1fr));}
+        #servicios-FCom { grid-template-rows: repeat(4, minmax(335px, 1fr));}
+        
+        
+        #app-FCom .views-field-title, #servicios-FCom .views-field-title  { height: 100%; }
         #app-FCom .views-enlace a, #servicios-FCom .views-enlace a { 
             width: 90%;
             height: 100%;
@@ -1709,9 +1757,9 @@
         }
 
         /* Utilidades & Servicios*/
-        #app-FCom, #servicios-FCom {
-            grid-template-rows: repeat(4, minmax(245px, 1fr));
-        }
+        #app-FCom { grid-template-rows: repeat(3, minmax(245px, 1fr));}
+        #servicios-FCom { grid-template-rows: repeat(4, minmax(245px, 1fr));}
+        #app-FCom .views-field-title, #servicios-FCom .views-field-title  { height: 90%; }
     }
 
     /* Big screen devices (889px and above) */
@@ -1719,11 +1767,15 @@
 
     /* Big screen devices (1024px and above) */
     @media only screen and (min-width: 1024px) { 
-        #app-FCom, #servicios-FCom { grid-template-rows: repeat(4, minmax(220px, 1fr)); } 
+        #app-FCom { grid-template-rows: repeat(3, minmax(220px, 1fr));}
+        #servicios-FCom { grid-template-rows: repeat(4, minmax(220px, 1fr));}
+        #app-FCom .views-field-title, #servicios-FCom .views-field-title  { height: 80%; }
     }
 
     /* Extra big screen devices (1200px and above) */
-    @media only screen and (min-width: 1200px) {}
+    @media only screen and (min-width: 1200px) {
+        #app-FCom .views-field-title, #servicios-FCom .views-field-title  { height: 65%; }
+    }
 
 
 /* fin context-prefix */
@@ -1855,7 +1907,7 @@
 
     /* vista practicas -&gt; SoyESTUDIANTE*/
 
-    .jumbotron { padding: 4rem 2rem;}
+    .jumbotron { padding: 2rem;}
 
     .firma-vicedecanato{
         color:#A90533;
@@ -1886,6 +1938,7 @@
         color: black; 
         display: flex;
         align-items: center;
+        width: 100%;
     }
 
     .soy .col-sm-3 a { flex-direction: column;}
@@ -1917,11 +1970,8 @@
     .soy .col-sm-3 p {
         border: 3px solid #ccc;
         border-radius: 6px;
-        padding: 5px 50px;
-        text-align: center;
     }
 
-    .col-sm-3 { margin: 20px; }
     .col-sm-4 {
         flex: 0 0 33.333333%;
         max-width: 33.333333%;
@@ -1933,15 +1983,12 @@
     }
 
     .display-1 {
-        font-size: 6rem;
+        font-size: 11vw;
         line-height: 1.2;
-        color:#A90533;
-        font-size: 100px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 50px 0px;
+        color: #A90533;
+        margin: 0px 0px 40px 0px;
         font-weight: 400;
+        text-align: center;
     }
 
     .display-1 a, 
@@ -2318,6 +2365,8 @@
         .container-mas-en {
             grid-template-columns: 1fr 1fr 1fr 1fr;
         }
+
+        .display-1 { font-size: 9vw; }
     }
     
 /* fin content-suffix */
@@ -2559,22 +2608,9 @@
         text-align: center;
     }
 
-    div.cenefa-subtitle-masopciones {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    div.cenefa-solotexto-masopciones {
-        padding-top: 12px;
-        background: #a90533;
-    }
-
     div.cenefa-subtitle-masopciones h2 {
-        padding: 30px;
         border-radius: unset;
         font-size: 45px;
-        margin-left: -5%;
     }
     
     /* conoce fcom */
@@ -2608,6 +2644,20 @@
         #content-prefix div.cenefa-subtitle h2 { text-align: left; }
 
         div.cenefa-title { padding: 0px 10px; }
+
+        div.cenefa-solotexto-masopciones.row {
+            grid-template-columns: repeat(1,minmax(200px,max-content));
+            grid-template-rows: repeat(1,200px);
+            padding: 0px 30px;
+            background: #a90533;
+        }
+
+        div.cenefa-subtitle-masopciones.row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
 
     }
 
