@@ -1628,7 +1628,6 @@
     #app-FCom .views-field-title, #servicios-FCom .views-field-title {
         border: 1px solid #a90533;
         padding: 10px;
-        min-height: 235px;
         display: flex;
         align-items: center;
         text-align: center;
@@ -1658,6 +1657,16 @@
             gap: 25px;
         }
 
+        #app-FCom, #servicios-FCom {
+            grid-template-rows: repeat(4, minmax(130px, 1fr));
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-gap: 20px;
+        }
+        
+        #app-FCom .views-field-title, #servicios-FCom .views-field-title { height: 100%; }
+        #app-FCom .views-enlace a, #servicios-FCom .views-enlace a { height: 100%; }
+
         
     }
 
@@ -1667,9 +1676,8 @@
         #content-prefix .row-imprescindibles { grid-template-columns: 1fr 1fr;  }
         #app-FCom, #servicios-FCom {
             display: grid;
-            grid-gap: 10px;
             grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(4, minmax(330px, 1fr));
+            grid-template-rows: repeat(4, minmax(335px, 1fr));
         }
 
         #app-FCom .views-enlace, #servicios-FCom .views-enlace {
@@ -1677,8 +1685,11 @@
             align-items: center;
             justify-content: center;
         }
-
-        #app-FCom .views-enlace a, #servicios-FCom .views-enlace a { width: 90%; }    
+        #app-FCom .views-field-title, #servicios-FCom .views-field-title  { height: 80%; }
+        #app-FCom .views-enlace a, #servicios-FCom .views-enlace a { 
+            width: 90%;
+            height: 100%;
+        }    
 
     }
     /* Medium screen devices (768px and above) */
@@ -1708,7 +1719,7 @@
 
     /* Big screen devices (1024px and above) */
     @media only screen and (min-width: 1024px) { 
-        #app-FCom, #servicios-FCom { grid-template-rows: repeat(4, minmax(220px, 1fr)); }    
+        #app-FCom, #servicios-FCom { grid-template-rows: repeat(4, minmax(220px, 1fr)); } 
     }
 
     /* Extra big screen devices (1200px and above) */
