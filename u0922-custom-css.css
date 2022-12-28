@@ -1144,6 +1144,10 @@
     @media only screen and (min-width: 768px) {
         .soy .col-sm-3 p { padding: 5px 30px; }
         #block-u0922-menu-principal .dropdown-content { max-width: 99%; }
+        
+         /* movilidad 1er nivel*/
+         .view-u0922-movilidad .container-level1 .row { grid-template-columns: repeat(2,minmax(250px, 300px)); }
+
     }
  
     /* Big screen devices (889px and above) */
