@@ -865,7 +865,7 @@
         padding: 20px;
         display: flex;
         max-height: 320px;
-        min-width: 320px;
+        min-width: 380px;
     }
     
     .narrativa p {
@@ -874,6 +874,7 @@
         display: flex;
         margin-bottom: 0px;
         flex: 2;
+        min-width: 320px;
     }
     
     .narrativa-l2 { /**/
@@ -1110,7 +1111,7 @@
     @media only screen and (max-width: 480px) {
     }
 
-    /* Small screen devices (600px and above) */
+    /* Small screen devices (481px and above) */
     @media only screen and (min-width: 481px) {
         .row {
             grid-template-columns: repeat(2,minmax(150px, 250px));
@@ -1127,6 +1128,12 @@
             height: 100%;
         }
 
+        .dropdown:hover .dropdown-content,
+        .dropdown:focus .dropdown-content{  
+            width: 92%;
+            max-width: 1550px;
+        }
+
     }
     /* Medium screen devices (600px and above) */
     @media only screen and (min-width: 600px) {
@@ -1136,15 +1143,19 @@
     /* Medium screen devices (768px and above) */
     @media only screen and (min-width: 768px) {
         .soy .col-sm-3 p { padding: 5px 30px; }
+        #block-u0922-menu-principal .dropdown-content { max-width: 99%; }
     }
  
     /* Big screen devices (889px and above) */
     @media only screen and (min-width: 889px) {
         #block-u0922-menu-principal { justify-self: flex-start; }
 
-        #block-u0922-menu-principal .dropdown-content {
-            max-width: 88%;
-            width: 1024px;
+        
+
+        .dropdown:hover .dropdown-content,
+        .dropdown:focus .dropdown-content{  
+            width: 92%;
+            max-width: 1550px;
         }
 
         .container-view-u0922-practicas.container-level1 .row { grid-template-columns: repeat(3,minmax(250px, 315px)); }
@@ -1189,11 +1200,7 @@
     }
 
     /* Extra big screen devices (1200px and above) */
-    @media only screen and (min-width: 1200px) {
-        
-        #block-u0922-menu-principal .dropdown-content{  width: 1250px; }
-
-    }
+    @media only screen and (min-width: 1200px) {}
     
     /* Extra big screen devices (1440px and above) */
     @media only screen and (min-width: 1440px) {
@@ -1201,10 +1208,6 @@
         #block-u0922-menu-principal {
             grid-column: unset;
         }
-
-        #block-u0922-menu-principal .dropdown-content{ width: 1440px; }
-
-        .narrativa-l2 { width: 550px; }
     }
 
 
