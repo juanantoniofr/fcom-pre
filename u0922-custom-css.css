@@ -829,11 +829,11 @@
         margin-left: -13%;
         background-color: white;
         z-index: 10;
-        display: flex;
-        flex-wrap: wrap;
         align-items: stretch;
         padding-top: 10px;
         margin-top: 30px;
+        display: grid;
+        grid-template-columns: 2fr minmax(450px,600px);
     }
     
     .opacity0-50 { opacity: 0.5; }
@@ -864,6 +864,8 @@
     .narrativa img {
         padding: 20px;
         display: flex;
+        max-height: 320px;
+        min-width: 320px;
     }
     
     .narrativa p {
@@ -878,7 +880,6 @@
         display: flex;
         width: stretch;
         align-items: normal;
-        width: 550px;
     }
     
     .narrativa-l21 { /**/
@@ -1146,8 +1147,6 @@
             width: 1024px;
         }
 
-        .narrativa { max-width: 350px; }
-        .narrativa-l2 { width: 430px; }
         .container-view-u0922-practicas.container-level1 .row { grid-template-columns: repeat(3,minmax(250px, 315px)); }
         .row {
             grid-template-rows: repeat(2,150px);
@@ -1194,9 +1193,6 @@
         
         #block-u0922-menu-principal .dropdown-content{  width: 1250px; }
 
-        .narrativa { max-width: 400px; }
-        .narrativa-l2 { width: 600px; }
-
     }
     
     /* Extra big screen devices (1440px and above) */
@@ -1207,13 +1203,6 @@
         }
 
         #block-u0922-menu-principal .dropdown-content{ width: 1440px; }
-
-        .narrativa { max-width: 700px; }
-
-        .narrativa img {
-            max-width: 450px;
-            max-height: 324px;
-        }
 
         .narrativa-l2 { width: 550px; }
     }
