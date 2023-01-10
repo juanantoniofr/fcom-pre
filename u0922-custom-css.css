@@ -2470,7 +2470,7 @@
     /* Medium screen devices (768px and above) */
     @media only screen and (min-width: 768px) {
         #main-content { max-width: 80%; }
-        #content-suffix { width: 75%; }
+        #content-suffix { width: 80%; }
         /* conoce FCom */
         #block-views-block-u0922-bloque-mas-opciones-block-2 .container-mas-en,
         #block-views-block-u0922-bloque-mas-opciones-block-4 .container-mas-en,
@@ -2491,6 +2491,7 @@
     /* Big screen devices (1024px and above) */
     @media only screen and (min-width: 1024px) { 
         #main-content { max-width: 75%; }
+        #content-suffix { width: 75%; }
     }
 
     /* Extra big screen devices (1200px and above) */
