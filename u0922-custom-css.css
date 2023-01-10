@@ -2139,7 +2139,7 @@
 
     .column-actualidad.views-col.col-1 {
         display: grid;
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(4, max-content);
         grid-row-gap: 20px;
     }
 
@@ -2469,7 +2469,7 @@
 
     /* Medium screen devices (768px and above) */
     @media only screen and (min-width: 768px) {
-        #main-content { max-width: 75%; }
+        #main-content { max-width: 80%; }
         #content-suffix { width: 75%; }
         /* conoce FCom */
         #block-views-block-u0922-bloque-mas-opciones-block-2 .container-mas-en,
@@ -2489,7 +2489,9 @@
     }
     
     /* Big screen devices (1024px and above) */
-    @media only screen and (min-width: 1024px) { }
+    @media only screen and (min-width: 1024px) { 
+        #main-content { max-width: 75%; }
+    }
 
     /* Extra big screen devices (1200px and above) */
     @media only screen and (min-width: 1200px) {
