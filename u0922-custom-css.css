@@ -1690,7 +1690,7 @@
 /* content-prefix */
 
     #content-prefix {
-        width: 90%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -1714,6 +1714,12 @@
         background: transparent;
         font-weight: 600;
         color:#a90533;
+    }
+
+    #content-prefix #block-views-block-padre-block-1-2 {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;   
     }
 
     /* agenda */
@@ -1786,6 +1792,7 @@
         #app-FCom, #servicios-FCom {
             display: grid;
             grid-template-columns: repeat(1,1fr);
+            grid-row-gap: 20px;
         }
         #app-FCom { grid-template-rows: repeat(3, minmax(130px, 1fr));}
         #servicios-FCom { grid-template-rows: repeat(4, minmax(130px, 1fr));}
@@ -1835,6 +1842,7 @@
         /* Utilidades & Servicios*/
         #app-FCom { grid-template-rows: repeat(3, minmax(245px, 1fr));}
         #servicios-FCom { grid-template-rows: repeat(4, minmax(245px, 1fr));}
+        #app-FCom, #servicios-FCom{ grid-row-gap: 10px;}
         #app-FCom .views-field-title, #servicios-FCom .views-field-title  { height: 90%; }
     }
 
@@ -1845,6 +1853,7 @@
     @media only screen and (min-width: 1024px) { 
         #app-FCom { grid-template-rows: repeat(3, minmax(115px, 1fr));}
         #servicios-FCom { grid-template-rows: repeat(4, minmax(115px, 1fr));}
+        #app-FCom, #servicios-FCom{ grid-row-gap: 0px;}
     }
 
     /* Extra big screen devices (1200px and above) */
@@ -2144,7 +2153,7 @@
     }
 
     .class-doscolumnas-noticiasfcom .views-field.views-field-field-entradilla { padding-left: 10px; }
-    .column-actualidad.views-col.col-1{ grid-template-rows: auto minmax(100px, 158px) auto; }
+    
     .class-doscolumnas-noticiasfcom .views-field.views-field-title { grid-column: 1 / 3; }
     .class-doscolumnas-noticiasfcom .views-field.views-field-created { grid-column: 1 / 3; }
 
@@ -2165,16 +2174,19 @@
     }
 
     /* For extremely small screen devices (480px and below) */
-    @media only screen and (max-width: 480px) { }
+    @media only screen and (max-width: 480px) {
+        .column-actualidad.views-col.col-1{ grid-template-rows: auto minmax(100px, 158px) auto; }
+     }
     
     /* Small screen devices (600px and above) */
-    @media only screen and (min-width: 481px) {  }
+    @media only screen and (min-width: 481px) {  
+        .column-actualidad.views-col.col-1{ grid-template-rows: auto minmax(100px, 158px) auto; }
+    }
     
     /* Medium screen devices (768px and above) */
     @media only screen and (min-width: 768px) {
-        .column-actualidad.views-col.col-1{ grid-template-rows: repeat(4 max-content); }
-        .class-doscolumnas-noticiasfcom .views-field.views-field-title { grid-column: unset; }
-        .class-doscolumnas-noticiasfcom .views-field.views-field-created { grid-column: unset; }
+        .column-actualidad.views-col.col-1{  grid-template-rows: auto minmax(100px, 125px) auto; } 
+        
      }
      
     /* Big screen devices (889px and above) */
@@ -2182,6 +2194,7 @@
         
     /* Big screen devices (1024px and above) */
     @media only screen and (min-width: 1024px) { 
+        .column-actualidad.views-col.col-1{ grid-template-rows: auto minmax(100px, 134px) auto; }
         .views-view-grid.horizontal.cols-1.clearfix { grid-template-columns: 1fr 1fr; }
     }
     
@@ -2678,7 +2691,7 @@
 /* Cenefas */
     
     /* todas las cenefas */
-    
+
     div.cenefa-texto p {
         font-size: 24px;
         line-height: 1.2em;
@@ -2753,9 +2766,10 @@
 
     div.cenefa-solotexto h1 {
         font-weight: bold;
-        font-size: 3vw;
+        font-size: 46px;
         font-stretch: condensed;
         text-align: center;
+        line-height: 4vw;
     }
 
     div.cenefa-subtitle-masopciones h2 {
@@ -2777,6 +2791,9 @@
         grid-template-rows: repeat(1,200px);
         padding: 0px 30px;
         background: #a90533;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     div.cenefa-subtitle-masopciones.row {
@@ -2837,6 +2854,7 @@
     /* Big screen devices (889px and above) */
     @media only screen and (min-width: 889px) { 
         div.cenefa-texto p { text-align: justify; }
+        div.cenefa-solotexto h1 { font-size: 4vw;  }
     }
 
     /* Extra big screen devices (1200px and above) */
