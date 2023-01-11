@@ -1133,8 +1133,7 @@
             grid-template-rows: repeat(2,150px);
         }
 
-        .view-u0922-movilidad .row,
-        .view-u0922-secretaria .row {
+        .view-u0922-movilidad .row {
             grid-template-columns: repeat(1,minmax(150px, 250px));
         }
 
@@ -1233,8 +1232,7 @@
             grid-template-columns: repeat(2,minmax(150px, 250px));
         }
 
-        .view-u0922-secretaria .row { grid-template-columns: repeat(1,minmax(150px, 250px)); }
-        
+             
         .container-level1 .row { grid-template-columns: repeat(2,minmax(250px, 315px)); }
 
     }
