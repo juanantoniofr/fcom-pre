@@ -1116,8 +1116,7 @@
         display: grid;
         grid-template-rows: repeat(1,1fr);
     }
-    .container-view-u0922-practicas.container-level1 .row
-    { grid-template-columns: repeat(1,minmax(250px, 315px)); }
+    .container-view-u0922-practicas.container-level1 .row { grid-template-columns: repeat(1,minmax(250px, 315px)); }
     
     .view-u0922-sistema-de-calidad .container-view-u0922-practicas.container-level1 .row {
         grid-template-columns: repeat(1,minmax(115px, 300px));
@@ -1134,7 +1133,8 @@
             grid-template-rows: repeat(2,150px);
         }
 
-        .view-u0922-movilidad .row {
+        .view-u0922-movilidad .row,
+        .view-u0922-secretaria .row {
             grid-template-columns: repeat(1,minmax(150px, 250px));
         }
 
@@ -2808,9 +2808,6 @@
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: 2fr 1fr;
         display: grid;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .cenefa-subtitle.row {
