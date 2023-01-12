@@ -2688,6 +2688,31 @@
 
 /* fin pagina decanato */
 
+/* Página secretaría */
+
+    .datos_decanato.horario_secretaria {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    div.contenido ul {
+        padding: 0px;
+        margin: 0px;
+        text-align: left;
+        list-style-type: none;
+    }
+
+    div.contenido ul li::before {
+        content: "\2714"; 
+        margin-right: 10px;
+    }
+    div.contenido ul li { line-height: 2.2em; }
+
+    .datos_decanato div.contenido { padding: 20px; }
+
+/* Página secretaría */
+
+/* fin Página secretaría */
+
 /* Cenefas */
     
     /* todas las cenefas */
@@ -2862,3 +2887,4 @@
         div.cenefa-solotexto { flex-direction: column;}
         div.cenefa-subtitle { width: 50%; }
     }
+    
