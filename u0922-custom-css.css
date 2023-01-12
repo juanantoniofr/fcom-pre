@@ -2304,19 +2304,47 @@
         box-shadow: unset;
     }
 
-    .views-field.views-field-field-nombredirectorio {
-        font-size: 2.2em;
-        line-height: 1.2em;
+    .card-directorio {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
     }
 
-    .views-field-field-puesto-directorio {
-        font-size: 1.4em;
-        margin: 20px 0px;
+    .card-image-directorio {
+        width: 30%;
+        padding: 10px;
+        box-sizing: border-box;
+        }
+        .card-image-directorio img {
+        width: 100%;
     }
 
-    .views-field.views-field-body {
-        line-height: 1.4em;
-        margin-top: 30px;
+    .card-text-directorio {
+        width: 70%;
+        padding: 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .card-title-directorio {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        }
+    .card-subtitle-directorio {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: normal;
+        color: #333;
     }
     
     #profesorDirectorio p { margin: 0px;}
@@ -2332,9 +2360,6 @@
         display: none;
     }
 
-    .view-buscador-docentes-e-investigadores .views-col { text-align: center;}
-
-
     .view-buscador-docentes-e-investigadores dl dt a::before {
         font-family: fontAwesome;
         content: "\f054";
@@ -2348,6 +2373,22 @@
         background-color: #a90533;
         color: white;
     }
+
+    .view-buscador-docentes-e-investigadores select {
+        width: 100%;
+        padding: 12px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        font-size: 16px;
+        position: relative;
+        height: fit-content;
+        appearance: button;
+    }
+    
+    
 
 /* content-suffix */
 
