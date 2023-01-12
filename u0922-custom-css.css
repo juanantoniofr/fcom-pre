@@ -2662,9 +2662,6 @@
         gap: 20px;
     }
 
-    .datos_decanato.horario_secretaria .contenido {
-        min-height: 300px;
-      }
     
     /* For extremely small screen devices (595px and below) */
     @media only screen and (max-width: 480px) {}
