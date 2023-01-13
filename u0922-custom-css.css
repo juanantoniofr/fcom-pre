@@ -2734,9 +2734,9 @@
 
 /* Página secretaría */
 
-    .datos_decanato.horario_secretaria {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+    .datos_decanato.personal_secretaria { grid-template-columns: 1fr 1fr 1fr; }
+    .datos_decanato.horario_secretaria { grid-template-columns: 1fr 1fr; }
+    .datos_decanato.horario_secretaria .horario_verano { grid-column: 1 / 3; }
 
     div.contenido ul {
         padding: 0px;
