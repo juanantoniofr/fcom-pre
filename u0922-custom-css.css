@@ -2285,6 +2285,7 @@
         width: 100%;
         flex-direction: row;
         justify-content: center;
+        align-items: last baseline;
     }
     
     #edit-title {
@@ -2374,7 +2375,9 @@
         color: white;
     }
 
-    .view-buscador-docentes-e-investigadores select {
+    .view-buscador-docentes-e-investigadores select,
+    .view-buscador-docentes-e-investigadores #edit-title, 
+    .view-buscador-docentes-e-investigadores #edit-submit-buscador-docentes-e-investigadores {
         width: 100%;
         padding: 12px;
         border-radius: 4px;
@@ -2385,7 +2388,6 @@
         font-size: 16px;
         position: relative;
         height: fit-content;
-        appearance: button;
     }
     
     
