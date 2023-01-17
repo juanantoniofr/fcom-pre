@@ -2933,60 +2933,66 @@
     }
 
 /** Mapa del Sitio **/
-.site-map-row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.card-site-map {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-shadow: 0 2px 2px rgba(0,0,0,.1);
-    flex: 1 0 calc(33.33% - 20px);
-    margin: 10px;
-}
-
-.card-body-site-map {
-    padding: 20px;
-}
-
-.card-title {
-    background-color: #a90533;
-    color: white;
-    padding: 10px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.card-text {
-    background-color: #a90533;
-    color: white;
-    padding: 10px;
-}
-
-.card-links {
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.card-links ul {
+.site-map ul {
     list-style: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
-.card-links li {
+.site-map li {
     margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
 }
 
-.card-links .link-text {
-    margin-left: 10px;
+
+.site-map li ul {
+    margin-top: 10px;
+    padding-left: 40px;
 }
 
-.group-title{
-    font-size: initial;
-    font-weight: initial;
+.site-map li::before {
+    background-color: #ccc;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
 }
+
+.site-map {
+    position: relative;
+    width: 100%;
+  }
+  
+  .accordion-item {
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .accordion-header {
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .accordion-title {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  
+  #content1:target ~ .accordion-content,
+  #content2:target ~ .accordion-content{
+    max-height: 200px;
+  }
+  
