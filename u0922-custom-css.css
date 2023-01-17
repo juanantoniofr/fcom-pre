@@ -2935,7 +2935,7 @@
 /** Mapa del Sitio **/
 .site-map ul {
     list-style: none;
-    padding: 0;
+    padding: 20px 35px;
     margin: 0;
 }
 
@@ -2967,32 +2967,24 @@
     position: relative;
     width: 100%;
   }
-  
-  .accordion-item {
-    margin-bottom: 10px;
-    position: relative;
+  .site-map input[type="checkbox"] {
+    display: none;
   }
-  
-  .accordion-header {
+  .site-map input[type="checkbox"] + label {
     cursor: pointer;
     display: block;
     padding: 10px;
     border: 1px solid #ccc;
   }
-  
-  .accordion-title {
-    color: #000;
-    text-decoration: none;
-  }
-  
-  .accordion-content {
+  .site-map .accordion-content {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
-  
-  #content1:target ~ .accordion-content,
-  #content2:target ~ .accordion-content{
+  .site-map input[type="checkbox"] + label + .accordion-content {
+    max-height: 0;
+  }
+  .site-map input[type="checkbox"]:checked + label + .accordion-content {
     max-height: 200px;
   }
   
