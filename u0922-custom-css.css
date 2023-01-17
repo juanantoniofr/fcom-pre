@@ -2975,6 +2975,7 @@
     display: block;
     padding: 10px;
     position: relative;
+    color: #a90533;
   }
   .site-map .accordion-content {
     max-height: 0;
@@ -2984,7 +2985,7 @@
   .site-map input[type="checkbox"] + label + .accordion-content {
     max-height: 0;
   }
-  .site-map input[type="checkbox"]:checked + label + .accordion-content { max-height: 200px; }
+  .site-map input[type="checkbox"]:checked + label + .accordion-content { max-height: fit-content; }
 
   .accordion-header::before {
     content: "";
@@ -3003,3 +3004,5 @@
   
   .site-map .link-text { color: #555; }
   
+  .site-map div.links { margin-top: 30px;  }
+  .site-map  .h4-links { font-weight: initial; }
