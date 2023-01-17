@@ -1,126 +1,162 @@
 {% set url = url('<current>')|render|render %}
-<div class="mas_en">
-    <h3>+ Títulos</h3>
-    <div class="container-mas-en">
-        
-            <!-- 1.Grados -->
-            <div class="opcion_menu {% if url ends with 'grados' %} display-none {% endif %}">
-                <img src="/sites/fcom/files/menu-ppal/titulos.png" />
-
-                <div class="descripcion">
-                    <h4>Grados</h4>
-                    <p>Lorem ipsum.....</p>
-                </div>
-            </div>
+    <div class="mas_en">
+        <h3>+ Títulos</h3>
+        <div class="container-mas-en">
             
-            <!-- 2.Periodismo -->
-            <div class="opcion_menu {% if url ends with 'periodismo' %} display-none {% endif %}">
-                <img src="/sites/fcom/files/menu-ppal/titulos.png" />
-
-                <div class="descripcion">
-                    <h4>Grado Periodismo</h4>
-                    <p>Lorem ipsum.....</p>
-                </div>
-            </div>
-            
-            <!-- 3.Publicidad y RRPP -->
-            <div class="opcion_menu {% if url ends with 'publicidad-y-relaciones-publicas' %} display-none {% endif %}">
-                <img src="/sites/fcom/files/menu-ppal/titulos.png" />
-
-                <div class="descripcion">
-                    <h4>Grados Públicidad y RR-PP</h4>
-                    <p>Lorem ipsum.....</p>
-                </div>
-            </div>
-
-            <!-- 4.CAV -->
-            <div class="opcion_menu {% if url ends with 'comunicacion-audiovisual' %} display-none {% endif %}">
-                <img src="/sites/fcom/files/menu-ppal/titulos.png" />
-
-                <div class="descripcion">
-                    <h4>Grado Comunicación Audiovisual</h4>
-                    <p>Lorem ipsum.....</p>
-                </div>
-            </div>
-
-            <!-- 5.Doble Grado -->
-            <div class="opcion_menu {% if url ends with 'doblegrado-PER-CAV' %} display-none {% endif %}">
-                <img src="/sites/fcom/files/menu-ppal/titulos.png" />
-
-                <div class="descripcion">
-                    <h4>Doble Grado</h4>
-                    <p>Lorem ipsum.....</p>
-                </div>
-            </div>
-
-            <!-- 6.doctorado -->
-            <div class="opcion_menu {% if url ends with 'doctorados' %} display-none {% endif %}">
-                <img src="/sites/fcom/files/menu-ppal/titulos.png" />
-
-                <div class="descripcion">
-                    <h4>Grados, másteres y doctorado</h4>
-                    <p>Lorem ipsum.....</p>
-                </div>
-            </div>
-
-            <!-- 7.másteres -->
-            <div class="opcion_menu {% if url ends with 'masteres' %} display-none {% endif %}">
-                <img src="/sites/fcom/files/menu-ppal/titulos.png" />
-
-                <div class="descripcion">
-                    <h4>Másteres</h4>
-                    <p>Lorem ipsum.....</p>
-                </div>
-            </div>
-
-            <!-- 8.Comunicación institucional .... -->
-            <div class="opcion_menu {% if url ends with 'comunicacion-institucional-politica' %} display-none {% endif %}">
-                <img src="/sites/fcom/files/menu-ppal/titulos.png" />
-
-                <div class="descripcion">
-                    <h4>Máster Comunicación Institucional y Política</h4>
-                    <p>Lorem ipsum.....</p>
-                </div>
-            </div>
-
-            <!-- 9.Comunicación y Cultura -->
-            <div class="opcion_menu {% if url ends with 'comunicacion-cultura' %} display-none {% endif %}">
-                <img src="/sites/fcom/files/menu-ppal/titulos.png" />
-
-                <div class="descripcion">
-                    <h4>Máster Comunicación y Cultura</h4>
-                    <p>Lorem ipsum.....</p>
-                </div>
-            </div>
-
-            <!-- 10.Escritura Creativa -->
-            <div class="opcion_menu {% if url ends with 'escritura-creativa' %} display-none {% endif %}">
-                <img src="/sites/fcom/files/menu-ppal/titulos.png" />
-
-                <div class="descripcion">
-                    <h4>Máster Escritura Creativa</h4>
-                    <p>Lorem ipsum.....</p>
-                </div>
-            </div>
-
-            <!-- 11.Guión, Narrativa y ... -->
-            <div class="opcion_menu {% if url ends with 'guion-narrativa' %} display-none {% endif %}">
-                <img src="/sites/fcom/files/menu-ppal/titulos.png" />
-
-                <div class="descripcion">
-                    <h4>Máster Guion, Narrativa y Creatividad Audiovisual</h4>
-                    <p>Lorem ipsum.....</p>
-                </div>
-            </div>
-
-            <!-- 12.Publicidad y Gestión... -->
-            <div class="opcion_menu {% if url ends with 'publicidad-gestion-contenidos' %} display-none {% endif %}">
-                <img src="/sites/fcom/files/menu-ppal/titulos.png" />
-
-                <div class="descripcion">
-                    <h4>Máster Publicidad y Gestión de Contenidos</h4>
-                    <p>Lorem ipsum.....</p>
-                </div>
-            </div>
+                <!-- 1.Grados -->
+                <a href="/titulos/grados" class="link_masEn {% if url ends with 'grados' %} display-none {% endif %}">
+                    <div class="opcion_menu">
+                        <img src="/sites/fcom/files/menu-ppal/titulos.png" />
+    
+                        <div class="descripcion">
+                            <h4>Grados</h4>
+                            <p>Lorem ipsum.....</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- 2.Periodismo -->
+                <a href="/titulos/grados/periodismo" class="link_masEn {% if url ends with 'periodismo' %} display-none {% endif %}">
+                    <div class="opcion_menu">
+                        <img src="/sites/fcom/files/menu-ppal/titulos.png" />
+    
+                        <div class="descripcion">
+                            <h4>Grado Periodismo</h4>
+                            <p>El Grado de Periodismo dota a sus estudiantes de los conocimientos y competencias profesionales necesarios para el ejercicio de la profesión en los medios impresos audiovisuales y digitales.</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- 4.Publicidad y RRPP -->
+                <a href="/titulos/grados/publicidad-y-relaciones-publicas" class="link_masEn {% if url ends with 'publicidad-y-relaciones-publicas' %} display-none {% endif %}">
+                    <div class="opcion_menu">
+                        <img src="/sites/fcom/files/menu-ppal/titulos.png" />
+    
+                        <div class="descripcion">
+                            <h4>Grados Públicidad y RR-PP</h4>
+                            <p>El Grado en Publicidad y Relaciones Públicas forma a sus estudiantes en la gestión y producción de la comunicación publicitaria y en las relaciones públicas.</p>
+                        </div>
+                    </div>
+                </a>
+    
+                <!-- 3.CAV -->
+                <a href="/titulos/grados/comunicacion-audiovisual" class="link_masEn {% if url ends with 'comunicacion-audiovisual' %} display-none {% endif %}">
+                    <div class="opcion_menu">
+                        <img src="/sites/fcom/files/menu-ppal/titulos.png" />
+    
+                        <div class="descripcion">
+                            <h4>Grado Comunicación Audiovisual</h4>
+                            <p>El Grado en Comunicación Audiovisual capacita a sus estudiantes para investigar, conocer críticamente y emprender la realización de obras audiovisuales en sus diferentes formatos.</p>
+                        </div>
+                    </div>
+                </a>
+    
+                <!-- 5.Doble Grado -->
+                <a href="/titulos/grados/doblegrado-PER-CAV" class="link_masEn {% if url ends with 'doblegrado-PER-CAV' %} display-none {% endif %}">
+                    <div class="opcion_menu">
+                        <img src="/sites/fcom/files/menu-ppal/titulos.png" />
+    
+                        <div class="descripcion">
+                            <h4>Doble Grado</h4>
+                            <p>La hibridación de la formación periodística con ámbitos de la comunicación audiovisual responde a la demanda de nuevos perfiles de comunicadores solicitados por las empresas del sector de la comunicación surgidos en el campo de la nueva economía digital.</p>
+                        </div>
+                    </div>
+                </a>
+    
+                <!-- 6. Resuelva sus dudas en MiTFG -->
+                <a href="/titulos/grados/miTFG" class="link_masEn {% if url ends with 'miTFG' %} display-none {% endif %}">
+                    <div class="opcion_menu">
+                        <img src="/sites/fcom/files/menu-ppal/titulos.png" />
+    
+                        <div class="descripcion">
+                            <h4>Resuelva sus dudas en #MiTFG</h4>
+                            <p>Lorem ipsum...</p>
+                        </div>
+                    </div>
+                </a>
+    
+                <!-- 7.doctorado -->
+                <a href="/titulos/doctorados" class="link_masEn {% if url ends with 'doctorados' %} display-none {% endif %}">
+                    <div class="opcion_menu">
+                        <img src="/sites/fcom/files/menu-ppal/titulos.png" />
+    
+                        <div class="descripcion">
+                            <h4>Grados, másteres y doctorado</h4>
+                            <p>Un programa de doctorado interuniversitario en Comunicación de excelencia conformado por cuatro universidades y seis líneas de investigación.</p>
+                        </div>
+                    </div>
+                </a>
+    
+                <!-- 8.másteres -->
+                <a href="/titulos/masteres" class="link_masEn {% if url ends with 'masteres' %} display-none {% endif %}">
+                    <div class="opcion_menu">
+                        <img src="/sites/fcom/files/menu-ppal/titulos.png" />
+    
+                        <div class="descripcion">
+                            <h4>Másteres</h4>
+                            <p>Lorem ipsum.....</p>
+                        </div>
+                    </div>
+                </a>
+    
+                <!-- 9.Comunicación institucional .... -->
+                <a href="/titulos/masteres/comunicacion-institucional-politica" class="link_masEn {% if url ends with 'comunicacion-institucional-politica' %} display-none {% endif %}">
+                    <div class="opcion_menu">
+                        <img src="/sites/fcom/files/menu-ppal/titulos.png" />
+    
+                        <div class="descripcion">
+                            <h4>Máster Comunicación Institucional y Política</h4>
+                            <p>El Máster en Comunicación Institucional y Política, forma a profesionales especializados en ambos campos con especial atención a la gestión, promoción y estrategia de sus actividades vehiculadas a través de los medios de comunicación.</p>
+                        </div>
+                    </div>
+                </a>
+    
+                <!-- 10.Comunicación y Cultura -->
+                <a href="/titulos/masteres/comunicacion-cultura" class="link_masEn {% if url ends with 'comunicacion-cultura' %} display-none {% endif %}">
+                    <div class="opcion_menu">
+                        <img src="/sites/fcom/files/menu-ppal/titulos.png" />
+    
+                        <div class="descripcion">
+                            <h4>Máster Comunicación y Cultura</h4>
+                            <p>El Máster en Comunicación y Cultura forma a sus investigadores en las nociones epistemológicas y en las metodologías de mayor uso en el campo científico de la comunicación.</p>
+                        </div>
+                    </div>
+                </a>
+    
+                <!-- 11.Escritura Creativa -->
+                <a href="/titulos/masteres/escritura-creativa" class="link_masEn {% if url ends with 'escritura-creativa' %} display-none {% endif %}">
+                    <div class="opcion_menu">
+                        <img src="/sites/fcom/files/menu-ppal/titulos.png" />
+    
+                        <div class="descripcion">
+                            <h4>Máster Escritura Creativa</h4>
+                            <p>El Máster en Escritura Creativa forma a profesionales de la creación literaria en los distintos géneros, fomentando la imaginación artística y potenciando la creatividad.</p>
+                        </div>
+                    </div>
+                </a>
+    
+                <!-- 12. Guión, Narrativa y ... -->
+                <a href="/titulos/masteres/guion-narrativa" class="link_masEn {% if url ends with 'guion-narrativa' %} display-none {% endif %}">
+                    <div class="opcion_menu">
+                        <img src="/sites/fcom/files/menu-ppal/titulos.png" />
+    
+                        <div class="descripcion">
+                            <h4>Máster Guion, Narrativa y Creatividad Audiovisual</h4>
+                            <p>La figura del guionista sigue siendo fundamental en la creación de contenidos atractivos para una audiencia cada vez más huidiza y escindida en múltiples pantallas. El Máster en Guion, Narrativa y Creatividad Audiovisual, capacita a sus alumnos para el trabajo profesional de guionista en diferentes ámbitos y formatos.</p>
+                        </div>
+                    </div>
+                </a>
+    
+                <!-- 13. Publicidad y Gestión... -->
+                <a href="/titulos/masteres/publicidad-gestion-contenidos" class="link_masEn {% if url ends with 'publicidad-gestion-contenidos' %} display-none {% endif %}">
+                    <div class="opcion_menu">
+                        <img src="/sites/fcom/files/menu-ppal/titulos.png" />
+    
+                        <div class="descripcion">
+                            <h4>Máster Publicidad y Gestión de Contenidos</h4>
+                            <p>El Máster en Publicidad y Gestión de Contenidos forma a sus estudiantes en la comunicación corporativa e institucional, así como en las nuevas formas de comunicación publicitaria y de relaciones públicas, fomentando las aptitudes creativas y emprendedoras y las habilidades en las nuevas estrategias nacidas de los entornos digitales.</p>
+                        </div>
+                    </div>
+                </a>
+        </div>
     </div>
-</div>
