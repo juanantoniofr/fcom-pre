@@ -2564,7 +2564,7 @@
 
     /* Super Extra big screen devices (1450px and above) */
     @media only screen and (min-width: 1450px) {
-        .container-mas-en .link_masEn .opcion_menu { grid-template-columns: minmax(150px,210px) auto; }
+        .container-mas-en .link_masEn .opcion_menu { grid-template-columns: minmax(150px,175px) auto; }
         .container-mas-en .opcion_menu img { 
             width: 100%; 
             max-height: unset;
