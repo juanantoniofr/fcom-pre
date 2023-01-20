@@ -1763,6 +1763,7 @@
         display: flex;
         align-items: center;
         text-align: center;
+        width: 100%;
     }
     
     #app-FCom svg, #servicios-FCom svg {
