@@ -167,12 +167,12 @@
 
     /** .accordeon (generado en las vistas **/
 
-    .accordeon div { border: none; }
+    .accordeon div, .accordeon div:focus-visible { border: none; }
     .accordeon .ui-state-default a {
         color: #f9f9f9;
         font-size: x-large;
     }
-
+    .ui-state-focus { border: none; }
     .ui-accordion-header a  {font-size: x-large; color: #a90533 !important;} 
             
     .ui-accordion-header-active.ui-state-active,
@@ -2584,7 +2584,7 @@
     } 
     #footer h2 {
         text-align: center;
-        font-size: 2.5em;
+        font-size: 2em;
         line-height: normal;
     }
     #footer h3 {
@@ -3035,6 +3035,15 @@
     line-height: 40px;
 }
 
+.menu-actas ul { padding: 0px; }
+
+.menu-actas ul span {
+    font-size: x-large;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+}
+
 .menu-actas ul li {
     display: inline-block;
     padding: 10px 20px;
@@ -3099,4 +3108,16 @@
     text-align: center;
     font-weight: 600;
     font-size: x-large;
+}
+
+#actas_ce {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+
+#actas_cd {
+    position: absolute;
+    top: 20%;
+    left: 50%;
 }
