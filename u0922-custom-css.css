@@ -3013,3 +3013,90 @@
   
   .site-map div.links { margin-top: 30px;  }
   .site-map  .h4-links { font-weight: initial; }
+
+  /** Actas **/
+
+.row-actas.views-row {
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    grid-column-gap: 40px;
+}
+
+#header-actas-list,
+.row-actas .item-list ul li.fichero-acta{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.row-actas .item-list ul li.fichero-acta{ 
+    padding: 50px 0px 0px 0px;
+    border-bottom: 1px solid #bbb;
+    line-height: 40px;
+}
+
+.menu-actas ul li {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid #aaa;
+    margin: 5px;
+    width: 100%;
+}
+
+.view-vista-conoce-fcom.view-display-id-block_6 {
+    border: 2px solid #A90533;
+    border-radius: 5px;
+    padding: 30px 50px;
+}
+
+
+
+#header-actas-list div {
+    border: 1px solid #aaa;
+    padding: 10px;
+    text-align: center;
+    color: #a90533;
+    border-radius: 5px;
+}
+
+.row-actas .item-list ul { padding: 0px; }
+
+.download-acta { text-align: center; } 
+
+.active-link-actas { background: #a90533; }
+.active-link-actas a {color: white;  }
+
+.download-acta a { font-size: 38px; }
+
+
+#header-actas-title {
+    padding: .5em .5em .5em .7em;
+      padding-bottom: 0.5em;
+    color: white;
+    font-size: x-large;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    background: #a90533;
+    border-radius: 5px;
+}
+
+#header-actas-title p { display: inline; }
+
+#header-actas-title::before {
+    font-family: fontAwesome;
+    content: "\f054";
+    margin-right: 10px;
+    font-size: large;
+}
+
+.warning-actas p{
+    margin: 45px 0px;
+    text-align: center;
+    font-weight: 600;
+    font-size: x-large;
+}
