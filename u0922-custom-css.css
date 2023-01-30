@@ -592,6 +592,21 @@
     }
 
     .search-block-form__form { margin-bottom: 0px; }
+
+    #edit-basic {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .button {
+        margin-bottom: 20px;
+        background-color: #a90533;
+        border-color: #a90533;
+        margin-top: 15px;
+        border-radius: 5px;
+        }
+
+
     /* fin formulario de busqueda */
 
     @media  (max-width: 767px) {
@@ -2757,9 +2772,8 @@
 
     .datos_decanato div.contenido { padding: 20px; }
 
-/* Página secretaría */
-
 /* fin Página secretaría */
+
 
 /* Cenefas */
     
