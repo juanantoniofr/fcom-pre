@@ -606,6 +606,9 @@
         border-radius: 5px;
         }
 
+    #search-form label {
+        display: none;
+    }
 
     /* fin formulario de busqueda */
 
