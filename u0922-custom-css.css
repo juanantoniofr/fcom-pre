@@ -598,12 +598,13 @@
         padding-bottom: 30px;
     }
 
-    .button, button:hover, button:focus, .button:hover, .button:focus  {
+    .button, button, button:hover, button:focus, .button:hover, .button:focus, button:focus-visible  {
         margin-bottom: 20px;
         background-color: #a90533;
         border-color: #a90533;
         margin-top: 15px;
         border-radius: 5px;
+        outline: #A90533;
         }
 
     #search-form label {
