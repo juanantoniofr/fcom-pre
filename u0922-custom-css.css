@@ -598,7 +598,7 @@
         padding-bottom: 30px;
     }
 
-    .button {
+    .button, button:hover, button:focus, .button:hover, .button:focus  {
         margin-bottom: 20px;
         background-color: #a90533;
         border-color: #a90533;
