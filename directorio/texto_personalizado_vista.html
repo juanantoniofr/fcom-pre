@@ -1,10 +1,39 @@
+<!-- pdi -->
 <div class="card-directorio">
-    <div class="card-image-directorio">
-        {{ field_imagen_personalizada }}
+  <div class="card-image-directorio">
+    {{ field_foto }}
+  </div>
+  <div class="card-text-directorio">
+    <h5 class="card-title-directorio">{{ title }}</h5>
+    <p class="card-subtitle-directorio">{{ field_relacion_laboral }}</p>
+    
+
+    <div id="profesorDirectorio">
+      {% if field_titulacion is not empty %} <p><strong>Titulaciones</strong>:{{ field_titulacion }}</p>{% endif %}
+      {% if field_departamento_pdi is not empty %}<p><strong>Departamento</strong>: {{ field_departamento_pdi }}</p>{% endif %}
+      {% if field_despacho is not empty %}<p><strong>Despacho</strong>: {{ field_despacho }}</p>{% endif %}
+      {% if field_correo_pdi is not empty %}<p class="correo"><strong>Correo</strong>: <a href="mailto: {{ field_correo_pdi }}">{{ field_correo_pdi }}</a></p>{% endif %}
+      {% if field_trabaja_en_la_us is not empty %}<p>{{ field_trabaja_en_la_us }}</p>{% endif %}
+      {% if body is not empty %}<p>{{ body }}</p>{% endif %}
     </div>
-    <div class="card-text-directorio">
-      <h5 class="card-title-directorio">{{ field_nombredirectorio }}</h5>
-      <p class="card-subtitle-directorio">{{ field_puesto_directorio }}</p>
-      <p>{{ body }}</p>
+  </div>
+</div>
+
+<!-- pas -->
+<div class="card-directorio">
+  <div class="card-image-directorio">
+    {{ field_foto_pas }}
+  </div>
+  <div class="card-text-directorio">
+    <h5 class="card-title-directorio">{{ title }}</h5>
+    <p class="card-subtitle-directorio">{{ field_categoria_profesional }}</p>
+    
+
+    <div id="profesorDirectorio">
+      {% if field_subunidad is not empty %}<p><strong>Unidad</strong>: {{ field_subunidad }}</p>{% endif %}
+      {% if field_correo is not empty %}<p class="correo"><strong>Correo</strong>: <a href="mailto: {{ field_correo }}">{{ field_correo }}</a></p>{% endif %}
+      {% if field_informacion_complementaria is not empty %}<p>{{ field_informacion_complementaria }}</p>{% endif %}
+      {% if body is not empty %}<p>{{ body }}</p>{% endif %}
     </div>
+  </div>
 </div>
