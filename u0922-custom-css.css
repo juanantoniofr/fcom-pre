@@ -2161,7 +2161,10 @@
         padding: 18px;
     }
 
-    .row-accordion-soy .ckeditor-accordion-container  dl dd { padding: 15px; }
+    .row-accordion-soy .ckeditor-accordion-container  dl dd { 
+        padding: 40px;
+        background-color: #ccc;
+    }
 
     /* Noticias Fcom */
     
