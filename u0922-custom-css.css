@@ -68,11 +68,13 @@
     .ui-accordion .ui-accordion-content {
         background: transparent;
         border-radius: 0px 0px 5px 5px;
+        padding: 50px;
+        border: 1px solid #ddd;
     }
 
     .accordeon.views-row { margin: 20px 0px; }
 
-    .ckeditor-accordion-container dl dd { padding: 20px 50px; }
+    .ckeditor-accordion-container dl dd { padding: 50px; }
     .ckeditor-accordion-container dl dt a {
         background: transparent;
         border: none;
@@ -82,6 +84,7 @@
         line-height: 1.8em;
     }
 
+    
     .accordion-ckeditor-title .ckeditor-accordion-container dl dt a { padding: 0px; }
 
     .ck-accordion-ident.styled a { font-size: x-large; }
@@ -92,6 +95,11 @@
         font-weight: normal;
     }
 
+    .view-buscador-docentes-e-investigadores .ckeditor-accordion-container dl dt.active a {
+        background-color: #a90533;
+        color: white;
+    }
+    
     .ckeditor-accordion-container ul li {
         list-style: disc;
         padding: 10px;
@@ -184,12 +192,29 @@
     .ui-accordion-header-active.ui-state-active a:visited { 
         background-color: #a90533;
         color: white !important; 
+        padding: 20px;
     }
 
     .ui-state-default { background: transparent;}
 
-    .secretaria .ui-state-default { background: rgba(0,0,0,.03); }
-    .secretaria .title-JqueryUI-secretaria:hover { color: #a90533; }
+    .secretaria .ui-state-default,
+    .calidad .ui-state-default,
+    .miTFG .ui-state-default,
+    .practicas .ui-state-default,
+    .movilidad .ui-state-default { background: rgba(0,0,0,.03); }
+    
+    .secretaria .ui-accordion .ui-accordion-header:hover,
+    .calidad .ui-accordion .ui-accordion-header:hover,
+    .miTFG .ui-accordion .ui-accordion-header:hover,
+    .practicas .ui-accordion .ui-accordion-header:hover,
+    .movilidad .ui-accordion .ui-accordion-header:hover { color: #a90533; }
+
+    
+    .calidad .ui-accordion .ui-accordion-content
+    {
+        background-color: #ccc;
+        padding: 40px;
+    }
 
     .accordeon .views-accordion-header a::before {
         font-family: fontAwesome;
@@ -1139,7 +1164,15 @@
     .view-u0922-movilidad .view-footer .node__title,
     .view-u0922-movilidad .view-footer .node__content{
         text-align: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 3px solid #A90533;
+        padding: 50px;
     }
+    
+    .view-u0922-movilidad .view-footer .node__title { font-size: 2.5vw; }
+
     .soy .col-sm-3 p {
         text-align: center;
         height: 100%;
