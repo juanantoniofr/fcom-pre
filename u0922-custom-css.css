@@ -2301,6 +2301,7 @@
         height: 40px;
         margin: 0 0  1rem;
         width: fit-content;
+        align-self: center;
     }
     .form--inline.clearfix {
         display: flex;
@@ -2308,7 +2309,7 @@
         width: 100%;
         flex-direction: row;
         justify-content: center;
-        align-items: last baseline;
+        align-items: initial;
     }
     
     #edit-title {
