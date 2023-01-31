@@ -2129,7 +2129,7 @@
     .row-accordion-soy div.ui-state-active,
     .row-accordion-soy .accordeon .ui-state-active a::before { 
         color: black !important;
-        background-color: #f7f7f7;
+        background-color: rgba(0,0,0,.03);
         border: 1px solid #dfdfdf;
     }
 
@@ -2156,7 +2156,7 @@
 
     .row-accordion-soy .ckeditor-accordion-container  dl dt a,
     .row-accordion-soy .ckeditor-accordion-container dl dt.active a {
-        background: #f7f7f7;
+        background: rgba(0,0,0,.03);
         color: #a90533;
         padding: 18px;
     }
