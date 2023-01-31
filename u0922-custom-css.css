@@ -58,8 +58,11 @@
         font-size: 0.9em;
         font-style: italic;
         color: #444;
+        padding: 5px 0px;
+        margin-bottom: 20px;
+        text-align: right;
     }
-
+    
     /* ckeditor-accordion-container */
 
     .ui-accordion .ui-accordion-content {
@@ -183,8 +186,10 @@
         color: white !important; 
     }
 
-    .ui-state-default { background: transparent;}  
-    
+    .ui-state-default { background: transparent;}
+
+    .secretaria .ui-state-default { background: rgba(0,0,0,.03); }
+    .secretaria .field-content:hover { color: #a90533; }
 
     .accordeon .views-accordion-header a::before {
         font-family: fontAwesome;
