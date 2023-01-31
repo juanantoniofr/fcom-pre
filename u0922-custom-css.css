@@ -616,6 +616,19 @@
         display: none;
     }
 
+    .item-list-busqueda li::marker {
+        font-size: x-large;
+        color: #a90533;
+      }
+
+    .item-list-busqueda span.views-field-title {
+        font-size: x-large;
+    }
+
+    .item-list-busqueda li {
+        padding-bottom: 15px;
+    }
+
     /* fin formulario de busqueda */
 
     @media  (max-width: 767px) {
