@@ -1700,6 +1700,72 @@
         .pg-noticiasFCom .container-horizontal .card-horizontal img{ max-width: 35.5em;}
     }
 
+
+    .noticias-destacadas-front-page .view-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .container-texto-noticia-destacada {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.2);
+        grid-template-rows: 1fr 8fr;
+    }
+
+    .noticias-destacadas-front-page .container-noticia-destacada { position: relative; }
+
+    .container-texto-noticia-destacada .taxonomia {
+        background-color: #a90533;
+        width: 40%;
+        opacity: 0.4;
+        margin: 0px;
+        padding: 0px;
+        margin-left: 10px;
+        padding-left: 10px;
+    }
+
+    .container-texto-noticia-destacada .taxonomia a,
+    .container-texto-noticia-destacada .taxonomia a:hover,
+    .container-texto-noticia-destacada .taxonomia a:visited,
+    .container-texto-noticia-destacada .taxonomia a:focus {
+        color: white;
+        text-transform: uppercase;
+        padding: 0px;
+        margin: 0px;
+    }
+
+
+    .container-texto-noticia-destacada .taxonomia h4{
+        margin: 0px;
+        padding: 5px 0px;
+    }
+
+    .titulares h2, .titulares h3 {
+        background-color: #a90533;
+        width: 70%;
+        opacity: 0.7;
+        padding: 0px 0px 0px 20px;
+    }
+
+    .titulares h2 {
+        margin: 0px 0px 10px 0px;
+        padding: 50px 5px 50px 20px;
+    }
+
+    .titulares h2 a {
+        color: white;
+    }
+    .titulares h3 {
+        font-size: initial;
+    }
 /* fin highlighted */    
 
 /* features */
@@ -2202,6 +2268,7 @@
     /* Noticias Fcom */
     
     
+
     #main-content .class-doscolumnas-noticiasfcom .views-field.views-field-field-imagen img { padding-left: 0px; }
     
     .class-doscolumnas-noticiasfcom .views-field.views-field-created {
