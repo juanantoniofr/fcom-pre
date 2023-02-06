@@ -1,18 +1,14 @@
-<div class='container-horizontal'>
-  <div class='card-horizontal'>
+<div class='container-noticia-destacada'>
+  
+  <div class='imagen-noticia-destacada'>
     {{ field_imagen }}
-    <div class='card-body-horizontal'>
-      <div class='card-text-horizontal'>
-        
-          <h2>{{ title }}</h2>
-          <h3> {{ field_subtitulo }} </h3>  
-          <p>
-            {{ field_entradilla }}
-            
-          </p>
-        
-      </div>
-      
-    </div>
   </div>
+
+  <div class="container-texto-noticia">
+      <h4>{{ term_node_tid }}</h3>
+
+      <h2>{{ title }}</h2>
+      <h3> {{ field_subtitulo }} </h3>  
+  </div>
+    
 </div>
