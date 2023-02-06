@@ -1766,6 +1766,28 @@
     .titulares h3 {
         font-size: initial;
     }
+
+    #noticia-destacada-2 .container-texto-noticia-destacada .taxonomia, #noticia-destacada-2 .container-texto-noticia-destacada .titulares h3 {
+        display: none;
+    }
+
+    #noticia-destacada-2 .titulares h2 {
+        width: 100%;
+    }
+
+    #noticia-destacada-2 .container-texto-noticia-destacada {
+        grid-template-rows: 1fr;
+        align-items: end;
+    }
+
+    #noticia-destacada-2 .titulares h2 {
+        margin: 0px;
+        padding: 30px 60px;
+    }
+
+    .noticias-destacadas-front-page img {
+        border-radius: unset;
+    }
 /* fin highlighted */    
 
 /* features */
