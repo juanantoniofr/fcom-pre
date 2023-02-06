@@ -1700,7 +1700,7 @@
         .pg-noticiasFCom .container-horizontal .card-horizontal img{ max-width: 35.5em;}
     }
 
-
+    .noticias-destacadas-front-page { border-bottom: 10px solid #a90533; }
     .noticias-destacadas-front-page .view-content {
         display: grid;
         grid-template-columns: 1fr 1fr;
