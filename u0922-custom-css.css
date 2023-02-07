@@ -1862,7 +1862,11 @@
 
         #block-views-block-noticias-de-actualidad-block-4 .view-content { grid-template-columns: repeat(2, minmax(250px, 1fr)); }
     }
-
+    
+    .view-display-id-block_2 .view-content .row-imprescindibles{
+        display: grid;
+        grid-template-rows: minmax(400px, 655px) 1fr;
+    }
 /* fin features */
 
 /* content-prefix */
