@@ -726,7 +726,7 @@
     @media only screen and (min-width: 1440px) {
 
         #navbar .l-r { 
-            grid-template-columns: minmax(200px, 260px) auto 160px; 
+            grid-template-columns: minmax(200px, 290px) auto 190px;
             grid-gap: 5px;
         }
         #block-logouses { grid-column: unset; }
@@ -1240,7 +1240,7 @@
  
     /* Big screen devices (889px and above) */
     @media only screen and (min-width: 889px) {
-        #block-u0922-menu-principal { justify-self: flex-start; }
+        #block-u0922-menu-principal { justify-self: self-end; }
 
         
 
@@ -1325,8 +1325,6 @@
     #block-u0922-imprescindibles-mas-idiomas { justify-content: center; }
 
     #block-u0922-imprescindibles-mas-idiomas .clearfix { margin-bottom: 0px; }
-
-    #menu-u0922-imprescindibles { padding: 30px 0px 0px 0px; }
 
     #container_imprescindibles_mas_idiomas .dropbtn,
     #container_imprescindibles_mas_idiomas .dropbtn:hover {
@@ -1459,9 +1457,8 @@
     @media only screen and (min-width: 768px) {
         
         #menu-u0922-imprescindibles {
-            padding: 30px 0px 0px 0px;
             display: flex;
-            justify-content: end;
+            justify-content: right;
         }
         
     }
@@ -1472,7 +1469,11 @@
     /* Extra big screen devices (1200px and above) */
     @media only screen and (min-width: 1200px) {
         
-        #block-u0922-imprescindibles-mas-idiomas { align-self: end; }
+        #block-u0922-imprescindibles-mas-idiomas { 
+            display: flex;
+            align-items: self-start;
+            justify-content: right;
+        }
     }
 
     /*#block-alternadordeidioma ul {
