@@ -672,7 +672,9 @@
         color: black;
     }
 
-    
+    p#logo-us{ text-align: center; }
+
+    p#text-UniSevilla{ align-self: baseline; }
     
     @media  (max-width: 767px) {
         #navbar .pr-navbar__rw { max-width: unset; }
@@ -1721,7 +1723,7 @@
     .container-texto-noticia-destacada .taxonomia {
         background-color: #a90533;
         width: 40%;
-        opacity: 0.4;
+        opacity: 0.7;
         margin: 0px;
         padding: 0px;
         margin-left: 10px;
@@ -1747,7 +1749,7 @@
     .titulares h2, .titulares h3 {
         background-color: #a90533;
         width: 70%;
-        opacity: 0.7;
+        opacity: 0.8;
         padding: 0px 0px 0px 20px;
     }
 
@@ -1802,6 +1804,7 @@
         margin-right: auto;
         background-color: transparent;
         margin-top: 20px;
+        display: grid;
     }
 
     #features img{ 
@@ -1813,7 +1816,7 @@
         display: grid;
         justify-items: center;
         align-items: start;
-        grid-template-columns: repeat(1, minmax(250px, 1fr));
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
         grid-gap: 25px;
     }
 
