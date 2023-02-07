@@ -1480,7 +1480,7 @@
         #block-u0922-imprescindibles-mas-idiomas { align-self: end; }
     }
 
-    #block-alternadordeidioma ul {
+    /*#block-alternadordeidioma ul {
         padding: 0px; 
         display: flex;
         list-style: none;
@@ -1492,7 +1492,7 @@
     #block-alternadordeidioma ul li img { 
         width: 30px; 
         height: 20px;
-    }
+    }*/
     /* fin imprescindibles (incluye idiomas) */        
 
 /*fin navbar */
