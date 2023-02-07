@@ -396,11 +396,7 @@
 /* masthead */
 
     #masthead {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 2px;
-        margin-top: 4px;
+        width: 100%;
         background: #a90533;
     }
 
@@ -424,6 +420,7 @@
     #block-u0922-menu-header { 
         margin: 0px;
         width: 100%;
+        margin: 5px 0px;
     }
     
     #block-u0922-headerleft,
@@ -456,13 +453,15 @@
         .pr-header .regions {
             background: inherit;
             display: grid;
-            grid-template-rows: 1fr 1fr;
+            grid-template-rows: 1fr;
+            width: 80%;
         }    
         
         .pr-header__header-first {
             display: grid;
             float: none !important;
             width: 100% !important;
+            grid-template-columns: 3fr 1fr auto;
         }
            
         .collapsible-masthead-content .content-inner {
@@ -596,11 +595,7 @@
     /* formulario de busqueda */
     
     
-    #block-formulariodebusqueda {    
-        margin-right: 10px;
-        margin-top: 7px;
-        margin-bottom: 3px;
-    }
+    #block-formulariodebusqueda {    margin: 8px 0px; }
     
     #block-formulariodebusqueda #edit-keys{
         font-size: 18px;
