@@ -1332,7 +1332,7 @@
     #container_imprescindibles_mas_idiomas .dropbtn:hover {
         background: #a90533;
         border: none;
-        border-radius: 20px 0px 0px 20px;
+        border-radius: 10px 10px 10px 10px;
         height: 55px;
         padding: 0px 22px;
     }
