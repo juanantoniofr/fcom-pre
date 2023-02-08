@@ -838,7 +838,7 @@
     #block-u0922-menu-principal .dropbtn {
         background-color: transparent;
         color: #a90533;
-        font-size: clamp( 1.4rem, 2vw, 2.7vh);
+        font-size: 2vw;
         font-weight: 600;
         border: none;
         cursor: pointer;
@@ -1344,6 +1344,7 @@
         margin-right: 0px;
         margin-left: unset;
         transform: translate(-93px, 30px);
+        margin-top: 45px;
     }
 
     #menu-u0922-imprescindibles ul {

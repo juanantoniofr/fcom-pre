@@ -2,13 +2,17 @@
     
     {%if field_fecha_de_inicio_actividad_  == field_fecha_fin_actividad_o_even %}
         <div class="evento-fecha">
-            <span>{{ field_fecha_de_inicio_actividad__2 }}</span><!-- formato Mes-->    
-            <span>{{ field_fecha_de_inicio_actividad__3 }}</span><!-- formato día-->    
+            <div class="mes">{{ field_fecha_de_inicio_actividad__2 }}</div><!-- formato Mes-->    
+            <div class="dia">{{ field_fecha_de_inicio_actividad__3 }}</div><!-- formato día-->    
         </div>
     {% else %}
         <div class="evento-fechas">
-            <span>{{ field_fecha_de_inicio_actividad__1 }}</span><!-- formato Mes día-->
-            <span>{{ field_fecha_fin_actividad_o_even_1 }}</span><!-- formato Mes día-->
+            <!-- fecha inicio -->
+            <div class="mes">{{ field_fecha_de_inicio_actividad__2 }}</div><!-- formato Mes-->    
+            <div class="dia">{{ field_fecha_de_inicio_actividad__3 }}</div><!-- formato día-->    
+            <!--fecha fin-->
+            <div class="mes">{{ field_fecha_fin_actividad_o_even_1 }}</div><!-- formato Mes-->    
+            <div class="dia">{{ field_fecha_fin_actividad_o_even_2 }}</div><!-- formato día-->    
         </div>
     {% endif %}
 
