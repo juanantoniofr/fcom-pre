@@ -1912,8 +1912,6 @@
         font-weight: 600
     }
 
-    div.agenda-de-la-semana { padding: 8px; }
-    div.agenda-de-la-semana a { color: black; }
     div.agenda-de-la-semana span.views-field { color: #a90533;}
 
 
@@ -2048,7 +2046,32 @@
     /* Extra big screen devices (1200px and above) */
     @media only screen and (min-width: 1200px) { }
 
+    /* Agenda */
+    .evento {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-column-gap: 20px;
+    }
+    .evento-fechas {
+        border-right: 1px solid #aaa;
+        padding: 10px;
+        padding-left: 0px;
+    }
 
+    .evento-fechas span:nth-child(1) {
+        border-bottom: 1px solid #a90533;
+        display: block;
+    }
+
+    .evento-fechas span {
+        line-height: 44px;
+        font-size: 20px;
+    }
+
+    .evento-titulo {
+        display: flex;
+        align-items: center;
+    }
 /* fin context-prefix */
 
 /* main-content */
