@@ -838,7 +838,7 @@
     #block-u0922-menu-principal .dropbtn {
         background-color: transparent;
         color: #a90533;
-        font-size: 1.5vw;
+        font-size: 1.2vw;
         font-weight: 600;
         border: none;
         cursor: pointer;
@@ -2065,7 +2065,7 @@
         line-height: 1.2em;
     }
     
-    .agenda-de-la-semana .evento-fechas, .agenda-de-la-semana .evento-fecha {
+    .agenda-de-la-semana .fecha-inicio, .agenda-de-la-semana .fecha-fin {
         padding: 10px;
         background-color: #a90533;
         color: white;
