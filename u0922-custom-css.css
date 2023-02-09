@@ -2984,6 +2984,21 @@
 
 /* fin Página secretaría */
 
+/* Página de busqueda */
+
+    div.class-buscador #edit-keys.form-text {
+        width: 500px;
+        border-radius: 4px;
+    }
+
+    .class-buscador #edit-submit-search-content {
+        margin-top: 18px;
+      }
+
+
+
+/* fin Página de busqueda */
+
 
 /* Cenefas */
     
