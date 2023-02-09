@@ -2054,24 +2054,31 @@
         grid-column-gap: 20px;
     }
 
-    .agenda-de-la-semana .mes {
+    .evento-fechas, .evento-fecha {
+        background-color: #a90533;
+        color: #ddd;
+        border: 1px solid #a90533;
+        border-radius: 10px;
+        width: 90px;
+        height: 90px;
+    }
+    
+    .agenda-de-la-semana .evento-fecha .mes {
         font-size: 1.3em;
         line-height: 1.5em;
         text-transform: uppercase;
         }
     
-    .agenda-de-la-semana .dia {
+    .agenda-de-la-semana .evento-fecha .dia {
         font-size: 2.2em;
         line-height: 1.2em;
     }
     
     .agenda-de-la-semana .fecha-inicio, .agenda-de-la-semana .fecha-fin {
-        padding: 10px;
-        background-color: #a90533;
-        color: white;
-        text-align: center;
-        border: 1px solid #a90533;
-        border-radius: 10px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
     }
     
     .agenda-de-la-semana {
