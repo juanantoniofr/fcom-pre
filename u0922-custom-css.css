@@ -1297,7 +1297,7 @@
             grid-template-rows: repeat(1,170px);
         }
         .view-u0922-sistema-de-calidad .row {
-            grid-template-columns: repeat(4,1fr);
+            grid-template-columns: repeat(5,1fr);
         }
         .view-u0922-practicas .row,
         .view-u0922-mitfg .row {
