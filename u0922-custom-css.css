@@ -2066,7 +2066,7 @@
     .agenda-de-la-semana .evento-fecha .mes {
         align-self: end;
         text-transform: uppercase;
-        }
+    }
     
     .agenda-de-la-semana .evento-fecha .dia {
         font-size: 2.2em;
@@ -2079,7 +2079,14 @@
         grid-template-rows: 45px 55px;
         grid-row-gap: 0px;
         height: 100px;
+        width: 100px;
         justify-content: center;
+    }
+
+    .evento-fecha.fechas-mismo-mes .dia {
+        font-size: 1.7em;
+        line-height: 1em;
+        display: flex;
     }
     
     .fechas-intervalo .fechas {
@@ -2100,14 +2107,13 @@
         height: 100px;
     }
 
-    .mes-inicio-intervalo {
-        text-transform: uppercase;
+    span.separa-fechas {
+        font-size: small;
+        display: flex;
+        padding: 0px 2px;
     }
 
-    .dia-inicio-intervalo {
-        font-size: 2em;
-        font-weight: bold;
-    }
+    
     
     .agenda-de-la-semana {
         padding: 20px 0px 20px 0px;

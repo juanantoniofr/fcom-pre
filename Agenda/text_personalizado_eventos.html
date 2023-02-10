@@ -8,18 +8,29 @@
             </div>
         </div>
     {% else %}
-        <div class="evento-fechas">
-            <!-- Intervalo de fechas -->
-            <div class="fechas-intervalo">
-                <div class="fecha">
-                    <span class="mes-inicio-intervalo">{{ field_fecha_de_inicio_actividad__2 }}</span><!-- formato Mes-->
-                    <span class="dia-inicio-intervalo"> {{ field_fecha_de_inicio_actividad__3 }}</span><!-- formato día-->
-                    <span class="separa-intevalo"> // </span> 
-                    <span class="mes-inicio-intervalo">{{ field_fecha_fin_actividad_o_even_1 }}</span><!-- formato Mes-->
-                    <span class="dia-inicio-intervalo"> {{ field_fecha_fin_actividad_o_even_2 }}</span><!-- formato día-->
+        {% if field_fecha_de_inicio_actividad__2 == field_fecha_fin_actividad_o_even_1 %}
+            <div class="evento-fecha fechas-mismo-mes">
+                <div class="fecha-inicio">
+                    <div class="mes">{{ field_fecha_de_inicio_actividad__2 }}</div><!-- formato Mes-->    
+                    <div class="dia">{{ field_fecha_de_inicio_actividad__3 }} <span class="separa-fechas">-</span> {{ field_fecha_fin_actividad_o_even_2 }}</div><!-- formato día-->    
                 </div>
             </div>
-        </div>
+        {% else %}    
+            <div class="evento-fechas fechas-distinto-mes">
+                <!-- Intervalo de fechas -->
+                <div class="fechas-intervalo">
+                    <div class="fecha-incio-intervalo">
+                        <div class="mes">{{ field_fecha_de_inicio_actividad__2 }}</div><!-- formato Mes-->
+                        <div class="dia"> {{ field_fecha_de_inicio_actividad__3 }}</div><!-- formato día-->
+                    </div>
+                    <div class="separa-fechas">//</div>
+                    <div class="fecha-fin-intervalo">
+                        <div class="mes">{{ field_fecha_fin_actividad_o_even_1 }}</div><!-- formato Mes-->
+                        <div class="dia"> {{ field_fecha_fin_actividad_o_even_2 }}</div><!-- formato día-->
+                    </div>
+                </div>
+            </div>
+        {% endif %}
     {% endif %}
 
     <div class="evento-titulo">{{ title }}</div>
