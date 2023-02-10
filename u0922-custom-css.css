@@ -2120,7 +2120,7 @@
         font-size: 1.4em;
         align-self: flex-end;
     }
-
+    .fecha-incio-intervalo .mes, .fecha-fin-intervalo .mes { margin-right: 2px; }
     div.separa-fechas {
         display: flex;
         font-size: 0px;
