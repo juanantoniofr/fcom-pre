@@ -9,15 +9,15 @@
         </div>
     {% else %}
         <div class="evento-fechas">
-            <!-- fecha inicio -->
-            <div class="fecha-inicio">
-                <div class="mes">{{ field_fecha_de_inicio_actividad__2 }}</div><!-- formato Mes-->    
-                <div class="dia">{{ field_fecha_de_inicio_actividad__3 }}</div><!-- formato día-->    
-            </div>
-            <!--fecha fin-->
-            <div class="fecha-fin">
-                <div class="mes">{{ field_fecha_fin_actividad_o_even_1 }}</div><!-- formato Mes-->    
-                <div class="dia">{{ field_fecha_fin_actividad_o_even_2 }}</div><!-- formato día-->    
+            <!-- Intervalo de fechas -->
+            <div class="fechas-intervalo">
+                <div class="fecha">
+                    <span class="mes-inicio-intervalo">{{ field_fecha_de_inicio_actividad__2 }}</span><!-- formato Mes-->
+                    <span class="dia-inicio-intervalo"> {{ field_fecha_de_inicio_actividad__3 }}</span><!-- formato día-->
+                    <span class="separa-intevalo"> // </span> 
+                    <span class="mes-inicio-intervalo">{{ field_fecha_fin_actividad_o_even_1 }}</span><!-- formato Mes-->
+                    <span class="dia-inicio-intervalo"> {{ field_fecha_fin_actividad_o_even_2 }}</span><!-- formato día-->
+                </div>
             </div>
         </div>
     {% endif %}

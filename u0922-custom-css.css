@@ -752,6 +752,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 346px;
     }
     
     #block-logouses img {
@@ -762,12 +763,12 @@
     
     #block-logouses h1 {
         font-size: 1.9em;
-        font-weight: 600;
         color: #a90533;
         margin-bottom: 0px;
         line-height: 1em;
         font-stretch: ultra-condensed;
         text-align: center;
+        letter-spacing: -2.5px;
     }
     
     #block-logouses p {
@@ -806,7 +807,7 @@
     
     #block-u0922-menu-principal .block__inner{
         display: flex;
-        justify-content: end;
+        justify-content: right;
         flex-wrap: wrap;
         height: 100%;
         align-items: end;
@@ -2059,26 +2060,52 @@
         color: #ddd;
         border: 1px solid #a90533;
         border-radius: 10px;
-        width: 90px;
-        height: 90px;
     }
     
     .agenda-de-la-semana .evento-fecha .mes {
-        font-size: 1.3em;
-        line-height: 1.5em;
+        align-self: end;
         text-transform: uppercase;
         }
     
     .agenda-de-la-semana .evento-fecha .dia {
         font-size: 2.2em;
-        line-height: 1.2em;
+        align-self: baseline;
+        font-weight: bold;
     }
     
-    .agenda-de-la-semana .fecha-inicio, .agenda-de-la-semana .fecha-fin {
+    .agenda-de-la-semana .fecha-inicio {
         display: grid;
-        grid-template-rows: 1fr 1fr;
-        align-items: center;
+        grid-template-rows: 45px 55px;
+        grid-row-gap: 0px;
+        height: 100px;
         justify-content: center;
+    }
+    
+    .fechas-intervalo .fechas {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .fecha {
+        justify-content: center;
+        display:flex;
+        align-items: center;    
+    }
+
+    .fechas-intervalo {
+        display: grid;
+        height: 100px;
+    }
+
+    .mes-inicio-intervalo {
+        text-transform: uppercase;
+    }
+
+    .dia-inicio-intervalo {
+        font-size: 2em;
+        font-weight: bold;
     }
     
     .agenda-de-la-semana {
