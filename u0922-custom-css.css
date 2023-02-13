@@ -1272,6 +1272,10 @@
             grid-template-columns: repeat(1,minmax(150px, 250px));
         }
     
+        .view-u0922-sistema-de-calidad .row {
+            grid-template-columns: repeat(2,minmax(150px, 250px));
+            grid-template-rows: repeat(3,150px);
+        }
 
         .col-sm-3 { 
             margin: 0px; 
