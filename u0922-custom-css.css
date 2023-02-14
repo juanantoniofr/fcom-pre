@@ -20,6 +20,10 @@
         margin: 60px 0px;
         text-align: left;
     }
+
+    #block-views-block-u0922-tedestacamos-agendaynovedades-block-9 .pager {
+        margin: 35px 0px 0px 0px;
+    }
     
     
     a.pager__link, a.pager__link:hover, a.pager__link:active, a.pager__link:focus  {
@@ -29,7 +33,7 @@
         border-radius: 14px;
         background: #a90533;
     }
-    .row-imprescindibles  a.pager__link, .row-imprescindibles  a.pager__link:hover, .row-imprescindibles a.pager__link:active, .row-imprescindibles  a.pager__link:focus {
+    #block-views-block-u0922-tedestacamos-agendaynovedades-block-9  a.pager__link, .row-imprescindibles  a.pager__link:hover, .row-imprescindibles a.pager__link:active, .row-imprescindibles  a.pager__link:focus {
         padding: 10px;
         border-radius: 7px;
     }
