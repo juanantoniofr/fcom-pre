@@ -1192,8 +1192,9 @@
 
     
     .container-level1 .row {
-        grid-template-columns: repeat(1,minmax(250px, 315px));
         display: grid;
+        grid-template-columns: repeat(1,minmax(250px, 315px));
+        
         grid-template-rows: repeat(1,1fr);
     }
     .container-view-u0922-practicas.container-level1 .row { grid-template-columns: repeat(1,minmax(250px, 315px)); }
@@ -1232,7 +1233,7 @@
     }
     /* Medium screen devices (600px and above) */
     @media only screen and (min-width: 600px) {
-        .container-level1 .row { grid-template-columns: repeat(2,minmax(250px, 315px)); }
+        /*.container-level1 .row { grid-template-columns: repeat(2,minmax(250px, 315px)); }*/
         
         .view-u0922-sistema-de-calidad .container-view-u0922-practicas.container-level1 .row {
             grid-template-columns: repeat(4,minmax(115px, 150px));
@@ -1251,9 +1252,10 @@
     @media only screen and (min-width: 768px) {
         .soy .col-sm-3 p { padding: 5px 30px; }
         .view-u0922-movilidad .container-view-u0922-practicas.container-level1 .row,
-        .view-u0922-mitfg .container-view-u0922-practicas.container-level1 .row { 
+        .view-u0922-mitfg .container-view-u0922-practicas.container-level1 .row,
+        .secretaria .container-view-u0922-secretaria.container-level1 .row { 
             grid-template-columns: repeat(2,minmax(250px, 315px)); 
-            grid-template-rows: repeat(3, 1fr);
+            grid-template-rows: 1fr;
         }
 
     }
@@ -1295,7 +1297,7 @@
 
         .view-u0922-sistema-de-calidad .container-view-u0922-practicas.container-level1 .row {
             grid-template-columns: repeat(6,minmax(110px, 250px));
-            grid-template-rows: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
             grid-gap: 30px;
         }
 

@@ -1,0 +1,47 @@
+.container-view-u0922-practicas.container-level1 .row { grid-template-columns: repeat(1,minmax(250px, 315px)); }
+.view-u0922-sistema-de-calidad .container-view-u0922-practicas.container-level1 .row { grid-template-columns: repeat(1,minmax(115px, 300px)); }
+
+@media only screen and (min-width: 600px) {
+    .view-u0922-sistema-de-calidad .container-view-u0922-practicas.container-level1 .row {
+        grid-template-columns: repeat(4,minmax(115px, 150px));
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .view-u0922-movilidad .container-view-u0922-practicas.container-level1 .row,
+    .view-u0922-mitfg .container-view-u0922-practicas.container-level1 .row { 
+        grid-template-columns: repeat(2,minmax(250px, 315px)); 
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width: 889px) {
+            
+    .container-view-u0922-practicas.container-level1 .row { grid-template-columns: repeat(3,minmax(250px, 315px)); }
+    
+    .view-u0922-sistema-de-calidad .container-view-u0922-practicas.container-level1 .row {
+        grid-template-columns: repeat(6,minmax(110px, 250px));
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+    
+}
+
+@media only screen and (min-width: 1024px){
+     /* practicas */
+
+}
+
+/*
+
+.movilidad // .view-u0922-movilidad -> 2 cajas
+.secretaria // .view-u0922-secretaria -> 2 cajas
+.miTFG // .view-u0922-mitfg -> 2 cajas
+
+
+.practicas //  .view-u0922-practicas -> 3 cajas
+.view-buscador-docentes-e-investigadores -> 3 cajas
+
+.calidad // .view-u0922-sistema-de-calidad -> 6 cajas
+*/
