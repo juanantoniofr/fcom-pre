@@ -2224,7 +2224,16 @@
     #block-views-block-u0922-tedestacamos-block-novedades .row-novedades {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
     }
+
+    #block-views-block-u0922-tedestacamos-block-novedades .row-novedades .views-row {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-column-gap: 10px;
+        align-items: center;
+    }
+
 /* fin context-prefix */
 
 /* main-content */
