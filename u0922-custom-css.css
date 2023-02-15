@@ -1205,7 +1205,7 @@
 
     /* For extremely small screen devices (480px and below) */
     @media only screen and (max-width: 480px) {
-
+        .miTFG .jumbotron {padding: 2rem;}
     }
 
     /* Small screen devices (481px and above) */
