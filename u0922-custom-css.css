@@ -1995,13 +1995,6 @@
         font-size: 0.8em;
     }
 
-    .novedades-secretaria-front .views-field-nothing,
-    .novedades-practicas-front .views-field-nothing,
-    .novedades-movilidad-front .views-field-nothing{
-        text-align: right;
-        font-size: 20px;
-        color: #a90533;
-    }
 
     /* Utilidades y Servicios */
 
@@ -2227,15 +2220,36 @@
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
+        grid-row-gap: 5px;
+        text-align: center;
     }
 
     #block-views-block-u0922-tedestacamos-block-novedades .row-novedades .views-row {
         display: grid;
-        grid-template-columns: 2fr 1fr;
         grid-column-gap: 10px;
-        align-items: center;
+        border-top: 1px solid #ddd;
+        padding-top: 20px
+    }
+    
+    .row-novedades.views-row .views-field-title {
+        font-size: 1.2em;
+        text-align: center;
     }
 
+    .row-novedades.views-row .fecha_novedad {
+        font-size: 0.8em;
+    }
+
+    #block-views-block-u0922-tedestacamos-block-novedades .row-novedades.views-row .views-field-nothing {
+        padding: 5px;
+        width: 60%;
+        border-right: 2px solid #a90533;
+        border-left: 2px solid #a90533;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 /* fin context-prefix */
 
 /* main-content */
