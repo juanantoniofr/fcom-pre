@@ -2234,13 +2234,13 @@
     #block-views-block-u0922-tedestacamos-block-novedades .row-novedades .views-row {
         display: grid;
         grid-column-gap: 10px;
-        border-top: 1px solid #ddd;
-        padding-top: 20px
+        border-bottom: 1px solid #ddd;
+        padding: 20px 0px;
     }
-    
+
     .row-novedades.views-row .views-field-title {
-        font-size: 1.2em;
-        text-align: center;
+        font-size: 1.1em;
+        text-align: left;
     }
 
     .row-novedades.views-row .fecha_novedad {
@@ -2249,13 +2249,21 @@
 
     #block-views-block-u0922-tedestacamos-block-novedades .row-novedades.views-row .views-field-nothing {
         padding: 5px;
-        width: 60%;
+        width: 45%;
         border-right: 2px solid #a90533;
         border-left: 2px solid #a90533;
         border-radius: 5px;
         margin-bottom: 20px;
         margin-right: auto;
         margin-left: auto;
+    }
+
+    .views-field.views-field-title:before {
+        font-family: fontAwesome;
+        content: "\f058";
+        font-size: 1.1em;
+        margin-right: 10px;
+        color: #969696;
     }
 /* fin context-prefix */
 
