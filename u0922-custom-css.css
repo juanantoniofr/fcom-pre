@@ -1205,6 +1205,9 @@
 
     /* For extremely small screen devices (480px and below) */
     @media only screen and (max-width: 480px) {
+        .view-buscador-docentes-e-investigadores .row {
+            grid-template-rows: repeat(1,150px);
+          }
     }
 
     /* Small screen devices (481px and above) */
@@ -1221,6 +1224,10 @@
         .view-u0922-sistema-de-calidad .row {
             grid-template-rows: repeat(3,150px);
           }
+
+        .view-buscador-docentes-e-investigadores .row {
+            grid-template-rows: repeat(1,150px);
+        }
 
         .col-sm-3 { 
             margin: 0px; 
