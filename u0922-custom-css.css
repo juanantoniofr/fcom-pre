@@ -3347,6 +3347,10 @@
             font-size: 1.4em;
             line-height: 1.4em;
         }
+
+        article.node { padding: 10px; }
+
+        
     }
 
     /* Small screen devices (481px and above) */
@@ -3366,6 +3370,10 @@
 
         div.cenefa-title { padding: 0px 10px; }
 
+        article.node { padding: 10px; }
+
+        div.cenefa-subtitle-masopciones h2 { font-size: 35px; }
+
     }
 
     /* Medium screen devices (768px and above) */
@@ -3375,12 +3383,16 @@
             margin-left: 50px;
             width: 70%; }
 
+        div.cenefa-subtitle-masopciones h2 { font-size: 40px; }
+
     }
 
     /* Big screen devices (889px and above) */
     @media only screen and (min-width: 889px) { 
         div.cenefa-texto p { text-align: justify; }
         div.cenefa-solotexto h1 { font-size: 4vw;  }
+
+        article.node { padding: 40px; }
     }
 
     /* Extra big screen devices (1200px and above) */
