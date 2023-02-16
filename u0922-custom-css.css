@@ -1211,6 +1211,10 @@
             grid-template-columns: repeat(1,200px);
           }
 
+        .container-view-u0922-practicas.container-level1 .row {
+            grid-template-columns: repeat(1,minmax(250px, 260px));
+        }
+
         .view-u0922-mitfg div.row-accordion-soy {
             padding-right: 10px;
             padding-left: 10px;
