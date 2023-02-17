@@ -302,8 +302,7 @@
   
     /* Medium screen devices (768px and above) */
     @media only screen and (min-width: 768px) {
-        #main-content .views-element-container,
-        .node--view-mode-full{ /* padding: 2rem 0px;  */ }
+        
     }
   
     /* Big screen devices (889px and above) */
@@ -432,6 +431,8 @@
         margin: 5px 0px;
     }
     
+    #block-u0922-menu-header p { margin: 0px;  }
+    
     #block-u0922-headerleft,
     #block-u0922-headerright {
             margin-top: auto;
@@ -471,6 +472,7 @@
             float: none !important;
             width: 100% !important;
             grid-template-columns: 3fr 1fr auto;
+            align-items: center;
         }
            
         .collapsible-masthead-content .content-inner {
@@ -2734,7 +2736,6 @@
         font-size: 18px;
         border-radius: 7px;
         height: 40px;
-        margin: 0 0  1rem;
         width: fit-content;
         align-self: center;
     }
