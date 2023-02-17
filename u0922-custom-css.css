@@ -900,7 +900,6 @@
     
     .dropdown:hover .dropdown-content,
     .dropdown:focus .dropdown-content{
-        margin-left: -13%;
         background-color: white;
         z-index: 10;
         align-items: stretch;
