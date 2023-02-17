@@ -3341,7 +3341,7 @@
         margin-bottom: 25px;
     }
     
-    /* For extremely small screen devices (595px and below) */
+    /* For extremely small screen devices (480px and below) */
     @media only screen and (max-width: 480px) { 
         div.cenefa-texto p {
             font-size: 1.4em;
@@ -3350,7 +3350,7 @@
 
         article.node { padding: 10px; }
 
-        
+        div.cenefa-subtitle-masopciones h2 { font-size: 35px; }
     }
 
     /* Small screen devices (481px and above) */
