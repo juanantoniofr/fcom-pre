@@ -1276,7 +1276,7 @@
             grid-template-rows: 1fr;
         }
 
-        #block-u0922-menu-principal .dropbtn { font-size: 2vw; }
+        #block-u0922-menu-principal .dropbtn { font-size: 1.8vw; }
 
     }
  
@@ -1349,10 +1349,13 @@
              
         .container-level1 .row { grid-template-columns: repeat(2,minmax(250px, 315px)); }
 
+               
     }
 
     /* Extra big screen devices (1200px and above) */
-    @media only screen and (min-width: 1200px) {}
+    @media only screen and (min-width: 1200px) {
+        #block-u0922-menu-principal .dropbtn { font-size: 1.5vw; }
+    }
     
     /* Extra big screen devices (1440px and above) */
     @media only screen and (min-width: 1440px) {
@@ -1360,6 +1363,8 @@
         #block-u0922-menu-principal {
             grid-column: unset;
         }
+    #block-u0922-menu-principal .dropbtn { font-size: 1.2vw; }
+        
     }
 
 
