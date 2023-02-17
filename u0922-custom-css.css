@@ -721,6 +721,7 @@
             width: 100%;
             margin: 0 auto;
             grid-template-columns: minmax(150px, 200px) auto 160px;
+            max-width: 1800px;
         }
         
         
@@ -3071,6 +3072,15 @@
         text-decoration: underline;
     }
 
+    .l-r.region.pr-footer__footer {
+        max-width: 20000px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+    }
+
     /* For extremely small screen devices (595px and below) */
     @media only screen and (max-width: 480px) {}
 
@@ -3091,11 +3101,7 @@
             margin-right: auto;
             margin-bottom: 2px;
         }
-        #block-datosdecontacto-3, #block-avisolegal {
-            float: left;
-            width: 50%;
-            padding: 0px 20px;
-        }
+        
     }
 
     /* Extra big screen devices (1200px and above) */
@@ -3660,10 +3666,8 @@
 
 .l-r.region.pr-features__features-second {
     display: grid;
-    grid-template-columns: 2fr 1fr;
     grid-gap: 55px;
-    row-gap: 55px;
-    grid-template-columns: 1fr 8fr 2fr 1fr;
+    grid-template-columns: auto minmax(320px, 1400px) minmax(320px, 400px) auto;
     grid-row-gap: 0px;
     background-color: #dadada;
     margin-left: auto;
