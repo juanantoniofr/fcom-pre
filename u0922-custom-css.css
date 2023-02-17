@@ -1276,6 +1276,8 @@
             grid-template-rows: 1fr;
         }
 
+        #block-u0922-menu-principal .dropbtn { font-size: 2vw; }
+
     }
  
     /* Big screen devices (889px and above) */
