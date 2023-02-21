@@ -21,11 +21,6 @@
         text-align: left;
     }
 
-    #block-views-block-u0922-tedestacamos-agendaynovedades-block-9 .pager {
-        margin: 35px 0px 0px 0px;
-    }
-    
-    
     a.pager__link, a.pager__link:hover, a.pager__link:active, a.pager__link:focus  {
         padding: 20px;
         font-size: 22px;
@@ -38,6 +33,22 @@
         border-radius: 7px;
     }
 
+    /* For extremely small screen devices (480px and below) */
+    @media only screen and (max-width: 480px) {
+        #block-views-block-u0922-tedestacamos-agendaynovedades-block-9 .pager {
+            display: flex;
+            justify-content: center;
+        }
+        .pager__items.js-pager__items ul {
+            display: inline;
+            margin: 0px 20px;
+        }
+    }
+    
+    /* Small screen devices (481px and above) */
+    @media only screen and (min-width: 481px) {
+        #block-views-block-u0922-tedestacamos-agendaynovedades-block-9 .pager { margin: 35px 0px 0px 0px; }
+    }
     .ui-widget-content a{ color: #A90533; }
 
     table {
@@ -2007,6 +2018,7 @@
         #block-views-block-noticias-de-actualidad-block-2 .view-content,
         #block-views-block-noticias-de-actualidad-block-4-2 .view-content { grid-template-columns: 1fr; }
         #block-views-block-paginas-gabinete-block-1 { margin-bottom: 0px; }
+        #block-views-block-noticias-de-actualidad-block-4-2 { display: none; }
     }
 
     /* Small screen devices (481px and above) */
@@ -2270,7 +2282,6 @@
     .evento {
         display: grid;
         grid-template-columns: 1fr 4fr;
-        grid-column-gap: 20px;
     }
 
     .evento-fechas, .evento-fecha {
@@ -2335,6 +2346,7 @@
         display: flex;
         align-self: flex-end;
     }
+    
     .fecha-incio-intervalo .mes, .fecha-fin-intervalo .mes { margin-right: 2px; }
     div.separa-fechas {
         display: flex;
@@ -2361,25 +2373,27 @@
 
     .fecha-incio-intervalo .mes, .fecha-fin-intervalo .mes { text-transform: uppercase; }
     
-    .agenda-de-la-semana {
-        padding: 20px 0px 20px 0px;
-        border-bottom: 1px solid #ddd;
-    }
+    .agenda-de-la-semana { border-bottom: 1px solid #ddd; }
 
     .evento-titulo {
         display: flex;
         align-items: center;
     }
 
+    /* For extremely small screen devices (480px and below) */
+    @media only screen and (max-width: 480px) {
+        .evento { grid-column-gap: 10px; }
+        .agenda-de-la-semana { padding: 20px 5px 20px 5px; }
+    }
+    
+    /* Small screen devices (600px and above) */
+    @media only screen and (min-width: 481px) {  
+        .evento { grid-column-gap: 20px; }
+        .agenda-de-la-semana { padding: 20px 5px 20px 5px; }
+    }
     /** Novedades **/
 
-    #block-views-block-u0922-tedestacamos-block-novedades .row-novedades {
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr;
-        grid-row-gap: 5px;
-        text-align: center;
-    }
+
 
     #block-views-block-u0922-tedestacamos-block-novedades .row-novedades .views-row {
         display: grid;
@@ -2389,8 +2403,8 @@
     }
 
     .row-novedades.views-row .views-field-title {
-        font-size: 1.1em;
         text-align: left;
+        font-size: 1.1em;        
     }
 
     .row-novedades.views-row .fecha_novedad {
@@ -2414,6 +2428,23 @@
         font-size: 1.1em;
         margin-right: 10px;
         color: #969696;
+    }
+
+    /* For extremely small screen devices (480px and below) */
+    @media only screen and (max-width: 480px) {
+        #block-views-block-u0922-tedestacamos-block-novedades .row-novedades { padding: 0px 5px; }
+        .row-novedades.views-row .views-field-title { text-align: center; }
+    }
+        
+    /* Small screen devices (600px and above) */
+    @media only screen and (min-width: 481px) {  
+        #block-views-block-u0922-tedestacamos-block-novedades .row-novedades {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
+            grid-row-gap: 5px;
+            text-align: center;
+        }
     }
 /* fin context-prefix */
 
@@ -2448,8 +2479,6 @@
         width: 100% !important;
         height: 550px !important;
     }
-
-    
 
     /* vista Titulos */
 
@@ -2681,9 +2710,6 @@
     }
 
     /* Noticias Fcom */
-    
-    
-
     #main-content .class-doscolumnas-noticiasfcom .views-field.views-field-field-imagen img { padding-left: 0px; }
     
     .class-doscolumnas-noticiasfcom .views-field.views-field-created {
