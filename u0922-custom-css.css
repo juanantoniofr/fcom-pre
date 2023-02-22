@@ -138,6 +138,7 @@
 
     /** Cards **/
     .card {
+        height: 35em;
         --mdb-card-spacer-y: 1.5rem;
         --mdb-card-spacer-x: 1.5rem;
         --mdb-card-title-spacer-y: 0.5rem;
@@ -163,7 +164,6 @@
         border: var(--mdb-card-border-width) solid var(--mdb-card-border-color);
         border-radius: var(--mdb-card-border-radius);
         box-shadow: var(--mdb-card-box-shadow);
-        height: 35em;
     }
     .card-header {
         --mdb-card-header-border-width: 2px;
@@ -195,6 +195,10 @@
         background: linear-gradient(rgba(255, 255, 255, 0), white);
     }
 
+    /* For extremely small screen devices (480px and below) */
+    @media only screen and (max-width: 480px) { 
+        .card { height: 32em; }
+    }
     /** .accordeon (generado en las vistas **/
 
     .accordeon div, .accordeon div:focus-visible { border: none; }
@@ -204,7 +208,6 @@
     }
     .ui-state-focus { border: none; }
     .ui-accordion-header a  {font-size: x-large; color: #a90533 !important;} 
-            
     .ui-accordion-header-active.ui-state-active,
     .ui-accordion-header-active.ui-state-focus,
     .ui-accordion-header-active.ui-state-hover,
@@ -214,28 +217,21 @@
         color: white !important; 
         padding: 20px;
     }
-
     .ui-state-default { background: transparent;}
-
     .secretaria .ui-state-default,
     .calidad .ui-state-default,
     .miTFG .ui-state-default,
     .practicas .ui-state-default,
     .movilidad .ui-state-default { background: rgba(0,0,0,.03); }
-    
     .secretaria .ui-accordion .ui-accordion-header:hover,
     .calidad .ui-accordion .ui-accordion-header:hover,
     .miTFG .ui-accordion .ui-accordion-header:hover,
     .practicas .ui-accordion .ui-accordion-header:hover,
     .movilidad .ui-accordion .ui-accordion-header:hover { color: #a90533; }
-
-    
-    .calidad .ui-accordion .ui-accordion-content
-    {
+    .calidad .ui-accordion .ui-accordion-content{
         background-color: #ccc;
         padding: 40px;
     }
-
     .accordeon .views-accordion-header a::before {
         font-family: fontAwesome;
         content: "\f054";
@@ -418,15 +414,12 @@
         width: 100%;
         background: #a90533;
     }
-
     #masthead a {
         color:white;
         padding: 10px;
         font-size: 12px;
     }
-
     .collapsible-masthead-content { width: 100%; }
-
     input#collapsible[type="checkbox"],
     input#collapsible-masthead[type="checkbox"],
     input#collapsible-ConoceFcom[type="checkbox"],
@@ -435,32 +428,35 @@
     input#collapsible-Movilidad[type="checkbox"],
     input#collapsible-Secretaria[type="checkbox"],
     input#collapsible-NoticiasFcom[type="checkbox"] { display: none; } 
-
     #block-u0922-menu-header { 
         margin: 0px;
         width: 100%;
         margin: 5px 0px;
     }
-    
     #block-u0922-menu-header p { margin: 0px;  }
-
     #block-u0922-headerleft,
     #block-u0922-headerright {
             margin-top: auto;
             margin-bottom: 0px;
             align-content: center;
     }
-
     #block-u0922-menu-header .clearfix { margin-bottom: 0px; }
-
     #block-u0922-headerright ul.fcom-menu a { display: block; }
 
-    
     /* For extremely small screen devices (480px and below) */
-    @media only screen and (max-width: 480px) {}
+    @media only screen and (max-width: 480px) {
+        #block-u0922-menu-header { max-width: 50px; } 
+        .pr-header__header-first {
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+        }       
+    }
 
-    /* Small screen devices (600px and above) */
-    @media only screen and (min-width: 481px) {}
+    /* Small screen devices (481px and above) */
+    @media only screen and (min-width: 481px) {
+        #block-u0922-menu-header { max-width: unset; }
+    }
   
     /* Medium screen devices (768px and above) */
     @media only screen and (min-width: 768px) {
@@ -801,6 +797,14 @@
         font-stretch: condensed;
     }
     
+    /* For extremely small screen devices (480px and below) */
+    @media only screen and (max-width: 480px) {
+        #block-u0922-menu-principal p,
+        .collapsible-content .content-inner { margin: 0px; }
+    }
+    
+
+
     @media  (max-width: 767px) {
         
         #block-logouses,
@@ -1080,7 +1084,6 @@
         .lbl-toggle-Movilidad:hover,
         .lbl-toggle-Secretaria:hover,
         .lbl-toggle-NoticiasFcom:hover { color: #FFF; }
-
         .lbl-toggle::before,
         .lbl-toggle-ConoceFcom::before,
         .lbl-toggle-Titulos::before,
@@ -1097,7 +1100,6 @@
             margin-right: .7rem; transform: translateY(-2px);
             transition: transform .2s ease-out; 
         }
-
         .toggle:checked+.lbl-toggle::before,
         .toggle:checked+.lbl-toggle-ConoceFcom::before,
         .toggle:checked+.lbl-toggle-Titulos::before,
@@ -1105,7 +1107,6 @@
         .toggle:checked+.lbl-toggle-Movilidad::before,
         .toggle:checked+.lbl-toggle-Secretaria::before,
         .toggle:checked+.lbl-toggle-NoticiasFcom::before { transform: rotate(90deg) translateX(-3px); }
-
         .collapsible-content,
         .collapsible-ConoceFcom-content,
         .collapsible-Titulos-content,
@@ -1117,7 +1118,6 @@
             overflow: hidden;
             transition: max-height .25s ease-in-out;
         }
-
         .collapsible-ConoceFcom-content { z-index: 8; }
         .collapsible-Titulos-content { z-index: 7; }
         .collapsible-Practicas-content { z-index: 6; }
@@ -1944,20 +1944,16 @@
         /*padding: 50px 0px;*/
         padding: 0px;
     }
-
     .pr-features .regions {
         background: transparent;
         width: 75%;
         margin-left: auto;
         margin-right: auto;
     }
-
     #block-teinformamos { margin: 0px 0px; }
-
     #block-views-block-noticias-de-actualidad-block-2 .view-display-id-block_4 .view-content{
         margin: 0px 0px;
     }
-
     #block-teinformamos  h2 {
         text-align: center;
         font-size: 36px;
@@ -1965,30 +1961,22 @@
         margin: 25px 0px;
         color: rgb(63, 63, 63);
     }
-
-    #block-teinformamos .block__content {
-        border-bottom: 1px solid #d9d9d9;
-        margin: 65px 0px;
-    }
-
+    #block-teinformamos .block__content { border-bottom: 1px solid #d9d9d9; }
     .l-r.region.pr-features__features-first{
+        width: 75%;
         display: grid;
         grid-gap: 55px;
         grid-template-rows: max-content 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-        width: 75%;
         grid-row-gap: 0px;
-        padding-bottom: 100px;
         max-width: 1800px;
         margin-left: auto;
         margin-right: auto;
     }
-    
     #features img{ 
         border-bottom: 10px solid #a90533; 
         width: 100%;
     }
-
     #block-views-block-noticias-de-actualidad-block-2 .view-content,
     #block-views-block-noticias-de-actualidad-block-4-2 .view-content {
         display: grid;
@@ -1997,20 +1985,14 @@
         grid-template-columns: repeat(2, minmax(250px, 1fr));
         grid-gap: 25px;
     }
-
     .view-noticias-de-actualidad.view-id-noticias_de_actualidad .views-row:nth-child(3), .view-noticias-de-actualidad.view-id-noticias_de_actualidad .views-row:nth-child(4) {
         display: none;
     }
-
     #block-views-block-noticias-de-actualidad-block-2 h1 {
         font-size: 26px;
         line-height: 1.2em;
     }
-
-    .row-imprescindibles.views-row h2 { 
-        color: #a90533;
-        
-    }
+    .row-imprescindibles.views-row h2 { color: #a90533; }
 
     /* For extremely small screen devices (480px and below) */
     @media only screen and (max-width: 480px) {
@@ -2025,9 +2007,16 @@
         #block-views-block-paginas-gabinete-block-1 { margin-bottom: 0px; }
         #block-views-block-noticias-de-actualidad-block-4-2 { display: none; }
         .row-imprescindibles.views-row h2 { 
-            width: 70%;
+            width: 100%;
             margin-bottom: 20px;
             text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .l-r.region.pr-features__features-first{ padding-bottom: 50px; }
+        #block-teinformamos .block__content{
+            margin: 55px 0px auto;
+            width: 90%;
             margin-left: auto;
             margin-right: auto;
         }
@@ -2043,16 +2032,19 @@
             grid-template-columns: 1fr 1fr 1fr;
             width: 75%;
         }
-        
         #block-teinformamos { grid-column: 1 / 4; }
         #block-views-block-noticias-de-actualidad-block-2,
         #block-views-block-noticias-de-actualidad-block-4-2  { grid-column: 1 / 3; }
-
         #block-views-block-padre-block-1-2 { grid-column: 2 / 3; }
         .row-imprescindibles.views-row h2 { 
             width: 80%;
             margin-bottom: 40px;
             border-bottom: 1px solid #a90533;
+        }
+        .l-r.region.pr-features__features-first{ padding-bottom: 100px; }
+        #block-teinformamos .block__content { 
+            margin: 65px 0px;
+            width: 100%;
         }
     }
 
@@ -2142,10 +2134,7 @@
         font-weight: 600;
         border-bottom: 4px solid #a90533;
     }
-
     div.agenda-de-la-semana span.views-field { color: #a90533;}
-
-
     #content-prefix .view-noticias-de-actualidad .pager__item a:active { background-color: #999; }
 
     /* novedades */
@@ -2157,7 +2146,7 @@
     }
 
 
-    /* Utilidades y Servicios */
+    /* Utilidades y Servicios - para la comunidad -*/
 
     #app-FCom .views-enlace a, 
     #servicios-FCom .views-enlace a { 
@@ -2165,7 +2154,6 @@
         display: flex;
         gap: 10px;
     }
-
     #app-FCom .views-field-title, #servicios-FCom .views-field-title {
         border: 1px solid rgb(63, 63, 63);
         border-radius: 10px;
@@ -2173,9 +2161,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100%;
     }
-    
     #app-FCom svg, #servicios-FCom svg {
         height: 75px;
         width: 75px;
@@ -2184,27 +2170,54 @@
         border-radius: 40px;
         padding: 20%;
     }
-
     p.servicios-Fcom::before {
         font-family: fontAwesome;
         content: "\f292";
         display: inline;
     }
-
     p.utilidades::before {
         font-family: fontAwesome;
         content: "\f0c1";
         display: inline;
-      }
+    }
+    #block-tedestacamos .block__content { border-bottom: 1px solid rgb(63, 63, 63); }
+    .pr-features .arc--2 .l-r:last-child,
+    .pr-features .arc--3 .l-r:last-child,
+    .l-r .region .pr-features__.features-second { 
+        float: none; 
+        margin-right: 0px;
+        padding-bottom:100px;
+    }
 
     /* For extremely small screen devices (480px and below) */
     @media only screen and (max-width: 480px) {
         
         #app-FCom .views-enlace,
         #servicios-FCom .views-enlace { margin: 20px 0px; }
-
         #block-views-block-u0922-tedestacamos-agendaynovedades-block-9 h2,
-        #block-views-block-u0922-tedestacamos-block-novedades h2{ text-align: center; }
+        #block-views-block-u0922-tedestacamos-block-novedades h2{ 
+            font-size: 36px;
+            font-weight: unset;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center; 
+        }
+        #app-FCom .views-field-title, #servicios-FCom .views-field-title {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #block-tedestacamos .block__content {
+            margin-bottom: 25px;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .pr-features .arc--2 .l-r:last-child,
+        .pr-features .arc--3 .l-r:last-child,
+        .l-r .region .pr-features__.features-second { padding-top: 25px; }
+
     }
 
     /* Small screen devices (481px and above) */
@@ -2215,10 +2228,8 @@
             grid-template-columns: 1fr; 
             gap: 25px;
         }
-        
         #app-FCom .views-enlace,
         #servicios-FCom .views-enlace { margin: 35px 0px; }
-
         #app-FCom, #servicios-FCom {
             display: grid;
             grid-template-columns: repeat(1,1fr);
@@ -2226,16 +2237,18 @@
         }
         #app-FCom { grid-template-rows: repeat(3, minmax(130px, 1fr));}
         #servicios-FCom { grid-template-rows: repeat(4, minmax(130px, 1fr));}
-        
         #app-FCom .views-enlace, #servicios-FCom .views-enlace {
             display: flex;
             align-items: center;
             justify-content: left;
         }
-        #app-FCom .views-field-title, #servicios-FCom .views-field-title { height: 100%; }
+        #app-FCom .views-field-title, #servicios-FCom .views-field-title {
+            height: 100%;
+            width: 100%; 
+        }
         #app-FCom .views-enlace a, #servicios-FCom .views-enlace a { height: 100%; }
-
-        
+        #block-tedestacamos .block__content { margin-bottom: 5opx; }
+        .l-r .region .pr-features__.features-second { padding-top: 50px; }
     }
 
     /* Medium screen devices (600px and above) */
@@ -2302,6 +2315,8 @@
         color: #ddd;
         border-radius: 10px;
         box-shadow: 2px 2px 10px rgba(169, 5, 51, 0.4);
+        max-width: 100px;
+        max-height: 100px;
     }
     
     .agenda-de-la-semana .evento-fecha .mes {
@@ -2392,20 +2407,27 @@
         display: flex;
         align-items: center;
     }
+    .evento { grid-column-gap: 20px; }
 
     /* For extremely small screen devices (480px and below) */
     @media only screen and (max-width: 480px) {
-        .evento { grid-column-gap: 10px; }
-        .agenda-de-la-semana { padding: 20px 5px 20px 5px; }
+        .evento { align-items: center; }
+        .agenda-de-la-semana { 
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px 5px 20px 5px; 
+        }
     }
     
-    /* Small screen devices (600px and above) */
+    /* Small screen devices (481px and above) */
     @media only screen and (min-width: 481px) {  
-        .evento { grid-column-gap: 20px; }
-        .agenda-de-la-semana { padding: 20px 5px 20px 5px; }
+        .agenda-de-la-semana { 
+            padding: 20px 5px 20px 5px;
+            width: 100%;
+        }
     }
     /** Novedades **/
-
 
 
     #block-views-block-u0922-tedestacamos-block-novedades .row-novedades .views-row {
@@ -2414,16 +2436,13 @@
         border-bottom: 1px solid #ddd;
         padding: 20px 0px;
     }
-
     .row-novedades.views-row .views-field-title {
         text-align: left;
         font-size: 1.1em;        
     }
-
     .row-novedades.views-row .fecha_novedad {
         font-size: 0.8em;
     }
-
     #block-views-block-u0922-tedestacamos-block-novedades .row-novedades.views-row .views-field-nothing {
         padding: 5px;
         width: 45%;
@@ -2434,7 +2453,6 @@
         margin-right: auto;
         margin-left: auto;
     }
-
     .view-u0922__tedestacamos-agendaynovedades .views-field.views-field-title:before {
         font-family: fontAwesome;
         content: "\f058";
@@ -2447,6 +2465,11 @@
     @media only screen and (max-width: 480px) {
         #block-views-block-u0922-tedestacamos-block-novedades .row-novedades { padding: 0px 5px; }
         .row-novedades.views-row .views-field-title { text-align: center; }
+        #block-views-block-u0922-tedestacamos-block-novedades .row-novedades .views-row {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
         
     /* Small screen devices (600px and above) */
@@ -2458,6 +2481,7 @@
             grid-row-gap: 5px;
             text-align: center;
         }
+        #block-views-block-u0922-tedestacamos-block-novedades .row-novedades .views-row { width: 100%; }
     }
 /* fin context-prefix */
 
@@ -2920,7 +2944,7 @@
         padding: 10px;
         box-sizing: border-box;
         }
-        .card-image-directorio img {
+    .card-image-directorio img {
         width: 100%;
     }
 
@@ -3025,20 +3049,9 @@
         width: fit-content;
     }
     
-    #u0922_comunidad h3{
-        /*text-align: center;
-        padding: 20px;
-        font-size: 26px;
-        color: white;
-        border-radius: 14px;
-        background: #a90533;*/
-        color: #a90533;
-        border-bottom: 1px solid #a90533;
-        margin-bottom: 40px;
-    }
+    #u0922_comunidad h3{ color: #a90533; }
 
     #u0922_comunidad a {
-        /*display: inline-table;*/
         display: flex;
         align-items: center;
         width: 100%;
@@ -3106,14 +3119,26 @@
     
     /* For extremely small screen devices (480px and below) */
     @media only screen and (max-width: 480px) {
-        #content-suffix {
-            width: 95%;
-        }
+        
+        #content-suffix { width: 95%; }
         .container-mas-en .opcion_menu img {
             margin: 0px;
             max-height: 220px;
             width: auto;
         }
+
+        #u0922_comunidad h3{
+            margin: 20px 0px;
+            text-align: center;
+        }
+
+        #u0922_comunidad a,
+        #u0922_comunidad div.dropdown {
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        }
+
     }
 
     /* Small screen devices (600px and above) */
@@ -3133,6 +3158,11 @@
             margin: 0px 0px 40px 0px;
         }
         .display-4 { font-size: 4.5vw; }
+
+        #u0922_comunidad h3{
+            border-bottom: 1px solid #a90533;
+            margin-bottom: 40px;
+        }
 
     }
  
@@ -3202,12 +3232,10 @@
     #footer a {color: #f4f4f4;}
     #footer a {text-decoration: underline;}
     #block-datosdecontacto-3, #block-avisolegal { width: 100%;}
-    
     .pr-footer a {
         color: white;
         text-decoration: underline;
     }
-
     .l-r.region.pr-footer__footer {
         max-width: 20000px;
         margin-left: auto;
@@ -3215,7 +3243,6 @@
         display: grid;
         grid-gap: 40px;
     }
-
     .l-r.region.pr-features__features-second {
         display: grid;
         grid-gap: 55px;
@@ -3225,16 +3252,14 @@
         margin-left: auto;
         margin-right: auto;
     }
-
     .row-imprescindibles { display: grid; }
-
-    
 
     /* For extremely small screen devices (595px and below) */
     @media only screen and (max-width: 480px) {
         .l-r.region.pr-footer__footer { grid-template-columns: 1fr; }
         .l-r.region.pr-features__features-second { grid-template-columns: 1fr; }
         .row-imprescindibles { grid-template-columns: 1fr; }
+        #block-datosdecontacto-3, #block-avisolegal { margin: 0px; }
 
     }
 
@@ -3606,19 +3631,15 @@
     padding: 20px 35px;
     margin: 0;
 }
-
 .site-map li {
     margin-bottom: 10px;
     padding-left: 20px;
     position: relative;
 }
-
-
 .site-map li ul {
     margin-top: 10px;
     padding-left: 40px;
 }
-
 .site-map li::before {
     background-color: #a90533;
     content: "";
@@ -3630,32 +3651,29 @@
     height: 5px;
     border-radius: 50%;
 }
-
 .site-map {
     position: relative;
     width: 100%;
-  }
-  .site-map input[type="checkbox"] {
+}
+.site-map input[type="checkbox"] {
     display: none;
-  }
-  .site-map input[type="checkbox"] + label {
+}
+.site-map input[type="checkbox"] + label {
     cursor: pointer;
     display: block;
     padding: 10px;
     position: relative;
     color: #a90533;
-  }
-  .site-map .accordion-content {
+}
+.site-map .accordion-content {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-  }
-  .site-map input[type="checkbox"] + label + .accordion-content {
-    max-height: 0;
-  }
-  .site-map input[type="checkbox"]:checked + label + .accordion-content { max-height: fit-content; }
+}
+.site-map input[type="checkbox"] + label + .accordion-content { max-height: 0; }
+.site-map input[type="checkbox"]:checked + label + .accordion-content { max-height: fit-content; }
 
-  .accordion-header::before {
+.accordion-header::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -3666,14 +3684,11 @@
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
     border-left: 5px solid #a90533;
-  }
-  
-  .site-map input[type="checkbox"]:checked + label::before { transform: translateY(-50%) rotate(90deg); }
-  
-  .site-map .link-text { color: #555; }
-  
-  .site-map div.links { margin-top: 30px;  }
-  .site-map  .h4-links { font-weight: initial; }
+}
+.site-map input[type="checkbox"]:checked + label::before { transform: translateY(-50%) rotate(90deg); }
+.site-map .link-text { color: #555; }
+.site-map div.links { margin-top: 30px;  }
+.site-map  .h4-links { font-weight: initial; }
 
   /** Actas **/
 
@@ -3682,29 +3697,24 @@
     grid-template-columns: 2fr 6fr;
     grid-column-gap: 40px;
 }
-
 #header-actas-list,
 .row-actas .item-list ul li.fichero-acta{
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-column-gap: 20px;
 }
-
 .row-actas .item-list ul li.fichero-acta{ 
     padding: 50px 0px 0px 0px;
     border-bottom: 1px solid #bbb;
     line-height: 40px;
 }
-
 .menu-actas ul { padding: 0px; }
-
 .menu-actas ul span {
     font-size: x-large;
     display: block;
     text-align: center;
     margin: 25px 0px;
 }
-
 .menu-actas ul li {
     display: inline-block;
     padding: 10px 20px;
@@ -3717,15 +3727,11 @@
     margin: 5px;
     width: 100%;
 }
-
 .view-vista-conoce-fcom.view-display-id-block_6 {
     border: 2px solid #A90533;
     border-radius: 5px;
     padding: 30px 50px;
 }
-
-
-
 #header-actas-list div {
     border: 1px solid #aaa;
     padding: 10px;
@@ -3733,17 +3739,11 @@
     color: #a90533;
     border-radius: 5px;
 }
-
 .row-actas .item-list ul { padding: 0px; }
-
 .download-acta { text-align: center; } 
-
 .active-link-actas { background: #a90533; }
 .active-link-actas a {color: white;  }
-
 .download-acta a { font-size: 38px; }
-
-
 #header-actas-title {
     padding: .5em .5em .5em .7em;
       padding-bottom: 0.5em;
@@ -3754,29 +3754,24 @@
     background: #a90533;
     border-radius: 5px;
 }
-
 #header-actas-title p { display: inline; }
-
 #header-actas-title::before {
     font-family: fontAwesome;
     content: "\f054";
     margin-right: 10px;
     font-size: large;
 }
-
 .warning-actas p{
     margin: 45px 0px;
     text-align: center;
     font-weight: 600;
     font-size: x-large;
 }
-
 #actas_ce {
     position: absolute;
     top: 20%;
     left: 50%;
 }
-
 #actas_cd {
     position: absolute;
     top: 20%;
@@ -3789,32 +3784,17 @@
     display: grid;
     grid-template-columns: 1fr;
 }
-
 .pr-features .arc--2 .l-r {
      width: 100%; 
      float: none;
      margin-right: 0px;
 }
-
-.pr-features .arc--2 .l-r:last-child,
-.pr-features .arc--3 .l-r:last-child,
-.l-r .region .pr-features__.features-second { 
-    float: none; 
-    margin-right: 0px;
-    padding-bottom:100px;
-    padding-top: 50px;
-}
-
-
-
 .pr-features .regions {
     background: transparent;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
-
-
 #block-tedestacamos h2 {
     margin: 0px;
     text-align: center;
@@ -3823,16 +3803,9 @@
     margin: 25px 0px;
     color: rgb(63, 63, 63);
 }
-
 #block-views-block-u0922-comunidad-block-1 {
     margin: 0px;
 }
-
-#block-tedestacamos .block__content {
-    border-bottom: 1px solid rgb(63, 63, 63);
-    margin-bottom: 50px;
-}
-
 p.utilidades,
 p.servicios-Fcom {
     margin: 0px;
@@ -3841,7 +3814,6 @@ p.servicios-Fcom {
     margin-right: auto;
     text-align: center;
 }
-
 .view-empty{
     display: none;
 }
