@@ -1995,7 +1995,7 @@
         margin: 25px 0px;
         color: rgb(63, 63, 63);
     }
-    #block-teinformamos .block__content { border-bottom: 1px solid #d9d9d9; }
+    #block-teinformamos .block__content { border-bottom: 1px solid #b3b3b3; }
     .l-r.region.pr-features__features-first{
         display: grid;
         grid-gap: 55px;
@@ -2062,7 +2062,7 @@
             padding-bottom: 50px;
         }
         .row-imprescindibles.views-row h2 { 
-            width: 90%;
+            width: fit-content;
             margin-left: auto;
             margin-right: auto;
             text-align: center;
@@ -2073,7 +2073,9 @@
         
         #block-teinformamos .block__content { 
             margin: 65px 0px;
-            width: 100%;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
         }
         .view-noticias-de-actualidad.view-id-noticias_de_actualidad .views-row:nth-child(3),
         .view-noticias-de-actualidad.view-id-noticias_de_actualidad .views-row:nth-child(4) {
@@ -2090,7 +2092,6 @@
         #block-views-block-noticias-de-actualidad-block-2 .view-content,
         #block-views-block-noticias-de-actualidad-block-4-2 .view-content { grid-template-columns: repeat(2, minmax(200px, 1fr)); }
         .row-imprescindibles.views-row h2 { 
-            width: 80%;
             margin-bottom: 40px;
         }
     }
@@ -2109,7 +2110,7 @@
         .row-imprescindibles.views-row h2 { 
             text-decoration: none;
             border-bottom: 1px solid #a90533; 
-            width: 90%;
+            
         }
         
     }
@@ -2236,7 +2237,7 @@
         gap: 10px;
     }
     #app-FCom .views-field-title, #servicios-FCom .views-field-title {
-        border: 1px solid rgb(63, 63, 63);
+        border: 1px solid #b3b3b3;
         border-radius: 10px;
         padding: 10px;
         display: flex;
@@ -2261,7 +2262,7 @@
         content: "\f0c1";
         display: inline;
     }
-    #block-tedestacamos .block__content { border-bottom: 1px solid rgb(63, 63, 63); }
+    #block-tedestacamos .block__content { border-bottom: 1px solid #b3b3b3; }
     .pr-features .arc--2 .l-r:last-child,
     .pr-features .arc--3 .l-r:last-child,
     .l-r .region .pr-features__.features-second { 
@@ -2407,6 +2408,11 @@
 
     /* Extra big screen devices (1200px and above) */
     @media only screen and (min-width: 1200px) { 
+        #block-tedestacamos .block__content{
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
     }
 
@@ -3335,7 +3341,7 @@
         }
         #u0922_comunidad_icons {
             margin-top: 20px;
-            border: 1px solid rgb(63, 63, 63);
+            border: 1px solid #b3b3b3;
             border-radius: 10px;
             padding: 20px;
         }
@@ -3346,7 +3352,7 @@
         .display-4 { font-size: 4.5vw; }
 
         #u0922_comunidad h3{
-            width: 90%;
+            width: fit-content;
             margin-left: auto;
             margin-right: auto;
             border: none;
