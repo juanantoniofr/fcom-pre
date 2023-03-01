@@ -2413,7 +2413,17 @@
             margin-left: auto;
             margin-right: auto;
         }
-
+        #app-FCom, #servicios-FCom{ grid-row-gap: 10px;}
+        #app-FCom .views-field-title, #servicios-FCom .views-field-title { 
+            padding: 15px; 
+            min-height: 165px;
+        }
+        #block-tedestacamos .block__content { margin-top: 70px; }
+        #app-FCom .views-enlace, #servicios-FCom .views-enlace { 
+            align-self:  flex-start;
+        }
+        
+            
     }
 
     /* Agenda */
@@ -3402,7 +3412,12 @@
 
     /* Extra big screen devices (1200px and above) */
     @media only screen and (min-width: 1200px) {
-        #u0922_comunidad_icons{ grid-template-columns: 1fr 1fr; }
+        #u0922_comunidad_icons {
+            grid-template-columns: 1fr 1fr; 
+            padding: 20px; 
+            margin-top: 0px;
+            min-height: 515px;
+        }
     }
 
     /* Super Extra big screen devices (1450px and above) */
@@ -3485,6 +3500,7 @@
     /* Medium screen devices (600px and above) */
     @media only screen and (min-width: 600px) {
         .l-r.region.pr-footer__footer { grid-template-columns: 0px 1fr 1fr 0px; }
+        #block-views-block-u0922-comunidad-block-1 { padding-bottom: 40px; }
     }
     
     /* Medium screen devices (768px and above) */
@@ -3495,7 +3511,10 @@
             grid-template-columns: 20px 1fr 1fr 20px; 
             grid-gap: 0px;
         }
+        #block-views-block-u0922-comunidad-block-1 { grid-column: 2 / 4; }
+        .row-imprescindibles { grid-template-columns: 1fr 1fr; }
     }
+
 
     /* Big screen devices (889px and above) */
     @media only screen and (min-width: 889px) {
@@ -3517,7 +3536,7 @@
     @media only screen and (min-width: 1200px) {
         .l-r.region.pr-features__features-second { 
             grid-template-columns: auto minmax(280px, 400px) minmax(280px, 400px) minmax(450px, 600px) auto;
-            grid-row-gap: 40px;
+            padding-bottom: 50px;
         }
         #block-tedestacamos{ grid-column: 2 / 5; }
         #block-views-block-u0922-comunidad-block-1 { grid-column: 4;}
@@ -4048,18 +4067,4 @@ p.servicios-Fcom {
 }
 .view-empty{
     display: none;
-}
-
-/* Medium screen devices (600px and above) */
-@media only screen and (min-width: 600px) { 
-
-    #block-views-block-u0922-comunidad-block-1 {
-        padding-bottom: 40px;
-    }
-}
-
-/* Medium screen devices (768px and above) */
-@media only screen and (min-width: 768px) {
-    #block-views-block-u0922-comunidad-block-1 { grid-column: 2 / 4; }
-    .row-imprescindibles { grid-template-columns: 1fr 1fr; }
 }
