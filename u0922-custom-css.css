@@ -3515,7 +3515,12 @@
 
     /* Extra big screen devices (1200px and above) */
     @media only screen and (min-width: 1200px) {
-        .l-r.region.pr-features__features-second { grid-row-gap: 40px;}
+        .l-r.region.pr-features__features-second { 
+            grid-template-columns: auto minmax(280px, 400px) minmax(280px, 400px) minmax(450px, 600px) auto;
+            grid-row-gap: 40px;
+        }
+        #block-tedestacamos{ grid-column: 2 / 5; }
+        #block-views-block-u0922-comunidad-block-1 { grid-column: 4;}
     }
 
 /* fin footer */
