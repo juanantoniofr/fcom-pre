@@ -280,7 +280,7 @@
             max-width: 27em;
         }  
     }
-    
+
     /** .accordeon (generado en las vistas **/
 
     .accordeon div, .accordeon div:focus-visible { border: none; }
@@ -319,6 +319,44 @@
         content: "\f054";
         margin-right: 10px;
         font-size: large
+    }
+
+    /* For extremely small screen devices (480px and below) */
+    @media only screen and (max-width: 480px) { 
+        .accordeon .ui-state-default a {
+            font-size: larger;
+        }
+    }
+
+    /* Small screen devices (481px and above) */
+    @media only screen and (min-width: 481px) {
+        .accordeon .ui-state-default a {
+        font-size: larger;
+        }
+    }
+
+    /* Medium screen devices (768px and above) */
+    @media only screen and (min-width: 768px) {
+    }
+
+    /* Medium screen devices (600px and above) */
+    @media only screen and (min-width: 600px) { 
+        .accordeon .ui-state-default a {
+            color: #f9f9f9;
+            font-size: x-large;
+        }
+    }
+
+    /* Big screen devices (889px and above) */
+    @media only screen and (min-width: 889px) {
+    }
+
+    /* Big screen devices (1024px and above) */
+    @media only screen and (min-width: 1024px) {
+    }
+
+    /* Big screen devices (1200px and above) */
+    @media only screen and (min-width: 1200px) {
     }
 
     /* todas las imagenes */
