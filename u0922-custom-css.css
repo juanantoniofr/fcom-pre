@@ -3838,6 +3838,7 @@
         article.node { padding: 10px; }
 
         div.cenefa-subtitle-masopciones h2 { font-size: 35px; }
+        div.cenefa-solotexto h1 { line-height: 12vw; }
     }
 
     /* Small screen devices (481px and above) */
@@ -3860,6 +3861,7 @@
         article.node { padding: 10px; }
 
         div.cenefa-subtitle-masopciones h2 { font-size: 35px; }
+        div.cenefa-solotexto h1 { line-height: 10vw; }
 
     }
 
@@ -3871,15 +3873,16 @@
             width: 70%; }
 
         div.cenefa-subtitle-masopciones h2 { font-size: 40px; }
+        div.cenefa-solotexto h1 { line-height: 7vw; }
 
     }
 
     /* Big screen devices (889px and above) */
     @media only screen and (min-width: 889px) { 
         div.cenefa-texto p { text-align: justify; }
-        div.cenefa-solotexto h1 { font-size: 4vw;  }
 
         article.node { padding: 40px; }
+        div.cenefa-solotexto h1 { line-height: 7vw; }
     }
 
     /* Extra big screen devices (1200px and above) */
