@@ -3863,14 +3863,16 @@
         div.cenefa-subtitle-masopciones h2 { font-size: 35px; }
         div.cenefa-solotexto h1 { line-height: 10vw; }
 
+        div.cenefa-subtitle { 
+            margin-left: 50px;
+            width: 50%;
+        }
     }
 
     /* Medium screen devices (768px and above) */
     @media only screen and (min-width: 768px) { 
 
-        div.cenefa-subtitle { 
-            margin-left: 50px;
-            width: 70%; }
+
 
         div.cenefa-subtitle-masopciones h2 { font-size: 40px; }
         div.cenefa-solotexto h1 { line-height: 7vw; }
@@ -3888,7 +3890,6 @@
     /* Extra big screen devices (1200px and above) */
     @media only screen and (min-width: 1200px) { 
         div.cenefa-solotexto { flex-direction: column;}
-        div.cenefa-subtitle { width: 50%; }
     }
 
 /** Mapa del Sitio **/
