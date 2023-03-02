@@ -280,6 +280,7 @@
             max-width: 27em;
         }  
     }
+    
     /** .accordeon (generado en las vistas **/
 
     .accordeon div, .accordeon div:focus-visible { border: none; }
