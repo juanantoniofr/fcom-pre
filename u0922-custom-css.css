@@ -40,14 +40,7 @@
         margin: 0px 20px;
     }
 
-    /* For extremely small screen devices (480px and below) */
-    @media only screen and (max-width: 480px) {
-    }
-    
-    /* Small screen devices (481px and above) */
-    @media only screen and (min-width: 481px) {
-        #block-views-block-u0922-tedestacamos-agendaynovedades-block-9 .pager { margin: 35px 0px 0px 0px; }
-    }
+
     .ui-widget-content a{ color: #A90533; }
 
     table {
@@ -80,6 +73,62 @@
         padding: 5px 0px;
         margin-bottom: 20px;
         text-align: right;
+    }
+
+    /* For extremely small screen devices (480px and below) */
+    @media only screen and (max-width: 480px) {
+        a.pager__link, a.pager__link:hover, a.pager__link:active, a.pager__link:focus {
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 5px;
+        } 
+    }
+    
+    /* Small screen devices (481px and above) */
+    @media only screen and (min-width: 481px) {
+        #block-views-block-u0922-tedestacamos-agendaynovedades-block-9 .pager { margin: 35px 0px 0px 0px; }
+        a.pager__link, a.pager__link:hover, a.pager__link:active, a.pager__link:focus {
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 5px;
+        } 
+    }
+
+    /* Medium screen devices (600px and above) */
+    @media only screen and (min-width: 600px) {
+        a.pager__link, a.pager__link:hover, a.pager__link:active, a.pager__link:focus {
+            padding: 15px;
+            font-size: 18px;
+            border-radius: 9px;
+        } 
+    }
+    
+    /* Medium screen devices (768px and above) */
+    @media only screen and (min-width: 768px) {
+        a.pager__link, a.pager__link:hover, a.pager__link:active, a.pager__link:focus { 
+            padding: 20px;
+            font-size: 18px; 
+            border-radius: 14px;
+        }
+    }
+
+    /* Big screen devices (889px and above) */
+    @media only screen and (min-width: 889px) {
+        a.pager__link, a.pager__link:hover, a.pager__link:active, a.pager__link:focus { 
+            padding: 20px;
+            font-size: 22px;
+            color: white;
+            border-radius: 14px;
+            background: #a90533;
+        }
+    }
+
+    /* Big screen devices (1024px and above) */
+    @media only screen and (min-width: 1024px) {
+    }
+
+    /* Big screen devices (1200px and above) */
+    @media only screen and (min-width: 1200px) {
     }
     
     /* ckeditor-accordion-container */
