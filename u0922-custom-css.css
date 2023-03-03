@@ -591,7 +591,7 @@
             background: inherit;
             display: grid;
             grid-template-rows: 1fr;
-            width: 80%;
+            width: 95%;
             max-width: 1800px;
         }    
         
@@ -814,6 +814,11 @@
     p#logo-us{ text-align: center; }
 
     p#text-UniSevilla{ align-self: baseline; }
+
+    .pr-navbar__rw {
+        width: 95%;
+        max-width: 1440px;
+    }
     
     @media  (max-width: 767px) {
         #navbar .pr-navbar__rw { max-width: unset; }
@@ -868,7 +873,7 @@
     @media only screen and (min-width: 1440px) {
 
         #navbar .l-r { 
-            grid-template-columns: minmax(200px, 450px) auto 190px;
+            grid-template-columns: minmax(200px, 352px) auto 160px;
             grid-gap: 5px;
         }
         #block-logouses { grid-column: unset; }
@@ -1018,9 +1023,10 @@
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
+        left: 50%;
+        transform: translateX(-50%);
     }
     
-    #block-u0922-menu-principal .dropdown-content{ left: Calc(26% - 100px); }
     
     .dropdown-content a {
         color: black;
@@ -1041,7 +1047,7 @@
         padding-top: 10px;
         margin-top: 30px;
         display: grid;
-        grid-template-columns: 2fr minmax(450px,600px);
+        grid-template-columns: 2fr minmax(450px,max-content);
     }
 
     #menu-u0922-imprescindibles .dropdown:hover .dropdown-content{
@@ -1337,6 +1343,8 @@
         grid-template-columns: repeat(1,minmax(115px, 300px));
     }
 
+    #block-u0922-menu-principal .field { margin: 0px;}
+
     /* For extremely small screen devices (480px and below) */
     @media only screen and (max-width: 480px) {
         .miTFG .jumbotron {padding: 2rem;}
@@ -1423,7 +1431,7 @@
         .dropdown:hover .dropdown-content,
         .dropdown:focus .dropdown-content{  
             width: 92%;
-            max-width: 1550px;
+            max-width: 1440px;
         }
 
                 
@@ -1494,10 +1502,8 @@
     /* Extra big screen devices (1440px and above) */
     @media only screen and (min-width: 1440px) {
         
-        #block-u0922-menu-principal {
-            grid-column: unset;
-        }
-    #block-u0922-menu-principal .dropbtn { font-size: 1vw; }
+        #block-u0922-menu-principal { grid-column: unset; }
+    
         
     }
 
@@ -1528,6 +1534,7 @@
         margin-left: unset;
         transform: translate(-93px, 30px);
         margin-top: 45px;
+        left: auto;
     }
 
     #menu-u0922-imprescindibles ul {
@@ -1538,15 +1545,13 @@
         display: flex;
     }
 
-    #menu-u0922-imprescindibles li ul {width: 15em;}
-
-
     #menu-u0922-imprescindibles li {
         list-style: none;
         width: 90%;
         margin-left: auto;
         margin-right: auto;
         display: flex;
+        flex-direction: column;
     }
 
     #menu-u0922-imprescindibles li ul li {
@@ -1563,26 +1568,18 @@
         align-items: center;
     }
 
-    #menu-u0922-imprescindibles a:hover { 
-        padding: 17px 12px;
-        font-size: 12px;    
-        background-color: #A90533;
-        color: white;
-    }
-
+    
+    
     #menu-u0922-imprescindibles li ul li a{
         font-size: 16px;
         align-items: center;
         padding: 5px;
         display: flex;
         width: 100%;
+        font-size: 12px;
     }
 
-    #menu-u0922-imprescindibles li ul { 
-        margin-top: 20px; 
-        width: 250px !important;
-    }
-
+    
     #menu-u0922-imprescindibles a { color:white; }
 
     a.u0922-imprescindibles-link::before {
@@ -1600,7 +1597,34 @@
     #u0922-imprescindibles-menu-link-item-6 a::before { content: "\f109"; }
     #u0922-imprescindibles-menu-link-item-7 a::before { content: "\f1ea"; }
     #u0922-imprescindibles-menu-link-item-8 a::before { content: "\f044"; }
-    #u0922-imprescindibles-menu-link-item-9 a::before { content: "\f292"; }    
+    #u0922-imprescindibles-menu-link-item-9 a::before { content: "\f292"; }   
+    
+    #u0922-imprescindibles-menu-link-item-3,
+    #u0922-imprescindibles-menu-link-item-4 {
+        margin: 0 10px;
+    }
+
+    #u0922-imprescindibles-menu-link-item-3 ul,
+    #u0922-imprescindibles-menu-link-item-4 ul {
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        min-width: unset;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    #u0922-imprescindibles-menu-link-item-4 ul { top: 180% }
+
+    #u0922-imprescindibles-menu-link-item-3:hover ul,
+    #u0922-imprescindibles-menu-link-item-4:hover ul {
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        max-height: 1000px;
+        padding: 10px;
+        border: 1px solid #ccc
+    }
+
+    #u0922-imprescindibles-menu-link-item-3 ul li a::before,
+    #u0922-imprescindibles-menu-link-item-4 ul li a::before { content: unset;}
 
     @media  (max-width: 767px) {
         
@@ -1662,19 +1686,6 @@
         }
     }
 
-    /*#block-alternadordeidioma ul {
-        padding: 0px; 
-        display: flex;
-        list-style: none;
-        justify-content: end;
-    }
-
-    #block-alternadordeidioma ul li { margin: 3px; }
-
-    #block-alternadordeidioma ul li img { 
-        width: 30px; 
-        height: 20px;
-    }*/
     /* fin imprescindibles (incluye idiomas) */        
 
 /*fin navbar */
@@ -1685,10 +1696,12 @@
     #highlighted {
         width: 100%;
         margin: 0px;
-        max-width: 1800px;
     }
     
-    
+    .l-r.region.pr-highlighted__highlighted{
+        display: grid;
+        grid-template-columns: auto minmax(320px, 1440px) auto;
+    }
     
     /* For extremely small screen devices (480px and below) */
     @media only screen and (max-width: 480px) {
@@ -1748,8 +1761,8 @@
     @media only screen and (min-width: 768px) {
         
         #highlighted {
-            margin-top: 35px;
-            margin-bottom: 60px;
+            padding-top: 0px;
+            padding-bottom: 60px;
         }
 
         .pg-noticiasFCom .container-horizontal {
@@ -1838,7 +1851,7 @@
     /* Big screen devices (1024px and above) */
     @media only screen and (min-width: 1024px) {
         
-        #highlighted { width: fit-content; }
+        #highlighted { width: 100%; }
         .pg-noticiasFCom .container-horizontal .card-horizontal {
             margin: 0.9em;
             height: 21em;
@@ -2061,9 +2074,7 @@
         width: 100%;
         margin-left: auto;
         margin-right: auto;
-        background-color: transparent;
-        /*background-color: #f5f5f5;*/
-        /*padding: 50px 0px;*/
+        background-color: #f5f5f5;
         padding: 0px;
     }
     .pr-features .regions {
@@ -2111,6 +2122,12 @@
     }
     .row-imprescindibles.views-row h2 { color: #a90533; }
 
+    #block-views-block-paginas-gabinete-block-1 {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1440px;
+        grid-column: 2;
+    }
     /* For extremely small screen devices (480px and below) */
     @media only screen and (max-width: 480px) {
         #features { margin-top: 0px; }
@@ -2627,8 +2644,12 @@
 
     .evento-titulo {
         display: flex;
-        align-items: center;
+        align-items: baseline;
+        height: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
+    
     .evento { grid-column-gap: 20px; }
 
     /* For extremely small screen devices (480px and below) */
@@ -3352,26 +3373,42 @@
         gap:5px;
     }
 
+    #u0922_comunidad_icons .dropdown-content {
+        position: absolute;
+        top: 32px;
+        display: none;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        margin-left: 45px;
+        border-radius: 10px;
+        opacity: 0.9;
+        width: fit-content;
+    }
     #u0922_comunidad div.dropdown {
         display: flex;
         align-items: center;
         gap: 5px;
         padding: 5px;
+        position: relative;
     }
 
     #u0922_comunidad div.dropdown ul {
+        padding: 10px 20px;
         list-style: none;
+        color: wheat;
+        list-style-position: outside;
+        margin-bottom: 0px;
+        width: max-content;
     }
    
     #u0922_comunidad .dropdown:hover .dropdown-content {
-        width: Calc(25% - 150px);
-        margin-left: 5%;
         background-color: #a90533;
         display: flex;
         flex-wrap: wrap;
-        padding-top: 10px;
-        margin-top: 7%;
     }
+
+    #u0922_comunidad .dropdown:hover { cursor: pointer; }
 
     #u0922_comunidad .dropdown-content a {
         color: white;
@@ -3640,6 +3677,14 @@
         }
         #block-tedestacamos{ grid-column: 2 / 5; }
         #block-views-block-u0922-comunidad-block-1 { grid-column: 4;}
+    }
+
+    /* Super Extra big screen devices (1440px and above) */
+    @media only screen and (min-width: 1440px) {
+        .pr-footer__rw {
+            width: 90%;
+            max-width: 1800px;
+        }
     }
 
 /* fin footer */
