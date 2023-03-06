@@ -285,7 +285,7 @@
 
     .accordeon div, .accordeon div:focus-visible { border: none; }
     .accordeon .ui-state-default a {
-        color: #f9f9f9;
+        color: #f9f9f9; 
         font-size: x-large;
     }
     .ui-state-focus { border: none; }
@@ -297,7 +297,12 @@
     .ui-accordion-header-active.ui-state-active a:visited { 
         background-color: #a90533;
         color: white !important; 
-        padding: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        line-height: 1.8;
+
     }
     .ui-state-default { background: transparent;}
     .secretaria .ui-state-default,
