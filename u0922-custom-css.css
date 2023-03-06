@@ -83,6 +83,7 @@
             font-size: 15px;
             border-radius: 8px;
         }
+        .pager__items.js-pager__items ul { margin: 0px 10px; }
     }
     
     /* Small screen devices (481px and above) */
@@ -93,11 +94,15 @@
             font-size: 15px;
             border-radius: 8px;
         }
+
+        .pager__items.js-pager__items ul { margin: 0px 10px; }
     }
 
     /* Medium screen devices (600px and above) */
     @media only screen and (min-width: 600px) {
-
+        .pager__items.js-pager__items ul {
+            margin: 0px 20px;
+        }
     }
     
     /* Medium screen devices (768px and above) */
