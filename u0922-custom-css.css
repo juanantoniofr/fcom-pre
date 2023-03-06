@@ -2184,7 +2184,7 @@
         }
         
         #block-teinformamos .block__content { 
-            margin: 65px 0px;
+            margin: 180px 0px 70px 0px;
             width: 90%;
             margin-left: auto;
             margin-right: auto;
@@ -2458,7 +2458,7 @@
             height: 100%;
             width: 100%;
         }
-        #block-tedestacamos .block__content { margin-bottom: 50px; }
+        #block-tedestacamos .block__content { margin: 180px 0px 70px 0px; }
         .l-r .region .pr-features__.features-second { 
             padding-top: 50px;
             padding-bottom: 40px;
@@ -2542,7 +2542,7 @@
             padding: 15px; 
             min-height: 165px;
         }
-        #block-tedestacamos .block__content { margin-top: 70px; }
+        
         #app-FCom .views-enlace, #servicios-FCom .views-enlace { 
             align-self:  flex-start;
         }
