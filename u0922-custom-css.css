@@ -77,58 +77,60 @@
 
     /* For extremely small screen devices (480px and below) */
     @media only screen and (max-width: 480px) {
+        #block-views-block-u0922-tedestacamos-agendaynovedades-block-9 .pager { margin: 35px 0px 0px 0px; }
         a.pager__link, a.pager__link:hover, a.pager__link:active, a.pager__link:focus {
-            padding: 8px;
-            font-size: 16px;
-            border-radius: 5px;
-        } 
+            padding: 10px;
+            font-size: 15px;
+            border-radius: 8px;
+        }
     }
     
     /* Small screen devices (481px and above) */
     @media only screen and (min-width: 481px) {
         #block-views-block-u0922-tedestacamos-agendaynovedades-block-9 .pager { margin: 35px 0px 0px 0px; }
         a.pager__link, a.pager__link:hover, a.pager__link:active, a.pager__link:focus {
-            padding: 8px;
-            font-size: 16px;
-            border-radius: 5px;
-        } 
+            padding: 10px;
+            font-size: 15px;
+            border-radius: 8px;
+        }
     }
 
     /* Medium screen devices (600px and above) */
     @media only screen and (min-width: 600px) {
-        a.pager__link, a.pager__link:hover, a.pager__link:active, a.pager__link:focus {
-            padding: 15px;
-            font-size: 18px;
-            border-radius: 9px;
-        } 
+
     }
     
     /* Medium screen devices (768px and above) */
     @media only screen and (min-width: 768px) {
-        a.pager__link, a.pager__link:hover, a.pager__link:active, a.pager__link:focus { 
-            padding: 20px;
-            font-size: 18px; 
-            border-radius: 14px;
-        }
+
     }
 
     /* Big screen devices (889px and above) */
     @media only screen and (min-width: 889px) {
-        a.pager__link, a.pager__link:hover, a.pager__link:active, a.pager__link:focus { 
-            padding: 20px;
-            font-size: 22px;
-            color: white;
-            border-radius: 14px;
-            background: #a90533;
+        a.pager__link, a.pager__link:hover, a.pager__link:active, a.pager__link:focus {
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 8px;
         }
+
     }
 
     /* Big screen devices (1024px and above) */
     @media only screen and (min-width: 1024px) {
+        a.pager__link, a.pager__link:hover, a.pager__link:active, a.pager__link:focus {
+            padding: 12px;
+            font-size: 22px;
+            border-radius: 10px;
+        }
     }
 
     /* Big screen devices (1200px and above) */
     @media only screen and (min-width: 1200px) {
+        a.pager__link, a.pager__link:hover, a.pager__link:active, a.pager__link:focus {
+            padding: 20px;
+            font-size: 22px;
+            border-radius: 14px;
+        }
     }
     
     /* ckeditor-accordion-container */
@@ -1767,7 +1769,7 @@
         
         #highlighted {
             padding-top: 0px;
-            padding-bottom: 0px;
+            padding-bottom: 60px;
         }
 
         .pg-noticiasFCom .container-horizontal {
@@ -2132,9 +2134,7 @@
         margin-right: auto;
         max-width: 1440px;
         grid-column: 2;
-        margin-bottom: 0px;
     }
-
     /* For extremely small screen devices (480px and below) */
     @media only screen and (max-width: 480px) {
         #features { margin-top: 0px; }
@@ -2164,7 +2164,7 @@
 
     /* Small screen devices (481px and above) */
     @media only screen and (min-width: 481px) {
-        #features { margin-top: 0px; }
+        #features { margin-top: 20px; }
         #block-views-block-noticias-de-actualidad-block-2 .view-content,
         #block-views-block-noticias-de-actualidad-block-4-2 .view-content { grid-template-columns: 1fr; }
         .l-r.region.pr-features__features-first{
@@ -2184,7 +2184,7 @@
         }
         
         #block-teinformamos .block__content { 
-            margin: 180px 0px 70px 0px;
+            margin: 65px 0px;
             width: 90%;
             margin-left: auto;
             margin-right: auto;
@@ -2458,7 +2458,7 @@
             height: 100%;
             width: 100%;
         }
-        #block-tedestacamos .block__content { margin: 180px 0px 70px 0px; }
+        #block-tedestacamos .block__content { margin-bottom: 50px; }
         .l-r .region .pr-features__.features-second { 
             padding-top: 50px;
             padding-bottom: 40px;
@@ -2542,7 +2542,7 @@
             padding: 15px; 
             min-height: 165px;
         }
-        
+        #block-tedestacamos .block__content { margin-top: 70px; }
         #app-FCom .views-enlace, #servicios-FCom .views-enlace { 
             align-self:  flex-start;
         }
