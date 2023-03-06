@@ -547,6 +547,7 @@
         font-size: 12px;
     }
     .collapsible-masthead-content { width: 100%; }
+    
     input#collapsible[type="checkbox"],
     input#collapsible-masthead[type="checkbox"],
     input#collapsible-ConoceFcom[type="checkbox"],
@@ -554,7 +555,19 @@
     input#collapsible-Practicas[type="checkbox"],
     input#collapsible-Movilidad[type="checkbox"],
     input#collapsible-Secretaria[type="checkbox"],
-    input#collapsible-NoticiasFcom[type="checkbox"] { display: none; } 
+    input#collapsible-NoticiasFcom[type="checkbox"],
+    input#collapsible-menu-imprescindibles-horarios[type="checkbox"] 
+    { display: none; } 
+    
+    .toggle:checked + .lbl-toggle-collapsible-menu-imprescindibles-horarios + .collapsible-menu-imprescindibles-horarios-content { max-height: fit-content; }
+    
+    .collapsible-menu-imprescindibles-horarios-content { 
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height .5s ease-in-out;
+    }
+
+
     #block-u0922-menu-header { 
         margin: 0px;
         width: 100%;
@@ -1249,7 +1262,7 @@
         .collapsible-NoticiasFcom-content { 
             max-height: 0px;
             overflow: hidden;
-            transition: max-height .25s ease-in-out;
+            transition: max-height .5s ease-in-out;
         }
         .collapsible-ConoceFcom-content { z-index: 8; }
         .collapsible-Titulos-content { z-index: 7; }
@@ -1265,6 +1278,7 @@
         }
 
         .toggle:checked + .lbl-toggle + .collapsible-content { max-height: fit-content; }
+        
 
         .toggle:checked + .lbl-toggle-ConoceFcom + .collapsible-ConoceFcom-content,
         .toggle:checked + .lbl-toggle-Titulos + .collapsible-Titulos-content,
