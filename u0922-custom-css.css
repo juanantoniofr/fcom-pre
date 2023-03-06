@@ -1767,7 +1767,7 @@
         
         #highlighted {
             padding-top: 0px;
-            padding-bottom: 60px;
+            padding-bottom: 0px;
         }
 
         .pg-noticiasFCom .container-horizontal {
@@ -2132,7 +2132,9 @@
         margin-right: auto;
         max-width: 1440px;
         grid-column: 2;
+        margin-bottom: 0px;
     }
+
     /* For extremely small screen devices (480px and below) */
     @media only screen and (max-width: 480px) {
         #features { margin-top: 0px; }
@@ -2162,7 +2164,7 @@
 
     /* Small screen devices (481px and above) */
     @media only screen and (min-width: 481px) {
-        #features { margin-top: 20px; }
+        #features { margin-top: 0px; }
         #block-views-block-noticias-de-actualidad-block-2 .view-content,
         #block-views-block-noticias-de-actualidad-block-4-2 .view-content { grid-template-columns: 1fr; }
         .l-r.region.pr-features__features-first{
