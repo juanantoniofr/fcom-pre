@@ -685,7 +685,10 @@
 
     @media  (max-width: 767px) {
 
-        #masthead { width: 100%; }
+        #masthead { 
+            width: 100%;
+            padding: 0px 10px;
+        }
 
         .pr-header__header-first { 
             display: flex; 
@@ -864,11 +867,14 @@
 
     .pr-navbar__rw {
         width: 95%;
-        max-width: 1440px;
+        max-width: 1880px;
     }
     
     @media  (max-width: 767px) {
-        #navbar .pr-navbar__rw { max-width: unset; }
+        #navbar .pr-navbar__rw { 
+            max-width: unset; 
+            width: 100%;
+        }
         
         #navbar .l-r {
             display: flex;
@@ -879,6 +885,7 @@
         }
 
         #block-logouses{ display: flex; }
+
     }
 
     /* For extremely small screen devices (480px and below) */
@@ -1201,6 +1208,8 @@
         }
 
         #block-u0922-menu-principal .block__inner .block__content{ width: 100%; }
+
+        .dropdown-content { transform: unset; }
 
         #block-u0922-menu-principal .dropdown-content {
             left: 0;
@@ -1544,7 +1553,7 @@
 
     /* Extra big screen devices (1200px and above) */
     @media only screen and (min-width: 1200px) {
-        #block-u0922-menu-principal .dropbtn { font-size: 1.5vw; }
+        #block-u0922-menu-principal .dropbtn { font-size: 28px; }
     }
     
     /* Extra big screen devices (1440px and above) */
@@ -1676,6 +1685,9 @@
     #u0922-imprescindibles-menu-link-item-4 {
         margin: 0 10px;
     }
+
+    .collapsible-masthead-content #u0922-imprescindibles-menu-link-item-3,
+    .collapsible-masthead-content #u0922-imprescindibles-menu-link-item-4 { margin: 0px; }
 
     #u0922-imprescindibles-menu-link-item-3 ul,
     #u0922-imprescindibles-menu-link-item-4 ul{
@@ -3418,7 +3430,7 @@
 
     .l-r.region.pr-content-suffix__content-suffix {
         display: grid;
-        grid-template-columns: 6fr 1fr;
+        grid-template-columns: 1fr;
     }
 
     #u0922_comunidad_icons,
@@ -3622,7 +3634,10 @@
     /* Big screen devices (1024px and above) */
     @media only screen and (min-width: 1024px) { 
         #main-content { max-width: 75%; }
-        #content-suffix { width: 100%; }
+        #content-suffix { 
+            width: 100%;
+            max-width: 1880px;
+        }
     }
 
     /* Extra big screen devices (1200px and above) */
