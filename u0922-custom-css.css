@@ -812,10 +812,8 @@
     }
 
     .button, button, button:hover, button:focus, .button:hover, .button:focus, button:focus-visible  {
-        margin-bottom: 20px;
         background-color: #a90533;
         border-color: #a90533;
-        margin-top: 15px;
         border-radius: 5px;
         outline: #A90533;
         }
@@ -1592,7 +1590,7 @@
         margin-right: 0px;
         margin-left: unset;
         transform: translate(-93px, 30px);
-        margin-top: 45px;
+        margin-top: 30px;
         left: auto;
     }
 
@@ -3304,9 +3302,6 @@
     #edit-actions {
         font-size: 18px;
         border-radius: 7px;
-        height: 40px;
-        width: fit-content;
-        align-self: center;
     }
     .form--inline.clearfix {
         display: flex;
@@ -3314,7 +3309,8 @@
         width: 100%;
         flex-direction: row;
         justify-content: center;
-        align-items: initial;
+        align-items: last baseline;
+        height: 80px;
     }
     
     #edit-title {
@@ -3406,17 +3402,15 @@
 
     .view-buscador-docentes-e-investigadores select,
     .view-buscador-docentes-e-investigadores #edit-title, 
-    .view-buscador-docentes-e-investigadores #edit-submit-buscador-docentes-e-investigadores {
+    .view-buscador-docentes-e-investigadores #edit-submit-buscador-docentes-e-investigadores,
+    .class-buscador #edit-submit-search-content {
         width: 100%;
         padding: 12px;
         border-radius: 4px;
-        border: 1px solid #ccc;
         box-sizing: border-box;
-        margin-top: 6px;
-        margin-bottom: 16px;
         font-size: 16px;
         position: relative;
-        height: fit-content;
+        height: max-content;
     }
     
     
@@ -3914,14 +3908,7 @@
         padding-top:20px;
     }
 
-    .class-buscador #edit-submit-search-content {
-        margin-top: 18px;
-      }
-
-
-
 /* fin Página de busqueda */
-
 
 /* Cenefas */
     
