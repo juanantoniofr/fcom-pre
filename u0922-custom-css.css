@@ -3560,7 +3560,10 @@
     /* Small screen devices (481px and above) */
     @media only screen and (min-width: 481px) {
 
-        #main-content { max-width: 90%; }
+        #main-content { 
+            max-width: 90%; 
+            padding-bottom: 150px;
+        }
         #content-suffix { width: 90%; }
         .jumbotron { padding: 2rem;}
         #u0922_comunidad_icons,
