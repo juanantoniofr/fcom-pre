@@ -562,17 +562,23 @@
     input#collapsible-Secretaria[type="checkbox"],
     input#collapsible-NoticiasFcom[type="checkbox"],
     input#collapsible-menu-imprescindibles-horarios[type="checkbox"],
-    input#collapsible-menu-imprescindibles-examenes[type="checkbox"] 
+    input#collapsible-menu-imprescindibles-horarios-masthead[type="checkbox"],
+    input#collapsible-menu-imprescindibles-examenes[type="checkbox"],
+    input#collapsible-menu-imprescindibles-examenes-masthead[type="checkbox"] 
     { display: none; } 
     
     .toggle:checked + .lbl-toggle-collapsible-menu-imprescindibles-horarios + .collapsible-menu-imprescindibles-horarios-content,
-    .toggle:checked + .lbl-toggle-collapsible-menu-imprescindibles-examenes + .collapsible-menu-imprescindibles-examenes-content {
+    .toggle:checked + .lbl-toggle-collapsible-menu-imprescindibles-horarios-masthead + .collapsible-menu-imprescindibles-horarios-masthead-content,
+    .toggle:checked + .lbl-toggle-collapsible-menu-imprescindibles-examenes + .collapsible-menu-imprescindibles-examenes-content,
+    .toggle:checked + .lbl-toggle-collapsible-menu-imprescindibles-examenes-masthead + .collapsible-menu-imprescindibles-examenes-masthead-content {
         max-height: fit-content;
         margin-bottom: 20px; 
     }
     
     .collapsible-menu-imprescindibles-horarios-content,
-    .collapsible-menu-imprescindibles-examenes-content { 
+    .collapsible-menu-imprescindibles-horarios-masthead-content,
+    .collapsible-menu-imprescindibles-examenes-content,
+    .collapsible-menu-imprescindibles-examenes-masthead-content { 
         max-height: 0px;
         overflow: hidden;
         transition: max-height .5s ease-in-out;
