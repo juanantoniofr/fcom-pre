@@ -258,19 +258,19 @@
             max-height: 38em;
             max-width: 30em;
         }
-        .ckeditor-accordion-container dl dd { padding: 30px; }
+        .ui-accordion .ui-accordion-content { padding: 30px; }
     }
 
     /* For extremely small screen devices (480px and below) */
     @media only screen and (max-width: 480px) { 
-        .ckeditor-accordion-container dl dd { padding: 30px; }
+        .ui-accordion .ui-accordion-content { padding: 30px; }
     }
 
     /* Medium screen devices (768px and above) */
     @media only screen and (min-width: 768px) {
         .card { max-width: 21em; 
-            .ckeditor-accordion-container dl dd { padding: 50px; }
         }    
+        .ui-accordion .ui-accordion-content { padding: 50px; }
     }
 
     /* Big screen devices (889px and above) */
@@ -3563,6 +3563,7 @@
             margin-right: auto;
             width: 80%;
         }
+        .display-4 { font-size: 4.8vw; }
 
     }
 
@@ -3594,7 +3595,7 @@
             font-size: 6vw; 
             margin: 0px 0px 40px 0px;
         }
-        .display-4 { font-size: 4.5vw; }
+        .display-4 { font-size: 4.8vw; }
 
         #u0922_comunidad h3{
             width: fit-content;
