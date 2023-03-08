@@ -1418,6 +1418,11 @@
             padding-right: 10px;
             padding-left: 10px;
         }
+
+        .practicas .row {
+            grid-template-rows: repeat(2,175px);
+            grid-template-columns: repeat(1,200px);
+        }
     }
 
     /* Small screen devices (481px and above) */
