@@ -1378,6 +1378,7 @@
         border-bottom: 3px solid #A90533;
         padding: 50px;
     }
+    .movilidad .field__items h5 { text-align: center; }
     
     .view-u0922-movilidad .view-footer .node__title { font-size: 2.5vw; }
 
