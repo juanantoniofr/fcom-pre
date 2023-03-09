@@ -1435,6 +1435,7 @@
 
         .view-u0922-movilidad .row {
             grid-template-columns: repeat(1,minmax(150px, 250px));
+            grid-template-rows: unset;  
         }
 
         .container-view-u0922-practicas.container-level1 .row {
