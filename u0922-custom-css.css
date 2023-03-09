@@ -171,7 +171,7 @@
         background: transparent;
         font-weight: normal;
     }
-    ..view-buscador-docentes-e-investigadores{ padding-bottom: 100px;}
+    .view-buscador-docentes-e-investigadores{ padding-bottom: 100px;}
     .view-buscador-docentes-e-investigadores .ckeditor-accordion-container dl dt.active a {
         background-color: #a90533;
         color: white;
@@ -1365,9 +1365,9 @@
     }
 
 
-    .view-u0922-movilidad .row {
+    /*.view-u0922-movilidad .row {
         grid-template-rows: repeat(1,120px);
-    }
+    }*/
 
     .view-u0922-movilidad .view-footer .node__title,
     .view-u0922-movilidad .view-footer .node__content{
@@ -1422,7 +1422,8 @@
             padding-left: 10px;
         }
 
-        .practicas .row { grid-template-columns: repeat(1,200px); }
+        .practicas .row,
+        .view-u0922-movilidad .row { grid-template-columns: 200px; }
     }
 
     /* Small screen devices (481px and above) */
@@ -1452,16 +1453,17 @@
         .dropdown:hover .dropdown-content,
         .dropdown:focus .dropdown-content{ width: 99%; }
 
-        .miTFG {
+       #dropdown-content-titulos .miTFG {
             grid-column: 1 / 3;
             padding: 10px;
             width: fit-content;
             margin-right: auto;
             height: fit-content;
             display: flex;
+            flex-direction: column;
         }
 
-        .miTFG a::before {
+        #dropdown-content-titulos .miTFG a::before {
             font-family: fontAwesome;
             content: "\f19d";
             margin-right: 5px;
