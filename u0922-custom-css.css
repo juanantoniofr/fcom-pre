@@ -1435,8 +1435,7 @@
         }
 
         .view-u0922-movilidad .row {
-            grid-template-columns: 200px;
-            grid-template-rows: unset;  
+            grid-template-columns: repeat(1,minmax(150px, 250px));
         }
 
         .container-view-u0922-practicas.container-level1 .row {
@@ -3580,12 +3579,7 @@
             width: 80%;
         }
         .display-4 { font-size: 4.8vw; }
-        .jumbotron { padding: 2rem;}
 
-        .display-1 { 
-            font-size: 6vw; 
-            margin: 0px 0px 40px 0px;
-        }
     }
 
     /* Small screen devices (481px and above) */
@@ -4206,12 +4200,29 @@
     grid-template-columns: 2fr 6fr;
     grid-column-gap: 40px;
 }
-#header-actas-list,
-.row-actas .item-list ul li.fichero-acta{
+
+.header-actas {
+    border: 1px solid #aaa;
+    padding: 20px 50px;
+    color: #a90533;
+    border-radius: 5px;
+    margin-bottom: 10px;
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-column-gap: 20px;
+    grid-template-columns: 2fr 1fr;
 }
+
+.fichero-acta.views-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.block-listado-actas .view-content {
+    display: grid;
+    grid-template-rows: auto;
+    grid-row-gap: 30px;
+}
+
+
 .row-actas .item-list ul li.fichero-acta{ 
     padding: 50px 0px 0px 0px;
     border-bottom: 1px solid #bbb;
@@ -4236,23 +4247,26 @@
     margin: 5px;
     width: 100%;
 }
+
 .view-vista-conoce-fcom.view-display-id-block_6 {
     border: 2px solid #A90533;
     border-radius: 5px;
     padding: 30px 50px;
 }
-#header-actas-list div {
-    border: 1px solid #aaa;
-    padding: 10px;
-    text-align: center;
-    color: #a90533;
-    border-radius: 5px;
-}
+
 .row-actas .item-list ul { padding: 0px; }
-.download-acta { text-align: center; } 
+
 .active-link-actas { background: #a90533; }
+
 .active-link-actas a {color: white;  }
+
 .download-acta a { font-size: 38px; }
+
+#header-actas-list {
+    display: grid;
+    grid-template-rows: max-content auto;
+}
+
 #header-actas-title {
     padding: .5em .5em .5em .7em;
       padding-bottom: 0.5em;
