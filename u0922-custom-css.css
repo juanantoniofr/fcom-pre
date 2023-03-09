@@ -171,7 +171,7 @@
         background: transparent;
         font-weight: normal;
     }
-
+    ..view-buscador-docentes-e-investigadores{ padding-bottom: 100px;}
     .view-buscador-docentes-e-investigadores .ckeditor-accordion-container dl dt.active a {
         background-color: #a90533;
         color: white;
@@ -1355,7 +1355,7 @@
     .row {
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(4,120px);
+        /*grid-template-rows: repeat(4,120px);*/
         grid-gap: 20px;
     }
 
@@ -1395,7 +1395,6 @@
     .container-level1 .row {
         display: grid;
         grid-template-columns: repeat(1,minmax(250px, 315px));
-        
         grid-template-rows: repeat(1,1fr);
     }
     .container-view-u0922-practicas.container-level1 .row { grid-template-columns: repeat(1,minmax(250px, 315px)); }
@@ -1423,10 +1422,7 @@
             padding-left: 10px;
         }
 
-        .practicas .row {
-            grid-template-rows: repeat(2,175px);
-            grid-template-columns: repeat(1,200px);
-        }
+        .practicas .row { grid-template-columns: repeat(1,200px); }
     }
 
     /* Small screen devices (481px and above) */
@@ -3088,10 +3084,7 @@
         font-size: 2rem;
     }
 
-    .soy { 
-        justify-content: center;
-        padding-bottom: 100px;
-    }
+    .soy { justify-content: center; }
 
     .container-view-u0922-practicas  {
         width: 100%;
@@ -3447,7 +3440,6 @@
 /* content-suffix */
 
     #content-suffix {
-        width: 75%;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 1%;
@@ -3565,7 +3557,7 @@
     /* For extremely small screen devices (480px and below) */
     @media only screen and (max-width: 480px) {
         
-        #content-suffix { width: 95%; }
+        #content-suffix { width: 90%; }
         .container-mas-en .opcion_menu img {
             margin: 0px;
             max-height: 220px;
