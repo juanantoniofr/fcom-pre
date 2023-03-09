@@ -1425,6 +1425,7 @@
 
         .practicas .row,
         .view-u0922-movilidad .row { grid-template-columns: 200px; }
+        .movilidad .view-footer .node__content { padding: 20px; }
     }
 
     /* Small screen devices (481px and above) */
@@ -1450,7 +1451,7 @@
             margin: 0px; 
             height: 100%;
         }
-
+        .movilidad .view-footer .node__content { padding: 20px; }
         .dropdown:hover .dropdown-content,
         .dropdown:focus .dropdown-content{ width: 99%; }
 
@@ -1516,7 +1517,7 @@
             max-width: 1440px;
         }
 
-                
+        .movilidad .view-footer .node__content { padding: 50px; }        
         .container-view-u0922-practicas.container-level1 .row { grid-template-columns: repeat(3,minmax(250px, 315px)); }
         .row {
             grid-template-rows: repeat(2,150px);
