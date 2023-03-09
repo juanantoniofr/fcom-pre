@@ -1434,7 +1434,7 @@
         }
 
         .view-u0922-movilidad .row {
-            grid-template-columns: repeat(1,minmax(150px, 250px));
+            grid-template-columns: 200px;
             grid-template-rows: unset;  
         }
 
@@ -3580,6 +3580,11 @@
         }
         .display-4 { font-size: 4.8vw; }
         .jumbotron { padding: 2rem;}
+
+        .display-1 { 
+            font-size: 6vw; 
+            margin: 0px 0px 40px 0px;
+        }
     }
 
     /* Small screen devices (481px and above) */
