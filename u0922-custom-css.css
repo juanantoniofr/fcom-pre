@@ -1378,7 +1378,6 @@
         border-bottom: 3px solid #A90533;
         padding: 50px;
     }
-    .movilidad .field__items h5 { text-align: center; }
     
     .view-u0922-movilidad .view-footer .node__title { font-size: 2.5vw; }
 
@@ -4234,7 +4233,8 @@
     font-size: x-large;
     display: block;
     text-align: center;
-    margin: 25px 0px;
+    margin-bottom: 10px;
+    padding: 20px 0px
 }
 .menu-actas ul li {
     display: inline-block;
@@ -4265,7 +4265,7 @@
 
 #header-actas-list {
     display: grid;
-    grid-template-rows: max-content auto;
+    grid-template-rows: max-content;
 }
 
 #header-actas-title {
@@ -4302,7 +4302,16 @@
     left: 50%;
 }
 
+.pagina-listado-actas  .view-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 40px;
+}
 
+.pagina-listado-actas  #header-actas-title {
+    grid-column: 1 / 3;
+}
+/* fin actas */
 
 #features {
     display: grid;
@@ -4339,4 +4348,8 @@ p.servicios-Fcom {
 }
 .view-empty{
     display: none;
+}
+
+.view-vista-conoce-fcom .view-empty {
+    display: contents;
 }
