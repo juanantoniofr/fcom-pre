@@ -3582,7 +3582,7 @@
             width: 80%;
         }
         .display-4 { font-size: 4.8vw; }
-
+        .jumbotron { padding: 2rem;}
     }
 
     /* Small screen devices (481px and above) */
