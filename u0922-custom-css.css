@@ -1437,6 +1437,7 @@
 
         .view-u0922-movilidad .row {
             grid-template-columns: repeat(1,minmax(150px, 250px));
+            grid-template-rows: repeat(1,150px);
         }
 
         .container-view-u0922-practicas.container-level1 .row {
@@ -1575,7 +1576,6 @@
 
              
         .container-level1 .row { grid-template-columns: repeat(2,minmax(250px, 315px)); }
-
                
     }
 
