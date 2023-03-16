@@ -1435,6 +1435,10 @@
             grid-template-rows: repeat(2,150px);
         }
 
+        .secretaria .row {
+            grid-template-rows: repeat(1,150px);
+        }
+
         .view-u0922-movilidad .row {
             grid-template-columns: repeat(1,minmax(150px, 250px));
             grid-template-rows: repeat(1,150px);
@@ -3921,6 +3925,37 @@
 
     .datos_decanato div.contenido { padding: 20px; }
 
+    /* For extremely small screen devices (480px and below) */
+    @media only screen and (max-width: 480px) { 
+        .datos_decanato.personal_secretaria { grid-template-columns: 1fr; }
+    }
+
+     /* Small screen devices (481px and above) */
+    @media only screen and (min-width: 481px) {
+        .datos_decanato.personal_secretaria { grid-template-columns: 1fr; }
+    }
+
+    /* Medium screen devices (600px and above) */
+    @media only screen and (min-width: 600px) { 
+        .datos_decanato.personal_secretaria { grid-template-columns: 1fr 1fr 1fr; }
+    }
+
+    /* Medium screen devices (768px and above) */
+    @media only screen and (min-width: 768px) {
+    }
+
+    /* Big screen devices (889px and above) */
+    @media only screen and (min-width: 889px) {
+    }
+
+    /* Big screen devices (1024px and above) */
+    @media only screen and (min-width: 1024px) {
+    }
+
+    /* Big screen devices (1200px and above) */
+    @media only screen and (min-width: 1200px) {
+    }
+    
 /* fin Página secretaría */
 
 /* Página de busqueda */
