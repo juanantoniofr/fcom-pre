@@ -1422,10 +1422,17 @@
             padding-left: 10px;
         }
 
+        .path-secretaria-nuestrasecretaria .secretaria .row {
+            grid-template-rows: repeat(1,1fr);
+            grid-template-columns: repeat(1,minmax(250px, 260px));
+        }
+
+        .secretaria .display-1 { font-size: 6vw; }
         .practicas .row,
         .view-u0922-movilidad .row { grid-template-columns: 200px; }
         .movilidad .view-footer .node__content { padding: 20px; }
         .view-u0922-movilidad .view-footer .node__title { font-size: 6vw; }
+        
     }
 
     /* Small screen devices (481px and above) */
@@ -1437,6 +1444,11 @@
 
         .secretaria .row {
             grid-template-rows: repeat(1,150px);
+        }
+
+        .path-secretaria-nuestrasecretaria .secretaria .row {
+            grid-template-rows: repeat(1,1fr);
+            grid-template-columns: repeat(1,minmax(250px, 260px));
         }
 
         .view-u0922-movilidad .row {
