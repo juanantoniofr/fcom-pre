@@ -1372,7 +1372,7 @@
     .view-u0922-movilidad .view-footer .node__title,
     .view-u0922-movilidad .view-footer .node__content{
         text-align: center;
-        width: 80%;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
         border-bottom: 3px solid #A90533;
@@ -1430,7 +1430,6 @@
         .secretaria .display-1 { font-size: 6vw; }
         .practicas .row,
         .view-u0922-movilidad .row { grid-template-columns: 200px; }
-        .movilidad .view-footer .node__content { padding: 20px; }
         .view-u0922-movilidad .view-footer .node__title { font-size: 6vw; }
         
     }
@@ -3475,7 +3474,7 @@
     #u0922_comunidad_icons,
     .container-mas-en {
         display: grid;
-        gap: 10px;
+        gap: 60px;
         grid-template-columns: 1fr;
     } 
 
@@ -3553,7 +3552,10 @@
 
     .container-mas-en .link_masEn .opcion_menu {
         display: grid;
-        grid-gap: 20px;
+        grid-gap: 40px;
+        justify-items: center;
+        border-bottom: 1px solid #adadad;
+        padding: 30px 0px;
     }
     
     .container-mas-en .opcion_menu img { margin-right: 0px; }
@@ -3579,7 +3581,10 @@
     /* For extremely small screen devices (480px and below) */
     @media only screen and (max-width: 480px) {
         
-        #content-suffix { width: 90%; }
+        #content-suffix { 
+            width: 90%; 
+            margin: 40px auto;
+        }
         .container-mas-en .opcion_menu img {
             margin: 0px;
             max-height: 220px;
@@ -4264,6 +4269,9 @@
 .fichero-acta.views-row {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    align-items: center;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 10px;
 }
 
 .block-listado-actas .view-content {
@@ -4299,7 +4307,8 @@
     width: 100%;
 }
 
-.view-vista-conoce-fcom.view-display-id-block_6 {
+.view-vista-conoce-fcom.view-display-id-block_6,
+.warning-actas {
     border: 2px solid #A90533;
     border-radius: 5px;
     padding: 30px 50px;
@@ -4318,9 +4327,9 @@
     grid-template-rows: max-content;
 }
 
-#header-actas-title {
+#header-actas-title,
+#link-to-actas {
     padding: .5em .5em .5em .7em;
-      padding-bottom: 0.5em;
     color: white;
     font-size: x-large;
     padding-bottom: 10px;
@@ -4328,6 +4337,20 @@
     background: #a90533;
     border-radius: 5px;
 }
+
+#link-to-actas{
+    color: #a90533;
+    background: transparent;
+    padding: .5em .5em .5em;
+}
+
+#link-to-actas a:before {
+    font-family: fontAwesome;
+    content: "\f054";
+    margin-right: 10px;
+    font-size: large;
+}
+
 #header-actas-title p { display: inline; }
 #header-actas-title::before {
     font-family: fontAwesome;
@@ -4341,16 +4364,7 @@
     font-weight: 600;
     font-size: x-large;
 }
-#actas_ce {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-}
-#actas_cd {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-}
+
 
 .pagina-listado-actas  .view-header {
     display: grid;
