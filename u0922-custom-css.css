@@ -1234,7 +1234,7 @@
         
         #block-u0922-menu-principal .dropbtn{
             color: #DDD;
-            font-size: 0.9em;
+            font-size: 1.1em;
             box-shadow: unset;
             display: inline;
         }
@@ -1261,6 +1261,7 @@
             cursor: pointer;
             border-radius: unset;
             transition: all 0.25s ease-out;
+            font-size: 22px;
         }
 
         .lbl-toggle:hover, 
@@ -1369,7 +1370,11 @@
         grid-template-rows: repeat(1,120px);
     }*/
 
-    .view-u0922-movilidad .view-footer .node__title,
+    .view-u0922-movilidad .view-footer .node__title
+    {
+        border-bottom: 1px solid #A90533;
+        font-weight: 600;
+    }
     .view-u0922-movilidad .view-footer .node__content{
         text-align: center;
         width: 90%;
@@ -2935,7 +2940,7 @@
 /* main-content */
 
     #main-content {
-        max-width: 95%;
+        max-width: 90%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -3474,7 +3479,7 @@
     #u0922_comunidad_icons,
     .container-mas-en {
         display: grid;
-        gap: 60px;
+        gap: 20px;
         grid-template-columns: 1fr;
     } 
 
@@ -3552,10 +3557,10 @@
 
     .container-mas-en .link_masEn .opcion_menu {
         display: grid;
-        grid-gap: 40px;
         justify-items: center;
         border-bottom: 1px solid #adadad;
-        padding: 30px 0px;
+        grid-gap: 10px;
+        padding: 10px 0px;
     }
     
     .container-mas-en .opcion_menu img { margin-right: 0px; }
@@ -3565,9 +3570,10 @@
         width: 100%;
     }
     .descripcion h4 { 
-        margin: 0px;
         font-size: 22px;
         line-height: 28px;
+        margin: 10px auto;
+        text-align: center;
     }
 
     .descripcion p { 
