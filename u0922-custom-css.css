@@ -1737,11 +1737,6 @@
     #u0922-imprescindibles-menu-link-item-8 a::before { content: "\f044"; }
     #u0922-imprescindibles-menu-link-item-9 a::before { content: "\f292"; }   
     
-    #u0922-imprescindibles-menu-link-item-3,
-    #u0922-imprescindibles-menu-link-item-4 {
-        margin: 0 10px;
-    }
-
     .collapsible-masthead-content #u0922-imprescindibles-menu-link-item-3,
     .collapsible-masthead-content #u0922-imprescindibles-menu-link-item-4 { margin: 0px; }
 
