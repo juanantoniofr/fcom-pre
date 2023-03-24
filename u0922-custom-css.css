@@ -40,6 +40,7 @@
         margin: 0px 20px;
     }
 
+    label {font-weight: initial; }
 
     .ui-widget-content a{ color: #A90533; }
 
@@ -853,6 +854,7 @@
             position: absolute;
             z-index: 10;
             top: 2px;
+            right: 5px;
         }
     }
 
@@ -1240,6 +1242,7 @@
             font-size: 1.1em;
             box-shadow: unset;
             display: inline;
+            font-weight: initial;
         }
 
         #block-u0922-menu-principal .dropdown:hover .dropbtn{ color: #DDD; }
@@ -1720,6 +1723,7 @@
         font-family: FontAwesome;
         padding: 2px;
         font-size: 35px;
+        margin-right: 10px;
     }
     #u0922-imprescindibles-menu-link-item-3 label::before { content: "\f017"; }
     #u0922-imprescindibles-menu-link-item-4 label::before { content: "\f274"; }
@@ -1729,8 +1733,6 @@
 
     #u0922-imprescindibles-menu-link-item-1 a::before { content: "\f272"; }
     #u0922-imprescindibles-menu-link-item-2 a::before { content: "\f073"; }
-    /* #u0922-imprescindibles-menu-link-item-3 a::before { content: "\f017"; }
-    #u0922-imprescindibles-menu-link-item-4 a::before { content: "\f274"; }  */
     #u0922-imprescindibles-menu-link-item-5 a::before { content: "\f15c"; }
     #u0922-imprescindibles-menu-link-item-6 a::before { content: "\f109"; }
     #u0922-imprescindibles-menu-link-item-7 a::before { content: "\f1ea"; }
@@ -1744,28 +1746,7 @@
     #u0922-imprescindibles-menu-link-item-4 ul{
         min-width: unset;
     }
-    /*#u0922-imprescindibles-menu-link-item-3 ul,
-    #u0922-imprescindibles-menu-link-item-4 ul {
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-        border-radius: 10px;
-        min-width: unset;
-        max-height: 0;
-        overflow: hidden;
-    }*/
-
-    /* #u0922-imprescindibles-menu-link-item-4 ul { top: 180% } */
-
-    /*#u0922-imprescindibles-menu-link-item-3:hover ul,
-    #u0922-imprescindibles-menu-link-item-4:hover ul {
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-        max-height: 1000px;
-        padding: 10px;
-        border: 1px solid #ccc
-    } */
-
-    /* #u0922-imprescindibles-menu-link-item-3 ul li a::before,
-    #u0922-imprescindibles-menu-link-item-4 ul li a::before { content: unset;} */
-
+    
     @media  (max-width: 767px) {
         
         /* menu imprescindibles */
@@ -1794,6 +1775,10 @@
             flex-direction: column;
             gap: 40px;
             min-width: 160px;
+        }
+
+        #u0922-imprescindibles-menu-link-item-3 label, #u0922-imprescindibles-menu-link-item-4 label {
+            margin-left: initial;
         }
     }
 
@@ -2558,7 +2543,10 @@
         }
         .pr-features .arc--2 .l-r:last-child,
         .pr-features .arc--3 .l-r:last-child,
-        .l-r .region .pr-features__.features-second { padding-top: 25px; }
+        .l-r .region .pr-features__.features-second { 
+            padding-top: 25px; 
+            padding-bottom: 40px;
+        }
 
     }
 
