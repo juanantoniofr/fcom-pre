@@ -40,6 +40,16 @@
         margin: 0px 20px;
     }
 
+    .l-r.region.pr-main__content{
+        box-shadow: 2px 2px 5px rgba(159, 5, 51, 0.3);
+        padding: 0px 40px;
+    }
+
+    .clearfix.text-formatted.field.field-node--body.field-formatter-text-default.field-name-body.field-type-text-with-summary.field-label-hidden.has-single {
+    
+        padding-top: 30px;
+    }
+
     label {font-weight: initial; }
 
     .ui-widget-content a{ color: #A90533; }
@@ -144,7 +154,7 @@
     /* ckeditor-accordion-container */
 
     .ui-accordion .ui-accordion-content {
-        background: transparent;
+        background-color: #ccc;
         border-radius: 0px 0px 5px 5px;
         padding: 50px;
         border: 1px solid #ddd;
@@ -403,15 +413,22 @@
     }
       
     /** img **/
-    .node--view-mode-full img { 
-        margin:0px;
-        margin-bottom: 30px; 
-        float: none;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
+    .field-type-image {
+        float: right;
+        padding: 0px;
+        margin-right: 20px;
+    }
+    
+    .field-node--field-imagen img,
+    .field-node--body img { 
+        padding: 20px;
+    }
+    
+    .field-node--field-imagen img{
+        float: right;
+        padding: 0px 0px 20px 30px;
+    }
     /* titulos &amp; h3 en grados */
 
     h1.node__title{
@@ -429,11 +446,16 @@
     
     .field-type-image__item { width: fit-content; }
     
-    .field-node--field-imagen{ float: right;}
+    /*.field-node--field-imagen{ float: right;} */
 
-    .field-node--field-subtitulo { font-size: 1.7em;}
+    .field-node--field-subtitulo { 
+        font-size: 1.7em;
+        line-height: 1.2em;
+        color: #a90533;
+    }
 
-    .field-node--field-entradilla{ color:#A90533; }
+    .field-node--field-entradilla{color: #3a3a3a;
+        font-weight: 600; }
 
     /* For extremely small screen devices (480px and below) */
     @media only screen and (max-width: 480px) { }
@@ -453,10 +475,10 @@
   
     /* Big screen devices (889px and above) */
     @media only screen and (min-width: 889px) {
-        .node--view-mode-full img { 
+        /*.node--view-mode-full img { 
             margin-left: 40px; 
             float: right;
-        }
+        }*/
     }
   
     /* Extra big screen devices (1200px and above) */
@@ -1543,6 +1565,10 @@
             width: 92%;
             max-width: 1440px;
         }
+
+        .dropdown:hover #dropdown-content-titulos, .dropdown:focus #dropdown-content-titulos {
+            max-width: 1600px;
+          }
 
         .movilidad .view-footer .node__content { padding: 50px; }        
         .container-view-u0922-practicas.container-level1 .row { grid-template-columns: repeat(3,minmax(250px, 315px)); }
@@ -2825,8 +2851,13 @@
     #block-views-block-u0922-tedestacamos-block-novedades .row-novedades .views-row {
         display: grid;
         grid-column-gap: 10px;
+        grid-row-gap: 25px;
         border-bottom: 1px solid #ddd;
-        padding: 20px 0px;
+        padding: 0px 0px 10px 0px;
+        grid-template-rows: 50px max-content;
+        align-content: center;
+        align-items: center;
+        width: 90%;
     }
     .row-novedades.views-row .views-field-title {
         text-align: left;
@@ -2837,13 +2868,15 @@
     }
     #block-views-block-u0922-tedestacamos-block-novedades .row-novedades.views-row .views-field-nothing {
         padding: 5px;
-        width: 45%;
+        width: 90%;
         border-right: 2px solid #a90533;
         border-left: 2px solid #a90533;
         border-radius: 5px;
-        margin-bottom: 20px;
         margin-right: auto;
         margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .view-u0922__tedestacamos-agendaynovedades .views-field.views-field-title:before {
         font-family: fontAwesome;
@@ -2857,11 +2890,7 @@
     @media only screen and (max-width: 480px) {
         #block-views-block-u0922-tedestacamos-block-novedades .row-novedades { padding: 0px 5px; }
         .row-novedades.views-row .views-field-title { text-align: center; }
-        #block-views-block-u0922-tedestacamos-block-novedades .row-novedades .views-row {
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-        }
+        
     }
         
     /* Small screen devices (600px and above) */
@@ -2870,7 +2899,7 @@
             display: grid;
             grid-template-rows: 1fr 1fr 1fr;
             grid-template-columns: 1fr;
-            grid-row-gap: 5px;
+            grid-row-gap: 20px;
             text-align: center;
             width: 90%;
             margin-left: auto;
@@ -2878,7 +2907,6 @@
         }
         #block-views-block-u0922-tedestacamos-block-novedades .row-novedades .views-row { 
             width: 90%;
-            margin-left: auto;
             margin-left: auto;
             margin-right: auto;
         }
@@ -2891,41 +2919,13 @@
             grid-template-rows: 1fr;
             grid-template-columns: 1fr 1fr 1fr;
         }
-        #block-views-block-u0922-tedestacamos-block-novedades .row-novedades .views-row {
-            grid-row-gap: 25px;
-            grid-template-rows: 100px 80px;
-        }
-        #block-views-block-u0922-tedestacamos-block-novedades .row-novedades.views-row .views-field-nothing {
-            width: 80%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+        
     }
 
     /* Big screen devices (889px and above) */
     @media only screen and (min-width: 889px) { 
         #block-views-block-u0922-tedestacamos-block-novedades .row-novedades {
             grid-template-columns: 1fr;
-        }
-        #block-views-block-u0922-tedestacamos-block-novedades .row-novedades .views-row {
-            grid-template-rows: 80px 40px;
-            align-content: center;
-            padding: 0px;
-            align-items: center;
-            min-height: 177px;
-        }
-        #block-views-block-u0922-tedestacamos-block-novedades .row-novedades.views-row .views-field-nothing { 
-            width: 45%; 
-            margin-bottom: 0px;
-        }
-    }
-
-    /* Big screen devices (889px and above) */
-    @media only screen and (min-width: 889px) { 
-        #block-views-block-u0922-tedestacamos-block-novedades .row-novedades .views-row {
-            grid-template-rows: 63px 24px;
-            min-height: 160px;
         }
     }
     
@@ -3515,7 +3515,6 @@
         margin-left: 45px;
         border-radius: 10px;
         opacity: 0.9;
-        width: fit-content;
     }
 
     #u0922_comunidad_icons .icon {
@@ -3541,7 +3540,7 @@
         color: wheat;
         list-style-position: outside;
         margin-bottom: 0px;
-        width: max-content;
+        width: fit-content;
     }
    
     #u0922_comunidad .dropdown:hover .dropdown-content {
@@ -3869,17 +3868,16 @@
 
     .info_decanato {
         border: 2px solid #d7d7d7;
-        padding-top: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
         border-radius: 10px;
         margin-top: 50px;
+        padding: 50px;
     }
 
     .info_decanato h4 {
         color: #a90533;
         text-decoration: underline #d7d7d7 2px;
         font-weight: normal;
+        margin-bottom: 40px;
     }
 
     .tit_decanato {
