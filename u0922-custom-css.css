@@ -45,10 +45,7 @@
         padding: 0px 40px;
     }
 
-    .clearfix.text-formatted.field.field-node--body.field-formatter-text-default.field-name-body.field-type-text-with-summary.field-label-hidden.has-single {
     
-        padding-top: 30px;
-    }
 
     label {font-weight: initial; }
 
@@ -454,8 +451,11 @@
         color: #a90533;
     }
 
-    .field-node--field-entradilla{color: #3a3a3a;
-        font-weight: 600; }
+    .field-node--field-entradilla{
+        color: #3a3a3a;
+        font-weight: 600; 
+        margin-bottom: 30px;
+    }
 
     /* For extremely small screen devices (480px and below) */
     @media only screen and (max-width: 480px) { }
@@ -2996,6 +2996,8 @@
         font-weight: bold;
         line-height: 1.2em;
     }
+
+    h1.node__title { font-size: 2.4em;}
 
     .inferior_grado dt a::before,
     .accordion-ckeditor-title-ConoceFcom dt a::before{
