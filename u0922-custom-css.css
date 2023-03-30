@@ -3926,6 +3926,8 @@
         justify-content: center;
         align-items: center;
         gap: 20px;
+        padding: 20px;
+        min-height: 280px;
     }
 
     
@@ -3945,13 +3947,35 @@
     /* Big screen devices (889px and above) */
     @media only screen and (min-width: 889px) { }
 
-    /* Extra big screen devices (1200px and above) */
-    @media only screen and (min-width: 1200px) {
-        .datos_decanato {
-            grid-template-columns: 1fr 1fr 2fr 1fr;
+    @media only screen and (min-width: 1024px) {
+        .datos_decanato div.contenido {
+            min-height: 480px;
         }
     }
     
+    /* Extra big screen devices (1200px and above) */
+    @media only screen and (min-width: 1200px) {
+        .datos_decanato {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    /*  Extra-Extra big screen devices (1440px and above) */
+    @media only screen and (min-width: 1440px) {
+        .datos_decanato div.contenido {
+            min-height: 380px;
+        }
+    }
+    
+    /* Super Extra big screen devices (1745px and above) */
+    @media only screen and (min-width: 1745px) {
+        .datos_decanato {
+            grid-template-columns: 1fr minmax(150px, 200px) 2fr 1fr;
+        }
+        .datos_decanato div.contenido {
+            min-height: 280px;
+        }
+    }
 
 /* fin pagina decanato */
 
@@ -3974,8 +3998,7 @@
     }
     div.contenido ul li { line-height: 2.2em; }
 
-    .datos_decanato div.contenido { padding: 20px; }
-
+    
     /* For extremely small screen devices (480px and below) */
     @media only screen and (max-width: 480px) { 
         .datos_decanato.personal_secretaria { grid-template-columns: 1fr; }
