@@ -19,6 +19,7 @@
     .pager {
         margin: 60px 0px;
         text-align: left;
+        padding: 0px 0px 40px 0px;
     }
     a.pager__link, a.pager__link:hover, a.pager__link:active, a.pager__link:focus  {
         padding: 20px;
@@ -149,15 +150,18 @@
     }
     
     /* ckeditor-accordion-container */
-
-    .ui-accordion .ui-accordion-content {
+    .view-vista-conoce-fcom .ui-accordion-content {
         background-color: #ccc;
+    }
+    .ui-accordion .ui-accordion-content {
         border-radius: 0px 0px 5px 5px;
         padding: 50px;
         border: 1px solid #ddd;
     }
 
     .view-vista-conoce-fcom .accordeon.views-row { margin: 20px 0px; }
+    .views-element-container { padding: 40px; }
+    
 
     .ckeditor-accordion-container dl dd { padding: 50px; }
     .ckeditor-accordion-container dl dt a {
@@ -3186,7 +3190,7 @@
 
     .row-accordion-soy .ckeditor-accordion-container  dl dt a,
     .row-accordion-soy .ckeditor-accordion-container dl dt.active a {
-        background: rgba(0,0,0,.03);
+        background: rgba(0,0,0,.4);
         color: #a90533;
         padding: 18px;
     }
