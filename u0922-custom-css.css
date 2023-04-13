@@ -160,9 +160,16 @@
     }
 
     .view-vista-conoce-fcom .accordeon.views-row { margin: 20px 0px; }
-    .views-element-container { 
+    .views-element-container .view{ 
         padding: 40px; 
-        margin-bottom: 40px;
+    }
+    .views-element-container .view-frontpage {
+        padding: 0px;
+        margin: 0px;
+    }
+    .views-element-container .movilidad,
+    .views-element-container .practicas{ 
+        padding: 0px; 
     }
     
 
