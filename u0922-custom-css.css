@@ -1412,10 +1412,16 @@
         grid-template-rows: repeat(1,120px);
     }*/
 
-    .view-u0922-movilidad .view-footer .node__title
+    .view-u0922-movilidad .view-footer .node__title,
+    .view-u0922-practicas .view-footer .node__title
     {
         border-bottom: 1px solid #A90533;
-        font-weight: 600;   
+        font-weight: 600;
+        text-align: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 1.6em;   
     }
     .view-u0922-movilidad .view-footer .node__content{
         text-align: center;
@@ -1584,7 +1590,8 @@
             max-width: 1600px;
           }
 
-        .movilidad .view-footer .node__content { padding: 50px; }        
+        .movilidad .view-footer .node__content,
+        .practicas .view-footer .node__content { padding: 50px; }        
         .container-view-u0922-practicas.container-level1 .row { grid-template-columns: repeat(3,minmax(250px, 315px)); }
         .row {
             grid-template-rows: repeat(2,150px);
