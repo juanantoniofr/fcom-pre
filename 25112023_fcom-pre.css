@@ -103,6 +103,10 @@ p.ident {
   padding: 30px 50px;
 }
 
+a.pager__link.pager__link--is-active {
+    background: #9c6e7c;
+}
+
 .views-field.views-field-changed {
   font-size: 0.9em;
   font-style: italic;
