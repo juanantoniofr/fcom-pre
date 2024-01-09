@@ -1978,7 +1978,7 @@ p#text-UniSevilla {
 /* Extra big screen devices (1200px and above) */
 @media only screen and (min-width: 1200px) {
   #block-u0922-menu-principal .dropbtn {
-    font-size: 28px;
+    font-size: 25px;
   }
 }
 
@@ -4406,7 +4406,7 @@ span.views-summary-unformatted {
 }
 #footer h2 {
   text-align: center;
-  font-size: 2em;
+  font-size: 1.6em;
   line-height: normal;
 }
 #footer h3 {
@@ -4523,8 +4523,6 @@ span.views-summary-unformatted {
 
   #footer {
     background: #a90533;
-    padding: 50px;
-    font-size: larger;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2px;
@@ -4579,6 +4577,7 @@ span.views-summary-unformatted {
   text-decoration: underline #d7d7d7 2px;
   font-weight: normal;
   margin-bottom: 40px;
+  font-size: x-large;
 }
 
 .tit_decanato {
@@ -4611,7 +4610,7 @@ div.datos_decanato {
 
 .datos_decanato h2 {
   text-align: center;
-  font-size: 16px;
+  font-size: 15px;
   color: #a90533;
   margin: 0px;
 }
