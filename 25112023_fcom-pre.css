@@ -1203,7 +1203,7 @@ p#text-UniSevilla {
   line-height: 1em;
   font-stretch: ultra-condensed;
   text-align: center;
-  letter-spacing: -2.5px;
+  letter-spacing: -1px;
 }
 
 #block-logouses p {
@@ -1978,7 +1978,7 @@ p#text-UniSevilla {
 /* Extra big screen devices (1200px and above) */
 @media only screen and (min-width: 1200px) {
   #block-u0922-menu-principal .dropbtn {
-    font-size: 25px;
+    font-size: 23px;
   }
 }
 
@@ -3223,6 +3223,7 @@ p.utilidades::before {
   #servicios-FCom .views-field-title {
     padding: 15px;
     min-height: 165px;
+    background: #cbc9c9;
   }
 
   #app-FCom .views-enlace,
