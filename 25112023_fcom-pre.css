@@ -1013,10 +1013,10 @@ input#collapsible-menu-imprescindibles-examenes-masthead[type="checkbox"] {
 
 #block-formulariodebusqueda #edit-keys {
   font-size: 18px;
-  background-color: #a90533;
-  opacity: 0.7;
+  background-color: #d2a2af;
+  /*opacity: 0.7;*/
   border-radius: 7px;
-  color: #f8ebef;
+  color: #620622;
   height: 40px;
 }
 
