@@ -3223,7 +3223,7 @@ p.utilidades::before {
   #servicios-FCom .views-field-title {
     padding: 15px;
     min-height: 165px;
-    background: #cbc9c9;
+    background: #f5f5f5;
   }
 
   #app-FCom .views-enlace,
@@ -4381,6 +4381,7 @@ span.views-summary-unformatted {
     padding: 20px;
     margin-top: 0px;
     min-height: 515px;
+    background-color: #f5f5f5;
   }
 }
 
@@ -4446,6 +4447,7 @@ span.views-summary-unformatted {
   background-color: #dadada;
   margin-left: auto;
   margin-right: auto;
+  background-color: white;
 }
 .row-imprescindibles {
   display: grid;
