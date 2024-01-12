@@ -4623,12 +4623,18 @@ div.datos_decanato {
   color: white;
   text-align: center;
   min-height: 200px;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   gap: 20px;
   padding: 20px;
   min-height: 280px;
+}
+
+.contenido img {
+  padding: 0px;
+  margin-bottom: 0px;
+  max-width: 90%;
 }
 
 /* For extremely small screen devices (595px and below) */
