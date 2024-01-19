@@ -4637,6 +4637,11 @@ div.datos_decanato {
   max-width: 90%;
 }
 
+.datos_decanato a {
+  color: white;
+  text-decoration: underline;
+}
+
 /* For extremely small screen devices (595px and below) */
 @media only screen and (max-width: 480px) {
 }
