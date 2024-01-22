@@ -4672,12 +4672,15 @@ div.datos_decanato {
   .datos_decanato {
     grid-template-columns: 1fr 1fr;
   }
+  .datos_decanato div.contenido {
+    min-height: 380px;
+  }
 }
 
 /*  Extra-Extra big screen devices (1440px and above) */
 @media only screen and (min-width: 1440px) {
   .datos_decanato div.contenido {
-    min-height: 380px;
+    min-height: 280px;
   }
 }
 
@@ -5255,4 +5258,56 @@ p.servicios-Fcom {
 
 .view-vista-conoce-fcom .view-empty {
   display: contents;
+}
+
+
+/* ++++++++++++++++++++++++++++++++++
++   CKEDITOR: PDF INSERTADO   +
++++++++++++++++++++++++++++++++++++ */
+/* Anchura */
+.pdf-insertado{width:100%;height:100vh;}
+.pdf-insertado[data-width="95"]{width:95%;height:95vh;}
+.pdf-insertado[data-width="90"]{width:90%;height:90vh;}
+.pdf-insertado[data-width="85"]{width:85%;height:85vh;}
+.pdf-insertado[data-width="80"]{width:80%;height:80vh;}
+.pdf-insertado[data-width="75"]{width:75%;height:75vh;}
+.pdf-insertado[data-width="70"]{width:70%;height:70vh;}
+.pdf-insertado[data-width="55"]{width:65%;height:65vh;}
+.pdf-insertado[data-width="60"]{width:60%;height:60vh;}
+.pdf-insertado[data-width="55"]{width:55%;height:55vh;}
+.pdf-insertado[data-width="50"]{width:50%;height:50vh;}
+.pdf-insertado[data-width="45"]{width:45%;height:45vh;}
+.pdf-insertado[data-width="40"]{width:40%;height:40vh;}
+.pdf-insertado[data-width="35"]{width:35%;height:35vh;}
+.pdf-insertado[data-width="30"]{width:30%;height:30vh;}
+.pdf-insertado[data-width="25"]{width:25%;height:25vh;}
+.pdf-insertado[data-width="20"]{width:20%;height:20vh;}
+.pdf-insertado[data-width="15"]{width:15%;height:15vh;}
+.pdf-insertado[data-width="10"]{width:10%;height:10vh;}
+
+/* Alineación */
+.pdf-insertado.align-center {
+	display: block;
+	margin: 0 auto 20px auto;
+}
+.pdf-insertado.align-left {
+	float: left;
+	margin: 10px 20px 10px 0;
+}
+.pdf-insertado.align-right {
+	float: right;
+	margin: 10px 0 10px 20PX;
+}
+
+/* iframe se adapta*/
+.pdf-insertado iframe {
+	width:100%;
+	height:100%;
+}
+
+/* Modo móvil */
+@media (max-width: 767px){
+	.pdf-insertado {
+		width: 100% !important;
+	}
 }
