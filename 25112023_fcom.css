@@ -1128,6 +1128,7 @@ p#text-UniSevilla {
 
 /* For extremely small screen devices (480px and below) */
 @media only screen and (max-width: 480px) {
+
 }
 
 /* Small screen devices (600px and above) */
@@ -1153,10 +1154,16 @@ p#text-UniSevilla {
 
 /* Big screen devices (889px and above) */
 @media only screen and (min-width: 889px) {
+  div.iconos_ppales {
+    min-height: 115px;
+    text-align: right;
+  }
+
 }
 
 /* Extra big screen devices (1200px and above) */
 @media only screen and (min-width: 1200px) {
+  
 }
 
 /* Extra big screen devices (1440px and above) escritorio medio */
@@ -1175,6 +1182,11 @@ p#text-UniSevilla {
     justify-content: center;
     align-items: flex-end;
   }
+
+  div.iconos_ppales {
+    min-height: 85px;
+    text-align: right;
+  }
 }
 
 .iconos_ppales img {
@@ -1183,10 +1195,7 @@ p#text-UniSevilla {
   box-shadow: unset;
 }
 
-div.iconos_ppales {
-  min-height: 102px;
-  text-align: right;
-}
+
 
 /* logo us es */
 
