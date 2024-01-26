@@ -1177,6 +1177,16 @@ p#text-UniSevilla {
   }
 }
 
+.iconos_ppales img {
+  max-height: 3em;
+  padding-right: 10px;
+  box-shadow: unset;
+}
+
+div.iconos_ppales {
+  min-height: 102px;
+  text-align: right;
+}
 
 /* logo us es */
 
