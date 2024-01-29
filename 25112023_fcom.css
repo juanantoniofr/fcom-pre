@@ -1155,7 +1155,7 @@ p#text-UniSevilla {
 /* Big screen devices (889px and above) */
 @media only screen and (min-width: 889px) {
   div.iconos_ppales {
-    min-height: 115px;
+    min-height: 132px;
     text-align: right;
   }
 
@@ -1184,7 +1184,7 @@ p#text-UniSevilla {
   }
 
   div.iconos_ppales {
-    min-height: 85px;
+    min-height: 102px;
     text-align: right;
   }
 }
@@ -1193,6 +1193,33 @@ p#text-UniSevilla {
   max-height: 3em;
   padding-right: 10px;
   box-shadow: unset;
+}
+
+.iconos_ppales div{
+  display: inline-block;
+  position: relative;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: max-content;
+  background-color: #a90533;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  padding: 1px 6px 1px 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: -65%;
+  left: 35%;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: small;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
 
