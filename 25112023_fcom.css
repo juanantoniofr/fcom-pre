@@ -1210,7 +1210,7 @@ p#text-UniSevilla {
   padding: 1px 6px 1px 6px;
   position: absolute;
   z-index: 1;
-  bottom: -65%;
+  bottom: -75%;
   left: 35%;
   opacity: 0;
   transition: opacity 0.3s;
