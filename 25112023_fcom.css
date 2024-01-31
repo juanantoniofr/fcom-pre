@@ -1128,11 +1128,16 @@ p#text-UniSevilla {
 
 /* For extremely small screen devices (480px and below) */
 @media only screen and (max-width: 480px) {
-
+  div.iconos_ppales {
+    display: none;
+  }
 }
 
-/* Small screen devices (600px and above) */
+/* Small screen devices (481px and above) */
 @media only screen and (min-width: 481px) {
+  div.iconos_ppales {
+    display: none;
+  }
 }
 
 /* Medium screen devices (768px and above) */
@@ -1150,11 +1155,13 @@ p#text-UniSevilla {
     grid-template-columns: minmax(150px, 200px) auto 160px;
     max-width: 1800px;
   }
+
 }
 
 /* Big screen devices (889px and above) */
 @media only screen and (min-width: 889px) {
   div.iconos_ppales {
+    display: block;
     min-height: 113px;
     text-align: right;
   }
