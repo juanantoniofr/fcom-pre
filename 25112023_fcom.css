@@ -1155,7 +1155,6 @@ p#text-UniSevilla {
     grid-template-columns: minmax(150px, 200px) auto 160px;
     max-width: 1800px;
   }
-
 }
 
 /* Big screen devices (889px and above) */
@@ -1165,12 +1164,10 @@ p#text-UniSevilla {
     min-height: 113px;
     text-align: right;
   }
-
 }
 
 /* Extra big screen devices (1200px and above) */
 @media only screen and (min-width: 1200px) {
-  
 }
 
 /* Extra big screen devices (1440px and above) escritorio medio */
@@ -1202,7 +1199,7 @@ p#text-UniSevilla {
   box-shadow: unset;
 }
 
-.iconos_ppales div{
+.iconos_ppales div {
   display: inline-block;
   position: relative;
 }
@@ -1228,8 +1225,6 @@ p#text-UniSevilla {
   visibility: visible;
   opacity: 1;
 }
-
-
 
 /* logo us es */
 
@@ -1760,6 +1755,18 @@ p#text-UniSevilla {
 
 /* For extremely small screen devices (480px and below) */
 @media only screen and (max-width: 480px) {
+  .row {
+    grid-gap: 0;
+  }
+
+  .narrativa-l21 {
+    padding: 9px;
+  }
+
+  .border-row {
+    padding-left: 0px;
+  }
+
   .miTFG .jumbotron {
     padding: 2rem;
   }
@@ -2681,7 +2688,6 @@ a.u0922-imprescindibles-link::before {
   .noticias-destacadas-front-page .view-content {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-gap: 0px;
   }
   .titulares h2,
   .titulares h3 {
@@ -4562,7 +4568,7 @@ span.views-summary-unformatted {
   }
   .l-r.region.pr-features__features-second {
     grid-template-columns: 20px 1fr 1fr 20px;
-    grid-gap: 0px;
+    grid-gap: 0;
   }
   #block-views-block-u0922-comunidad-block-1 {
     grid-column: 2 / 4;
