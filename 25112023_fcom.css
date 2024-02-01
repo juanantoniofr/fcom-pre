@@ -1161,7 +1161,7 @@ p#text-UniSevilla {
 @media only screen and (min-width: 889px) {
   div.iconos_ppales {
     display: block;
-    min-height: 113px;
+    min-height: 132px;
     text-align: right;
   }
 }
@@ -2633,7 +2633,7 @@ a.u0922-imprescindibles-link::before {
 
   .noticias-destacadas-front-page .view-content {
     grid-template-columns: 1fr;
-
+    grid-gap: 50px;
     grid-template-rows: 1fr 1fr;
   }
 
@@ -2688,6 +2688,7 @@ a.u0922-imprescindibles-link::before {
   .noticias-destacadas-front-page .view-content {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    grid-gap: 0;
   }
   .titulares h2,
   .titulares h3 {
