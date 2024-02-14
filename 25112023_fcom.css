@@ -757,6 +757,7 @@ input#collapsible-Practicas[type="checkbox"],
 input#collapsible-Movilidad[type="checkbox"],
 input#collapsible-Secretaria[type="checkbox"],
 input#collapsible-NoticiasFcom[type="checkbox"],
+input#collapsible-Biblioteca[type="checkbox"],
 input#collapsible-menu-imprescindibles-horarios[type="checkbox"],
 input#collapsible-menu-imprescindibles-horarios-masthead[type="checkbox"],
 input#collapsible-menu-imprescindibles-examenes[type="checkbox"],
@@ -1541,7 +1542,8 @@ p#text-UniSevilla {
   .lbl-toggle-Practicas,
   .lbl-toggle-Movilidad,
   .lbl-toggle-Secretaria,
-  .lbl-toggle-NoticiasFcom {
+  .lbl-toggle-NoticiasFcom, 
+  .lbl-toggle-Biblioteca {
     display: block;
     text-align: center;
     padding: 1rem;
@@ -1559,7 +1561,8 @@ p#text-UniSevilla {
   .lbl-toggle-Practicas:hover,
   .lbl-toggle-Movilidad:hover,
   .lbl-toggle-Secretaria:hover,
-  .lbl-toggle-NoticiasFcom:hover {
+  .lbl-toggle-NoticiasFcom:hover,
+  .lbl-toggle-Biblioteca:hover {
     color: #fff;
   }
   .lbl-toggle::before,
@@ -1568,7 +1571,8 @@ p#text-UniSevilla {
   .lbl-toggle-Practicas::before,
   .lbl-toggle-Movilidad::before,
   .lbl-toggle-Secretaria::before,
-  .lbl-toggle-NoticiasFcom::before {
+  .lbl-toggle-NoticiasFcom::before,
+  .lbl-toggle-Biblioteca::before {
     content: " ";
     display: inline-block;
     border-top: 5px solid transparent;
@@ -1585,7 +1589,8 @@ p#text-UniSevilla {
   .toggle:checked + .lbl-toggle-Practicas::before,
   .toggle:checked + .lbl-toggle-Movilidad::before,
   .toggle:checked + .lbl-toggle-Secretaria::before,
-  .toggle:checked + .lbl-toggle-NoticiasFcom::before {
+  .toggle:checked + .lbl-toggle-NoticiasFcom::before, 
+  .toggle:checked + .lbl-toggle-Biblioteca::before{
     transform: rotate(90deg) translateX(-3px);
   }
   .collapsible-content,
@@ -1594,27 +1599,31 @@ p#text-UniSevilla {
   .collapsible-Practicas-content,
   .collapsible-Movilidad-content,
   .collapsible-Secretaria-content,
-  .collapsible-NoticiasFcom-content {
+  .collapsible-NoticiasFcom-content,
+  .collapsible-Biblioteca-content {
     max-height: 0px;
     overflow: hidden;
     transition: max-height 0.5s ease-in-out;
   }
   .collapsible-ConoceFcom-content {
-    z-index: 8;
+    z-index: 9;
   }
   .collapsible-Titulos-content {
-    z-index: 7;
+    z-index: 8;
   }
   .collapsible-Practicas-content {
-    z-index: 6;
+    z-index: 7;
   }
   .collapsible-Movilidad-content {
-    z-index: 5;
+    z-index: 6;
   }
   .collapsible-Secretaria-content {
-    z-index: 4;
+    z-index: 5;
   }
   .collapsible-NoticiasFcom-content {
+    z-index: 4;
+  }
+  .collapsible-Biblioteca-content {
     z-index: 3;
   }
   .collapsible-content .content-inner {
@@ -1633,9 +1642,8 @@ p#text-UniSevilla {
   .toggle:checked + .lbl-toggle-Practicas + .collapsible-Practicas-content,
   .toggle:checked + .lbl-toggle-Movilidad + .collapsible-Movilidad-content,
   .toggle:checked + .lbl-toggle-Secretaria + .collapsible-Secretaria-content,
-  .toggle:checked
-    + .lbl-toggle-NoticiasFcom
-    + .collapsible-NoticiasFcom-content {
+  .toggle:checked + .lbl-toggle-NoticiasFcom + .collapsible-NoticiasFcom-content,
+  .toggle:checked + .lbl-toggle-Biblioteca + .collapsible-Biblioteca-content {
     max-height: fit-content;
     display: flex;
     margin-top: 30px;
@@ -1647,7 +1655,8 @@ p#text-UniSevilla {
   .toggle:checked + .lbl-toggle-Practicas,
   .toggle:checked + .lbl-toggle-Movilidad,
   .toggle:checked + .lbl-toggle-Secretaria,
-  .toggle:checked + .lbl-toggle-NoticiasFcom {
+  .toggle:checked + .lbl-toggle-NoticiasFcom,
+  .toggle:checked + .lbl-toggle-Biblioteca {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
   }
