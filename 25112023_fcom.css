@@ -1149,7 +1149,7 @@ p#text-UniSevilla {
     display: grid;
     width: 100%;
     margin: 0 auto;
-    grid-template-columns: minmax(150px, 200px) auto 160px;
+    grid-template-columns: minmax(300px, 300px) auto 160px;
     max-width: 1800px;
   }
 }
@@ -1220,8 +1220,8 @@ p#text-UniSevilla {
 }
 
 #block-logouses img {
-  width: 200px;
-  min-width: 150px;
+  width: 300px;
+  min-width: 300px;
   box-shadow: unset;
 }
 
@@ -1266,6 +1266,16 @@ p#text-UniSevilla {
     text-align: center;
   }
 }
+
+/* Extra big screen devices (1300px and below) */
+@media (max-width: 1300px) {
+  #block-logouses img {
+    width: 250px;
+    min-width: 250px;
+    box-shadow: unset;
+  }
+}
+
 
 /* fin logo us es*/
 
@@ -1908,7 +1918,7 @@ p#text-UniSevilla {
   }
 
   #block-u0922-menu-principal .dropbtn {
-    font-size: 1.8vw;
+    font-size: 1.5vw;
   }
   .view-u0922-movilidad .view-footer .node__title {
     font-size: 4vw;
@@ -2027,7 +2037,7 @@ p#text-UniSevilla {
 /* Extra big screen devices (1200px and above) */
 @media only screen and (min-width: 1200px) {
   #block-u0922-menu-principal .dropbtn {
-    font-size: 23px;
+    font-size: 20px;
   }
 }
 
