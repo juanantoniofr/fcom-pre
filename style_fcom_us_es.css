@@ -1129,12 +1129,10 @@ p#text-UniSevilla {
 
 /* For extremely small screen devices (480px and below) */
 @media only screen and (max-width: 480px) {
-
 }
 
 /* Small screen devices (481px and above) */
 @media only screen and (min-width: 481px) {
-
 }
 
 /* Medium screen devices (768px and above) */
@@ -1156,7 +1154,6 @@ p#text-UniSevilla {
 
 /* Big screen devices (889px and above) */
 @media only screen and (min-width: 889px) {
-
 }
 
 /* Extra big screen devices (1200px and above) */
@@ -1179,10 +1176,7 @@ p#text-UniSevilla {
     justify-content: center;
     align-items: flex-end;
   }
-
 }
-
-
 
 .tooltiptext {
   visibility: hidden;
@@ -1275,7 +1269,6 @@ p#text-UniSevilla {
     box-shadow: unset;
   }
 }
-
 
 /* fin logo us es*/
 
@@ -1552,7 +1545,7 @@ p#text-UniSevilla {
   .lbl-toggle-Practicas,
   .lbl-toggle-Movilidad,
   .lbl-toggle-Secretaria,
-  .lbl-toggle-NoticiasFcom, 
+  .lbl-toggle-NoticiasFcom,
   .lbl-toggle-Biblioteca {
     display: block;
     text-align: center;
@@ -1599,8 +1592,8 @@ p#text-UniSevilla {
   .toggle:checked + .lbl-toggle-Practicas::before,
   .toggle:checked + .lbl-toggle-Movilidad::before,
   .toggle:checked + .lbl-toggle-Secretaria::before,
-  .toggle:checked + .lbl-toggle-NoticiasFcom::before, 
-  .toggle:checked + .lbl-toggle-Biblioteca::before{
+  .toggle:checked + .lbl-toggle-NoticiasFcom::before,
+  .toggle:checked + .lbl-toggle-Biblioteca::before {
     transform: rotate(90deg) translateX(-3px);
   }
   .collapsible-content,
@@ -1652,7 +1645,9 @@ p#text-UniSevilla {
   .toggle:checked + .lbl-toggle-Practicas + .collapsible-Practicas-content,
   .toggle:checked + .lbl-toggle-Movilidad + .collapsible-Movilidad-content,
   .toggle:checked + .lbl-toggle-Secretaria + .collapsible-Secretaria-content,
-  .toggle:checked + .lbl-toggle-NoticiasFcom + .collapsible-NoticiasFcom-content,
+  .toggle:checked
+    + .lbl-toggle-NoticiasFcom
+    + .collapsible-NoticiasFcom-content,
   .toggle:checked + .lbl-toggle-Biblioteca + .collapsible-Biblioteca-content {
     max-height: fit-content;
     display: flex;
@@ -3614,6 +3609,7 @@ h1.node__title {
 
 h1.node__title {
   font-size: 2.4em;
+  border: rgb(58, 58, 58) solid 1px;
 }
 
 .inferior_grado dt a::before,
@@ -4040,7 +4036,7 @@ div.views-summary.views-summary-unformatted {
   flex-direction: row;
   justify-content: center;
   align-items: last baseline;
-  height: 80px;
+  height: 120px;
 }
 
 #edit-title {
@@ -4146,6 +4142,19 @@ span.views-summary-unformatted {
   font-size: 16px;
   position: relative;
   height: max-content;
+}
+
+.class-buscador .views-row {
+  border-top: 1px solid #bbb;
+  padding: 30px 50px;
+}
+
+.class-buscador .views-row .views-field-title a {
+  font-size: 1.3em;
+}
+
+.class-buscador .views-row .views-field-field-entradilla {
+  margin-top: 13px;
 }
 
 /* content-suffix */
@@ -5422,4 +5431,15 @@ p.servicios-Fcom {
   .pdf-insertado {
     width: 100% !important;
   }
+}
+
+/*** Pie de foto ***/
+
+div.field-node--field-pie-de-foto {
+  float: right;
+  margin-right: 20px;
+  width: 58%;
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: bold;
 }
