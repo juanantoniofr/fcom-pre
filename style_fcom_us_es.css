@@ -1214,9 +1214,11 @@ p#text-UniSevilla {
 }
 
 #block-logouses img {
-  width: 300px;
-  min-width: 300px;
   box-shadow: unset;
+}
+
+#block-logouses img+img {
+  width: 103px;
 }
 
 #block-logouses h1 {
@@ -1233,6 +1235,7 @@ p#text-UniSevilla {
   margin: 0px;
   color: #454545;
   font-stretch: condensed;
+  display: inline-flex;
 }
 
 /* For extremely small screen devices (480px and below) */
@@ -1258,15 +1261,6 @@ p#text-UniSevilla {
 
   #block-logouses .field__item h1 {
     text-align: center;
-  }
-}
-
-/* Extra big screen devices (1300px and below) */
-@media (max-width: 1300px) {
-  #block-logouses img {
-    width: 250px;
-    min-width: 250px;
-    box-shadow: unset;
   }
 }
 
