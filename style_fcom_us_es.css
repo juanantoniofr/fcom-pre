@@ -1147,7 +1147,7 @@ p#text-UniSevilla {
     display: grid;
     width: 100%;
     margin: 0 auto;
-    grid-template-columns: minmax(300px, 300px) auto 160px;
+    grid-template-columns: minmax(300px, 320px) auto 160px;
     max-width: 1800px;
   }
 }
@@ -1163,7 +1163,7 @@ p#text-UniSevilla {
 /* Extra big screen devices (1440px and above) escritorio medio */
 @media only screen and (min-width: 1440px) {
   #navbar .l-r {
-    grid-template-columns: minmax(200px, 352px) auto 160px;
+    grid-template-columns: minmax(200px, 320px) auto 160px;
     grid-gap: 5px;
   }
   #block-logouses {
