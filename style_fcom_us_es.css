@@ -559,10 +559,6 @@ p:not(:empty)::after {
 }
 /* titulos &amp; h3 en grados */
 
-h1.node__title {
-  margin-bottom: 2rem;
-}
-
 h1.node__title,
 .inferior_grado h3 {
   padding: 15px;
@@ -1217,7 +1213,7 @@ p#text-UniSevilla {
   box-shadow: unset;
 }
 
-#block-logouses img+img {
+#block-logouses img + img {
   width: 103px;
 }
 
@@ -3601,9 +3597,12 @@ h1.node__title {
   line-height: 1.2em;
 }
 
-h1.node__title {
-  font-size: 2.4em;
-  border: rgb(58, 58, 58) solid 1px;
+.node__header h1.node__title {
+  font-size: 51px;
+  border: none;
+  padding: 15px 0px;
+  color: rgb(63, 63, 63);
+  margin-bottom: 0px;
 }
 
 .inferior_grado dt a::before,
