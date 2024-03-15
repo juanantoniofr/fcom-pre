@@ -559,10 +559,6 @@ p:not(:empty)::after {
 }
 /* titulos &amp; h3 en grados */
 
-h1.node__title {
-  margin-bottom: 2rem;
-}
-
 h1.node__title,
 .inferior_grado h3 {
   padding: 15px;
@@ -1147,7 +1143,7 @@ p#text-UniSevilla {
     display: grid;
     width: 100%;
     margin: 0 auto;
-    grid-template-columns: minmax(300px, 300px) auto 160px;
+    grid-template-columns: minmax(300px, 320px) auto 160px;
     max-width: 1800px;
   }
 }
@@ -1163,7 +1159,7 @@ p#text-UniSevilla {
 /* Extra big screen devices (1440px and above) escritorio medio */
 @media only screen and (min-width: 1440px) {
   #navbar .l-r {
-    grid-template-columns: minmax(200px, 352px) auto 160px;
+    grid-template-columns: minmax(200px, 320px) auto 160px;
     grid-gap: 5px;
   }
   #block-logouses {
@@ -1214,9 +1210,11 @@ p#text-UniSevilla {
 }
 
 #block-logouses img {
-  width: 300px;
-  min-width: 300px;
   box-shadow: unset;
+}
+
+#block-logouses img + img {
+  width: 103px;
 }
 
 #block-logouses h1 {
@@ -1233,6 +1231,7 @@ p#text-UniSevilla {
   margin: 0px;
   color: #454545;
   font-stretch: condensed;
+  display: inline-flex;
 }
 
 /* For extremely small screen devices (480px and below) */
@@ -1258,15 +1257,6 @@ p#text-UniSevilla {
 
   #block-logouses .field__item h1 {
     text-align: center;
-  }
-}
-
-/* Extra big screen devices (1300px and below) */
-@media (max-width: 1300px) {
-  #block-logouses img {
-    width: 250px;
-    min-width: 250px;
-    box-shadow: unset;
   }
 }
 
@@ -3607,8 +3597,12 @@ h1.node__title {
   line-height: 1.2em;
 }
 
-h1.node__title {
-  font-size: 2.4em;
+.node__header h1.node__title {
+  font-size: 51px;
+  border: none;
+  padding: 15px 0px;
+  color: rgb(63, 63, 63);
+  margin-bottom: 0px;
 }
 
 .inferior_grado dt a::before,
@@ -5441,4 +5435,25 @@ div.field-node--field-pie-de-foto {
   text-align: center;
   font-size: 0.8em;
   font-weight: bold;
+}
+
+/*** fecha y url a categoría en noticiasfcom ***/
+
+/* En línea #11 | https://fcom-pre.us.es/noticiasfcom/actividades-y-eventos/la-comunicacion-cientifica-del-cancer-debate-en-las-aulas-de-la */
+
+.field-node--field-f1,
+.field-node-field-vocabulario-para-noticias {
+  display: inline-block;
+  color: rgb(169, 5, 51);
+  border-right: 2px solid rgb(169, 5, 51);
+  line-height: 12px;
+  padding: 0px 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.field-node--field-f1 {
+  border-right: 2px solid rgb(169, 5, 51);
+  line-height: 10px;
+  padding: 0px 5px;
 }
